@@ -25,10 +25,10 @@ This document acts as a reference for which cards are part of this mod.
 | No | Rare | Shimmering Solution | 1 | Gain a random shimmering potion. Exhaust. | Reduce cost to 0. | Instead choose 1 of 2 shimmering potions. |
 | No | Rare | Mace of Seasons | 2 | Add Mace of Seasons (Winter) to your hand. Exhaust. | Reduce cost to 1. | Increase cost to 3. Added card has B upgrade. |
 ||||||||
-| No | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 4. | Instead draw 2. | Card gains retain. |
-| No | Common (Cantrip) | Gust | 0 | Attune wind. Draw 1 card. Limited 4. | Instead draw 2. | Card gains retain. |
-| No | Common (Cantrip) | Flare | 0 | Attune fire. Draw 1 card. Limited 4. | Instead draw 2. | Card gains retain. |
-| No | Common (Cantrip) | Whirlpool | 0 | Attune water. Draw 1 card. Limited 4. | Instead draw 2. | Card gains retain. |
+| No | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 3. | Instead draw 2. | Card gains retain. |
+| No | Common (Cantrip) | Gust | 0 | Attune wind. Draw 1 card. Limited 3. | Instead draw 2. | Card gains retain. |
+| No | Common (Cantrip) | Flare | 0 | Attune fire. Draw 1 card. Limited 3. | Instead draw 2. | Card gains retain. |
+| No | Common (Cantrip) | Whirlpool | 0 | Attune water. Draw 1 card. Limited 3. | Instead draw 2. | Card gains retain. |
 ||||||||
 | No | Common (Potion) | Name | 0 | Deal 2 damage. |  |  |
 | No | Common (Potion) | Name | 0 | Gain 1 flux. |  |  |
