@@ -4,9 +4,5 @@ This document acts as a reference for the statuses that are introduced in this m
 
 | Done? | Name | Decreases | Effect |
 |:-:|:-:|:-:|:-:|
-| Yes | Smoldering | End of turn | After heat is inflicted, take X hull damage if above the overheating threshold. |
-| Yes | Flammable | No | Take X more damage when overheating. |
-| Yes | Frozen | Start of turn | This ship cannot move. This does not apply to forced movement. |
-| Yes | Thermosensitive | No | When inflicted with heat or frozen, a random ship part is stunned. |
-| Yes | Safeguard | Start of turn | Prevent this ship from gaining heat. |
-| Yes | Heat Resist | No | This ship must gain X more heat before overheating. |
+| No | Attunement | No | Can attune the four elements of earth, wind, fire, and water. When all elements are attuned, add one of three potions to your hand. | # Note - maybe the status can hold a value from 0-15? and make postfix to reset when it's 15 and QueueImmediate for a card add
+| No | Scavenge | No | At the start of your turn, attune a random non-attuned element X times. |

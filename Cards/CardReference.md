@@ -4,35 +4,60 @@ This document acts as a reference for which cards are part of this mod.
 
 | Done? | Rarity | Name | Cost | Effect | Upgrade A | Upgrade B |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| Yes | Common | Incinerate | 1 | Attack 1. Enemy gains 3 heat. | Before attack, apply 1 smoldering (outgoing). | Attack 1 x 2, apply 2 burn on both attacks. |
-| Yes | Common | Dragon Claw | 2 | Attack 1 x 2. Enemy gains 1 flammable on second attack. | Increase attack to 2 x 2. | Enemy gains 3 heat on first attack. Gain 1 heat. |
-| Yes | Common | Flame Charge | 0 | Attack 1. Gain 1 evade. Gain 2 heat. | Reduce heat gain to 1. | Increase cost to 1. Increase attack to 2 and evade to 2. |
-| Yes | Common | Dragon Breath | 1 | Attack 1. If enemy is overheated, they also gain 2 flammable. | Enemy gains 1 heat. on attack | Enemy gains 2 heat on attack. Gain 1 heat. |
-| Yes | Common | Psychic | 2 | Gain 1 evade. Gain 2 temp shield. Enemy is moved 1 to the left (outgoing, flippable). | Card gains retain. | Gain 2 real shield instead of temp shield. |
-| Yes | Common | Will-O-Wisp | 0 | Gain 1 temp shield. Enemy gains 2 heat (outgoing). Gain 1 heat. | Enemy also gains 1 smoldering beforehand. | Gain 2 temp shield. Enemy instead gains 2 heat twice. Gain 2 heat instead of 1. |
-| Yes | Common | Heat Wave | 1 | Enemy gains 1 smoldering and 3 heat (outgoing). Gain 1 heat. | Reduce cost to 0. | Increase smoldering gain to 2. Gain 2 heat instead. |
-| Yes | Common | Facade | 1 | Deal piercing damage equal to your heat. | Reduce cost to 0. | Add retain. |
-| Yes | Common | Light Screen | 1 | Gain 1 shield. Reduce heat by 1. | Reduce cost to 0. | Instead reduce heat by 2. |
-| Yes | Common | Flamethrower | 1 | Deploy a flamethrower from the missile bay. | Gain 1 droneshift before deploying. | Increase cost to 2. Deploy an additional flamethrower to the left of the missile bay. |
+| No | Common | Discovery | 1 | Add 1 of 4 cantrips to your hand. | Added card has A upgrade. | Added card has B upgrade. |
+| No | Common | Forage | 1 | Attune a random non-attuned element. Draw 2 cards. | Instead draw 4 cards. |  |
+| No | Common | Magic Bellows | 1 | Move 1 flippable. Attune wind. | Also attune fire. | Also gain 1 evade. |
+| No | Common | Oscillating Blade | 0 | Add Oscillating Blade (Fire) or Oscillating Blade (Ice) at random to your hand. Exhaust. | Added card has A upgrade. | Added card has B upgrade. | # Rework this?
+| No | Common | Prestidigitation | 1 | Deal 1 damage. Add 1 of 2 cantrips to your hand. | Instead add 1 of 4 cantrips. | Increase damage to 2. |
+| No | Common | Sea Quake | 2 | Floppable. Gain 3 temp shield. Attune water. / Gain 2 shield. Attune earth. | Both actions attune earth and water. | Gain 5 temp shield / 3 shield. Card gains fleeting. |
+| No | Common | Self-Forged Weapon | 2 | Deal 2 damage. Attune earth. Increase damage by 2 this combat. | Also attune fire. | Instead deal 4 damage. |
+| No | Common | Synthesize | 2 | Attune all unattuned elements. | Reduce cost to 1. | Card gains retain. |
 ||||||||
-| Yes | Uncommon | Dragon Pulse | 2 | If enemy is overheating, attack for 3 (piercing) and stun. If not, attack for 2. Apply 1 flammable (outgoing). | Only do the first action. | Apply 2 flammable instead. |
-| Yes | Uncommon | Extrasensory | 1 | Enemy is moved 2 to the left (outgoing, flippable.) | This ship also moves 1 to the right (flippable). | Enemy instead moves 3 to the left (outgoing, flippable). Gain 1 evade. Gain 2 heat.
-| Yes | Uncommon | Sunny Day | 1 | Change field effect to solar flare. Gain 2 heat resist. | Instead gain 3 heat resist. Also gain 1 serenity. | Remove exhaust. If solar flare is already active, also apply 2 flammable. |
-| Yes | Uncommon | Hone Claws | 1 | Gain 2 overdrive. Gain 3 heat and 1 flammable. Exhaust. | Reduce cost to 0. | Instead gain 1 powerdrive. |
-| Yes | Uncommon | Solar Beam | 1 | Deal piercing damage equal to your heat + enemy heat. Exhaust. | Card gains retain. | You and the enemy gain 1 heat before the attack. |
-| Yes | Uncommon | Fire Fang | 1 | Attack 1 pierce. Enemy gains 2 heat. Reduce heat by 1. | Apply 1 smoldering before attack. | Increase attack to 3 and heat to 3. Gain 1 heat instead. |
-| Yes | Uncommon | Imprison | 2 | Gain 3 temp shield. Cancel all enemy's non-attack actions (outgoing). | Also reduce heat by 1. | Also gain 1 energy next turn. Gain 1 heat. |
-| Yes | Uncommon | Overheat | 1 | Enemy gains 1 smoldering, 3 heat, and 2 flammable (outgoing). Gain 3 heat. Exhaust. | Reduce self heat gain to 2. | Increase smoldering to 2. |
+| No | Uncommon | Enchanted Whetstone | 1 | Gain 1 overdrive. Gain 1 stun charge. | Card gains retain. | Also gain 1 flux. |
+| No | Uncommon | Fermented Concoction | 12 | Heal 3. Permanently reduce cost by 1 when drawn. Single use. | Reduce cost by 5 (min 0). | Reset cost to 12. Heal 4 instead. |
+| No | Uncommon | Potion Belt | 1 | Add retain to all potions in your hand. | Add retain to all potions in the deck. | Add 1 random potion beforehand. Limited 2. |
+| No | Uncommon | Quick Brew | 1 | Add a random potion to your hand. | Instead add 1 of 2 potions to your hand. | Add a random potion (85%) or shimmering potion (15%) to your hand. |
+| No | Uncommon | Transmogrify | 1 | Replace all potions in hand with another at random of the same type. | Reduce cost to 0. | Replaced potions keep retain. |
+| No | Uncommon | Wild Magic | 1 | Floppable. Move 2 / 4 random. Add 2 random cantrips to your hand. Exhaust. | Reduce cost to 0. | Instead move 1 / 5 random. |
 ||||||||
-| Yes | Rare | Fusion Flare | 2 | Attack 2. Enemy gains 2 smoldering. Enemy gains 3 heat (outgoing). Gain 1 heat. | Increase damage to 4. | Enemy gains 3 smoldering. Increase self heat gain to 2. |
-| Yes | Rare | Blue Flare | 3 | Attack 3. Enemy gains 4 flammable. Exhaust. | Reduce cost to 2. | Increase cost to 4. Increase damage to 5 and flammable to 6. |
-| Yes | Rare | Draco Meteor | 3 | Attack 2 + 2 heat, 2 + 1 flammable, 3. Lose 1 energy next turn. Exhaust. | Remove next turn energy loss. | Enemy gains 3 heat and 2 flammable instead. |
-| Yes | Rare | Roost | 2 | Heal 2 HP. Reduce heat by 3. Gain 2 flammable. Exhaust. | Card gains retain. | Also gain 2 shield. |
-| Yes | Rare | Outrage | 1 | Deal 2 piercing damage. Draw a card. Discard a card at random. Infinite. | Also inflict 2 heat on the enemy. | Increase damage to 3 and apply 2 heat. Gain 1 heat. |
-| Yes | Rare | Safeguard | 0 | Gain 1 safeguard. Exhaust. | Card gains retain. | Gain 2 heat. Increase safeguard gain to 2. |
+| No | Rare | Chromatic Orb | 1 | Deal 1 damage for each potion or shimmering potion played this combat. Exhaust. | Card no longer exhausts. Reset to 0 when played. |  |
+| No | Rare | Dimensional Storage | 2 | Gain 1 scavenge. Exhaust. | Reduce cost to 1. | Increase cost to 3. Gain 2 scavenge. |
+| No | Rare | Shimmering Solution | 1 | Gain a random shimmering potion. Exhaust. | Reduce cost to 0. | Instead choose 1 of 2 shimmering potions. |
+| No | Rare | Mace of Seasons | 2 | Add Mace of Seasons (Winter) to your hand. Exhaust. | Reduce cost to 1. | Increase cost to 3. Added card has B upgrade. |
 ||||||||
-| Yes | Uncommon (Kyurem) | Glaciate | 1 | Add a temp Ice Needle to your hand. | Add a temp Ice Needle A to your draw pile. | Add 1 temp Ice Needle to your hand, and 2 to your discard pile. Card gains exhaust. |
-| Yes | Common (Kyurem) | Ice Needle | 1 | Attack 1. Enemy gains 1 frozen. | Reduce cost to 0. | Increase attack and frozen to 2. Gain 1 frozen. |
-| Yes | Rare (Kyurem) | Ice Burn | 2 | Attack 1 x 2. Enemy gains 3 heat and 1 frozen. | Increase damage to 2 x 2. | Apply 1 more frozen. Gain 1 frozen. |
-| Yes | Uncommon (Victini) | Searing Shot | 1 | Exhaust the rightmost card in your hand. Deal damage and apply heat equal to its cost + 1. | Damage + heat equal to its cost + 2. | Instead choose a card to exhaust. |
-| Yes | Rare (Victini) | V-Create | 2 | Exhaust the leftmost and rightmost cards in your hand. Attack 3 and apply 2 smoldering. Exhaust. | Also apply 3 heat. | Increase cost to 3. Increase damage to 5 and smoldering to 3. |
+| No | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 4. | Instead draw 2. | Card gains retain. |
+| No | Common (Cantrip) | Gust | 0 | Attune wind. Draw 1 card. Limited 4. | Instead draw 2. | Card gains retain. |
+| No | Common (Cantrip) | Flare | 0 | Attune fire. Draw 1 card. Limited 4. | Instead draw 2. | Card gains retain. |
+| No | Common (Cantrip) | Whirlpool | 0 | Attune water. Draw 1 card. Limited 4. | Instead draw 2. | Card gains retain. |
+||||||||
+| No | Common (Potion) | Name | 0 | Deal 2 damage. |  |  |
+| No | Common (Potion) | Name | 0 | Gain 1 flux. |  |  |
+| No | Common (Potion) | Name | 0 | Gain 1 overdrive. |  |  |
+| No | Common (Potion) | Name | 0 | Draw 2 cards. |  |  |
+| No | Common (Potion) | Name | 0 | Gain 1 energy. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Deal 1 damage. Stun. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Gain 2 hermes boots. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Gain 2 evade. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Gain 2 block. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Gain 1 boost. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Gain 2 temp payback. |  |  |
+||||||||
+| No | Rare (Shimmering Potion) | Name | 0 | Gain 1 powerdrive. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Deal 10 damage. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Apply 2 corrode. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Deal 2 x 3 piercing damage. |  |  | # Potion of Dragon's Breath?
+| No | Rare (Shimmering Potion) | Name | 0 | Gain 1 stun source. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Gain 1 perfect shield. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Gain 3 max shield. Gain 3 shield. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Gain 12 temp shield. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Gain 1 ace. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Gain 3 energy. Draw 3 cards. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Play 3 random potions. |  |  |
+||||||||
+| No | Common (Generated) | Oscillating Blade (Fire) | 1 | Deal 1 damage. Attune fire. Add Oscillating Blade (Ice) to your hand. Exhaust. | Reduce cost to 0. | B Upgrade |
+| No | Common (Generated) | Oscillating Blade (Ice) | 1 | Deal 1 damage. Attune water. Add Oscillating Blade (Fire) to your hand. Exhaust. | Reduce cost to 0. | B Upgrade |
+||||||||
+| No | Rare (Generated) | Mace of Seasons (Winter) | 1 | Deal 1 damage. Gain 1 shield. Attune water. Add Mace of Seasons (Spring) to your hand. Exhaust. | Instead deal 3 damage. | Card gains retain. Summon B. |
+| No | Rare (Generated) | Mace of Seasons (Spring) | 1 | Deal 1 damage. Gain 1 evade. Attune wind. Add Mace of Seasons (Summer) to your hand. Exhaust. | Instead deal 3 damage. | Card gains retain. Summon B. |
+| No | Rare (Generated) | Mace of Seasons (Summer) | 1 | Deal 1 damage. Stun. Attune fire. Add Mace of Seasons (Autumn) to your hand. Exhaust. | Instead deal 3 damage. | Card gains retain. Summon B. |
+| No | Rare (Generated) | Mace of Seasons (Autumn) | 1 | Gain 1 flux. Deal 1 damage. Attune earth. Add Mace of Seasons (Winter) to your hand. Exhaust. | Instead deal 3 damage. | Card gains retain. Summon B. |
