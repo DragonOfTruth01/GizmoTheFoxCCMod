@@ -1,0 +1,243 @@
+{
+  "character": {
+    "ReshiramCCMod": {
+      "name": "Reshiram",
+      "description": "<c=f4f7f0>RESHIRAM</c>\nA legendary dragon that represents truth. Its cards utilize <c=ff687d>heat</c> alongside <c=boldPink>other debuffs</c> to set enemy ships ablaze."
+    },
+    "ReshiramCCMod_Victini": {
+      "name": "Victini"
+    },
+    "ReshiramCCMod_WKyurem": {
+      "name": "White Kyurem"
+    }
+  },
+  "action": {
+    "Solar Flare": {
+      "name": "SUMMON SOLAR FLARE",
+      "description": "Changes the current field effect to <c=status>SOLAR FLARE</c>."
+    },
+    "Non-Attack Stun":{
+      "name": "     NON-ATTACK STUN",
+      "description": "Cancel intents on the enemy ship that are not attacks."
+    },
+    "SearingShotChooseExhaust":{
+      "SelectText": "Choose a card in your hand to exhaust for Searing Shot."
+    },
+    "Exhaust Right":{
+      "name": "     EXHAUST RIGHTMOST CARD",
+      "description": "Exhaust the rightmost card in your hand."
+    },
+    "Exhaust Left Right":{
+      "name": "     EXHAUST LEFTMOST AND RIGHTMOST CARDS",
+      "description": "Exhaust the leftmost and rightmost cards in your hand."
+    },
+    "Choose Exhaust":{
+      "name": "     CHOOSE A CARD TO EXHAUST",
+      "description": "Choose a card in your hand to exhaust."
+    }
+  },
+  "artifact": {
+    "boss": {
+      "Flame Orb": {
+        "name": "FLAME ORB",
+        "description": "Gain 1 extra <c=status>ENERGY</c> every turn. <c=downside>Lose 1 <c=status>heat resist</c> at the start of combat.</c>"
+      },
+      "DNA Splicers": {
+        "name": "DNA SPLICERS",
+        "description": "Add <c=card>Glaciate</c> and <c=card>Ice Burn</c> to your deck. Enemy starts combat <c=status>THERMOSENSITIVE</c>."
+      }
+    },
+    "common": {
+      "Heat Rock": {
+        "name": "HEAT ROCK",
+        "description": "At start of combat, enemy gains 1 <c=status>FLAMMABLE</c>."
+      },
+      "Fire Gem": {
+        "name": "FIRE GEM",
+        "description": "The first time you gain <c=status>heat</c> each turn, gain 1 <c=status>OVERDRIVE</c>."
+      },
+      "Charcoal": {
+        "name": "CHARCOAL",
+        "description": "Every 3 turns, enemy gains 1 <c=status>SMOLDERING."
+      },
+      "Rawst Berry": {
+        "name": "RAWST BERRY",
+        "description": "The first time each combat you reach the <c=ff687d>overheating</c> threshold, reduce your heat to 1 below the threshold."
+      },
+      "Liberty Pass": {
+        "name": "LIBERTY PASS",
+        "description": "Add <c=card>Searing Shot</c> and <c=card>V-Create</c> to your deck."
+      }
+    }
+  },
+  "card": {
+    "Incinerate": {
+      "name": "Incinerate"
+    },
+    "Dragon Claw": {
+      "name": "Dragon Claw"
+    },
+    "Flame Charge": {
+      "name": "Flame Charge"
+    },
+    "Dragon Breath": {
+      "name": "Dragon Breath"
+    },
+    "Psychic": {
+      "name": "Psychic"
+    },
+    "Will-O-Wisp": {
+      "name": "Will-O-Wisp"
+    },
+    "Heat Wave": {
+      "name": "Heat Wave"
+    },
+    "Facade": {
+      "name": "Facade"
+    },
+    "Light Screen": {
+      "name": "Light Screen"
+    },
+    "Flamethrower": {
+      "name": "Flame-thrower"
+    },
+    "Dragon Pulse": {
+      "name": "Dragon Pulse"
+    },
+    "Extrasensory": {
+      "name": "Extra-sensory"
+    },
+    "Sunny Day": {
+      "name": "Sunny Day",
+      "description": {
+        "None": "Summon a <c=action>Solar Flare</c>. Gain 2 <c=status>heat resist</c>.",
+        "A": "Summon a <c=action>Solar Flare</c>. Gain 3 <c=status>heat resist</c> and 1 <c=status>serenity</c>.",
+        "B": "<c=action>Solar Flare</c>, or apply 2 <c=status>flammable</c> if already active. Gain 2 <c=status>heat resist</c>."
+      }
+    },
+    "Hone Claws": {
+      "name": "Hone Claws"
+    },
+    "Solar Beam": {
+      "name": "Solar Beam",
+      "description": {
+        "None": "Deal 1 <c=keyword>pierce</c> damage per <c=status>heat</c> on each ship{{damageString}}.",
+        "A": "Deal 1 <c=keyword>pierce</c> damage per <c=status>heat</c> on each ship{{damageString}}.",
+        "B": "Both ships gain 1 <c=status>heat</c>. Deal 1 <c=keyword>pierce</c> damage per <c=status>heat</c> on each ship{{damageString}}."
+      }
+    },
+    "Fire Fang": {
+      "name": "Fire Fang"
+    },
+    "Imprison": {
+      "name": "Imprison"
+    },
+    "Overheat": {
+      "name": "Overheat"
+    },
+    "Fusion Flare": {
+      "name": "Fusion Flare"
+    },
+    "Blue Flare": {
+      "name": "Blue Flare"
+    },
+    "Draco Meteor": {
+      "name": "Draco Meteor"
+    },
+    "Roost": {
+      "name": "Roost"
+    },
+    "Outrage": {
+      "name": "Outrage"
+    },
+    "Safeguard": {
+      "name": "Safeguard"
+    },
+    "Searing Shot": {
+      "name": "Searing Shot"
+    },
+    "V-Create": {
+      "name": "V-Create"
+    },
+    "Glaciate": {
+      "name": "Glaciate",
+      "description": {
+        "None": "Add an <c=card>Ice Needle</c> to your hand.",
+        "A": "Add an <c=card>Ice Needle A</c> to your draw pile.",
+        "B": "Add 1 <c=card>Ice Needle</c> to your hand. Add 2 more to your discard pile."
+      }
+    },
+    "Ice Needle": {
+      "name": "Ice Needle"
+    },
+    "Ice Burn": {
+      "name": "Ice Burn"
+    },
+    "Reshiram.EXE": {
+      "name": "Reshiram\n.EXE",
+      "description": {
+        "None": "Add 1 of 2 <c=cardtrait>discount, temp</c> <c=f4f7f0>Reshiram</c> cards to your hand.",
+        "A": "Add 1 of 2 <c=cardtrait>discount, temp</c> <c=f4f7f0>Reshiram</c> cards to your hand.",
+        "B": "Add 1 of 3 <c=cardtrait>discount, temp</c> <c=f4f7f0>Reshiram</c> cards to your hand."
+      }
+    }
+  },
+  "midrow":{
+    "Flamethrower":{
+      "name": "Flamethrower",
+      "description": "Beams 1 <c=status>heat</c> at its target once per turn."
+    }
+  },
+  "status": {
+    "Smoldering": {
+      "name": "Smoldering",
+      "description": "After <c=status>heat</c> is inflicted, take <c=boldPink>{0}</c> hull damage if at or above the <c=ff687d>overheating</c> threshold.\n<c=ff687d>Decreases by 1 at end of turn.</c>"
+    },
+    "Flammable": {
+      "name": "Flammable",
+      "description": "Take <c=boldPink>{0}</c> extra damage from <c=ff687d>overheating</c>."
+    },
+    "Safeguard": {
+      "name": "Safeguard",
+      "description": "This ship cannot gain <c=status>heat</c>.\n<c=ff687d>Decreases by 1 at start of turn.</c>"
+    },
+    "Heat Resist": {
+      "name": "Heat Resist",
+      "description": "This ship must gain <c=boldPink>{0}</c> extra <c=status>heat</c> before <c=ff687d>overheating</c>."
+    },
+    "Frozen": {
+      "name": "Frozen",
+      "description": "This ship cannot move, except from forced or instant movement.\n<c=ff687d>Decreases by 1 at start of turn.</c>"
+    },
+    "Thermosensitive": {
+      "name": "Thermosensitive",
+      "description": "Whenever this ship is inflicted with <c=status>HEAT</c> or <c=status>FROZEN</c>, one ship part is stunned at random."
+    },
+    "Exhaust Energy":{
+      "name": "exhausted card's energy value",
+      "description": "Energy value of the card that was exhausted."
+    },
+    "One":{
+      "name": "1",
+      "description": "Nobody really knows what this does."
+    },
+    "Two":{
+      "name": "2",
+      "description": "Nobody really knows what this does."
+    }
+  },
+  "condition": {
+    "isEnemyOverheating" : {
+      "title" : "ENEMY IS OVERHEATING",
+      "description" : "the enemy is overheating"
+    },
+    "isEnemyNotOverheating" : {
+      "title" : "ENEMY IS NOT OVERHEATING",
+      "description" : "the enemy is not overheating"
+    },
+    "isSolarFlareActive" : {
+      "title" : "SOLAR FLARE IS ACTIVE",
+      "description" : "a solar flare is active"
+    }
+  }
+}
