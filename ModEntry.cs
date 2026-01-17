@@ -80,7 +80,7 @@ public sealed class ModEntry : SimpleMod
     ];
 
     // Combine all the lists into a single object for reference
-    internal static IEnumerable<Type> ReshiramCCMod_AllCard_Types = [
+    internal static IEnumerable<Type> GizmoTheFoxCCMod_AllCard_Types = [
         .. GizmoTheFoxCCMod_Character_CommonCard_Types,
         .. GizmoTheFoxCCMod_Character_UncommonCard_Types,
         .. GizmoTheFoxCCMod_Character_RareCard_Types,
@@ -99,7 +99,7 @@ public sealed class ModEntry : SimpleMod
     ];
 
     // Combine all the artifacts into a single list
-    internal static IEnumerable<Type> ReshiramCCMod_AllArtifact_Types = [
+    internal static IEnumerable<Type> GizmoTheFoxCCMod_AllArtifact_Types = [
         .. GizmoTheFoxCCMod_CommonArtifact_Types,
         .. GizmoTheFoxCCMod_BossArtifact_Types
     ];
@@ -111,7 +111,7 @@ public sealed class ModEntry : SimpleMod
 
         KokoroApi = helper.ModRegistry.GetApi<IKokoroApi>("Shockah.Kokoro")!.V2;
 
-        Harmony = new Harmony("DragonOfTruth01.ReshiramCCMod");
+        Harmony = new Harmony("DragonOfTruth01.GizmoTheFoxCCMod");
 
         // This can be done in place of all Instance.Harmony.Patch() calls in class constructors.
         // However, this will case your IDE/text editor to think the function is unused (since 
@@ -128,28 +128,28 @@ public sealed class ModEntry : SimpleMod
         );
 
         // Card Frames
-        GizmoTheFoxCCMod_Character_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/ReshiramCCMod_character_cardframe.png"));
-        GizmoTheFoxCCMod_Potion_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/ReshiramCCMod_character_victini_cardframe.png"));
-        GizmoTheFoxCCMod_ShimmeringPotion_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/ReshiramCCMod_character_wkyurem_cardframe.png"));
+        GizmoTheFoxCCMod_Character_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/GizmoTheFoxCCMod_character_cardframe.png"));
+        GizmoTheFoxCCMod_Potion_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/GizmoTheFoxCCMod_character_victini_cardframe.png"));
+        GizmoTheFoxCCMod_ShimmeringPotion_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/GizmoTheFoxCCMod_character_wkyurem_cardframe.png"));
 
         // Character Panel
-        GizmoTheFoxCCMod_Character_Panel = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/ReshiramCCMod_character_panel.png"));
+        GizmoTheFoxCCMod_Character_Panel = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/GizmoTheFox_character_panel.png"));
 
         // Custom Card Arts
-        GizmoTheFoxCCMod_Character_DefaultCardBG = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/CardBGs/ReshiramCCMod_character_cardbackground.png"));
+        GizmoTheFoxCCMod_Character_DefaultCardBG = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/CardBGs/GizmoTheFox_character_cardbackground.png"));
 
         // Artifact Arts
 
         // Animation Sprites
-        GizmoTheFoxCCMod_Character_Neutral_0 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/reshi/ReshiramCCMod_character_reshi_neutral_0.png"));
-        GizmoTheFoxCCMod_Character_Neutral_1 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/reshi/ReshiramCCMod_character_reshi_neutral_0.png"));
-        GizmoTheFoxCCMod_Character_Neutral_2 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/reshi/ReshiramCCMod_character_reshi_neutral_0.png"));
+        GizmoTheFoxCCMod_Character_Neutral_0 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/reshi/GizmoTheFox_character_reshi_neutral_0.png"));
+        GizmoTheFoxCCMod_Character_Neutral_1 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/reshi/GizmoTheFox_character_reshi_neutral_0.png"));
+        GizmoTheFoxCCMod_Character_Neutral_2 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/reshi/GizmoTheFox_character_reshi_neutral_0.png"));
 
-        GizmoTheFoxCCMod_Character_Mini_0 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/reshi/ReshiramCCMod_character_reshi_neutral_0.png"));
+        GizmoTheFoxCCMod_Character_Mini_0 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/reshi/GizmoTheFox_character_reshi_neutral_0.png"));
 
-        GizmoTheFoxCCMod_Character_Squint_0 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/reshi/ReshiramCCMod_character_reshi_neutral_0.png"));
-        GizmoTheFoxCCMod_Character_Squint_1 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/reshi/ReshiramCCMod_character_reshi_neutral_0.png"));
-        GizmoTheFoxCCMod_Character_Squint_2 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/reshi/ReshiramCCMod_character_reshi_neutral_0.png"));
+        GizmoTheFoxCCMod_Character_Squint_0 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/reshi/GizmoTheFox_character_reshi_neutral_0.png"));
+        GizmoTheFoxCCMod_Character_Squint_1 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/reshi/GizmoTheFox_character_reshi_neutral_0.png"));
+        GizmoTheFoxCCMod_Character_Squint_2 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/reshi/GizmoTheFox_character_reshi_neutral_0.png"));
 
         // Custom Action Icons
 
@@ -283,17 +283,17 @@ public sealed class ModEntry : SimpleMod
                 ]
             },
 
-            Description = AnyLocalizations.Bind(["character", "ReshiramCCMod", "description"]).Localize,
+            Description = AnyLocalizations.Bind(["character", "GizmoTheFoxCCMod", "description"]).Localize,
 
             BorderSprite = GizmoTheFoxCCMod_Character_Panel.Sprite
         });
 
         // Register Cards
-        foreach (var cardType in ReshiramCCMod_AllCard_Types)
+        foreach (var cardType in GizmoTheFoxCCMod_AllCard_Types)
             AccessTools.DeclaredMethod(cardType, nameof(IGizmoTheFoxCCModCard.Register))?.Invoke(null, [helper]);
 
         // Register Artifacts
-        foreach (var artifactType in ReshiramCCMod_AllArtifact_Types)
+        foreach (var artifactType in GizmoTheFoxCCMod_AllArtifact_Types)
             AccessTools.DeclaredMethod(artifactType, nameof(IGizmoTheFoxCCModArtifact.Register))?.Invoke(null, [helper]);
 
         // Register Custom Statuses

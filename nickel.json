@@ -4,7 +4,7 @@
   "Author": "DragonOfTruth01",
   "Description": "TBD",
   "RequiredApiVersion": "0.6.0",
-  "EntryPointAssembly": "ReshiramCCMod.dll",
+  "EntryPointAssembly": "GizmoTheFoxCCMod.dll",
   "Dependencies": [
     {
       "UniqueName": "Shockah.Kokoro",
