@@ -2,10 +2,10 @@
 This README was made using Louis3797's awesome-readme-template
 -->
 <div align="center">
-  <h1>Reshiram Mod</h1>
+  <h1>Gizmo the Fox Mod</h1>
   <img src="assets/characters/reshi/ReshiramCCMod_character_reshi_neutral_0.png" alt="logo" width="auto" height="auto" />
   <p>
-    A legendary dragon that represents truth. Its cards utilize alongside other debuffs to set enemy ships ablaze.
+    [Description here]
   </p>
 </div>
 
@@ -15,24 +15,19 @@ This README was made using Louis3797's awesome-readme-template
 This mod adds the following:
 
 - <b>1</b> Character
-- <b>30</b> Cards
-  - <b>10</b> common
-  - <b>8</b> uncommon
-  - <b>6</b> rare
-  - <b>6</b> other
-- <b>7</b> Artifacts
-  - <b>5</b> common
-  - <b>2</b> boss
-- <b>6</b> Statuses
+- <b>???</b> Cards
+  - <b>???</b> common
+  - <b>???</b> uncommon
+  - <b>???</b> rare
+  - <b>???</b> other
+- <b>???</b> Artifacts
+  - <b>???</b> common
+  - <b>???</b> boss
+- <b>???</b> Statuses
 
 # Content Infographics
 
-<img src="README_assets/infographics/Reshi_Normal.png" alt="screenshot" width="auto" height="auto" />
-<img src="README_assets/infographics/Reshi_A.png" alt="screenshot" width="auto" height="auto" />
-<img src="README_assets/infographics/Reshi_B.png" alt="screenshot" width="auto" height="auto" />
 
-<!-- Screenshots -->
 # Screenshots
 
-<img src="README_assets/screenshots/gameplay_screenshot.png" alt="screenshot" width="auto" height="auto" />
-<img src="README_assets/screenshots/card_reward.png" alt="screenshot" width="auto" height="auto" />
+
