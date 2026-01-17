@@ -1,4 +1,4 @@
-﻿namespace DragonOfTruth01.ReshiramCCMod;
+﻿namespace DragonOfTruth01.GizmoTheFoxCCMod;
 
 using HarmonyLib;
 using FSPRO;
@@ -56,7 +56,6 @@ internal sealed class StatusManager : IKokoroApi.IV2.IStatusLogicApi.IHook, IKok
     [HarmonyPatch(typeof(Ship), "ResetAfterCombat")]
     private static void Ship_ResetAfterCombat_Prefix(Ship __instance)
     {
-        __instance.overheatDamage -= __instance.Get(ModEntry.Instance.Flammable.Status);
-        __instance.heatTrigger -= __instance.Get(ModEntry.Instance.HeatResist.Status);
+        
     }
 }

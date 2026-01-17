@@ -3,7 +3,6 @@ This README was made using Louis3797's awesome-readme-template
 -->
 <div align="center">
   <h1>Gizmo the Fox Mod</h1>
-  <img src="assets/characters/reshi/ReshiramCCMod_character_reshi_neutral_0.png" alt="logo" width="auto" height="auto" />
   <p>
     [Description here]
   </p>

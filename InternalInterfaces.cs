@@ -1,13 +1,13 @@
 ﻿using Nickel;
 
-namespace DragonOfTruth01.ReshiramCCMod;
+namespace DragonOfTruth01.GizmoTheFoxCCMod;
 
-internal interface IReshiramCCModCard
+internal interface IGizmoTheFoxCCModCard
 {
     static abstract void Register(IModHelper helper);
 }
 
-internal interface IReshiramCCModArtifact
+internal interface IGizmoTheFoxCCModArtifact
 {
     static abstract void Register(IModHelper helper);
 }
