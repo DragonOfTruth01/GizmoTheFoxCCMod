@@ -1,4 +1,4 @@
-namespace DragonOfTruth01.ReshiramCCMod;
+namespace DragonOfTruth01.GizmoTheFoxCCMod;
 
 /// <summary>
 /// Allows accessing all of Kokoro library APIs.
