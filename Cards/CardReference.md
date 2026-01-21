@@ -22,7 +22,7 @@ This document acts as a reference for which cards are part of this mod.
 | No | Uncommon | Transmogrify | 0 | Replace a potion or shimmering potion with a random one of the same type. | Replaced potion gains retain. | Increase cost to 1. Instead replace all potions in hand. |
 | No | Uncommon | Wild Magic | 1 | Floppable. Move 2 / 4 random. Add 2 random cantrips to your hand. Exhaust. | Reduce cost to 0. | Instead move 1 / 5 random. |
 ||||||||
-| No | Rare | Chromatic Orb | 1 | Deal 1 damage for each potion or shimmering potion played this combat. Exhaust. | Card no longer exhausts. Reset to 0 when played. |  |
+| No | Rare | Chromatic Orb | 1 | Deal 1 damage for each potion or shimmering potion played this combat. Exhaust. | Card no longer exhausts. Reset to 0 when played. | Card gains retain. |
 | No | Rare | Leyline Tapping | 2 | Gain 1 accumulate. Exhaust. | Reduce cost to 1. | Increase cost to 3. Gain 2 accumulate. |
 | No | Rare | Shimmering Solution | 1 | Gain a random shimmering potion. Exhaust. | Reduce cost to 0. | Instead choose 1 of 2 shimmering potions. |
 | No | Rare | Mace of Seasons | 2 | Add Mace of Seasons (Winter) to your hand. Exhaust. | Reduce cost to 1. | Increase cost to 3. Added card has B upgrade. |
