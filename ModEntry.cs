@@ -128,9 +128,9 @@ public sealed class ModEntry : SimpleMod
         );
 
         // Card Frames
-        GizmoTheFoxCCMod_Character_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/GizmoTheFoxCCMod_character_cardframe.png"));
-        GizmoTheFoxCCMod_Potion_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/GizmoTheFoxCCMod_character_victini_cardframe.png"));
-        GizmoTheFoxCCMod_ShimmeringPotion_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/characters/GizmoTheFoxCCMod_character_wkyurem_cardframe.png"));
+        GizmoTheFoxCCMod_Character_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/GizmoTheFoxCCMod_character_cardframe.png"));
+        GizmoTheFoxCCMod_Potion_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/GizmoTheFoxCCMod_potion_cardframe.png"));
+        GizmoTheFoxCCMod_ShimmeringPotion_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/GizmoTheFoxCCMod_shimmeringpotion_cardframe.png"));
 
         // Character Panel
         GizmoTheFoxCCMod_Character_Panel = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/GizmoTheFox_character_panel.png"));
