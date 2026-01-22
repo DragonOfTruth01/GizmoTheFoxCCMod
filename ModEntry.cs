@@ -133,10 +133,10 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_ShimmeringPotion_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_shimmeringpotion_cardframe.png"));
 
         // Character Panel
-        GizmoTheFoxCCMod_Character_Panel = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFox_character_panel.png"));
+        GizmoTheFoxCCMod_Character_Panel = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_panel.png"));
 
         // Custom Card Arts
-        GizmoTheFoxCCMod_Character_DefaultCardBG = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/GizmoTheFox_character_cardbackground.png"));
+        GizmoTheFoxCCMod_Character_DefaultCardBG = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/GizmoTheFoxCCMod_character_cardbackground.png"));
 
         // Artifact Arts
 
