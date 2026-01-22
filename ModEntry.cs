@@ -128,12 +128,12 @@ public sealed class ModEntry : SimpleMod
         );
 
         // Card Frames
-        GizmoTheFoxCCMod_Character_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/GizmoTheFoxCCMod_character_cardframe.png"));
-        GizmoTheFoxCCMod_Potion_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/GizmoTheFoxCCMod_potion_cardframe.png"));
-        GizmoTheFoxCCMod_ShimmeringPotion_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/GizmoTheFoxCCMod_shimmeringpotion_cardframe.png"));
+        GizmoTheFoxCCMod_Character_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_cardframe.png"));
+        GizmoTheFoxCCMod_Potion_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_potion_cardframe.png"));
+        GizmoTheFoxCCMod_ShimmeringPotion_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_shimmeringpotion_cardframe.png"));
 
         // Character Panel
-        GizmoTheFoxCCMod_Character_Panel = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/GizmoTheFox_character_panel.png"));
+        GizmoTheFoxCCMod_Character_Panel = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFox_character_panel.png"));
 
         // Custom Card Arts
         GizmoTheFoxCCMod_Character_DefaultCardBG = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/GizmoTheFox_character_cardbackground.png"));
@@ -141,15 +141,15 @@ public sealed class ModEntry : SimpleMod
         // Artifact Arts
 
         // Animation Sprites
-        GizmoTheFoxCCMod_Character_Neutral_0 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/GizmoTheFox_character_reshi_neutral_0.png"));
-        GizmoTheFoxCCMod_Character_Neutral_1 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/GizmoTheFox_character_reshi_neutral_0.png"));
-        GizmoTheFoxCCMod_Character_Neutral_2 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/GizmoTheFox_character_reshi_neutral_0.png"));
+        GizmoTheFoxCCMod_Character_Neutral_0 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFox_character_reshi_neutral_0.png"));
+        GizmoTheFoxCCMod_Character_Neutral_1 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFox_character_reshi_neutral_0.png"));
+        GizmoTheFoxCCMod_Character_Neutral_2 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFox_character_reshi_neutral_0.png"));
 
-        GizmoTheFoxCCMod_Character_Mini_0 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/GizmoTheFox_character_reshi_neutral_0.png"));
+        GizmoTheFoxCCMod_Character_Mini_0 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFox_character_reshi_neutral_0.png"));
 
-        GizmoTheFoxCCMod_Character_Squint_0 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/GizmoTheFox_character_reshi_neutral_0.png"));
-        GizmoTheFoxCCMod_Character_Squint_1 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/GizmoTheFox_character_reshi_neutral_0.png"));
-        GizmoTheFoxCCMod_Character_Squint_2 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/GizmoTheFox_character_reshi_neutral_0.png"));
+        GizmoTheFoxCCMod_Character_Squint_0 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFox_character_reshi_neutral_0.png"));
+        GizmoTheFoxCCMod_Character_Squint_1 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFox_character_reshi_neutral_0.png"));
+        GizmoTheFoxCCMod_Character_Squint_2 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFox_character_reshi_neutral_0.png"));
 
         // Custom Action Icons
 
