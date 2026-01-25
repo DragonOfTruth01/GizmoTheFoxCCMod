@@ -32,7 +32,8 @@ internal sealed class CardTremor : Card, IGizmoTheFoxCCModCard, IHasCustomCardTr
         CardData data = new CardData()
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
-            retain = upgrade == Upgrade.B
+            retain = upgrade == Upgrade.B,
+            temporary = true
         };
         return data;
     }
