@@ -2,7 +2,7 @@
   "character": {
     "GizmoTheFoxCCMod_Character": {
       "name": "Gizmo",
-      "description": "Your artificer/alchemist. His cards allow you to <c=boldPink>attune</c> the four elements to <c=boldPink>brew potions</c>."
+      "description": "Your artificer/alchemist. His cards allow you to <c=boldPink>create temporary cards</c> and <c=boldPink>attune</c> the four elements, brewing <c=boldPink>potions</c>."
     },
     "GizmoTheFoxCCMod_Potion": {
       "name": "Potion"
