@@ -4,11 +4,11 @@ using System.Reflection;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod.Cards;
 
-internal sealed class CardTremor : Card, IGizmoTheFoxCCModCard
+internal sealed class CardTremor : Card, IGizmoTheFoxCCModCard, IHasCustomCardTraits
 {
     public static void Register(IModHelper helper)
     {
-        helper.Content.Cards.RegisterCard("Tremor", new()
+        var entry = helper.Content.Cards.RegisterCard("Tremor", new()
         {
             CardType = MethodBase.GetCurrentMethod()!.DeclaringType!,
             Meta = new()
@@ -19,15 +19,24 @@ internal sealed class CardTremor : Card, IGizmoTheFoxCCModCard
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Tremor", "name"]).Localize
         });
+
+        // Set all upgrades to limited 3
+        ModEntry.Instance.KokoroApi.Limited.SetBaseLimitedUses(entry.UniqueName, 3);
     }
+
+    public IReadOnlySet<ICardTraitEntry> GetInnateTraits(State state)
+		=> new HashSet<ICardTraitEntry> { ModEntry.Instance.KokoroApi.Limited.Trait };
+
     public override CardData GetData(State state)
     {
         CardData data = new CardData()
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
+            retain = upgrade == Upgrade.B
         };
         return data;
     }
+
     public override List<CardAction> GetActions(State s, Combat c)
     {
         List<CardAction> actions = new();
@@ -40,6 +49,10 @@ internal sealed class CardTremor : Card, IGizmoTheFoxCCModCard
                     new AAttune()
                     {
                         elementBitfieldModifier = 0b1000
+                    },
+                    new ADrawCard()
+                    {
+                        count = 1
                     }
                 };
                 break;
@@ -47,19 +60,13 @@ internal sealed class CardTremor : Card, IGizmoTheFoxCCModCard
             case Upgrade.A:
                 actions = new()
                 {
-                    new AAttack()
+                    new AAttune()
                     {
-                        damage = GetDmg(s, 1)
+                        elementBitfieldModifier = 0b1000
                     },
-                    new AStatus(){
-                        status = Status.evade,
-                        statusAmount = 1,
-                        targetPlayer = true
-                    },
-                    new AStatus(){
-                        status = Status.heat,
-                        statusAmount = 1,
-                        targetPlayer = true
+                    new ADrawCard()
+                    {
+                        count = 2
                     }
                 };
                 break;
@@ -67,19 +74,13 @@ internal sealed class CardTremor : Card, IGizmoTheFoxCCModCard
             case Upgrade.B:
                 actions = new()
                 {
-                    new AAttack()
+                    new AAttune()
                     {
-                        damage = GetDmg(s, 2)
+                        elementBitfieldModifier = 0b1000
                     },
-                    new AStatus(){
-                        status = Status.evade,
-                        statusAmount = 2,
-                        targetPlayer = true
-                    },
-                    new AStatus(){
-                        status = Status.heat,
-                        statusAmount = 2,
-                        targetPlayer = true
+                    new ADrawCard()
+                    {
+                        count = 1
                     }
                 };
                 break;
