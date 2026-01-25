@@ -12,6 +12,22 @@
     }
   },
   "action": {
+    "Attune Earth": {
+      "name": "Attune Earth",
+      "description": "<c=boldPink>Attune</c> the <c=5a4e44>earth</c> element."
+    },
+    "Attune Wind": {
+      "name": "Attune Wind",
+      "description": "<c=boldPink>Attune</c> the <c=14a02e>wind</c> element."
+    },
+    "Attune Fire": {
+      "name": "Attune Fire",
+      "description": "<c=boldPink>Attune</c> the <c=e74c31>fire</c> element."
+    },
+    "Attune Water": {
+      "name": "Attune Water",
+      "description": "<c=boldPink>Attune</c> the <c=3e71d6>water</c> element."
+    }
   },
   "artifact": {
     "boss": {
@@ -20,6 +36,18 @@
     }
   },
   "card": {
+    "Gust": {
+      "name" : "Gust"
+    },
+    "Tremor": {
+      "name" : "Tremor"
+    },
+    "Flare": {
+      "name" : "Flare"
+    },
+    "Whirlpool": {
+      "name" : "Whirlpool"
+    }
   },
   "status": {
     "Attunement": {

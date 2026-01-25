@@ -14,10 +14,6 @@ internal sealed class AttunementManager : IKokoroApi.IV2.IStatusRenderingApi.IHo
 {
     public static ModEntry Instance => ModEntry.Instance;
 
-    public bool targetPlayer;
-
-    public int elementBitfield; // Represented as 0bXXXX, where the Xs are earth, wind, fire, and water respectively
-
     public AttunementManager()
     {
         /* We task Kokoro with the job to register our status into the game */
@@ -38,15 +34,15 @@ internal sealed class AttunementManager : IKokoroApi.IV2.IStatusRenderingApi.IHo
 
         Color[] colors = new Color[4];
 
-        bool earth = (elementBitfield & 0b1000) != 0;
-        bool wind  = (elementBitfield & 0b0100) != 0;
-        bool fire  = (elementBitfield & 0b0010) != 0;
-        bool water = (elementBitfield & 0b0001) != 0;
+        bool earth = (args.Amount & 0b1000) != 0;
+        bool wind  = (args.Amount & 0b0100) != 0;
+        bool fire  = (args.Amount & 0b0010) != 0;
+        bool water = (args.Amount & 0b0001) != 0;
 
-        colors[0] = earth ? new Color(0x005A4E44) : ModEntry.Instance.KokoroApi.StatusRendering.DefaultInactiveStatusBarColor;
-        colors[1] = wind  ? new Color(0x0014A02E) : ModEntry.Instance.KokoroApi.StatusRendering.DefaultInactiveStatusBarColor;
-        colors[2] = fire  ? new Color(0x00E74C31) : ModEntry.Instance.KokoroApi.StatusRendering.DefaultInactiveStatusBarColor;
-        colors[3] = water ? new Color(0x003E71D6) : ModEntry.Instance.KokoroApi.StatusRendering.DefaultInactiveStatusBarColor;
+        colors[0] = earth ? new Color(0xFF5A4E44) : ModEntry.Instance.KokoroApi.StatusRendering.DefaultInactiveStatusBarColor;
+        colors[1] = wind  ? new Color(0xFF14A02E) : ModEntry.Instance.KokoroApi.StatusRendering.DefaultInactiveStatusBarColor;
+        colors[2] = fire  ? new Color(0xFFE74C31) : ModEntry.Instance.KokoroApi.StatusRendering.DefaultInactiveStatusBarColor;
+        colors[3] = water ? new Color(0xFF3E71D6) : ModEntry.Instance.KokoroApi.StatusRendering.DefaultInactiveStatusBarColor;
 
         return ModEntry.Instance.KokoroApi.StatusRendering.MakeBarStatusInfoRenderer().SetSegments(colors).SetRows(1);
 	}
