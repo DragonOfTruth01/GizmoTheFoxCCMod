@@ -1,7 +1,7 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace DragonOfTruth01.ReshiramCCMod;
+namespace DragonOfTruth01.GizmoTheFoxCCMod;
 
 public partial interface IKokoroApi
 {
