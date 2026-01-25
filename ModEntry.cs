@@ -51,12 +51,15 @@ public sealed class ModEntry : SimpleMod
 
     // Custom Status Icons
 
+    internal ISpriteEntry GizmoTheFoxCCMod_Attunement { get; }
+
     // Custom Decks
     internal IDeckEntry GizmoTheFoxCCMod_Character_Deck { get; }
     internal IDeckEntry GizmoTheFoxCCMod_Potion_Deck { get; }
     internal IDeckEntry GizmoTheFoxCCMod_ShimmeringPotion_Deck { get; }
 
     // Custom Statuses
+    internal IStatusEntry Attunement { get; }
 
     // Card List Definitions
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_CommonCard_Types { get; } = [
@@ -163,6 +166,8 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_AttuneWater = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icons/attuneWater.png"));
 
         // Custom Status Icons
+
+        GizmoTheFoxCCMod_Attunement = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icons/attunement.png"));
 
         // Register Custom Decks
 
@@ -306,7 +311,18 @@ public sealed class ModEntry : SimpleMod
             AccessTools.DeclaredMethod(artifactType, nameof(IGizmoTheFoxCCModArtifact.Register))?.Invoke(null, [helper]);
 
         // Register Custom Statuses
+        Attunement = helper.Content.Statuses.RegisterStatus("Attunement", new()
+        {
+            Definition = new()
+            {
+                icon = GizmoTheFoxCCMod_Attunement.Sprite,
+                color = new("ff687d"),
+                isGood = true
+            },
+            Name = AnyLocalizations.Bind(["status", "Attunement", "name"]).Localize,
+            Description = AnyLocalizations.Bind(["status", "Attunement", "description"]).Localize
+        });
         
-        _ = new StatusManager();
+        _ = new AttunementManager();
     }
 }
