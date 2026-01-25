@@ -22,6 +22,10 @@
   "card": {
   },
   "status": {
+    "Attunement": {
+      "name": "Attunement",
+      "description": "Elements collected to brew potions. When all elements are attuned, add 1 of 3 potions to your hand."
+    }
   },
   "condition": {
   }
