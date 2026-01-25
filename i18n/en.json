@@ -14,7 +14,7 @@
   "action": {
     "Attune Earth": {
       "name": "Attune Earth",
-      "description": "<c=boldPink>Attune</c> the <c=5a4e44>earth</c> element."
+      "description": "<c=boldPink>Attune</c> the <c=796775>earth</c> element."
     },
     "Attune Wind": {
       "name": "Attune Wind",
@@ -52,7 +52,7 @@
   "status": {
     "Attunement": {
       "name": "Attunement",
-      "description": "Elements collected to brew potions. When all elements are attuned, add 1 of 3 potions to your hand."
+      "description": "Currently <c=boldPink>attuned</c> elements. When all elements are <c=boldPink>attuned</c>, add 1 of 3 <c=boldPink>potions</c> to your hand."
     }
   },
   "condition": {
