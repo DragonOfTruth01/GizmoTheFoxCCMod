@@ -18,8 +18,8 @@ This document acts as a reference for which cards are part of this mod.
 | No | Uncommon | Enchanted Whetstone | 1 | Gain 1 overdrive. Gain 1 stun charge. | Card gains retain. | Also gain 1 flux. |
 | No | Uncommon | Fermented Concoction | 12 | Heal 3. Permanently reduce cost by 1 when drawn. Single use. | Also draw 1 card when drawn. | Reset cost to 12. Heal 4 instead. |
 | No | Uncommon | Potion Belt | 1 | Add retain to all potions in your hand. | Add retain to all potions in the deck. | Add 1 random potion beforehand. Limited 2. |
-| No | Uncommon | Quick Brew | 1 | Add a random potion to your hand. | Instead add 1 of 2 potions to your hand. | Add a random potion (85%) or shimmering potion (15%) to your hand. |
-| No | Uncommon | Transmogrify | 0 | Replace a potion or shimmering potion with a random one of the same type. | Replaced potion gains retain. | Increase cost to 1. Instead replace all potions in hand. |
+| No | Uncommon | Quick Brew | 1 | Add a random potion to your hand. Limited 3. | Instead add 1 of 2 potions to your hand. | Add a random potion (85%) or shimmering potion (15%) to your hand. |
+| No | Uncommon | Transmogrify | 0 | Replace a potion or shimmering potion with a random one of the same type. Limited 3. | Replaced potion gains retain. | Increase cost to 1. Instead replace all potions in hand. |
 | No | Uncommon | Wild Magic | 1 | Floppable. Move 2 / 4 random. Add 2 random cantrips to your hand. Exhaust. | Reduce cost to 0. | Instead move 1 / 5 random. |
 ||||||||
 | No | Rare | Chromatic Orb | 1 | Deal 1 damage for each potion or shimmering potion played this combat. Exhaust. | Card no longer exhausts. Reset to 0 when played. | Card gains retain. |
@@ -27,10 +27,10 @@ This document acts as a reference for which cards are part of this mod.
 | No | Rare | Shimmering Solution | 1 | Gain a random shimmering potion. Exhaust. | Reduce cost to 0. | Instead choose 1 of 2 shimmering potions. |
 | No | Rare | Mace of Seasons | 2 | Add Mace of Seasons (Winter) to your hand. Exhaust. | Reduce cost to 1. | Increase cost to 3. Added card has B upgrade. |
 ||||||||
-| No | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 3. | Instead draw 2. | Card gains retain. |
-| No | Common (Cantrip) | Gust | 0 | Attune wind. Draw 1 card. Limited 3. | Instead draw 2. | Card gains retain. |
-| No | Common (Cantrip) | Flare | 0 | Attune fire. Draw 1 card. Limited 3. | Instead draw 2. | Card gains retain. |
-| No | Common (Cantrip) | Whirlpool | 0 | Attune water. Draw 1 card. Limited 3. | Instead draw 2. | Card gains retain. |
+| Yes | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 3. | Instead draw 2. | Card gains retain. |
+| Yes | Common (Cantrip) | Gust | 0 | Attune wind. Draw 1 card. Limited 3. | Instead draw 2. | Card gains retain. |
+| Yes | Common (Cantrip) | Flare | 0 | Attune fire. Draw 1 card. Limited 3. | Instead draw 2. | Card gains retain. |
+| Yes | Common (Cantrip) | Whirlpool | 0 | Attune water. Draw 1 card. Limited 3. | Instead draw 2. | Card gains retain. |
 ||||||||
 | No | Common (Potion) | Name | 0 | Deal 2 damage. |  |  |
 | No | Common (Potion) | Name | 0 | Gain 1 flux. |  |  |
