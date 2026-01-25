@@ -44,6 +44,10 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_Character_Squint_2 { get; }
 
     // Custom Action Icons
+    internal ISpriteEntry GizmoTheFoxCCMod_AttuneEarth { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AttuneWind { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AttuneFire { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AttuneWater { get; }
 
     // Custom Status Icons
 
@@ -152,6 +156,11 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_Character_Squint_2 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_squint_2.png"));
 
         // Custom Action Icons
+
+        GizmoTheFoxCCMod_AttuneEarth = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icons/attuneEarth.png"));
+        GizmoTheFoxCCMod_AttuneWind = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icons/attuneWind.png"));
+        GizmoTheFoxCCMod_AttuneFire = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icons/attuneFire.png"));
+        GizmoTheFoxCCMod_AttuneWater = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icons/attuneWater.png"));
 
         // Custom Status Icons
 
