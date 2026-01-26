@@ -16,7 +16,7 @@ This document acts as a reference for which cards are part of this mod.
 ||||||||
 | No | Uncommon | Dimensional Storage | 0 | Move a card from the discard pile to your hand. Exhaust. | Increase cost to 1. Remove exhaust. | Instead move 2 cards from your discard pile to your hand. |
 | No | Uncommon | Enchanted Whetstone | 1 | Gain 1 overdrive. Gain 1 stun charge. | Card gains retain. | Also gain 1 flux. |
-| No | Uncommon | Fermented Concoction | 12 | Heal 3. Permanently reduce cost by 1 when drawn. Single use. | Also draw 1 card when drawn. | Reset cost to 12. Heal 4 instead. |
+| No | Uncommon | Fermented Tincture | 12 | Heal 3. Permanently reduce cost by 1 when drawn. Single use. | Also draw 1 card when drawn. | Reset cost to 12. Heal 4 instead. |
 | No | Uncommon | Potion Belt | 1 | Add retain to all potions in your hand. | Add retain to all potions in the deck. | Add 1 random potion beforehand. Limited 2. |
 | No | Uncommon | Quick Brew | 1 | Add a random potion to your hand. Limited 3. | Instead add 1 of 2 potions to your hand. | Add a random potion (85%) or shimmering potion (15%) to your hand. |
 | No | Uncommon | Transmogrify | 0 | Replace a potion or shimmering potion with a random one of the same type. Limited 3. | Replaced potion gains retain. | Increase cost to 1. Instead replace all potions in hand. |
