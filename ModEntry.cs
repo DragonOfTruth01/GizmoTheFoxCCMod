@@ -63,10 +63,7 @@ public sealed class ModEntry : SimpleMod
 
     // Card List Definitions
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_CommonCard_Types { get; } = [
-        typeof(CardGust),
-        typeof(CardTremor),
-        typeof(CardFlare),
-        typeof(CardWhirlpool)
+        
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_UncommonCard_Types { get; } = [
