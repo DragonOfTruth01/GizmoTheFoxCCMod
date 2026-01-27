@@ -18,8 +18,9 @@ public sealed class AAttune : CardAction // NOTE: This should only be used to at
         if(newAttunement != currAttunement)
         {
             c.QueueImmediate(new AStatus{
+                mode = AStatusMode.Set,
                 status = ModEntry.Instance.Attunement.Status,
-                statusAmount = newAttunement - currAttunement,
+                statusAmount = newAttunement,
                 targetPlayer = true
             });
         }
