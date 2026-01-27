@@ -41,22 +41,22 @@ This document acts as a reference for which cards are part of this mod.
 | No | Uncommon (Potion) | Name | 0 | Deal 1 damage. Stun. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Gain 2 hermes boots. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Gain 2 evade. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Gain 2 block. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Gain 3 block. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Gain 1 boost. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Gain 2 temp payback. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Deal 0 damage. Apply 1 engine lock. |  |  |
 ||||||||
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 1 powerdrive. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Deal 9 damage. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Apply 2 corrode. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Deal 0 damage. Apply 2 corrode. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Deal 2 x 3 piercing damage. |  |  | # Potion of Dragon's Breath?
-| No | Rare (Shimmering Potion) | Name | 0 | Gain 1 stun source. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Gain 1 stun source. Gain 1 stun charge. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 1 perfect shield. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 3 max shield. Gain 3 shield. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 12 temp shield. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 1 ace. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 3 energy. Draw 3 cards. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Play 3 random potions. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Move 8 in a random direction. |  |  |
 ||||||||
 | No | Common (Generated) | Mana Blade (Fire) | 2 | Deal 2 damage. Attune fire. Retain. Exhaust. | Increase damage by 1. | Add piercing. |
 | No | Common (Generated) | Mana Blade (Ice) | 2 | Deal 2 damage. Attune water. Retain. Exhaust. | Increase damage by 1. | Add piercing. |
