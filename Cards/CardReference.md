@@ -56,7 +56,7 @@ This document acts as a reference for which cards are part of this mod.
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 12 temp shield. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 1 ace. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 3 energy. Draw 3 cards. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Play 3 random potions. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Add 3 random potions to your hand. |  |  |
 ||||||||
 | No | Common (Generated) | Mana Blade (Fire) | 2 | Deal 2 damage. Attune fire. Retain. Exhaust. | Increase damage by 1. | Add piercing. |
 | No | Common (Generated) | Mana Blade (Ice) | 2 | Deal 2 damage. Attune water. Retain. Exhaust. | Increase damage by 1. | Add piercing. |
