@@ -32,11 +32,12 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Common (Cantrip) | Flare | 0 | Attune fire. Draw 1 card. Limited 3. | Instead draw 2. | Card gains retain. |
 | Yes | Common (Cantrip) | Whirlpool | 0 | Attune water. Draw 1 card. Limited 3. | Instead draw 2. | Card gains retain. |
 ||||||||
-| No | Common (Potion) | Name | 0 | Deal 2 damage. |  |  |
-| No | Common (Potion) | Name | 0 | Gain 1 flux. |  |  |
-| No | Common (Potion) | Name | 0 | Gain 1 overdrive. |  |  |
-| No | Common (Potion) | Name | 0 | Draw 2 cards. |  |  |
-| No | Common (Potion) | Name | 0 | Gain 1 energy. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Deal 3 damage. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Gain 2 flux. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Gain 1 overdrive. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Draw 3 cards. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Gain 1 energy. Draw 1 card. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Move 3 flippable. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Deal 1 damage. Stun. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Gain 2 hermes boots. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Gain 2 evade. |  |  |
@@ -45,7 +46,7 @@ This document acts as a reference for which cards are part of this mod.
 | No | Uncommon (Potion) | Name | 0 | Gain 2 temp payback. |  |  |
 ||||||||
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 1 powerdrive. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Deal 10 damage. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Deal 9 damage. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Apply 2 corrode. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Deal 2 x 3 piercing damage. |  |  | # Potion of Dragon's Breath?
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 1 stun source. |  |  |
@@ -55,6 +56,7 @@ This document acts as a reference for which cards are part of this mod.
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 1 ace. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 3 energy. Draw 3 cards. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Play 3 random potions. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Move 8 in a random direction. |  |  |
 ||||||||
 | No | Common (Generated) | Mana Blade (Fire) | 2 | Deal 2 damage. Attune fire. Retain. Exhaust. | Increase damage by 1. | Add piercing. |
 | No | Common (Generated) | Mana Blade (Ice) | 2 | Deal 2 damage. Attune water. Retain. Exhaust. | Increase damage by 1. | Add piercing. |
