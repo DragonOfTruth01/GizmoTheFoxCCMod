@@ -19,8 +19,8 @@ This document acts as a reference for which cards are part of this mod.
 | No | Uncommon | Imbue | 2 | If attuned water, gain 1 flux. If attuned fire, gain 1 overdrive. If attuned wind, gain 1 evade. If attuned earth, gain 1 stun charge. Attack for 1. | Reduce cost to 1. | Card gains retain. |
 | No | Uncommon | Fermented Tincture | 12 | Heal 3. Permanently reduce cost by 1 when drawn. Single use. | Also draw 1 card when drawn. | Reset cost to 12. Heal 4 instead. |
 | No | Uncommon | Potion Belt | 1 | Add retain to all potions in your hand. | Add retain to all potions in the deck. | Add 1 random potion beforehand. Limited 2. |
-| No | Uncommon | Quick Brew | 1 | Add a random potion to your hand. Limited 3. | Instead add 1 of 2 potions to your hand. | Add a random potion (85%) or shimmering potion (15%) to your hand. |
-| No | Common | Synthesize | 1 | Attune all unattuned elements. | Next potion reward grants one additional potion. | Card gains retain. |
+| No | Common | Quick Brew | 1 | Attune all unattuned elements. | Next potion reward grants one additional potion. | Card gains retain. |
+| No | Uncommon | Synthesize | 0 | Add a random potion to your hand. Increase cost by 1 for this combat. | Instead add 1 of 2 potions to your hand. | Add a random potion (90%) or shimmering potion (10%) to your hand. |
 | No | Uncommon | Transmogrify | 1 | Replace a potion or shimmering potion with a random one of the same type. Limited 3. | Reduce cost to 0. | Instead replace all potions in hand. |
 | No | Uncommon | Wild Magic | 1 | Floppable. Move 2 / 4 random. Add 2 random cantrips to your hand. Exhaust. | Reduce cost to 0. | Instead move 1 / 5 random. |
 ||||||||
