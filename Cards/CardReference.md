@@ -4,6 +4,7 @@ This document acts as a reference for which cards are part of this mod.
 
 | Done? | Rarity | Name | Cost | Effect | Upgrade A | Upgrade B |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| No | Common | Diametric Decoction | 1 | Floppable. Attune earth + wind. / Attune fire + water. | Reduce cost to 0. Attune earth + wind + fire + water. Card gains exhaust. | Card gains recycle. |
 | No | Common | Conjure | 1 | Add 1 of 4 cantrips to your hand. | Added card has A upgrade. | Added card has B upgrade. |
 | No | Common | Flame Vortex | 2 | Floppable. Attack 1. Attack 2. Attune fire. / Attack 1. Move enemy 3 random. Attune wind. | Both actions attune fire and wind. | All attacks deal 1 more damage. Enemy random move is increased to 4. |
 | No | Common | Forage | 1 | Attune a random non-attuned element. Draw 2 cards. | Instead draw 4 cards. | Attune two random non-attuned elements. Reduce card draw to 1. | # Note - this could be a numbered action (e.g. Attune 2) - but it should queue individual actions separately to account for possible interruptions when attuning 1, getting a potion, then attuning again
