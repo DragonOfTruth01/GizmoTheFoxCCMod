@@ -48,7 +48,11 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneWind { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneFire { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneWater { get; }
-
+    internal ISpriteEntry GizmoTheFoxCCMod_AddCantrip2 { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AddCantrip4 { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AddCantripA { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AddCantripB { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AddCantripRandom { get; }
     // Custom Status Icons
 
     internal ISpriteEntry GizmoTheFoxCCMod_Attunement { get; }
@@ -164,6 +168,11 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_AttuneWind = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneWind.png"));
         GizmoTheFoxCCMod_AttuneFire = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneFire.png"));
         GizmoTheFoxCCMod_AttuneWater = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneWater.png"));
+        GizmoTheFoxCCMod_AddCantrip2 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantrip2.png"));
+        GizmoTheFoxCCMod_AddCantrip4 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantrip4.png"));
+        GizmoTheFoxCCMod_AddCantripA = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantripA.png"));
+        GizmoTheFoxCCMod_AddCantripB = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantripB.png"));
+        GizmoTheFoxCCMod_AddCantripRandom = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantripRandom.png"));
 
         // Custom Status Icons
 
