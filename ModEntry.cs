@@ -160,14 +160,14 @@ public sealed class ModEntry : SimpleMod
 
         // Custom Action Icons
 
-        GizmoTheFoxCCMod_AttuneEarth = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icons/attuneEarth.png"));
-        GizmoTheFoxCCMod_AttuneWind = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icons/attuneWind.png"));
-        GizmoTheFoxCCMod_AttuneFire = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icons/attuneFire.png"));
-        GizmoTheFoxCCMod_AttuneWater = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icons/attuneWater.png"));
+        GizmoTheFoxCCMod_AttuneEarth = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneEarth.png"));
+        GizmoTheFoxCCMod_AttuneWind = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneWind.png"));
+        GizmoTheFoxCCMod_AttuneFire = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneFire.png"));
+        GizmoTheFoxCCMod_AttuneWater = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneWater.png"));
 
         // Custom Status Icons
 
-        GizmoTheFoxCCMod_Attunement = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icons/attunement.png"));
+        GizmoTheFoxCCMod_Attunement = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/attunement.png"));
 
         // Register Custom Decks
 
