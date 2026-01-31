@@ -56,6 +56,9 @@
     }
   },
   "card": {
+    "Evocation": {
+      "name" : "Evocation"
+    },
     "Gust": {
       "name" : "Gust"
     },

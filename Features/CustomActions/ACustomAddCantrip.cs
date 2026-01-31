@@ -4,25 +4,91 @@ using System.Collections.Generic;
 using System.Reflection;
 using HarmonyLib;
 using Microsoft.Extensions.Logging;
+using DragonOfTruth01.GizmoTheFoxCCMod.Cards;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod;
 
-// This class's only purpose is to override the icon for adding cards to your hand when you add cantrips.
-public sealed class ACustomAddCantrip : AAddCard
+public sealed class ACustomAddCantrip : CardAction
 {
     public enum AddCantripType
     {
         addCantrip2,
         addCantrip4,
         addCantripA,
-        addCantripB,
-        addCantripRandom
+        addCantripB
     };
 
     public AddCantripType cantripType;
 
     public override void Begin(G g, State s, Combat c)
     {
+		switch(cantripType){
+            case AddCantripType.addCantrip2:
+				List<Card> offeringList = new List<Card>()
+				{
+					new CardTremor(),
+					new CardGust(),
+					new CardFlare(),
+					new CardWhirlpool()
+				};
+
+				int rand1 = s.rngCardOfferingsMidcombat.NextInt() % offeringList.Count;
+				Card card1 = offeringList[rand1];
+				offeringList.RemoveAt(rand1);
+
+				int rand2 = s.rngCardOfferingsMidcombat.NextInt() % offeringList.Count;
+				Card card2 = offeringList[rand2];
+				offeringList.RemoveAt(rand2);
+
+                c.Queue(new ASpecificCardOffering()
+						{
+							Destination = CardDestination.Hand,
+							Cards = [
+								card1,
+								card2
+							]
+						});
+                break;
+            case AddCantripType.addCantrip4:
+                c.Queue(new ASpecificCardOffering()
+						{
+							Destination = CardDestination.Hand,
+							Cards = [
+								new CardTremor(),
+								new CardGust(),
+								new CardFlare(),
+								new CardWhirlpool()
+							]
+						});
+                break;
+            case AddCantripType.addCantripA:
+                c.Queue(new ASpecificCardOffering()
+						{
+							Destination = CardDestination.Hand,
+							Cards = [
+								new CardTremor() { upgrade = Upgrade.A },
+								new CardGust() { upgrade = Upgrade.A },
+								new CardFlare() { upgrade = Upgrade.A },
+								new CardWhirlpool() { upgrade = Upgrade.A }
+							]
+						});
+                break;
+            case AddCantripType.addCantripB:
+                c.Queue(new ASpecificCardOffering()
+						{
+							Destination = CardDestination.Hand,
+							Cards = [
+								new CardTremor() { upgrade = Upgrade.B },
+								new CardGust() { upgrade = Upgrade.B },
+								new CardFlare() { upgrade = Upgrade.B },
+								new CardWhirlpool() { upgrade = Upgrade.B }
+							]
+						});
+                break;
+            default:
+                break;
+        }
+
         base.Begin(g, s, c);
     }
 
@@ -30,17 +96,15 @@ public sealed class ACustomAddCantrip : AAddCard
     {
         switch(cantripType){
             case AddCantripType.addCantrip2:
-                return new Icon(ModEntry.Instance.GizmoTheFoxCCMod_AddCantrip2.Sprite, number: amount, color: Colors.textMain, flipY: false);
+                return new Icon(ModEntry.Instance.GizmoTheFoxCCMod_AddCantrip2.Sprite, number: null, color: Colors.textMain, flipY: false);
             case AddCantripType.addCantrip4:
-                return new Icon(ModEntry.Instance.GizmoTheFoxCCMod_AddCantrip4.Sprite, number: amount, color: Colors.textMain, flipY: false);
+                return new Icon(ModEntry.Instance.GizmoTheFoxCCMod_AddCantrip4.Sprite, number: null, color: Colors.textMain, flipY: false);
             case AddCantripType.addCantripA:
-                return new Icon(ModEntry.Instance.GizmoTheFoxCCMod_AddCantripA.Sprite, number: amount, color: Colors.textMain, flipY: false);
+                return new Icon(ModEntry.Instance.GizmoTheFoxCCMod_AddCantripA.Sprite, number: null, color: Colors.textMain, flipY: false);
             case AddCantripType.addCantripB:
-                return new Icon(ModEntry.Instance.GizmoTheFoxCCMod_AddCantripB.Sprite, number: amount, color: Colors.textMain, flipY: false);
-            case AddCantripType.addCantripRandom:
-                return new Icon(ModEntry.Instance.GizmoTheFoxCCMod_AddCantripRandom.Sprite, number: amount, color: Colors.textMain, flipY: false);
+                return new Icon(ModEntry.Instance.GizmoTheFoxCCMod_AddCantripB.Sprite, number: null, color: Colors.textMain, flipY: false);
             default:
-                return new Icon(ModEntry.Instance.GizmoTheFoxCCMod_AddCantripRandom.Sprite, number: amount, color: Colors.textMain, flipY: false);
+                return new Icon(ModEntry.Instance.GizmoTheFoxCCMod_AddCantripRandom.Sprite, number: null, color: Colors.textMain, flipY: false);
         }
     }
 
@@ -78,14 +142,6 @@ public sealed class ACustomAddCantrip : AAddCard
                         TitleColor = Colors.action,
                         Title = ModEntry.Instance.Localizations.Localize(["character", "action", "Add Cantrip B", "name"]),
                         Description = ModEntry.Instance.Localizations.Localize(["character", "action", "Add Cantrip B", "description"])
-                    }];
-            case AddCantripType.addCantripRandom:
-                return [new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AddCantripRandom")
-                    {
-                        Icon = ModEntry.Instance.GizmoTheFoxCCMod_AddCantripRandom.Sprite,
-                        TitleColor = Colors.action,
-                        Title = ModEntry.Instance.Localizations.Localize(["character", "action", "Add Cantrip Random", "name"]),
-                        Description = ModEntry.Instance.Localizations.Localize(["character", "action", "Add Cantrip Random", "description"])
                     }];
             default:
                 return [new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AddCantripRandom")
