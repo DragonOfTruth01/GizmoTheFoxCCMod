@@ -21,12 +21,14 @@ internal sealed class CardWhirlpool : Card, IGizmoTheFoxCCModCard, IHasCustomCar
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Whirlpool", "name"]).Localize
         });
 
-        // Set all upgrades to limited 3
-        ModEntry.Instance.KokoroApi.Limited.SetBaseLimitedUses(entry.UniqueName, 3);
+        // Set limited on cards
+        ModEntry.Instance.KokoroApi.Limited.SetBaseLimitedUses(entry.UniqueName, Upgrade.None, 2);
+        ModEntry.Instance.KokoroApi.Limited.SetBaseLimitedUses(entry.UniqueName, Upgrade.A, 3);
+        ModEntry.Instance.KokoroApi.Limited.SetBaseLimitedUses(entry.UniqueName, Upgrade.B, 2);
     }
 
     public IReadOnlySet<ICardTraitEntry> GetInnateTraits(State state)
-		=> new HashSet<ICardTraitEntry> { ModEntry.Instance.KokoroApi.Limited.Trait };
+		=> new HashSet<ICardTraitEntry> { ModEntry.Instance.KokoroApi.Limited.Trait, ModEntry.Instance.KokoroApi.Fleeting.Trait };
 
     public override CardData GetData(State state)
     {
@@ -34,7 +36,6 @@ internal sealed class CardWhirlpool : Card, IGizmoTheFoxCCModCard, IHasCustomCar
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
             cost = 0,
-            retain = upgrade == Upgrade.B,
             temporary = true
         };
         return data;
@@ -70,12 +71,6 @@ internal sealed class CardWhirlpool : Card, IGizmoTheFoxCCModCard, IHasCustomCar
                     new ADrawCard()
                     {
                         count = 1
-                    },
-                    new AStatus()
-                    {
-                        status = Status.tempShield,
-                        statusAmount = 1,
-                        targetPlayer = true
                     }
                 };
                 break;
@@ -90,6 +85,12 @@ internal sealed class CardWhirlpool : Card, IGizmoTheFoxCCModCard, IHasCustomCar
                     new ADrawCard()
                     {
                         count = 1
+                    },
+                    new AStatus()
+                    {
+                        status = Status.tempShield,
+                        statusAmount = 1,
+                        targetPlayer = true
                     }
                 };
                 break;
