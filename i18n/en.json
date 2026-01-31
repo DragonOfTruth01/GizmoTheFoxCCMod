@@ -33,16 +33,16 @@
       "description": "Add 1 of 2 <c=card>cantrips</c> to your hand."
     },
     "Add Cantrip 4": {
-      "name": "Add Chosen Cantrip to Hand",
-      "description": "Add your choice of <c=card>cantrip</c> to your hand."
+      "name": "Add 1 of 4 Cantrips to Hand",
+      "description": "Add 1 of 4 <c=card>cantrips</c> to your hand."
     },
     "Add Cantrip A": {
-      "name": "Add Chosen Cantrip A to Hand",
-      "description": "Add your choice of <c=card>cantrip</c> with A upgrade to your hand."
+      "name": "Add 1 of 4 Cantrips A to Hand",
+      "description": "Add 1 of 4 <c=card>cantrips</c> with A upgrade to your hand."
     },
     "Add Cantrip B": {
-      "name": "Add Chosen Cantrip B to Hand",
-      "description": "Add your choice of <c=card>cantrip</c> with B upgrade to your hand."
+      "name": "Add 1 of 4 Cantrips B to Hand",
+      "description": "Add 1 of 4 <c=card>cantrips</c> with B upgrade to your hand."
     },
     "Add Cantrip Random": {
       "name": "Add Random Cantrip to Hand",
