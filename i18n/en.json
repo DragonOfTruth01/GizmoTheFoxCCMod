@@ -83,14 +83,23 @@
     "Flare": {
       "name": "Flare"
     },
+    "Flashbang": {
+      "name": "Flashbang"
+    },
     "Gust": {
       "name": "Gust"
+    },
+    "Ice Bomb": {
+      "name": "Ice Bomb"
     },
     "Mana Blade (Fire)": {
       "name": "Mana Blade (Fire)"
     },
     "Mana Blade (Ice)": {
       "name": "Mana Blade (Ice)"
+    },
+    "Potion of Haste": {
+      "name": "Potion of Haste"
     },
     "Prestidigitation": {
       "name": "Prestidigi-tation"

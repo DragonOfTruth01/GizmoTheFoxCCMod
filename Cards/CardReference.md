@@ -38,15 +38,15 @@ This document acts as a reference for which cards are part of this mod.
 | No | Uncommon (Potion) | Name | 0 | Gain 2 flux. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Gain 1 overdrive. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Draw 3 cards. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Gain 1 energy. Draw 1 card. |  |  |
+| No | Uncommon (Potion) | Potion of Haste | 0 | Gain 1 energy. Draw 1 card. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Move 3 flippable. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Deal 1 damage. Stun. |  |  |
+| No | Uncommon (Potion) | Flashbang | 0 | Deal 1 damage. Stun. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Gain 2 hermes boots. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Gain 2 evade. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Gain 3 block. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Gain 1 boost. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Gain 2 temp payback. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Deal 0 damage. Apply 1 engine lock. |  |  |
+| No | Uncommon (Potion) | Ice Bomb | 0 | Deal 0 damage. Apply 1 engine lock. |  |  |
 ||||||||
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 1 powerdrive. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Deal 9 damage. |  |  |
