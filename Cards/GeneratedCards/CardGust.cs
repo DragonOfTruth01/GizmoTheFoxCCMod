@@ -69,7 +69,13 @@ internal sealed class CardGust : Card, IGizmoTheFoxCCModCard, IHasCustomCardTrai
                     },
                     new ADrawCard()
                     {
-                        count = 2
+                        count = 1
+                    },
+                    new AStatus()
+                    {
+                        status = Status.tempShield,
+                        statusAmount = 1,
+                        targetPlayer = true
                     }
                 };
                 break;

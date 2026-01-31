@@ -29,10 +29,10 @@ This document acts as a reference for which cards are part of this mod.
 | No | Rare | Prismatic Wall | 2 | If attuned earth, gain 2 shield. If attuned wind, gain 1 autododge right. If attuned fire, gain 2 temp payback. If attuned water, gain 3 temp shield. Unattune all elements. | No longer unattune elements. | Increase cost to 3. Increase all effects by 1. |
 | No | Rare | Shimmering Solution | 1 | Gain a random shimmering potion. Exhaust. | Reduce cost to 0. | Instead choose 1 of 2 shimmering potions. |
 ||||||||
-| Yes | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 3. | Instead draw 2. | Card gains retain. |
-| Yes | Common (Cantrip) | Gust | 0 | Attune wind. Draw 1 card. Limited 3. | Instead draw 2. | Card gains retain. |
-| Yes | Common (Cantrip) | Flare | 0 | Attune fire. Draw 1 card. Limited 3. | Instead draw 2. | Card gains retain. |
-| Yes | Common (Cantrip) | Whirlpool | 0 | Attune water. Draw 1 card. Limited 3. | Instead draw 2. | Card gains retain. |
+| Yes | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 3. | Also gain 1 temp shield. | Card gains retain. |
+| Yes | Common (Cantrip) | Gust | 0 | Attune wind. Draw 1 card. Limited 3. | Also gain 1 temp shield. | Card gains retain. |
+| Yes | Common (Cantrip) | Flare | 0 | Attune fire. Draw 1 card. Limited 3. | Also gain 1 temp shield. | Card gains retain. |
+| Yes | Common (Cantrip) | Whirlpool | 0 | Attune water. Draw 1 card. Limited 3. | Also gain 1 temp shield. | Card gains retain. |
 ||||||||
 | No | Uncommon (Potion) | Name | 0 | Deal 3 damage. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Gain 2 flux. |  |  |

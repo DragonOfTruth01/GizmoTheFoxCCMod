@@ -69,7 +69,13 @@ internal sealed class CardFlare : Card, IGizmoTheFoxCCModCard, IHasCustomCardTra
                     },
                     new ADrawCard()
                     {
-                        count = 2
+                        count = 1
+                    },
+                    new AStatus()
+                    {
+                        status = Status.tempShield,
+                        statusAmount = 1,
+                        targetPlayer = true
                     }
                 };
                 break;
