@@ -8,7 +8,7 @@ internal sealed class CardSeaQuake : Card, IGizmoTheFoxCCModCard
 {
     public static void Register(IModHelper helper)
     {
-        helper.Content.Cards.RegisterCard("Sea Quake", new()
+        var entry = helper.Content.Cards.RegisterCard("Sea Quake", new()
         {
             CardType = MethodBase.GetCurrentMethod()!.DeclaringType!,
             Meta = new()
@@ -20,6 +20,7 @@ internal sealed class CardSeaQuake : Card, IGizmoTheFoxCCModCard
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Sea Quake", "name"]).Localize
         });
     }
+
     public override CardData GetData(State state)
     {
         CardData data = new CardData()
@@ -106,7 +107,7 @@ internal sealed class CardSeaQuake : Card, IGizmoTheFoxCCModCard
                     new AStatus()
                     {
                         status = Status.tempShield,
-                        statusAmount = 3,
+                        statusAmount = 5,
                         targetPlayer = true,
                         disabled = flipped
                     },
@@ -119,7 +120,7 @@ internal sealed class CardSeaQuake : Card, IGizmoTheFoxCCModCard
                     new AStatus()
                     {
                         status = Status.shield,
-                        statusAmount = 2,
+                        statusAmount = 3,
                         targetPlayer = true,
                         disabled = !flipped
                     },
