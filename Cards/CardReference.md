@@ -61,7 +61,7 @@ This document acts as a reference for which cards are part of this mod.
 | No | Rare (Shimmering Potion) | Name | 0 | Add 3 random potions to your hand. |  |  |
 ||||||||
 | No | Common (Generated) | Mana Blade (Fire) | 2 | Deal 3 damage. Attune fire. Retain. Exhaust. | Increase damage by 1. | Add piercing. |
-| No | Common (Generated) | Mana Blade (Ice) | 2 | Deal 2 damage. Gain 1 shield. Attune water. Retain. Exhaust. | Also gain 1 temp shield. | Add piercing. |
+| No | Common (Generated) | Mana Blade (Ice) | 2 | Deal 1 damage. Gain 2 shield. Attune water. Retain. Exhaust. | Increase damage by 1. | Also gain 2 temp shield. |
 ||||||||
 | No | Rare (Generated) | Mace of Seasons (Winter) | 1 | Deal 1 pierce damage. Gain 1 shield. Attune water. Add Mace of Seasons (Spring) to your hand. Limited 1. | Instead deal 3 damage. | Card gains retain. Summon B. |
 | No | Rare (Generated) | Mace of Seasons (Spring) | 1 | Deal 1 pierce damage. Gain 1 evade. Attune wind. Add Mace of Seasons (Summer) to your hand. Limited 1. | Instead deal 3 damage. | Card gains retain. Summon B. |
