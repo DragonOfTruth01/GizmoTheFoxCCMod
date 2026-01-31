@@ -25,6 +25,7 @@ internal sealed class CardEvocation : Card, IGizmoTheFoxCCModCard
         CardData data = new CardData()
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
+            description = ModEntry.Instance.Localizations.Localize(["card", "Evocation", "description", upgrade.ToString()]),
             cost = 1
         };
         return data;

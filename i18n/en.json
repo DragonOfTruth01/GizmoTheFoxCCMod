@@ -65,7 +65,12 @@
       }
     },
     "Evocation": {
-      "name" : "Evocation"
+      "name" : "Evocation",
+      "description": {
+        "None": "Add 1 of 4 <c=card>cantrips</c> to your hand.",
+        "A": "Add 1 of 4 <c=card>cantrips</c> with A upgrades to your hand.",
+        "B": "Add 1 of 4 <c=card>cantrips</c> with B upgrades to your hand."
+      }
     },
     "Flare": {
       "name" : "Flare"
