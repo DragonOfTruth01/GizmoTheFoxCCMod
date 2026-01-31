@@ -46,7 +46,7 @@
     },
     "Add Cantrip Random": {
       "name": "Add Random Cantrip to Hand",
-      "description": "Add <c=boldPink>{0}</c> random <c=card>cantrips</c> to your hand."
+      "description": "Add {{execCountString}} random <c=card>cantrips</c> to your hand."
     }
   },
   "artifact": {
