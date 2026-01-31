@@ -14,8 +14,7 @@ internal sealed class CardFlashbang : Card, IGizmoTheFoxCCModCard
             Meta = new()
             {
                 deck = ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
-                rarity = Rarity.common,
-                dontOffer = true
+                rarity = Rarity.common
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Flashbang", "name"]).Localize
         });

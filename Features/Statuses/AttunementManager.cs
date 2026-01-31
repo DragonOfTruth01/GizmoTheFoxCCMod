@@ -66,17 +66,19 @@ internal sealed class AttunementManager : IKokoroApi.IV2.IStatusRenderingApi.IHo
         // Do this logic if all element slots are attuned
         if(ship.Get(ModEntry.Instance.Attunement.Status) >= 0b1111)
         {
-            // Want to add a type of potion later, but for now just heal the player
-            c.QueueImmediate(new AHeal
+            c.QueueImmediate(new ACardOffering()
             {
-                targetPlayer = __instance.targetPlayer,
-                healAmount = 1
+                amount = 3,
+                limitDeck = ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
+                canSkip = false,
+                inCombat = true
             });
 
             c.QueueImmediate(new AStatus
             {
                 status = ModEntry.Instance.Attunement.Status,
-                statusAmount = -ship.Get(ModEntry.Instance.Attunement.Status),
+                mode = AStatusMode.Set,
+                statusAmount = 0,
                 targetPlayer = __instance.targetPlayer
             });
         }
