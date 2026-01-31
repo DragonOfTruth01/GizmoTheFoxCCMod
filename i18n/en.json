@@ -56,17 +56,31 @@
     }
   },
   "card": {
+    "Conjure Mana Blades": {
+      "name": "Conjure Mana Blades",
+      "description": {
+        "None": "Add <c=card>Mana Blade (Fire)</c> and <c=card>Mana Blade (Ice)</c> to your hand.",
+        "A": "Add <c=card>Mana Blade (Fire) A</c> and <c=card>Mana Blade (Ice) A</c> to your hand.",
+        "B": "Add <c=card>Mana Blade (Fire)</c> and <c=card>Mana Blade (Ice)</c> to your hand."
+      }
+    },
     "Evocation": {
       "name" : "Evocation"
+    },
+    "Flare": {
+      "name" : "Flare"
     },
     "Gust": {
       "name" : "Gust"
     },
+    "Mana Blade (Fire)": {
+      "name" : "Mana Blade (Fire)"
+    },
+    "Mana Blade (Ice)": {
+      "name" : "Mana Blade (Ice)"
+    },
     "Tremor": {
       "name" : "Tremor"
-    },
-    "Flare": {
-      "name" : "Flare"
     },
     "Whirlpool": {
       "name" : "Whirlpool"

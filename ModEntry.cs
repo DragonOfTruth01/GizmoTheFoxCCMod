@@ -71,7 +71,10 @@ public sealed class ModEntry : SimpleMod
         typeof(CardGust),
         typeof(CardFlare),
         typeof(CardWhirlpool),
-        typeof(CardEvocation)
+        typeof(CardEvocation),
+        typeof(CardConjureManaBlades),
+        typeof(CardManaBladeFire),
+        typeof(CardManaBladeIce)
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_UncommonCard_Types { get; } = [

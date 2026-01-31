@@ -15,7 +15,8 @@ internal sealed class CardFlare : Card, IGizmoTheFoxCCModCard, IHasCustomCardTra
             {
                 deck = ModEntry.Instance.GizmoTheFoxCCMod_Character_Deck.Deck,
                 rarity = Rarity.common,
-                upgradesTo = [Upgrade.A, Upgrade.B]
+                upgradesTo = [Upgrade.A, Upgrade.B],
+                dontOffer = true
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Flare", "name"]).Localize
         });
@@ -32,6 +33,7 @@ internal sealed class CardFlare : Card, IGizmoTheFoxCCModCard, IHasCustomCardTra
         CardData data = new CardData()
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
+            cost = 0,
             retain = upgrade == Upgrade.B,
             temporary = true
         };

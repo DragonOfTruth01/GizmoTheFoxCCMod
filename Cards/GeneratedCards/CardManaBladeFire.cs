@@ -4,11 +4,11 @@ using System.Reflection;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod.Cards;
 
-internal sealed class CardGust : Card, IGizmoTheFoxCCModCard, IHasCustomCardTraits
+internal sealed class CardManaBladeFire : Card, IGizmoTheFoxCCModCard
 {
     public static void Register(IModHelper helper)
     {
-        var entry = helper.Content.Cards.RegisterCard("Gust", new()
+        var entry = helper.Content.Cards.RegisterCard("Mana Blade (Fire)", new()
         {
             CardType = MethodBase.GetCurrentMethod()!.DeclaringType!,
             Meta = new()
@@ -18,23 +18,18 @@ internal sealed class CardGust : Card, IGizmoTheFoxCCModCard, IHasCustomCardTrai
                 upgradesTo = [Upgrade.A, Upgrade.B],
                 dontOffer = true
             },
-            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Gust", "name"]).Localize
+            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Mana Blade (Fire)", "name"]).Localize
         });
-
-        // Set all upgrades to limited 3
-        ModEntry.Instance.KokoroApi.Limited.SetBaseLimitedUses(entry.UniqueName, 3);
     }
-
-    public IReadOnlySet<ICardTraitEntry> GetInnateTraits(State state)
-		=> new HashSet<ICardTraitEntry> { ModEntry.Instance.KokoroApi.Limited.Trait };
 
     public override CardData GetData(State state)
     {
         CardData data = new CardData()
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
-            cost = 0,
-            retain = upgrade == Upgrade.B,
+            cost = 2,
+            retain = true,
+            exhaust = true,
             temporary = true
         };
         return data;
@@ -49,13 +44,13 @@ internal sealed class CardGust : Card, IGizmoTheFoxCCModCard, IHasCustomCardTrai
             case Upgrade.None:
                 actions = new()
                 {
+                    new AAttack()
+                    {
+                        damage = GetDmg(s, 3)
+                    },
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b0100
-                    },
-                    new ADrawCard()
-                    {
-                        count = 1
+                        elementBitfieldModifier = 0b0010
                     }
                 };
                 break;
@@ -63,13 +58,13 @@ internal sealed class CardGust : Card, IGizmoTheFoxCCModCard, IHasCustomCardTrai
             case Upgrade.A:
                 actions = new()
                 {
+                    new AAttack()
+                    {
+                        damage = GetDmg(s, 4)
+                    },
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b0100
-                    },
-                    new ADrawCard()
-                    {
-                        count = 2
+                        elementBitfieldModifier = 0b0010
                     }
                 };
                 break;
@@ -77,13 +72,14 @@ internal sealed class CardGust : Card, IGizmoTheFoxCCModCard, IHasCustomCardTrai
             case Upgrade.B:
                 actions = new()
                 {
+                    new AAttack()
+                    {
+                        damage = GetDmg(s, 3),
+                        piercing = true
+                    },
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b0100
-                    },
-                    new ADrawCard()
-                    {
-                        count = 1
+                        elementBitfieldModifier = 0b0010
                     }
                 };
                 break;
