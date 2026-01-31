@@ -40,7 +40,7 @@ public sealed class ACustomAddCantrip : CardAction
 				Card card2 = offeringList[rand2];
 				offeringList.RemoveAt(rand2);
 
-                c.Queue(new ASpecificCardOffering()
+                c.QueueImmediate(new ASpecificCardOffering()
 						{
 							Destination = CardDestination.Hand,
 							Cards = [
@@ -50,7 +50,7 @@ public sealed class ACustomAddCantrip : CardAction
 						});
                 break;
             case AddCantripType.addCantrip4:
-                c.Queue(new ASpecificCardOffering()
+                c.QueueImmediate(new ASpecificCardOffering()
 						{
 							Destination = CardDestination.Hand,
 							Cards = [
@@ -62,7 +62,7 @@ public sealed class ACustomAddCantrip : CardAction
 						});
                 break;
             case AddCantripType.addCantripA:
-                c.Queue(new ASpecificCardOffering()
+                c.QueueImmediate(new ASpecificCardOffering()
 						{
 							Destination = CardDestination.Hand,
 							Cards = [
@@ -74,7 +74,7 @@ public sealed class ACustomAddCantrip : CardAction
 						});
                 break;
             case AddCantripType.addCantripB:
-                c.Queue(new ASpecificCardOffering()
+                c.QueueImmediate(new ASpecificCardOffering()
 						{
 							Destination = CardDestination.Hand,
 							Cards = [

@@ -24,7 +24,7 @@ public sealed class AAddRandomCantrip : CardAction
 		    	new CardWhirlpool()
 		    };
 
-            c.Queue(new AAddCard()
+            c.QueueImmediate(new AAddCard()
             {
                 card = offeringList[s.rngCardOfferingsMidcombat.NextInt() % offeringList.Count],
                 destination = CardDestination.Hand,

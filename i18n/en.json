@@ -28,6 +28,14 @@
       "name": "Attune Water",
       "description": "<c=boldPink>Attune</c> the <c=3e71d6>water</c> element."
     },
+    "Attune Earth and Water": {
+      "name": "Attune Earth and Water",
+      "description": "<c=boldPink>Attune</c> the <c=796775>earth</c> and <c=3e71d6>water</c> elements."
+    },
+    "Attune Water and Earth": {
+      "name": "Attune Water and Earth",
+      "description": "<c=boldPink>Attune</c> the <c=3e71d6>water</c> and <c=796775>earth</c> elements."
+    },
     "Add Cantrip 2": {
       "name": "Add 1 of 2 Cantrips to Hand",
       "description": "Add 1 of 2 <c=card>cantrips</c> to your hand."
@@ -73,25 +81,28 @@
       }
     },
     "Flare": {
-      "name" : "Flare"
+      "name": "Flare"
     },
     "Gust": {
-      "name" : "Gust"
+      "name": "Gust"
     },
     "Mana Blade (Fire)": {
-      "name" : "Mana Blade (Fire)"
+      "name": "Mana Blade (Fire)"
     },
     "Mana Blade (Ice)": {
-      "name" : "Mana Blade (Ice)"
+      "name": "Mana Blade (Ice)"
     },
     "Prestidigitation": {
-      "name" : "Prestidigi-tation"
+      "name": "Prestidigi-tation"
+    },
+    "Sea Quake": {
+      "name": "Sea Quake"
     },
     "Tremor": {
-      "name" : "Tremor"
+      "name": "Tremor"
     },
     "Whirlpool": {
-      "name" : "Whirlpool"
+      "name": "Whirlpool"
     }
   },
   "status": {

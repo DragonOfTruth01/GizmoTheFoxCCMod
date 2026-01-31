@@ -76,15 +76,7 @@ public sealed class AAttune : CardAction // NOTE: This should only be used to at
                     }
                 ];
             default:
-                return [
-                    new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AttuneEarth")
-                    {
-                        Icon = ModEntry.Instance.GizmoTheFoxCCMod_AttuneEarth.Sprite,
-                        TitleColor = Colors.action,
-                        Title = ModEntry.Instance.Localizations.Localize(["action", "Attune Earth", "name"]),
-                        Description = ModEntry.Instance.Localizations.Localize(["action", "Attune Earth", "description"])
-                    }
-                ];
+                return new List<Tooltip>();
         }
     }
 
@@ -101,7 +93,7 @@ public sealed class AAttune : CardAction // NOTE: This should only be used to at
             case 0b0001:
                 return ModEntry.Instance.GizmoTheFoxCCMod_AttuneWater.Sprite;
             default:
-                return ModEntry.Instance.GizmoTheFoxCCMod_AttuneEarth.Sprite;
+                return new Spr();
         }
     }
 }
