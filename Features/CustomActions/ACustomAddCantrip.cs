@@ -116,40 +116,40 @@ public sealed class ACustomAddCantrip : CardAction
                     {
                         Icon = ModEntry.Instance.GizmoTheFoxCCMod_AddCantrip2.Sprite,
                         TitleColor = Colors.action,
-                        Title = ModEntry.Instance.Localizations.Localize(["character", "action", "Add Cantrip 2", "name"]),
-                        Description = ModEntry.Instance.Localizations.Localize(["character", "action", "Add Cantrip 2", "description"])
+                        Title = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip 2", "name"]),
+                        Description = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip 2", "description"])
                     }];
             case AddCantripType.addCantrip4:
                 return [new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AddCantrip4")
                     {
                         Icon = ModEntry.Instance.GizmoTheFoxCCMod_AddCantrip4.Sprite,
                         TitleColor = Colors.action,
-                        Title = ModEntry.Instance.Localizations.Localize(["character", "action", "Add Cantrip 4", "name"]),
-                        Description = ModEntry.Instance.Localizations.Localize(["character", "action", "Add Cantrip 4", "description"])
+                        Title = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip 4", "name"]),
+                        Description = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip 4", "description"])
                     }];
             case AddCantripType.addCantripA:
                 return [new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AddCantripA")
                     {
                         Icon = ModEntry.Instance.GizmoTheFoxCCMod_AddCantripA.Sprite,
                         TitleColor = Colors.action,
-                        Title = ModEntry.Instance.Localizations.Localize(["character", "action", "Add Cantrip A", "name"]),
-                        Description = ModEntry.Instance.Localizations.Localize(["character", "action", "Add Cantrip A", "description"])
+                        Title = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip A", "name"]),
+                        Description = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip A", "description"])
                     }];
             case AddCantripType.addCantripB:
                 return [new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AddCantripB")
                     {
                         Icon = ModEntry.Instance.GizmoTheFoxCCMod_AddCantripB.Sprite,
                         TitleColor = Colors.action,
-                        Title = ModEntry.Instance.Localizations.Localize(["character", "action", "Add Cantrip B", "name"]),
-                        Description = ModEntry.Instance.Localizations.Localize(["character", "action", "Add Cantrip B", "description"])
+                        Title = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip B", "name"]),
+                        Description = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip B", "description"])
                     }];
             default:
                 return [new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AddCantripRandom")
                     {
                         Icon = ModEntry.Instance.GizmoTheFoxCCMod_AddCantripRandom.Sprite,
                         TitleColor = Colors.action,
-                        Title = ModEntry.Instance.Localizations.Localize(["character", "action", "Add Cantrip Random", "name"]),
-                        Description = ModEntry.Instance.Localizations.Localize(["character", "action", "Add Cantrip Random", "description"])
+                        Title = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip Random", "name"]),
+                        Description = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip Random", "description"])
                     }];
         }
     }

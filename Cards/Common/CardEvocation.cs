@@ -4,7 +4,7 @@ using System.Reflection;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod.Cards;
 
-internal sealed class CardFusionFlare : Card, IGizmoTheFoxCCModCard
+internal sealed class CardEvocation : Card, IGizmoTheFoxCCModCard
 {
     public static void Register(IModHelper helper)
     {
@@ -14,7 +14,7 @@ internal sealed class CardFusionFlare : Card, IGizmoTheFoxCCModCard
             Meta = new()
             {
                 deck = ModEntry.Instance.GizmoTheFoxCCMod_Character_Deck.Deck,
-                rarity = Rarity.rare,
+                rarity = Rarity.common,
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Evocation", "name"]).Localize

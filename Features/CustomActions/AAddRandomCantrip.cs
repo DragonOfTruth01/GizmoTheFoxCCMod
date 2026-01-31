@@ -24,7 +24,7 @@ public sealed class AAddRandomCantrip : AAddCard
             {
                 Icon = ModEntry.Instance.GizmoTheFoxCCMod_AddCantripRandom.Sprite,
                 TitleColor = Colors.action,
-                Title = ModEntry.Instance.Localizations.Localize(["character", "action", "Add Cantrip Random", "name"]),
-                Description = ModEntry.Instance.Localizations.Localize(["character", "action", "Add Cantrip Random", "description"])
+                Title = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip Random", "name"]),
+                Description = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip Random", "description"])
             }];
 }
