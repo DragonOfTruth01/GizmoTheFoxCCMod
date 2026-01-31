@@ -25,7 +25,7 @@ public abstract class DynamicWidthCardAction : CardAction
         __result = 0;
 
         if (!dontDraw)
-            Draw.Sprite(icon.path, box.rect.x + __result, box.rect.y, flipY: icon.flipY);
+            Draw.Sprite(icon.path, box.rect.x + __result, box.rect.y, flipY: icon.flipY, color: action.disabled ? Colors.disabledIconTint : new Color("ffffff"));
         __result += texture.Width;
 
         if (icon.number is { } amount)
