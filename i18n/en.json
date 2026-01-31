@@ -38,11 +38,11 @@
     },
     "Add Cantrip A": {
       "name": "Add 1 of 4 Cantrips A to Hand",
-      "description": "Add 1 of 4 <c=card>cantrips</c> with A upgrades to your hand."
+      "description": "Add 1 of 4 <c=card>cantrips</c> with <c=cardtrait>A upgrade</c> to your hand."
     },
     "Add Cantrip B": {
       "name": "Add 1 of 4 Cantrips B to Hand",
-      "description": "Add 1 of 4 <c=card>cantrips</c> with B upgrades to your hand."
+      "description": "Add 1 of 4 <c=card>cantrips</c> with <c=cardtrait>B upgrade</c> to your hand."
     },
     "Add Cantrip Random": {
       "name": "Add Random Cantrip to Hand",
@@ -68,8 +68,8 @@
       "name" : "Evocation",
       "description": {
         "None": "Add 1 of 4 <c=card>cantrips</c> to your hand.",
-        "A": "Add 1 of 4 <c=card>cantrips</c> with A upgrades to your hand.",
-        "B": "Add 1 of 4 <c=card>cantrips</c> with B upgrades to your hand."
+        "A": "Add 1 of 4 <c=card>cantrips</c> with <c=cardtrait>A upgrade</c> to your hand.",
+        "B": "Add 1 of 4 <c=card>cantrips</c> with <c=cardtrait>B upgrade</c> to your hand."
       }
     },
     "Flare": {
