@@ -27,7 +27,8 @@ internal sealed class CardFlashbang : Card, IGizmoTheFoxCCModCard
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
             cost = 0,
             exhaust = true,
-            temporary = true
+            temporary = true,
+            artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Potion_CardFrame.Sprite
         };
         return data;
     }
