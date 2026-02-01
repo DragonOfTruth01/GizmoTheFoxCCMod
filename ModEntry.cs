@@ -218,7 +218,8 @@ public sealed class ModEntry : SimpleMod
                 starterDeck: new StarterDeck
                 {
                     cards = [
-                        // Alt starters go here
+                        new CardPrestidigitation(),
+                        new CardSeaQuake()
                     ]
                 }
 
@@ -317,7 +318,8 @@ public sealed class ModEntry : SimpleMod
             Starters = new()
             {
                 cards = [
-                    // Starter cards go here
+                    new CardEvocation(),
+                    new CardConjureManaBlades()
                 ]
             },
 
