@@ -2,7 +2,7 @@
   "character": {
     "GizmoTheFoxCCMod_Character": {
       "name": "Gizmo",
-      "description": "Your artificer/alchemist. His cards allow you to <c=boldPink>attune</c> the four elements to <c=boldPink>brew potions</c>."
+      "description": "Your artificer/alchemist. His cards allow you to <c=boldPink>brew potions</c> (temporary 0-cost cards granting benefits) by <c=boldPink>attuning</c> the four elements."
     },
     "GizmoTheFoxCCMod_Potion": {
       "name": "Potion"
@@ -12,6 +12,50 @@
     }
   },
   "action": {
+    "Attune Earth": {
+      "name": "Attune Earth",
+      "description": "<c=boldPink>Attune</c> the <c=796775>earth</c> element."
+    },
+    "Attune Wind": {
+      "name": "Attune Wind",
+      "description": "<c=boldPink>Attune</c> the <c=14a02e>wind</c> element."
+    },
+    "Attune Fire": {
+      "name": "Attune Fire",
+      "description": "<c=boldPink>Attune</c> the <c=e74c31>fire</c> element."
+    },
+    "Attune Water": {
+      "name": "Attune Water",
+      "description": "<c=boldPink>Attune</c> the <c=3e71d6>water</c> element."
+    },
+    "Attune Earth and Water": {
+      "name": "Attune Earth and Water",
+      "description": "<c=boldPink>Attune</c> the <c=796775>earth</c> and <c=3e71d6>water</c> elements."
+    },
+    "Attune Water and Earth": {
+      "name": "Attune Water and Earth",
+      "description": "<c=boldPink>Attune</c> the <c=3e71d6>water</c> and <c=796775>earth</c> elements."
+    },
+    "Add Cantrip 2": {
+      "name": "Add 1 of 2 Cantrips to Hand",
+      "description": "Add 1 of 2 <c=card>cantrips</c> to your hand."
+    },
+    "Add Cantrip 4": {
+      "name": "Add 1 of 4 Cantrips to Hand",
+      "description": "Add 1 of 4 <c=card>cantrips</c> to your hand."
+    },
+    "Add Cantrip A": {
+      "name": "Add 1 of 4 Cantrips A to Hand",
+      "description": "Add 1 of 4 <c=card>cantrips</c> with <c=cardtrait>A upgrade</c> to your hand."
+    },
+    "Add Cantrip B": {
+      "name": "Add 1 of 4 Cantrips B to Hand",
+      "description": "Add 1 of 4 <c=card>cantrips</c> with <c=cardtrait>B upgrade</c> to your hand."
+    },
+    "Add Cantrip Random": {
+      "name": "Add Random Cantrip to Hand",
+      "description": "Add {{execCountString}} random <c=card>cantrips</c> to your hand."
+    }
   },
   "artifact": {
     "boss": {
@@ -20,8 +64,61 @@
     }
   },
   "card": {
+    "Conjure Mana Blades": {
+      "name": "Conjure Mana Blades",
+      "description": {
+        "None": "Add <c=card>Mana Blade (Fire)</c> and <c=card>Mana Blade (Ice)</c> to your hand.",
+        "A": "Add <c=card>Mana Blade (Fire) A</c> and <c=card>Mana Blade (Ice) A</c> to your hand.",
+        "B": "Add <c=card>Mana Blade (Fire)</c> and <c=card>Mana Blade (Ice)</c> to your hand."
+      }
+    },
+    "Evocation": {
+      "name" : "Evocation",
+      "description": {
+        "None": "Add 1 of 4 <c=card>cantrips</c> to your hand.",
+        "A": "Add 1 of 4 <c=card>cantrips</c> with <c=cardtrait>A upgrade</c> to your hand.",
+        "B": "Add 1 of 4 <c=card>cantrips</c> with <c=cardtrait>B upgrade</c> to your hand."
+      }
+    },
+    "Flare": {
+      "name": "Flare"
+    },
+    "Flashbang": {
+      "name": "Flashbang"
+    },
+    "Gust": {
+      "name": "Gust"
+    },
+    "Ice Bomb": {
+      "name": "Ice Bomb"
+    },
+    "Mana Blade (Fire)": {
+      "name": "Mana Blade (Fire)"
+    },
+    "Mana Blade (Ice)": {
+      "name": "Mana Blade (Ice)"
+    },
+    "Potion of Haste": {
+      "name": "Potion of Haste"
+    },
+    "Prestidigitation": {
+      "name": "Prestidigi-tation"
+    },
+    "Sea Quake": {
+      "name": "Sea Quake"
+    },
+    "Tremor": {
+      "name": "Tremor"
+    },
+    "Whirlpool": {
+      "name": "Whirlpool"
+    }
   },
   "status": {
+    "Attunement": {
+      "name": "Attunement",
+      "description": "Currently <c=boldPink>attuned</c> elements. When all elements are <c=boldPink>attuned</c>, add 1 of 3 <c=boldPink>potions</c> to your hand."
+    }
   },
   "condition": {
   }

@@ -1,7 +1,7 @@
 ﻿using Nickel;
 using Nickel.Common;
 using HarmonyLib;
-// using DragonOfTruth01.GizmoTheFoxCCMod.Cards;
+using DragonOfTruth01.GizmoTheFoxCCMod.Cards;
 // using DragonOfTruth01.GizmoTheFoxCCMod.Artifacts;
 using Microsoft.Extensions.Logging;
 using Nanoray.PluginManager;
@@ -44,8 +44,20 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_Character_Squint_2 { get; }
 
     // Custom Action Icons
-
+    internal ISpriteEntry GizmoTheFoxCCMod_AttuneEarth { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AttuneWind { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AttuneFire { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AttuneWater { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AttuneEarthAndWater { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AttuneWaterAndEarth { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AddCantrip2 { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AddCantrip4 { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AddCantripA { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AddCantripB { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AddCantripRandom { get; }
     // Custom Status Icons
+
+    internal ISpriteEntry GizmoTheFoxCCMod_Attunement { get; }
 
     // Custom Decks
     internal IDeckEntry GizmoTheFoxCCMod_Character_Deck { get; }
@@ -53,10 +65,20 @@ public sealed class ModEntry : SimpleMod
     internal IDeckEntry GizmoTheFoxCCMod_ShimmeringPotion_Deck { get; }
 
     // Custom Statuses
+    internal IStatusEntry Attunement { get; }
 
     // Card List Definitions
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_CommonCard_Types { get; } = [
-        
+        typeof(CardConjureManaBlades),
+        typeof(CardEvocation),
+        typeof(CardPrestidigitation),
+        typeof(CardSeaQuake),
+        typeof(CardTremor),
+        typeof(CardGust),
+        typeof(CardFlare),
+        typeof(CardWhirlpool),
+        typeof(CardManaBladeFire),
+        typeof(CardManaBladeIce)
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_UncommonCard_Types { get; } = [
@@ -68,7 +90,9 @@ public sealed class ModEntry : SimpleMod
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Potion_Types { get; } = [
-        
+        typeof(CardFlashbang),
+        typeof(CardIceBomb),
+        typeof(CardPotionOfHaste)
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_ShimmeringPotion_Types { get; } = [
@@ -153,7 +177,21 @@ public sealed class ModEntry : SimpleMod
 
         // Custom Action Icons
 
+        GizmoTheFoxCCMod_AttuneEarth = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneEarth.png"));
+        GizmoTheFoxCCMod_AttuneWind = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneWind.png"));
+        GizmoTheFoxCCMod_AttuneFire = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneFire.png"));
+        GizmoTheFoxCCMod_AttuneWater = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneWater.png"));
+        GizmoTheFoxCCMod_AttuneEarthAndWater = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneEarthAndWater.png"));
+        GizmoTheFoxCCMod_AttuneWaterAndEarth = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneWaterAndEarth.png"));
+        GizmoTheFoxCCMod_AddCantrip2 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantrip2.png"));
+        GizmoTheFoxCCMod_AddCantrip4 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantrip4.png"));
+        GizmoTheFoxCCMod_AddCantripA = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantripA.png"));
+        GizmoTheFoxCCMod_AddCantripB = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantripB.png"));
+        GizmoTheFoxCCMod_AddCantripRandom = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantripRandom.png"));
+
         // Custom Status Icons
+
+        GizmoTheFoxCCMod_Attunement = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/attunement.png"));
 
         // Register Custom Decks
 
@@ -180,7 +218,8 @@ public sealed class ModEntry : SimpleMod
                 starterDeck: new StarterDeck
                 {
                     cards = [
-                        // Alt starters go here
+                        new CardPrestidigitation(),
+                        new CardSeaQuake()
                     ]
                 }
 
@@ -279,7 +318,8 @@ public sealed class ModEntry : SimpleMod
             Starters = new()
             {
                 cards = [
-                    // Starter cards go here
+                    new CardEvocation(),
+                    new CardConjureManaBlades()
                 ]
             },
 
@@ -297,7 +337,18 @@ public sealed class ModEntry : SimpleMod
             AccessTools.DeclaredMethod(artifactType, nameof(IGizmoTheFoxCCModArtifact.Register))?.Invoke(null, [helper]);
 
         // Register Custom Statuses
+        Attunement = helper.Content.Statuses.RegisterStatus("Attunement", new()
+        {
+            Definition = new()
+            {
+                icon = GizmoTheFoxCCMod_Attunement.Sprite,
+                color = new("ff687d"),
+                isGood = true
+            },
+            Name = AnyLocalizations.Bind(["status", "Attunement", "name"]).Localize,
+            Description = AnyLocalizations.Bind(["status", "Attunement", "description"]).Localize
+        });
         
-        _ = new StatusManager();
+        _ = new AttunementManager();
     }
 }

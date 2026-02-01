@@ -1,0 +1,51 @@
+using Nickel;
+using System.Collections.Generic;
+using System.Reflection;
+
+namespace DragonOfTruth01.GizmoTheFoxCCMod.Cards;
+
+internal sealed class CardIceBomb : Card, IGizmoTheFoxCCModCard
+{
+    public static void Register(IModHelper helper)
+    {
+        var entry = helper.Content.Cards.RegisterCard("Ice Bomb", new()
+        {
+            CardType = MethodBase.GetCurrentMethod()!.DeclaringType!,
+            Meta = new()
+            {
+                deck = ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
+                rarity = Rarity.common
+            },
+            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Ice Bomb", "name"]).Localize
+        });
+    }
+
+    public override CardData GetData(State state)
+    {
+        CardData data = new CardData()
+        {
+            art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
+            cost = 0,
+            exhaust = true,
+            temporary = true
+        };
+        return data;
+    }
+
+    public override List<CardAction> GetActions(State s, Combat c)
+    {
+        List<CardAction> actions = new();
+
+        actions = new()
+        {
+            new AAttack()
+            {
+                damage = GetDmg(s, 0),
+                status = Status.lockdown,
+                statusAmount = 1
+            }
+        };
+        
+        return actions;
+    }
+}
