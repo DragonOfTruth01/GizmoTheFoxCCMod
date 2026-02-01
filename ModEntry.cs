@@ -36,14 +36,31 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_Character_Neutral_0 { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_Character_Neutral_1 { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_Character_Neutral_2 { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Character_Neutral_3 { get; }
 
     internal ISpriteEntry GizmoTheFoxCCMod_Character_Mini_0 { get; }
 
     internal ISpriteEntry GizmoTheFoxCCMod_Character_Squint_0 { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_Character_Squint_1 { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_Character_Squint_2 { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Character_Squint_3 { get; }
 
     internal ISpriteEntry GizmoTheFoxCCMod_Character_GameOver_0 { get; }
+
+    internal ISpriteEntry GizmoTheFoxCCMod_Character_SideEye_0 { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Character_SideEye_1 { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Character_SideEye_2 { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Character_SideEye_3 { get; }
+
+    internal ISpriteEntry GizmoTheFoxCCMod_Character_Smirk_0 { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Character_Smirk_1 { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Character_Smirk_2 { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Character_Smirk_3 { get; }
+
+    internal ISpriteEntry GizmoTheFoxCCMod_Character_Smug_0 { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Character_Smug_1 { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Character_Smug_2 { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Character_Smug_3 { get; }
 
     // Custom Action Icons
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneEarth { get; }
@@ -170,14 +187,31 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_Character_Neutral_0 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_neutral_0.png"));
         GizmoTheFoxCCMod_Character_Neutral_1 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_neutral_1.png"));
         GizmoTheFoxCCMod_Character_Neutral_2 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_neutral_2.png"));
+        GizmoTheFoxCCMod_Character_Neutral_3 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_neutral_3.png"));
 
         GizmoTheFoxCCMod_Character_Mini_0 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_mini_0.png"));
 
         GizmoTheFoxCCMod_Character_Squint_0 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_squint_0.png"));
         GizmoTheFoxCCMod_Character_Squint_1 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_squint_1.png"));
         GizmoTheFoxCCMod_Character_Squint_2 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_squint_2.png"));
+        GizmoTheFoxCCMod_Character_Squint_3 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_squint_3.png"));
 
         GizmoTheFoxCCMod_Character_GameOver_0 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_gameover_0.png"));
+
+        GizmoTheFoxCCMod_Character_SideEye_0 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_sideeye_0.png"));
+        GizmoTheFoxCCMod_Character_SideEye_1 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_sideeye_1.png"));
+        GizmoTheFoxCCMod_Character_SideEye_2 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_sideeye_2.png"));
+        GizmoTheFoxCCMod_Character_SideEye_3 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_sideeye_3.png"));
+
+        GizmoTheFoxCCMod_Character_Smirk_0 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_smirk_0.png"));
+        GizmoTheFoxCCMod_Character_Smirk_1 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_smirk_1.png"));
+        GizmoTheFoxCCMod_Character_Smirk_2 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_smirk_2.png"));
+        GizmoTheFoxCCMod_Character_Smirk_3 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_smirk_3.png"));
+
+        GizmoTheFoxCCMod_Character_Smug_0 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_smug_0.png"));
+        GizmoTheFoxCCMod_Character_Smug_1 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_smug_1.png"));
+        GizmoTheFoxCCMod_Character_Smug_2 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_smug_2.png"));
+        GizmoTheFoxCCMod_Character_Smug_3 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_smug_3.png"));
 
         // Custom Action Icons
 
@@ -272,9 +306,7 @@ public sealed class ModEntry : SimpleMod
                 GizmoTheFoxCCMod_Character_Neutral_0.Sprite,
                 GizmoTheFoxCCMod_Character_Neutral_1.Sprite,
                 GizmoTheFoxCCMod_Character_Neutral_2.Sprite,
-                GizmoTheFoxCCMod_Character_Neutral_0.Sprite,
-                GizmoTheFoxCCMod_Character_Neutral_1.Sprite,
-                GizmoTheFoxCCMod_Character_Neutral_2.Sprite
+                GizmoTheFoxCCMod_Character_Neutral_3.Sprite
             }
         });
 
@@ -297,9 +329,7 @@ public sealed class ModEntry : SimpleMod
                 GizmoTheFoxCCMod_Character_Squint_0.Sprite,
                 GizmoTheFoxCCMod_Character_Squint_1.Sprite,
                 GizmoTheFoxCCMod_Character_Squint_2.Sprite,
-                GizmoTheFoxCCMod_Character_Squint_0.Sprite,
-                GizmoTheFoxCCMod_Character_Squint_1.Sprite,
-                GizmoTheFoxCCMod_Character_Squint_2.Sprite
+                GizmoTheFoxCCMod_Character_Squint_3.Sprite
             }
         });
 
@@ -310,6 +340,45 @@ public sealed class ModEntry : SimpleMod
             Frames = new[]
             {
                 GizmoTheFoxCCMod_Character_GameOver_0.Sprite,
+            }
+        });
+
+        helper.Content.Characters.V2.RegisterCharacterAnimation(new CharacterAnimationConfigurationV2()
+        {
+            CharacterType = GizmoTheFoxCCMod_Character_Deck.Deck.Key(),
+            LoopTag = "sideeye",
+            Frames = new[]
+            {
+                GizmoTheFoxCCMod_Character_SideEye_0.Sprite,
+                GizmoTheFoxCCMod_Character_SideEye_1.Sprite,
+                GizmoTheFoxCCMod_Character_SideEye_2.Sprite,
+                GizmoTheFoxCCMod_Character_SideEye_3.Sprite,
+            }
+        });
+
+        helper.Content.Characters.V2.RegisterCharacterAnimation(new CharacterAnimationConfigurationV2()
+        {
+            CharacterType = GizmoTheFoxCCMod_Character_Deck.Deck.Key(),
+            LoopTag = "smirk",
+            Frames = new[]
+            {
+                GizmoTheFoxCCMod_Character_Smirk_0.Sprite,
+                GizmoTheFoxCCMod_Character_Smirk_1.Sprite,
+                GizmoTheFoxCCMod_Character_Smirk_2.Sprite,
+                GizmoTheFoxCCMod_Character_Smirk_3.Sprite,
+            }
+        });
+
+        helper.Content.Characters.V2.RegisterCharacterAnimation(new CharacterAnimationConfigurationV2()
+        {
+            CharacterType = GizmoTheFoxCCMod_Character_Deck.Deck.Key(),
+            LoopTag = "smug",
+            Frames = new[]
+            {
+                GizmoTheFoxCCMod_Character_Smug_0.Sprite,
+                GizmoTheFoxCCMod_Character_Smug_1.Sprite,
+                GizmoTheFoxCCMod_Character_Smug_2.Sprite,
+                GizmoTheFoxCCMod_Character_Smug_3.Sprite,
             }
         });
         
