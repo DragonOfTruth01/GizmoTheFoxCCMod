@@ -24,6 +24,7 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_Character_CardFrameSpellCommon { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_Character_CardFrameSpellUncommon { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_Character_CardFrameSpellRare { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Character_CardFrameSpellCantrip { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_Potion_CardFrame { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_ShimmeringPotion_CardFrame { get; }
 
@@ -178,6 +179,7 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_Character_CardFrameSpellCommon = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_cardframe_spell_common.png"));
         GizmoTheFoxCCMod_Character_CardFrameSpellUncommon = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_cardframe_spell_uncommon.png"));
         GizmoTheFoxCCMod_Character_CardFrameSpellRare = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_cardframe_spell_rare.png"));
+        GizmoTheFoxCCMod_Character_CardFrameSpellCantrip = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_cardframe_spell_cantrip.png"));
         GizmoTheFoxCCMod_Potion_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_potion_cardframe.png"));
         GizmoTheFoxCCMod_ShimmeringPotion_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_shimmeringpotion_cardframe.png"));
 
