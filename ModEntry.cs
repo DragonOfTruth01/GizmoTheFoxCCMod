@@ -237,7 +237,7 @@ public sealed class ModEntry : SimpleMod
         {
             Definition = new DeckDef()
             {
-                color = new Color("f4f7f0"),
+                color = new Color("d1c3ac"),
                 titleColor = new Color("000000")
             },
 
@@ -268,7 +268,7 @@ public sealed class ModEntry : SimpleMod
         {
             Definition = new DeckDef()
             {
-                color = new Color("de543d"),
+                color = new Color("ffffff"),
 
                 titleColor = new Color("000000")
             },
@@ -283,7 +283,7 @@ public sealed class ModEntry : SimpleMod
         {
             Definition = new DeckDef()
             {
-                color = new Color("86cece"),
+                color = new Color("f7af41"),
 
                 titleColor = new Color("000000")
             },
