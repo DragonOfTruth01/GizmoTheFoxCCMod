@@ -27,7 +27,7 @@ internal sealed class CardEvocation : Card, IGizmoTheFoxCCModCard
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
             description = ModEntry.Instance.Localizations.Localize(["card", "Evocation", "description", upgrade.ToString()]),
             cost = 1,
-            artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Character_CardFrameSpellCommon.Sprite
+            artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Character_CardOverlaySpellCommon.Sprite
         };
         return data;
     }

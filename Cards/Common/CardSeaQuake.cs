@@ -28,7 +28,7 @@ internal sealed class CardSeaQuake : Card, IGizmoTheFoxCCModCard
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
             cost = 2,
             floppable = true,
-            artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Character_CardFrameSpellCommon.Sprite
+            artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Character_CardOverlaySpellCommon.Sprite
         };
         return data;
     }

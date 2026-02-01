@@ -21,12 +21,12 @@ public sealed class ModEntry : SimpleMod
 
     // Card Frames
     internal ISpriteEntry GizmoTheFoxCCMod_Character_CardFrame { get; }
-    internal ISpriteEntry GizmoTheFoxCCMod_Character_CardFrameSpellCommon { get; }
-    internal ISpriteEntry GizmoTheFoxCCMod_Character_CardFrameSpellUncommon { get; }
-    internal ISpriteEntry GizmoTheFoxCCMod_Character_CardFrameSpellRare { get; }
-    internal ISpriteEntry GizmoTheFoxCCMod_Character_CardFrameSpellCantrip { get; }
-    internal ISpriteEntry GizmoTheFoxCCMod_Potion_CardFrame { get; }
-    internal ISpriteEntry GizmoTheFoxCCMod_ShimmeringPotion_CardFrame { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Character_CardOverlaySpellCommon { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Character_CardOverlaySpellUncommon { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Character_CardOverlaySpellRare { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Character_CardOverlaySpellCantrip { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Potion_CardOverlay { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_ShimmeringPotion_CardOverlay { get; }
 
     // Character Panel
     internal ISpriteEntry GizmoTheFoxCCMod_Character_Panel { get; }
@@ -176,12 +176,12 @@ public sealed class ModEntry : SimpleMod
 
         // Card Frames
         GizmoTheFoxCCMod_Character_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_cardframe.png"));
-        GizmoTheFoxCCMod_Character_CardFrameSpellCommon = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_cardframe_spell_common.png"));
-        GizmoTheFoxCCMod_Character_CardFrameSpellUncommon = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_cardframe_spell_uncommon.png"));
-        GizmoTheFoxCCMod_Character_CardFrameSpellRare = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_cardframe_spell_rare.png"));
-        GizmoTheFoxCCMod_Character_CardFrameSpellCantrip = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_cardframe_spell_cantrip.png"));
-        GizmoTheFoxCCMod_Potion_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_potion_cardframe.png"));
-        GizmoTheFoxCCMod_ShimmeringPotion_CardFrame = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_shimmeringpotion_cardframe.png"));
+        GizmoTheFoxCCMod_Character_CardOverlaySpellCommon = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_cardframe_spell_common.png"));
+        GizmoTheFoxCCMod_Character_CardOverlaySpellUncommon = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_cardframe_spell_uncommon.png"));
+        GizmoTheFoxCCMod_Character_CardOverlaySpellRare = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_cardframe_spell_rare.png"));
+        GizmoTheFoxCCMod_Character_CardOverlaySpellCantrip = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_cardframe_spell_cantrip.png"));
+        GizmoTheFoxCCMod_Potion_CardOverlay = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_potion_cardframe.png"));
+        GizmoTheFoxCCMod_ShimmeringPotion_CardOverlay = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_shimmeringpotion_cardframe.png"));
 
         // Character Panel
         GizmoTheFoxCCMod_Character_Panel = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_panel.png"));
@@ -282,7 +282,7 @@ public sealed class ModEntry : SimpleMod
             },
 
             DefaultCardArt = GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
-            BorderSprite = GizmoTheFoxCCMod_Potion_CardFrame.Sprite,
+            BorderSprite = GizmoTheFoxCCMod_Character_CardFrame.Sprite,
 
             Name = AnyLocalizations.Bind(["character", "GizmoTheFoxCCMod_Potion", "name"]).Localize,
         });
@@ -297,7 +297,7 @@ public sealed class ModEntry : SimpleMod
             },
 
             DefaultCardArt = GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
-            BorderSprite = GizmoTheFoxCCMod_ShimmeringPotion_CardFrame.Sprite,
+            BorderSprite = GizmoTheFoxCCMod_Character_CardFrame.Sprite,
 
             Name = AnyLocalizations.Bind(["character", "GizmoTheFoxCCMod_ShimmeringPotion", "name"]).Localize,
         });

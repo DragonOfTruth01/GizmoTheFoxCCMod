@@ -28,7 +28,7 @@ internal sealed class CardPotionOfHaste : Card, IGizmoTheFoxCCModCard
             cost = 0,
             exhaust = true,
             temporary = true,
-            artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Potion_CardFrame.Sprite
+            artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Potion_CardOverlay.Sprite
         };
         return data;
     }
