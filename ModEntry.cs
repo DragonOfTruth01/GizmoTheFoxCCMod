@@ -43,6 +43,8 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_Character_Squint_1 { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_Character_Squint_2 { get; }
 
+    internal ISpriteEntry GizmoTheFoxCCMod_Character_GameOver_0 { get; }
+
     // Custom Action Icons
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneEarth { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneWind { get; }
@@ -175,6 +177,8 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_Character_Squint_1 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_squint_1.png"));
         GizmoTheFoxCCMod_Character_Squint_2 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_squint_2.png"));
 
+        GizmoTheFoxCCMod_Character_GameOver_0 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_gameover_0.png"));
+
         // Custom Action Icons
 
         GizmoTheFoxCCMod_AttuneEarth = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneEarth.png"));
@@ -305,8 +309,7 @@ public sealed class ModEntry : SimpleMod
             LoopTag = "gameover",
             Frames = new[]
             {
-                // The squint sprite is okay to use here...
-                GizmoTheFoxCCMod_Character_Squint_0.Sprite,
+                GizmoTheFoxCCMod_Character_GameOver_0.Sprite,
             }
         });
         
