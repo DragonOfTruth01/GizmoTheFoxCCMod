@@ -36,7 +36,8 @@ internal sealed class CardWhirlpool : Card, IGizmoTheFoxCCModCard, IHasCustomCar
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
             cost = 0,
-            temporary = true
+            temporary = true,
+            artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Character_CardFrameSpellCantrip.Sprite
         };
         return data;
     }

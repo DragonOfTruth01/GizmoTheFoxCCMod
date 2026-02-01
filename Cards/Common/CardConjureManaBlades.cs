@@ -26,7 +26,8 @@ internal sealed class CardConjureManaBlades : Card, IGizmoTheFoxCCModCard
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
             description = ModEntry.Instance.Localizations.Localize(["card", "Conjure Mana Blades", "description", upgrade.ToString()]),
-            cost = 0
+            cost = 0,
+            artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Character_CardFrameSpellCommon.Sprite
         };
         return data;
     }

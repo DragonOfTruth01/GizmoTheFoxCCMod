@@ -36,7 +36,8 @@ internal sealed class CardTremor : Card, IGizmoTheFoxCCModCard, IHasCustomCardTr
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
             cost = 0,
-            temporary = true
+            temporary = true,
+            artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Character_CardFrameSpellCantrip.Sprite
         };
         return data;
     }

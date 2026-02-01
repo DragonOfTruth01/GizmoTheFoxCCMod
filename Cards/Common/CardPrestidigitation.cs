@@ -26,7 +26,8 @@ internal sealed class CardPrestidigitation : Card, IGizmoTheFoxCCModCard
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
             cost = 1,
-            floppable = true
+            floppable = true,
+            artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Character_CardFrameSpellCommon.Sprite
         };
         return data;
     }
