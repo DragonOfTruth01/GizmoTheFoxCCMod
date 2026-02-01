@@ -10,7 +10,7 @@ This document acts as a reference for which cards are part of this mod.
 | No | Common | Forage | 1 | Attune a random non-attuned element. Draw 2 cards. | Instead draw 4 cards. | Attune two random non-attuned elements. Reduce card draw to 1. | # Note - this could be a numbered action (e.g. Attune 2) - but it should queue individual actions separately to account for possible interruptions when attuning 1, getting a potion, then attuning again
 | No | Common | Ornithopter | 1 | Move 2 flippable. Attune wind. | Move 3 flippable. | Move 1 flippable. Gain 1 evade. |
 | No | Common | Magic Missile | 1 | Attack 1 x 1 for each attuned element. | Add an extra attack for 1. | Attacks gain piercing. |
-| No | Common | Conjure Mana Blades | 1 | Add Mana Blade (Fire) and Mana Blade (Ice) to your hand. | Added cards have A upgrade. | Reduce cost to 0. |
+| No | Common | Conjure Mana Blades | 0 | Add Mana Blade (Fire) and Mana Blade (Ice) to your hand. | Added cards have A upgrade. | Added cards have B upgrade. |
 | No | Common | Prestidigitation | 1 | Floppable. Deal 1 damage. / Gain 1 block. Add 1 of 2 cantrips to your hand. | Instead add 1 of 4 cantrips. | Increase damage by 1. / Add 1 temp shield. |
 | No | Common | Sea Quake | 2 | Floppable. Gain 3 temp shield. Attune water. / Gain 2 shield. Attune earth. | Both actions attune earth and water. | Gain 5 temp shield / 3 shield. |
 | No | Common | Bloodstone Battleaxe | 1 | Deal 1 damage. Attune earth. Increase damage by 1 this combat. | Increase base damage to 2. Add piercing. | Increase cost, base damage, and damage to 2. |
@@ -60,8 +60,8 @@ This document acts as a reference for which cards are part of this mod.
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 3 energy. Draw 3 cards. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Add 3 random potions to your hand. |  |  |
 ||||||||
-| No | Common (Generated) | Mana Blade (Fire) | 2 | Deal 3 damage. Attune fire. Retain. Exhaust. | Increase damage by 1. | Add piercing. |
-| No | Common (Generated) | Mana Blade (Ice) | 2 | Deal 1 damage. Gain 2 shield. Attune water. Retain. Exhaust. | Increase damage by 1. | Also gain 2 temp shield. |
+| No | Common (Generated) | Mana Blade (Fire) | 1 | Deal 1 damage. Attune fire. Retain. Exhaust. | Increase damage by 1. | Gain 1 stun charge after attack. |
+| No | Common (Generated) | Mana Blade (Ice) | 1 | Deal 0 damage. Gain 1 shield. Attune water. Retain. Exhaust. | Increase damage by 1. | Also gain 1 temp shield. |
 ||||||||
 | No | Rare (Generated) | Mace of Seasons (Winter) | 1 | Deal 1 pierce damage. Gain 1 shield. Attune water. Add Mace of Seasons (Spring) to your hand. Limited 1. | Instead deal 3 damage. | Card gains retain. Summon B. |
 | No | Rare (Generated) | Mace of Seasons (Spring) | 1 | Deal 1 pierce damage. Gain 1 evade. Attune wind. Add Mace of Seasons (Summer) to your hand. Limited 1. | Instead deal 3 damage. | Card gains retain. Summon B. |

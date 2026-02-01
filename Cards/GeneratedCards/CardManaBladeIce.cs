@@ -27,7 +27,7 @@ internal sealed class CardManaBladeIce : Card, IGizmoTheFoxCCModCard
         CardData data = new CardData()
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
-            cost = 2,
+            cost = 1,
             retain = true,
             exhaust = true,
             temporary = true
@@ -46,12 +46,12 @@ internal sealed class CardManaBladeIce : Card, IGizmoTheFoxCCModCard
                 {
                     new AAttack()
                     {
-                        damage = GetDmg(s, 1)
+                        damage = GetDmg(s, 0)
                     },
                     new AStatus()
                     {
                         status = Status.shield,
-                        statusAmount = 2,
+                        statusAmount = 1,
                         targetPlayer = true
                     },
                     new AAttune()
@@ -66,12 +66,12 @@ internal sealed class CardManaBladeIce : Card, IGizmoTheFoxCCModCard
                 {
                     new AAttack()
                     {
-                        damage = GetDmg(s, 2)
+                        damage = GetDmg(s, 1)
                     },
                     new AStatus()
                     {
                         status = Status.shield,
-                        statusAmount = 2,
+                        statusAmount = 1,
                         targetPlayer = true
                     },
                     new AAttune()
@@ -86,18 +86,18 @@ internal sealed class CardManaBladeIce : Card, IGizmoTheFoxCCModCard
                 {
                     new AAttack()
                     {
-                        damage = GetDmg(s, 1)
+                        damage = GetDmg(s, 0)
                     },
                     new AStatus()
                     {
                         status = Status.shield,
-                        statusAmount = 2,
+                        statusAmount = 1,
                         targetPlayer = true
                     },
                     new AStatus()
                     {
                         status = Status.tempShield,
-                        statusAmount = 2,
+                        statusAmount = 1,
                         targetPlayer = true
                     },
                     new AAttune()

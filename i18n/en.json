@@ -69,7 +69,7 @@
       "description": {
         "None": "Add <c=card>Mana Blade (Fire)</c> and <c=card>Mana Blade (Ice)</c> to your hand.",
         "A": "Add <c=card>Mana Blade (Fire) A</c> and <c=card>Mana Blade (Ice) A</c> to your hand.",
-        "B": "Add <c=card>Mana Blade (Fire)</c> and <c=card>Mana Blade (Ice)</c> to your hand."
+        "B": "Add <c=card>Mana Blade (Fire) B</c> and <c=card>Mana Blade (Ice) B</c> to your hand."
       }
     },
     "Evocation": {

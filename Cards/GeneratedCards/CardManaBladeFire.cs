@@ -27,7 +27,7 @@ internal sealed class CardManaBladeFire : Card, IGizmoTheFoxCCModCard
         CardData data = new CardData()
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
-            cost = 2,
+            cost = 1,
             retain = true,
             exhaust = true,
             temporary = true
@@ -46,7 +46,7 @@ internal sealed class CardManaBladeFire : Card, IGizmoTheFoxCCModCard
                 {
                     new AAttack()
                     {
-                        damage = GetDmg(s, 3)
+                        damage = GetDmg(s, 1)
                     },
                     new AAttune()
                     {
@@ -60,7 +60,7 @@ internal sealed class CardManaBladeFire : Card, IGizmoTheFoxCCModCard
                 {
                     new AAttack()
                     {
-                        damage = GetDmg(s, 4)
+                        damage = GetDmg(s, 2)
                     },
                     new AAttune()
                     {
@@ -74,8 +74,13 @@ internal sealed class CardManaBladeFire : Card, IGizmoTheFoxCCModCard
                 {
                     new AAttack()
                     {
-                        damage = GetDmg(s, 3),
-                        piercing = true
+                        damage = GetDmg(s, 1)
+                    },
+                    new AStatus()
+                    {
+                        status = Status.stunCharge,
+                        statusAmount = 1,
+                        targetPlayer = true
                     },
                     new AAttune()
                     {

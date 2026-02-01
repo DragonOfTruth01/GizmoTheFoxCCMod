@@ -26,7 +26,7 @@ internal sealed class CardConjureManaBlades : Card, IGizmoTheFoxCCModCard
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
             description = ModEntry.Instance.Localizations.Localize(["card", "Conjure Mana Blades", "description", upgrade.ToString()]),
-            cost = upgrade == Upgrade.B ? 0 : 1
+            cost = 0
         };
         return data;
     }
@@ -77,13 +77,13 @@ internal sealed class CardConjureManaBlades : Card, IGizmoTheFoxCCModCard
                 {
                     new AAddCard()
                     {
-                        card = new CardManaBladeFire(),
+                        card = new CardManaBladeFire() { upgrade = Upgrade.B },
                         destination = CardDestination.Hand,
                         amount = 1
                     },
                     new AAddCard()
                     {
-                        card = new CardManaBladeIce(),
+                        card = new CardManaBladeIce() { upgrade = Upgrade.B },
                         destination = CardDestination.Hand,
                         amount = 1
                     }
