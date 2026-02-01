@@ -49,7 +49,7 @@ internal sealed class CardSeaQuake : Card, IGizmoTheFoxCCModCard
                     },
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b0001,
+                        elementBitfieldModifier = AttunementManager.WaterBitMask,
                         disabled = flipped
                     },
                     new ADummyAction(),
@@ -62,7 +62,7 @@ internal sealed class CardSeaQuake : Card, IGizmoTheFoxCCModCard
                     },
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b1000,
+                        elementBitfieldModifier = AttunementManager.EarthBitMask,
                         disabled = !flipped
                     }
                 };
@@ -80,8 +80,8 @@ internal sealed class CardSeaQuake : Card, IGizmoTheFoxCCModCard
                     },
                     new AAttuneMulti()
                     {
-                        elementBitfieldModifier1 = 0b1000,
-                        elementBitfieldModifier2 = 0b0001,
+                        elementBitfieldModifier1 = AttunementManager.WaterBitMask,
+                        elementBitfieldModifier2 = AttunementManager.EarthBitMask,
                         disabled = flipped
                     },
                     new ADummyAction(),
@@ -94,8 +94,8 @@ internal sealed class CardSeaQuake : Card, IGizmoTheFoxCCModCard
                     },
                     new AAttuneMulti()
                     {
-                        elementBitfieldModifier1 = 0b0001,
-                        elementBitfieldModifier2 = 0b1000,
+                        elementBitfieldModifier1 = AttunementManager.EarthBitMask,
+                        elementBitfieldModifier2 = AttunementManager.WaterBitMask,
                         disabled = !flipped
                     },
                 };
@@ -113,7 +113,7 @@ internal sealed class CardSeaQuake : Card, IGizmoTheFoxCCModCard
                     },
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b0001,
+                        elementBitfieldModifier = AttunementManager.WaterBitMask,
                         disabled = flipped
                     },
                     new ADummyAction(),
@@ -126,7 +126,7 @@ internal sealed class CardSeaQuake : Card, IGizmoTheFoxCCModCard
                     },
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b1000,
+                        elementBitfieldModifier = AttunementManager.EarthBitMask,
                         disabled = !flipped
                     }
                 };

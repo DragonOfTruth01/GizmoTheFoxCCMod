@@ -8,11 +8,21 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using OneOf.Types;
 using System.Runtime.CompilerServices;
+using System.Reflection.Metadata;
 
 [HarmonyPatch]
 internal sealed class AttunementManager : IKokoroApi.IV2.IStatusRenderingApi.IHook
 {
     public static ModEntry Instance => ModEntry.Instance;
+
+    // Elements are represented as 0bXXXX in a bitfield,
+    // where the Xs are earth, wind, fire, and water respectively
+    public const int EarthBitMask = 0b1000;
+    public const int WindBitMask  = 0b0100;
+    public const int FireBitMask  = 0b0010;
+    public const int WaterBitMask = 0b0001;
+
+    public static readonly int AllElementBitMask = 0b1111;
 
     public AttunementManager()
     {
@@ -34,10 +44,10 @@ internal sealed class AttunementManager : IKokoroApi.IV2.IStatusRenderingApi.IHo
 
         Color[] colors = new Color[4];
 
-        bool earth = (args.Amount & 0b1000) != 0;
-        bool wind  = (args.Amount & 0b0100) != 0;
-        bool fire  = (args.Amount & 0b0010) != 0;
-        bool water = (args.Amount & 0b0001) != 0;
+        bool earth = (args.Amount & EarthBitMask) != 0;
+        bool wind  = (args.Amount & WindBitMask) != 0;
+        bool fire  = (args.Amount & FireBitMask) != 0;
+        bool water = (args.Amount & WaterBitMask) != 0;
 
         colors[0] = earth ? new Color(0xFF796775) : ModEntry.Instance.KokoroApi.StatusRendering.DefaultInactiveStatusBarColor;
         colors[1] = wind  ? new Color(0xFF14A02E) : ModEntry.Instance.KokoroApi.StatusRendering.DefaultInactiveStatusBarColor;
@@ -64,7 +74,7 @@ internal sealed class AttunementManager : IKokoroApi.IV2.IStatusRenderingApi.IHo
         var ship = GetShip(__instance, s);
 
         // Do this logic if all element slots are attuned
-        if(ship.Get(ModEntry.Instance.Attunement.Status) >= 0b1111)
+        if(ship.Get(ModEntry.Instance.Attunement.Status) >= AllElementBitMask)
         {
             c.QueueImmediate(new ACardOffering()
             {

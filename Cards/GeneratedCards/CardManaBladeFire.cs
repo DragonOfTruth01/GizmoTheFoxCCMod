@@ -50,7 +50,7 @@ internal sealed class CardManaBladeFire : Card, IGizmoTheFoxCCModCard
                     },
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b0010
+                        elementBitfieldModifier = AttunementManager.FireBitMask
                     }
                 };
                 break;
@@ -64,7 +64,7 @@ internal sealed class CardManaBladeFire : Card, IGizmoTheFoxCCModCard
                     },
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b0010
+                        elementBitfieldModifier = AttunementManager.FireBitMask
                     }
                 };
                 break;
@@ -79,7 +79,7 @@ internal sealed class CardManaBladeFire : Card, IGizmoTheFoxCCModCard
                     },
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b0010
+                        elementBitfieldModifier = AttunementManager.FireBitMask
                     }
                 };
                 break;

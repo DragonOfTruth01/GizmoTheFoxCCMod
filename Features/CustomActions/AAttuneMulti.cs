@@ -8,7 +8,7 @@ namespace DragonOfTruth01.GizmoTheFoxCCMod;
 [HarmonyPatch]
 public sealed class AAttuneMulti : DynamicWidthCardAction
 {
-    public int elementBitfieldModifier1; // Represented as 0bXXXX, where the Xs are earth, wind, fire, and water respectively
+    public int elementBitfieldModifier1;
     public int elementBitfieldModifier2;
 
     public override void Begin(G g, State s, Combat c)
@@ -28,7 +28,7 @@ public sealed class AAttuneMulti : DynamicWidthCardAction
 
     public override List<Tooltip> GetTooltips(State s)
     {
-        if(elementBitfieldModifier1 == 0b1000 && elementBitfieldModifier2 == 0b0001)
+        if(elementBitfieldModifier1 == AttunementManager.EarthBitMask && elementBitfieldModifier2 == AttunementManager.WaterBitMask)
         {
             return [
                     new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AttuneEarthAndWater")
@@ -40,7 +40,7 @@ public sealed class AAttuneMulti : DynamicWidthCardAction
                     }
                 ];
         }
-        else if(elementBitfieldModifier1 == 0b0001 && elementBitfieldModifier2 == 0b1000)
+        else if(elementBitfieldModifier1 == AttunementManager.WaterBitMask && elementBitfieldModifier2 == AttunementManager.EarthBitMask)
         {
             return [
                     new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AttuneWaterAndEarth")
@@ -60,11 +60,11 @@ public sealed class AAttuneMulti : DynamicWidthCardAction
 
     private Spr GetStatusIcon()
     {
-        if(elementBitfieldModifier1 == 0b1000 && elementBitfieldModifier2 == 0b0001)
+        if(elementBitfieldModifier1 == AttunementManager.EarthBitMask && elementBitfieldModifier2 == AttunementManager.WaterBitMask)
         {
             return ModEntry.Instance.GizmoTheFoxCCMod_AttuneEarthAndWater.Sprite;
         }
-        else if(elementBitfieldModifier1 == 0b0001 && elementBitfieldModifier2 == 0b1000)
+        else if(elementBitfieldModifier1 == AttunementManager.WaterBitMask && elementBitfieldModifier2 == AttunementManager.EarthBitMask)
         {
             return ModEntry.Instance.GizmoTheFoxCCMod_AttuneWaterAndEarth.Sprite; 
         }

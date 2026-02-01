@@ -52,7 +52,7 @@ internal sealed class CardGust : Card, IGizmoTheFoxCCModCard, IHasCustomCardTrai
                 {
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b0100
+                        elementBitfieldModifier = AttunementManager.WindBitMask
                     },
                     new ADrawCard()
                     {
@@ -66,7 +66,7 @@ internal sealed class CardGust : Card, IGizmoTheFoxCCModCard, IHasCustomCardTrai
                 {
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b0100
+                        elementBitfieldModifier = AttunementManager.WindBitMask
                     },
                     new ADrawCard()
                     {
@@ -80,7 +80,7 @@ internal sealed class CardGust : Card, IGizmoTheFoxCCModCard, IHasCustomCardTrai
                 {
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b0100
+                        elementBitfieldModifier = AttunementManager.WindBitMask
                     },
                     new ADrawCard()
                     {

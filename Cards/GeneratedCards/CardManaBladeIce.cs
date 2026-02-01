@@ -56,7 +56,7 @@ internal sealed class CardManaBladeIce : Card, IGizmoTheFoxCCModCard
                     },
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b0001
+                        elementBitfieldModifier = AttunementManager.WaterBitMask
                     }
                 };
                 break;
@@ -76,7 +76,7 @@ internal sealed class CardManaBladeIce : Card, IGizmoTheFoxCCModCard
                     },
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b0001
+                        elementBitfieldModifier = AttunementManager.WaterBitMask
                     }
                 };
                 break;
@@ -102,7 +102,7 @@ internal sealed class CardManaBladeIce : Card, IGizmoTheFoxCCModCard
                     },
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b0001
+                        elementBitfieldModifier = AttunementManager.WaterBitMask
                     }
                 };
                 break;

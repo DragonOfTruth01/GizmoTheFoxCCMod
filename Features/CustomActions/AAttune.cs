@@ -8,7 +8,7 @@ namespace DragonOfTruth01.GizmoTheFoxCCMod;
 [HarmonyPatch]
 public sealed class AAttune : CardAction // NOTE: This should only be used to attune one status at a time, until solution is found to do multiple
 {
-    public int elementBitfieldModifier; // Represented as 0bXXXX, where the Xs are earth, wind, fire, and water respectively
+    public int elementBitfieldModifier;
 
     public override void Begin(G g, State s, Combat c)
     {
@@ -35,7 +35,7 @@ public sealed class AAttune : CardAction // NOTE: This should only be used to at
     {
         switch (elementBitfieldModifier)
         {
-            case 0b1000:
+            case AttunementManager.EarthBitMask:
                 return [
                     new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AttuneEarth")
                     {
@@ -45,7 +45,7 @@ public sealed class AAttune : CardAction // NOTE: This should only be used to at
                         Description = ModEntry.Instance.Localizations.Localize(["action", "Attune Earth", "description"])
                     }
                 ];
-            case 0b0100:
+            case AttunementManager.WindBitMask:
                 return [
                     new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AttuneWind")
                     {
@@ -55,7 +55,7 @@ public sealed class AAttune : CardAction // NOTE: This should only be used to at
                         Description = ModEntry.Instance.Localizations.Localize(["action", "Attune Wind", "description"])
                     }
                 ];
-            case 0b0010:
+            case AttunementManager.FireBitMask:
                 return [
                     new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AttuneFire")
                     {
@@ -65,7 +65,7 @@ public sealed class AAttune : CardAction // NOTE: This should only be used to at
                         Description = ModEntry.Instance.Localizations.Localize(["action", "Attune Fire", "description"])
                     }
                 ];
-            case 0b0001:
+            case AttunementManager.WaterBitMask:
                 return [
                     new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AttuneWater")
                     {
@@ -84,13 +84,13 @@ public sealed class AAttune : CardAction // NOTE: This should only be used to at
     {
         switch (elementBitfieldModifier)
         {
-            case 0b1000:
+            case AttunementManager.EarthBitMask:
                 return ModEntry.Instance.GizmoTheFoxCCMod_AttuneEarth.Sprite;
-            case 0b0100:
+            case AttunementManager.WindBitMask:
                 return ModEntry.Instance.GizmoTheFoxCCMod_AttuneWind.Sprite;
-            case 0b0010:
+            case AttunementManager.FireBitMask:
                 return ModEntry.Instance.GizmoTheFoxCCMod_AttuneFire.Sprite;
-            case 0b0001:
+            case AttunementManager.WaterBitMask:
                 return ModEntry.Instance.GizmoTheFoxCCMod_AttuneWater.Sprite;
             default:
                 return new Spr();

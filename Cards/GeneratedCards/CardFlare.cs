@@ -52,7 +52,7 @@ internal sealed class CardFlare : Card, IGizmoTheFoxCCModCard, IHasCustomCardTra
                 {
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b0010
+                        elementBitfieldModifier = AttunementManager.FireBitMask
                     },
                     new ADrawCard()
                     {
@@ -66,7 +66,7 @@ internal sealed class CardFlare : Card, IGizmoTheFoxCCModCard, IHasCustomCardTra
                 {
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b0010
+                        elementBitfieldModifier = AttunementManager.FireBitMask
                     },
                     new ADrawCard()
                     {
@@ -80,7 +80,7 @@ internal sealed class CardFlare : Card, IGizmoTheFoxCCModCard, IHasCustomCardTra
                 {
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b0010
+                        elementBitfieldModifier = AttunementManager.FireBitMask
                     },
                     new ADrawCard()
                     {

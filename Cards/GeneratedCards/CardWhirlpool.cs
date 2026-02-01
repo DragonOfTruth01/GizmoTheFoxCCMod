@@ -52,7 +52,7 @@ internal sealed class CardWhirlpool : Card, IGizmoTheFoxCCModCard, IHasCustomCar
                 {
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b0001
+                        elementBitfieldModifier = AttunementManager.WaterBitMask
                     },
                     new ADrawCard()
                     {
@@ -66,7 +66,7 @@ internal sealed class CardWhirlpool : Card, IGizmoTheFoxCCModCard, IHasCustomCar
                 {
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b0001
+                        elementBitfieldModifier = AttunementManager.WaterBitMask
                     },
                     new ADrawCard()
                     {
@@ -80,7 +80,7 @@ internal sealed class CardWhirlpool : Card, IGizmoTheFoxCCModCard, IHasCustomCar
                 {
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b0001
+                        elementBitfieldModifier = AttunementManager.WaterBitMask
                     },
                     new ADrawCard()
                     {

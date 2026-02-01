@@ -52,7 +52,7 @@ internal sealed class CardTremor : Card, IGizmoTheFoxCCModCard, IHasCustomCardTr
                 {
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b1000
+                        elementBitfieldModifier = AttunementManager.EarthBitMask
                     },
                     new ADrawCard()
                     {
@@ -66,7 +66,7 @@ internal sealed class CardTremor : Card, IGizmoTheFoxCCModCard, IHasCustomCardTr
                 {
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b1000
+                        elementBitfieldModifier = AttunementManager.EarthBitMask
                     },
                     new ADrawCard()
                     {
@@ -80,7 +80,7 @@ internal sealed class CardTremor : Card, IGizmoTheFoxCCModCard, IHasCustomCardTr
                 {
                     new AAttune()
                     {
-                        elementBitfieldModifier = 0b1000
+                        elementBitfieldModifier = AttunementManager.EarthBitMask
                     },
                     new ADrawCard()
                     {
