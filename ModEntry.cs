@@ -34,6 +34,9 @@ public sealed class ModEntry : SimpleMod
     // Custom Card Arts
     internal ISpriteEntry GizmoTheFoxCCMod_Character_DefaultCardBG { get; }
 
+    // Common Cards
+    internal ISpriteEntry GizmoTheFoxCCMod_CardEvocationBG { get; }
+
     // Artifact Arts
 
     // Animation Sprites
@@ -188,6 +191,9 @@ public sealed class ModEntry : SimpleMod
 
         // Custom Card Arts
         GizmoTheFoxCCMod_Character_DefaultCardBG = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/GizmoTheFoxCCMod_character_cardbackground.png"));
+
+        // Common Cards
+        GizmoTheFoxCCMod_CardEvocationBG = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardEvocationBG.png"));
 
         // Artifact Arts
 
