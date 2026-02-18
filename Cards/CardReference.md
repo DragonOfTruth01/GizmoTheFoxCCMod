@@ -4,7 +4,7 @@ This document acts as a reference for which cards are part of this mod.
 
 | Done? | Rarity | Name | Cost | Effect | Upgrade A | Upgrade B |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| Yes (no art) | Common | Evocation | 1 | Add 1 of 4 cantrips to your hand. | Added card has A upgrade. | Added card has B upgrade. |
+| Yes | Common | Evocation | 1 | Add 1 of 4 cantrips to your hand. | Added card has A upgrade. | Added card has B upgrade. |
 | No | Common | Diametric Decoction | 1 | Floppable. Attune earth + wind. / Attune fire + water. | Reduce cost to 0. Attune earth + wind + fire + water. Card gains exhaust. | Card gains recycle. |
 | No | Common | Flame Vortex | 2 | Floppable. Gain 2 wind charge + attune wind / Gain 1 overdrive + attune fire. Then, attack 1. | Both actions attune fire and wind. | Increase damage to 3. |
 | No | Common | Forage | 1 | Attune a random non-attuned element. Draw 2 cards. | Instead draw 4 cards. | Attune two random non-attuned elements. Reduce card draw to 1. | # Note - this could be a numbered action (e.g. Attune 2) - but it should queue individual actions separately to account for possible interruptions when attuning 1, getting a potion, then attuning again
@@ -13,7 +13,7 @@ This document acts as a reference for which cards are part of this mod.
 | Yes (no art) | Common | Conjure Mana Blades | 0 | Add Mana Blade (Fire) and Mana Blade (Ice) to your hand. | Added cards have A upgrade. | Added cards have B upgrade. |
 | Yes (no art) | Common | Prestidigitation | 1 | Floppable. Deal 1 damage. / Gain 1 block. Add 1 of 2 cantrips to your hand. | Instead add 1 of 4 cantrips. | Increase damage by 1. / Add 1 temp shield. |
 | Yes (no art) | Common | Sea Quake | 2 | Floppable. Gain 3 temp shield. Attune water. / Gain 2 shield. Attune earth. | Both actions attune earth and water. | Gain 5 temp shield / 3 shield. |
-| No | Common | Bloodstone Battleaxe | 1 | Deal 1 damage. Attune earth. Increase damage by 1 this combat. | Increase base damage to 2. Add piercing. | Increase cost, base damage, and damage to 2. |
+| No | Common | Bloodstone Battleaxe | 1 | Deal 1 piercing damage. Attune earth. Increase damage by 1 this combat. | Increase base damage by 1. Card gains buoyant. | Card gains recycle and fleeting. |
 ||||||||
 | No | Uncommon | Dimensional Storage | 0 | Move a card from the discard pile to your hand. Exhaust. | Increase cost to 1. Remove exhaust. | Instead move 2 cards from your discard pile to your hand. |
 | No | Uncommon | Imbue | 1 | If attuned earth, gain 1 stun charge. If attuned wind, gain 1 wind charge. If attuned fire, gain 1 overdrive. If attuned water, gain 1 flux. Attack for 0. Exhaust. | Remove attack for 0. Remove exhaust. | Card gains retain. |
