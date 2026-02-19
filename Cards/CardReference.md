@@ -19,7 +19,7 @@ This document acts as a reference for which cards are part of this mod.
 | No | Uncommon | Imbue | 1 | If attuned earth, gain 1 stun charge. If attuned wind, gain 1 wind charge. If attuned fire, gain 1 overdrive. If attuned water, gain 1 flux. Attack for 0. Exhaust. | Remove attack for 0. Remove exhaust. | Card gains retain. |
 | No | Uncommon | Fermented Tincture | 7 | Permanently reduce cost by 1 when drawn. Gain 1 max hull. Single use. Fleeting. | Reduce current cost by 2. | Increase cost by 3 (max 10). Gain 2 max hull instead. |
 | No | Uncommon | Absorb Elements | 1 | Gain 2 temp shield. Gain 1 absorb. | Also gain 1 shield. | Instead gain 4 temp shield. |
-| No | Common | Synthesize | 1 | Attune all unattuned elements. Limited 3. | Remove limited. | Card gains retain. |
+| No | Uncommon | Synthesize | 1 | Attune all unattuned elements. Limited 3. | Remove limited. | Card gains retain. |
 | No | Uncommon | Quick Brew | 1 | Add a random potion to your hand. | Instead add 1 of 2 potions to your hand. | Add 3 random potions to your discard pile. Exhaust. |
 | No | Uncommon | Chromatic Orb | 1 | Attack 0. Increase by 1 for each potion or shimmering potion played this combat. | Also channel a random non-attuned element. | Increase damage to 2. Card gains retain and exhaust. |
 | No | Uncommon | Wild Magic | 1 | Floppable. Move 2 / 4 random. Add 2 random cantrips to your hand. Exhaust. | Reduce cost to 0. | Instead move 1 / 5 random. |
