@@ -8,18 +8,18 @@ This document acts as a reference for which cards are part of this mod.
 | No | Common | Diametric Decoction | 0 |
 | No | Common | Flame Vortex | 0 |
 | No | Common | Forage | 0 |
-| No | Common | Flutter | 0 |
+| No | Common | Flutter | Silhouette of Gizmo darting some direction flying his ornithopter, with magic wind trails around him |
 | No | Common | Magic Missile | 0 |
 | No | Common | Conjure Mana Blades | 0 |
-| No | Common | Prestidigitation | 0 |
+| No | Common | Prestidigitation | Outstetched finger, with a spark at the end of it |
 | No | Common | Sea Quake | 0 |
-| No | Common | Bloodstone Battleaxe | 0 |
+| No | Common | Bloodstone Battleaxe | Gripping an axe with a bloody stone in the center |
 ||||||||
 | No | Uncommon | Dimensional Storage | 0 |
-| No | Uncommon | Imbue | 0 |
+| No | Uncommon | Imbue | Gizmo holding a sword with one hand, and infusing it with purple magic from his hand with the other |
 | No | Uncommon | Fermented Tincture | 0 |
 | No | Uncommon | Absorb Elements | 0 |
-| No | Common | Synthesize | 0 |
+| No | Uncommon | Synthesize | 0 |
 | No | Uncommon | Quick Brew | 0 |
 | No | Uncommon | Chromatic Orb | 0 |
 | No | Uncommon | Wild Magic | 0 |
