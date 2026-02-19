@@ -2,8 +2,8 @@
 
 This document acts as a reference for which cards are part of this mod.
 
-| Done? | Rarity | Name | BG Description | Effect | Upgrade A | Upgrade B |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Done? | Rarity | Name | BG Description
+|:-:|:-:|:-:|:-:|
 | Yes | Common | Evocation | Swirl of all four elements |
 | No | Common | Diametric Decoction | 0 |
 | No | Common | Flame Vortex | 0 |
