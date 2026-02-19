@@ -17,7 +17,7 @@ This document acts as a reference for which cards are part of this mod.
 ||||||||
 | No | Uncommon | Dimensional Storage | 0 | Move a card from the discard pile to your hand. Exhaust. | Increase cost to 1. Remove exhaust. | Instead move 2 cards from your discard pile to your hand. |
 | No | Uncommon | Imbue | 1 | If attuned earth, gain 1 stun charge. If attuned wind, gain 1 wind charge. If attuned fire, gain 1 overdrive. If attuned water, gain 1 flux. Attack for 0. Exhaust. | Remove attack for 0. Remove exhaust. | Card gains retain. |
-| No | Uncommon | Fermented Tincture | 7 | Gain 2 max HP. Permanently reduce cost by 1 when drawn. Single use. Fleeting. | Remove fleeting. | Increase cost by 3 (max 10). Gain 3 max HP instead. |
+| No | Uncommon | Fermented Tincture | 7 | Permanently reduce cost by 1 when drawn. Gain 1 max hull. Single use. Fleeting. | Reduce current cost by 2. | Increase cost by 3 (max 10). Gain 2 max hull instead. |
 | No | Uncommon | Absorb Elements | 1 | Gain 2 temp shield. Gain 1 absorb. | Also gain 1 shield. | Instead gain 4 temp shield. |
 | No | Common | Synthesize | 1 | Attune all unattuned elements. Limited 3. | Remove limited. | Card gains retain. |
 | No | Uncommon | Quick Brew | 1 | Add a random potion to your hand. | Instead add 1 of 2 potions to your hand. | Add 3 random potions to your discard pile. Exhaust. |
