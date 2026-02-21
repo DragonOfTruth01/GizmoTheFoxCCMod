@@ -40,6 +40,7 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_CardPrestidigitationBGBottom { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_CardPrestidigitationBGTopCondensed { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_CardPrestidigitationBGBottomCondensed { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_CardConjureManaBladesBG { get; }
 
     // Artifact Arts
 
@@ -202,6 +203,7 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_CardPrestidigitationBGBottom = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardPrestidigitationBGBottom.png"));
         GizmoTheFoxCCMod_CardPrestidigitationBGTopCondensed = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardPrestidigitationBGTopCondensed.png"));
         GizmoTheFoxCCMod_CardPrestidigitationBGBottomCondensed = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardPrestidigitationBGBottomCondensed.png"));
+        GizmoTheFoxCCMod_CardConjureManaBladesBG = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardConjureManaBladesBG.png"));
 
         // Artifact Arts
 
