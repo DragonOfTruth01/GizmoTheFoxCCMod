@@ -24,7 +24,8 @@ internal sealed class CardPrestidigitation : Card, IGizmoTheFoxCCModCard
     {
         CardData data = new CardData()
         {
-            art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
+            art = upgrade == Upgrade.B ? (flipped ? ModEntry.Instance.GizmoTheFoxCCMod_CardPrestidigitationBGBottomCondensed.Sprite : ModEntry.Instance.GizmoTheFoxCCMod_CardPrestidigitationBGTopCondensed.Sprite)
+                                       : (flipped ? ModEntry.Instance.GizmoTheFoxCCMod_CardPrestidigitationBGBottom.Sprite : ModEntry.Instance.GizmoTheFoxCCMod_CardPrestidigitationBGTop.Sprite),
             cost = 1,
             floppable = true,
             artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Character_CardOverlaySpellCommon.Sprite

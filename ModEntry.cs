@@ -36,6 +36,10 @@ public sealed class ModEntry : SimpleMod
 
     // Common Cards
     internal ISpriteEntry GizmoTheFoxCCMod_CardEvocationBG { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_CardPrestidigitationBGTop { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_CardPrestidigitationBGBottom { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_CardPrestidigitationBGTopCondensed { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_CardPrestidigitationBGBottomCondensed { get; }
 
     // Artifact Arts
 
@@ -194,6 +198,10 @@ public sealed class ModEntry : SimpleMod
 
         // Common Cards
         GizmoTheFoxCCMod_CardEvocationBG = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardEvocationBG.png"));
+        GizmoTheFoxCCMod_CardPrestidigitationBGTop = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardPrestidigitationBGTop.png"));
+        GizmoTheFoxCCMod_CardPrestidigitationBGBottom = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardPrestidigitationBGBottom.png"));
+        GizmoTheFoxCCMod_CardPrestidigitationBGTopCondensed = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardPrestidigitationBGTopCondensed.png"));
+        GizmoTheFoxCCMod_CardPrestidigitationBGBottomCondensed = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardPrestidigitationBGBottomCondensed.png"));
 
         // Artifact Arts
 
