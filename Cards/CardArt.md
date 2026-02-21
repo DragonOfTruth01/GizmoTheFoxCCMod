@@ -11,7 +11,7 @@ This document acts as a reference for which cards are part of this mod.
 | No | Common | Flutter | Silhouette of Gizmo darting some direction flying his ornithopter, with magic wind trails around him |
 | No | Common | Magic Missile | 0 |
 | No | Common | Conjure Mana Blades | 0 |
-| No | Common | Prestidigitation | Outstetched finger, with a spark at the end of it |
+| Yes | Common | Prestidigitation | Outstetched finger, with a spark at the end of it |
 | No | Common | Sea Quake | 0 |
 | No | Common | Bloodstone Battleaxe | Gripping an axe with a bloody stone in the center |
 ||||||||
