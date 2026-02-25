@@ -86,9 +86,10 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_AddCantripA { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AddCantripB { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AddCantripRandom { get; }
-    // Custom Status Icons
 
+    // Custom Status Icons
     internal ISpriteEntry GizmoTheFoxCCMod_Attunement { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_WindCharge { get; }
 
     // Custom Decks
     internal IDeckEntry GizmoTheFoxCCMod_Character_Deck { get; }
@@ -97,6 +98,7 @@ public sealed class ModEntry : SimpleMod
 
     // Custom Statuses
     internal IStatusEntry Attunement { get; }
+    internal IStatusEntry WindCharge { get; }
 
     // Card List Definitions
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_CommonCard_Types { get; } = [
@@ -254,6 +256,7 @@ public sealed class ModEntry : SimpleMod
         // Custom Status Icons
 
         GizmoTheFoxCCMod_Attunement = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/attunement.png"));
+        GizmoTheFoxCCMod_WindCharge = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/windCharge.png"));
 
         // Register Custom Decks
 
@@ -444,7 +447,20 @@ public sealed class ModEntry : SimpleMod
             Name = AnyLocalizations.Bind(["status", "Attunement", "name"]).Localize,
             Description = AnyLocalizations.Bind(["status", "Attunement", "description"]).Localize
         });
+
+        WindCharge = helper.Content.Statuses.RegisterStatus("Wind Charge", new()
+        {
+            Definition = new()
+            {
+                icon = GizmoTheFoxCCMod_WindCharge.Sprite,
+                color = new("ff687d"),
+                isGood = true
+            },
+            Name = AnyLocalizations.Bind(["status", "Wind Charge", "name"]).Localize,
+            Description = AnyLocalizations.Bind(["status", "Wind Charge", "description"]).Localize
+        });
         
         _ = new AttunementManager();
+        _ = new WindChargeManager();
     }
 }

@@ -118,6 +118,10 @@
     "Attunement": {
       "name": "Attunement",
       "description": "Currently <c=boldPink>attuned</c> elements. When all elements are <c=boldPink>attuned</c>, add 1 of 3 <c=boldPink>potions</c> to your hand."
+    },
+    "Wind Charge": {
+      "name": "Wind Charge",
+      "description": "After your next <c=boldPink>{0}</c> attacks, gain 1 <c=status>EVADE</c>. <c=downside>Goes away at the start of your next turn.</c>"
     }
   },
   "condition": {
