@@ -11,7 +11,7 @@ using System.Runtime.CompilerServices;
 using System.Reflection.Metadata;
 
 [HarmonyPatch]
-internal sealed class WindChargeManager : IKokoroApi.IV2.IStatusRenderingApi.IHook
+internal sealed class WindChargeManager : IKokoroApi.IV2.IStatusLogicApi.IHook
 {
     public static ModEntry Instance => ModEntry.Instance;
 
@@ -20,7 +20,7 @@ internal sealed class WindChargeManager : IKokoroApi.IV2.IStatusRenderingApi.IHo
     public WindChargeManager()
     {
         /* We task Kokoro with the job to register our status into the game */
-        Instance.KokoroApi.StatusRendering.RegisterHook(this, 0);
+        Instance.KokoroApi.StatusLogic.RegisterHook(this, 0);
     }
 
     [HarmonyPostfix]
@@ -50,6 +50,14 @@ internal sealed class WindChargeManager : IKokoroApi.IV2.IStatusRenderingApi.IHo
 
     public bool HandleStatusTurnAutoStep(IKokoroApi.IV2.IStatusLogicApi.IHook.IHandleStatusTurnAutoStepArgs args)
     {
+        if( args.Timing == IKokoroApi.IV2.IStatusLogicApi.StatusTurnTriggerTiming.TurnStart
+            && args.Status == Instance.WindCharge.Status
+            && args.Amount > 0)
+        {
+            args.Amount = 0;
+            return false;
+        }
+
         return false;
     }
 
