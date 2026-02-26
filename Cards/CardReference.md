@@ -5,7 +5,7 @@ This document acts as a reference for which cards are part of this mod.
 | Done? | Rarity | Name | Cost | Effect | Upgrade A | Upgrade B |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | Yes | Common | Evocation | 1 | Add 1 of 4 cantrips to your hand. | Added card has A upgrade. | Added card has B upgrade. |
-| No | Common | Diametric Decoction | 1 | Floppable. Attune earth + wind. / Attune fire + water. | Reduce cost to 0. Attune earth + wind + fire + water. Card gains exhaust. | Card gains recycle. |
+| Yes | Common | Diametric Decoction | 1 | Floppable. Attune earth + wind. / Attune fire + water. | Reduce cost to 0. Attune earth + wind + fire + water. Card gains exhaust. | Card gains recycle. |
 | Yes | Common | Flame Vortex | 2 | Floppable. Gain 2 wind charge + attune wind / Gain 1 overdrive + attune fire. Then, attack 1. | Both actions attune fire and wind. | Increase damage to 3. |
 | No | Common | Forage | 1 | Attune a random non-attuned element. Draw 2 cards. | Instead draw 4 cards. | Attune two random non-attuned elements. Reduce card draw to 1. | # Note - this could be a numbered action (e.g. Attune 2) - but it should queue individual actions separately to account for possible interruptions when attuning 1, getting a potion, then attuning again
 | No | Common | Flutter | 0 | Gain 1 wind charge. Attune wind. | Also gain 1 hermes boots. | Instead gain 2 wind charge. Also gain 1 engine stall. |
