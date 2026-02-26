@@ -459,7 +459,7 @@ public sealed class ModEntry : SimpleMod
             Definition = new()
             {
                 icon = GizmoTheFoxCCMod_WindCharge.Sprite,
-                color = new("ff687d"),
+                color = new("14a02e"),
                 isGood = true
             },
             Name = AnyLocalizations.Bind(["status", "Wind Charge", "name"]).Localize,
