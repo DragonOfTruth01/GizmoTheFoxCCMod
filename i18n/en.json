@@ -36,6 +36,14 @@
       "name": "Attune Water and Earth",
       "description": "<c=boldPink>Attune</c> the <c=3e71d6>water</c> and <c=796775>earth</c> elements."
     },
+    "Attune Wind and Fire": {
+      "name": "Attune Wind and Fire",
+      "description": "<c=boldPink>Attune</c> the <c=e74c31>fire</c> and <c=14a02e>wind</c> elements."
+    },
+    "Attune Fire and Wind": {
+      "name": "Attune Fire and Wind",
+      "description": "<c=boldPink>Attune</c> the <c=14a02e>wind</c> and <c=e74c31>fire</c> elements."
+    },
     "Add Cantrip 2": {
       "name": "Add 1 of 2 Cantrips to Hand",
       "description": "Add 1 of 2 <c=card>cantrips</c> to your hand."
@@ -71,6 +79,9 @@
         "A": "Add <c=card>Mana Blade (Fire) A</c> and <c=card>Mana Blade (Ice) A</c> to your hand.",
         "B": "Add <c=card>Mana Blade (Fire) B</c> and <c=card>Mana Blade (Ice) B</c> to your hand."
       }
+    },
+    "Diametric Decoction": {
+      "name": "Diametric Decoction"
     },
     "Evocation": {
       "name" : "Evocation",

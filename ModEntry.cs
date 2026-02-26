@@ -81,6 +81,8 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneWater { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneEarthAndWater { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneWaterAndEarth { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AttuneWindAndFire { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AttuneFireAndWind { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AddCantrip2 { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AddCantrip4 { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AddCantripA { get; }
@@ -103,6 +105,7 @@ public sealed class ModEntry : SimpleMod
     // Card List Definitions
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_CommonCard_Types { get; } = [
         typeof(CardConjureManaBlades),
+        typeof(CardDiametricDecoction),
         typeof(CardEvocation),
         typeof(CardFlameVortex),
         typeof(CardPrestidigitation),
@@ -248,6 +251,8 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_AttuneWater = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneWater.png"));
         GizmoTheFoxCCMod_AttuneEarthAndWater = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneEarthAndWater.png"));
         GizmoTheFoxCCMod_AttuneWaterAndEarth = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneWaterAndEarth.png"));
+        GizmoTheFoxCCMod_AttuneWindAndFire = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneWindAndFire.png"));
+        GizmoTheFoxCCMod_AttuneFireAndWind = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneFireAndWind.png"));
         GizmoTheFoxCCMod_AddCantrip2 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantrip2.png"));
         GizmoTheFoxCCMod_AddCantrip4 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantrip4.png"));
         GizmoTheFoxCCMod_AddCantripA = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantripA.png"));

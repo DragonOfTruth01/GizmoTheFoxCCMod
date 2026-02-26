@@ -97,8 +97,8 @@ internal sealed class CardFlameVortex : Card, IGizmoTheFoxCCModCard
                     },
                     new AAttuneMulti()
                     {
-                        elementBitfieldModifier1 = AttunementManager.WindBitMask,
-                        elementBitfieldModifier2 = AttunementManager.FireBitMask,
+                        elementBitfieldModifier1 = AttunementManager.FireBitMask,
+                        elementBitfieldModifier2 = AttunementManager.WindBitMask,
                         disabled = !flipped
                     },
                     new AAttack()
