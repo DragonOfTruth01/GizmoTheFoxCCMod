@@ -103,19 +103,22 @@ public sealed class ModEntry : SimpleMod
     internal IStatusEntry WindCharge { get; }
 
     // Card List Definitions
-    internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_CommonCard_Types { get; } = [
-        typeof(CardConjureManaBlades),
-        typeof(CardDiametricDecoction),
-        typeof(CardEvocation),
-        typeof(CardFlameVortex),
-        typeof(CardPrestidigitation),
-        typeof(CardSeaQuake),
+    internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_GeneratedCard_Types { get; } = [
         typeof(CardTremor),
         typeof(CardGust),
         typeof(CardFlare),
         typeof(CardWhirlpool),
         typeof(CardManaBladeFire),
         typeof(CardManaBladeIce)
+    ];
+
+    internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_CommonCard_Types { get; } = [
+        typeof(CardConjureManaBlades),
+        typeof(CardDiametricDecoction),
+        typeof(CardEvocation),
+        typeof(CardFlameVortex),
+        typeof(CardPrestidigitation),
+        typeof(CardSeaQuake)
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_UncommonCard_Types { get; } = [
@@ -142,6 +145,7 @@ public sealed class ModEntry : SimpleMod
 
     // Combine all the lists into a single object for reference
     internal static IEnumerable<Type> GizmoTheFoxCCMod_AllCard_Types = [
+        .. GizmoTheFoxCCMod_Character_GeneratedCard_Types,
         .. GizmoTheFoxCCMod_Character_CommonCard_Types,
         .. GizmoTheFoxCCMod_Character_UncommonCard_Types,
         .. GizmoTheFoxCCMod_Character_RareCard_Types,
