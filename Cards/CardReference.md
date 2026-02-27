@@ -63,7 +63,7 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Common (Generated) | Mana Blade (Fire) | 1 | Deal 1 damage. Attune fire. Retain. Exhaust. Temporary. | Increase damage by 1. | Gain 1 stun charge after attack. |
 | Yes | Common (Generated) | Mana Blade (Ice) | 1 | Deal 0 damage. Gain 1 shield. Attune water. Retain. Exhaust. Temporary. | Increase damage by 1. | Also gain 1 temp shield. |
 ||||||||
-| No | Rare (Generated) | Mace of Seasons (Winter) | 1 | Deal 2 damage. Gain 1 shield. Attune water. Add Mace of Seasons (Spring) to your hand. Limited 1. Temporary. | Increase damage to 3. Add pierce. | Card gains retain. Summon B. |
-| No | Rare (Generated) | Mace of Seasons (Spring) | 1 | Deal 2 damage. Gain 1 evade. Attune wind. Add Mace of Seasons (Summer) to your hand. Limited 1. Temporary. | Increase damage to 3. Add pierce. | Card gains retain. Summon B. |
-| No | Rare (Generated) | Mace of Seasons (Summer) | 1 | Deal 2 damage. Stun. Attune fire. Add Mace of Seasons (Autumn) to your hand. Limited 1. Temporary. | Increase damage to 3. Add pierce. | Card gains retain. Summon B. |
-| No | Rare (Generated) | Mace of Seasons (Autumn) | 1 | Gain 1 flux. Deal 2 damage. Attune earth. Add Mace of Seasons (Winter) to your hand. Limited 1. Temporary. | Increase damage to 3. Add pierce. | Card gains retain. Summon B. |
+| No | Rare (Generated) | Mace of Seasons (Winter) | 1 | Deal 2 damage. Gain 1 shield. Attune water. Add Mace of Seasons (Spring) to your hand. Limited 1. Temporary. Immutable. | Increase damage to 3. Add pierce. | Card gains retain. Summon B. |
+| No | Rare (Generated) | Mace of Seasons (Spring) | 1 | Deal 2 damage. Gain 1 evade. Attune wind. Add Mace of Seasons (Summer) to your hand. Limited 1. Temporary. Immutable. | Increase damage to 3. Add pierce. | Card gains retain. Summon B. |
+| No | Rare (Generated) | Mace of Seasons (Summer) | 1 | Deal 2 damage. Stun. Attune fire. Add Mace of Seasons (Autumn) to your hand. Limited 1. Temporary. Immutable. | Increase damage to 3. Add pierce. | Card gains retain. Summon B. |
+| No | Rare (Generated) | Mace of Seasons (Autumn) | 1 | Gain 1 flux. Deal 2 damage. Attune earth. Add Mace of Seasons (Winter) to your hand. Limited 1. Temporary. Immutable. | Increase damage to 3. Add pierce. | Card gains retain. Summon B. |
