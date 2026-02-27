@@ -29,41 +29,41 @@ This document acts as a reference for which cards are part of this mod.
 | No | Rare | Prismatic Wall | 2 | If attuned earth, gain 2 shield. If attuned wind, gain 1 autododge right. If attuned fire, gain 2 temp payback. If attuned water, gain 3 temp shield. Unattune all elements. | No longer unattune elements. | Increase cost to 3. Increase all effects by 1. |
 | No | Rare | Shimmering Solution | 1 | Gain a random shimmering potion. Exhaust. | Reduce cost to 0. | Instead choose 1 of 2 shimmering potions. |
 ||||||||
-| Yes | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 3. Fleeting. | Increase limited to 5. | Also gain 1 temp shield. |
-| Yes | Common (Cantrip) | Gust | 0 | Attune wind. Draw 1 card. Limited 3. Fleeting. | Increase limited to 5. | Also gain 1 temp shield. |
-| Yes | Common (Cantrip) | Flare | 0 | Attune fire. Draw 1 card. Limited 3. Fleeting. | Increase limited to 5. | Also gain 1 temp shield. |
-| Yes | Common (Cantrip) | Whirlpool | 0 | Attune water. Draw 1 card. Limited 3. Fleeting. | Increase limited to 5. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 3. Fleeting. Temporary. | Increase limited to 5. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Gust | 0 | Attune wind. Draw 1 card. Limited 3. Fleeting. Temporary. | Increase limited to 5. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Flare | 0 | Attune fire. Draw 1 card. Limited 3. Fleeting. Temporary. | Increase limited to 5. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Whirlpool | 0 | Attune water. Draw 1 card. Limited 3. Fleeting. Temporary. | Increase limited to 5. | Also gain 1 temp shield. |
 ||||||||
-| No | Uncommon (Potion) | Name | 0 | Deal 3 damage. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Gain 2 flux. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Gain 1 overdrive. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Draw 3 cards. |  |  |
-| Yes | Uncommon (Potion) | Potion of Haste | 0 | Gain 1 energy. Draw 1 card. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Move 3 flippable. |  |  |
-| Yes | Uncommon (Potion) | Flashbang | 0 | Deal 1 damage. Stun. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Gain 2 hermes boots. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Gain 2 evade. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Gain 3 block. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Gain 1 boost. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Gain 2 temp payback. |  |  |
-| Yes | Uncommon (Potion) | Ice Bomb | 0 | Deal 0 damage. Apply 1 engine lock. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Deal 3 damage. Temporary. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Gain 2 flux. Temporary. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Gain 1 overdrive. Temporary. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Draw 3 cards. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Potion of Haste | 0 | Gain 1 energy. Draw 1 card. Temporary. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Move 3 flippable. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Flashbang | 0 | Deal 1 damage. Stun. Temporary. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Gain 2 hermes boots. Temporary. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Gain 2 evade. Temporary. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Gain 3 block. Temporary. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Gain 1 boost. Temporary. |  |  |
+| No | Uncommon (Potion) | Name | 0 | Gain 2 temp payback. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Ice Bomb | 0 | Deal 0 damage. Apply 1 engine lock. Temporary. |  |  |
 ||||||||
-| No | Rare (Shimmering Potion) | Name | 0 | Gain 1 powerdrive. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Deal 9 damage. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Deal 0 damage. Apply 2 corrode. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Deal 2 x 3 piercing damage. |  |  | # Potion of Dragon's Breath?
-| No | Rare (Shimmering Potion) | Name | 0 | Gain 1 stun source. Gain 1 stun charge. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Gain 1 perfect shield. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Gain 3 max shield. Gain 3 shield. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Gain 12 temp shield. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Gain 1 ace. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Gain 3 energy. Draw 3 cards. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Add 3 random potions to your hand. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Gain 1 powerdrive. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Deal 9 damage. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Deal 0 damage. Apply 2 corrode. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Deal 2 x 3 piercing damage. Temporary. |  |  | # Potion of Dragon's Breath?
+| No | Rare (Shimmering Potion) | Name | 0 | Gain 1 stun source. Gain 1 stun charge. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Gain 1 perfect shield. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Gain 3 max shield. Gain 3 shield. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Gain 12 temp shield. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Gain 1 ace. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Gain 3 energy. Draw 3 cards. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Add 3 random potions to your hand. Temporary. |  |  |
 ||||||||
-| Yes | Common (Generated) | Mana Blade (Fire) | 1 | Deal 1 damage. Attune fire. Retain. Exhaust. | Increase damage by 1. | Gain 1 stun charge after attack. |
-| Yes | Common (Generated) | Mana Blade (Ice) | 1 | Deal 0 damage. Gain 1 shield. Attune water. Retain. Exhaust. | Increase damage by 1. | Also gain 1 temp shield. |
+| Yes | Common (Generated) | Mana Blade (Fire) | 1 | Deal 1 damage. Attune fire. Retain. Exhaust. Temporary. | Increase damage by 1. | Gain 1 stun charge after attack. |
+| Yes | Common (Generated) | Mana Blade (Ice) | 1 | Deal 0 damage. Gain 1 shield. Attune water. Retain. Exhaust. Temporary. | Increase damage by 1. | Also gain 1 temp shield. |
 ||||||||
-| No | Rare (Generated) | Mace of Seasons (Winter) | 1 | Deal 2 damage. Gain 1 shield. Attune water. Add Mace of Seasons (Spring) to your hand. Limited 1. | Increase damage to 3. Add pierce. | Card gains retain. Summon B. |
-| No | Rare (Generated) | Mace of Seasons (Spring) | 1 | Deal 2 damage. Gain 1 evade. Attune wind. Add Mace of Seasons (Summer) to your hand. Limited 1. | Increase damage to 3. Add pierce. | Card gains retain. Summon B. |
-| No | Rare (Generated) | Mace of Seasons (Summer) | 1 | Deal 2 damage. Stun. Attune fire. Add Mace of Seasons (Autumn) to your hand. Limited 1. | Increase damage to 3. Add pierce. | Card gains retain. Summon B. |
-| No | Rare (Generated) | Mace of Seasons (Autumn) | 1 | Gain 1 flux. Deal 2 damage. Attune earth. Add Mace of Seasons (Winter) to your hand. Limited 1. | Increase damage to 3. Add pierce. | Card gains retain. Summon B. |
+| No | Rare (Generated) | Mace of Seasons (Winter) | 1 | Deal 2 damage. Gain 1 shield. Attune water. Add Mace of Seasons (Spring) to your hand. Limited 1. Temporary. | Increase damage to 3. Add pierce. | Card gains retain. Summon B. |
+| No | Rare (Generated) | Mace of Seasons (Spring) | 1 | Deal 2 damage. Gain 1 evade. Attune wind. Add Mace of Seasons (Summer) to your hand. Limited 1. Temporary. | Increase damage to 3. Add pierce. | Card gains retain. Summon B. |
+| No | Rare (Generated) | Mace of Seasons (Summer) | 1 | Deal 2 damage. Stun. Attune fire. Add Mace of Seasons (Autumn) to your hand. Limited 1. Temporary. | Increase damage to 3. Add pierce. | Card gains retain. Summon B. |
+| No | Rare (Generated) | Mace of Seasons (Autumn) | 1 | Gain 1 flux. Deal 2 damage. Attune earth. Add Mace of Seasons (Winter) to your hand. Limited 1. Temporary. | Increase damage to 3. Add pierce. | Card gains retain. Summon B. |
