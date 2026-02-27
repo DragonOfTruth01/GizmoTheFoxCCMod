@@ -137,7 +137,8 @@ internal sealed class CardFlameVortex : Card, IGizmoTheFoxCCModCard
                     },
                     new AAttack()
                     {
-                        damage = GetDmg(s, 3)
+                        damage = GetDmg(s, 2),
+                        piercing = true
                     }
                 };
                 break;
