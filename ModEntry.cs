@@ -79,6 +79,7 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneWind { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneFire { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneWater { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AttuneRandom { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneEarthAndWater { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneWaterAndEarth { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneWindAndFire { get; }
@@ -253,6 +254,7 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_AttuneWind = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneWind.png"));
         GizmoTheFoxCCMod_AttuneFire = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneFire.png"));
         GizmoTheFoxCCMod_AttuneWater = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneWater.png"));
+        GizmoTheFoxCCMod_AttuneRandom = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneRandom.png"));
         GizmoTheFoxCCMod_AttuneEarthAndWater = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneEarthAndWater.png"));
         GizmoTheFoxCCMod_AttuneWaterAndEarth = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneWaterAndEarth.png"));
         GizmoTheFoxCCMod_AttuneWindAndFire = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneWindAndFire.png"));

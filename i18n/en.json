@@ -28,6 +28,10 @@
       "name": "Attune Water",
       "description": "<c=boldPink>Attune</c> the <c=3e71d6>water</c> element."
     },
+    "Attune Random": {
+      "name": "Attune Random",
+      "description": "<c=boldPink>Attune</c> a random element <c=boldPink>{{execCountString}}</c> times."
+    },
     "Attune Earth and Water": {
       "name": "Attune Earth and Water",
       "description": "<c=boldPink>Attune</c> the <c=796775>earth</c> and <c=3e71d6>water</c> elements."
