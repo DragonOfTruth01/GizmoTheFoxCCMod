@@ -46,23 +46,23 @@
     },
     "Add Cantrip 2": {
       "name": "Add 1 of 2 Cantrips to Hand",
-      "description": "Add 1 of 2 <c=card>cantrips</c> to your hand."
+      "description": "Add 1 of 2 <c=card>cantrips</c> to your hand <c=boldPink>{{execCountString}}</c> times."
     },
     "Add Cantrip 4": {
       "name": "Add 1 of 4 Cantrips to Hand",
-      "description": "Add 1 of 4 <c=card>cantrips</c> to your hand."
+      "description": "Add 1 of 4 <c=card>cantrips</c> to your hand <c=boldPink>{{execCountString}}</c> times."
     },
     "Add Cantrip A": {
       "name": "Add 1 of 4 Cantrips A to Hand",
-      "description": "Add 1 of 4 <c=card>cantrips</c> with <c=cardtrait>A upgrade</c> to your hand."
+      "description": "Add 1 of 4 <c=card>cantrips</c> with <c=cardtrait>A upgrade</c> to your hand <c=boldPink>{{execCountString}}</c> times."
     },
     "Add Cantrip B": {
       "name": "Add 1 of 4 Cantrips B to Hand",
-      "description": "Add 1 of 4 <c=card>cantrips</c> with <c=cardtrait>B upgrade</c> to your hand."
+      "description": "Add 1 of 4 <c=card>cantrips</c> with <c=cardtrait>B upgrade</c> to your hand <c=boldPink>{{execCountString}}</c> times."
     },
     "Add Cantrip Random": {
       "name": "Add Random Cantrip to Hand",
-      "description": "Add {{execCountString}} random <c=card>cantrips</c> to your hand."
+      "description": "Add <c=boldPink>{{execCountString}}</c> random <c=card>cantrips</c> to your hand."
     }
   },
   "artifact": {
