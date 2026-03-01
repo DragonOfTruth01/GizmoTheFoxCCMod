@@ -116,6 +116,9 @@
     "Ice Bomb": {
       "name": "Ice Bomb"
     },
+    "Magic Missile": {
+      "name": "Magic Missile"
+    },
     "Mana Blade (Fire)": {
       "name": "Mana Blade (Fire)"
     },
@@ -146,6 +149,10 @@
     "Wind Charge": {
       "name": "Wind Charge",
       "description": "After your next <c=boldPink>{0}</c> attacks, gain 1 <c=status>EVADE</c>. <c=downside>Goes away at the start of your next turn.</c>"
+    },
+    "AttunementCount": {
+      "name": "Attuned Elements",
+      "description": "The number of elements that are currently <c=boldPink>attuned</c>."
     }
   },
   "condition": {

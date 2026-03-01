@@ -102,6 +102,7 @@ public sealed class ModEntry : SimpleMod
     // Custom Statuses
     internal IStatusEntry Attunement { get; }
     internal IStatusEntry WindCharge { get; }
+    internal IStatusEntry AttunementCount { get; }
 
     // Card List Definitions
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_GeneratedCard_Types { get; } = [
@@ -120,6 +121,7 @@ public sealed class ModEntry : SimpleMod
         typeof(CardFlameVortex),
         typeof(CardFlutter),
         typeof(CardForage),
+        typeof(CardMagicMissile),
         typeof(CardPrestidigitation),
         typeof(CardSeaQuake)
     ];
@@ -472,6 +474,19 @@ public sealed class ModEntry : SimpleMod
             },
             Name = AnyLocalizations.Bind(["status", "Wind Charge", "name"]).Localize,
             Description = AnyLocalizations.Bind(["status", "Wind Charge", "description"]).Localize
+        });
+
+        // Unused status to represent the number of elements attuned
+        AttunementCount = helper.Content.Statuses.RegisterStatus("AttunementCount", new()
+        {
+            Definition = new()
+            {
+                icon = GizmoTheFoxCCMod_Attunement.Sprite,
+                color = new("ff687d"),
+                isGood = true
+            },
+            Name = AnyLocalizations.Bind(["status", "AttunementCount", "name"]).Localize,
+            Description = AnyLocalizations.Bind(["status", "AttunementCount", "description"]).Localize
         });
         
         _ = new AttunementManager();
