@@ -118,6 +118,7 @@ public sealed class ModEntry : SimpleMod
         typeof(CardDiametricDecoction),
         typeof(CardEvocation),
         typeof(CardFlameVortex),
+        typeof(CardFlutter),
         typeof(CardForage),
         typeof(CardPrestidigitation),
         typeof(CardSeaQuake)

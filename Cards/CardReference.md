@@ -8,7 +8,7 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Common | Diametric Decoction | 1 | Floppable. Attune earth + wind. / Attune fire + water. | Reduce cost to 0. Attune earth + wind + fire + water. Card gains exhaust. | Card gains recycle. |
 | Yes | Common | Flame Vortex | 2 | Floppable. Gain 2 wind charge + attune wind / Gain 1 overdrive + attune fire. Then, attack 1. | Both actions attune fire and wind. | Increase damage to 2 and pierce. |
 | Yes | Common | Forage | 1 | Attune a random non-attuned element. Draw 2 cards. | Instead draw 3 cards. | Attune two random non-attuned elements. | # Note - this could be a numbered action (e.g. Attune 2) - but it should queue individual actions separately to account for possible interruptions when attuning 1, getting a potion, then attuning again
-| No | Common | Flutter | 0 | Gain 1 wind charge. Attune wind. | Also gain 1 hermes boots. | Instead gain 2 wind charge. Also gain 1 engine stall. |
+| Yes | Common | Flutter | 0 | Move 1 random. Gain 1 wind charge. Attune wind. | Also gain 1 hermes boots. | Instead gain 2 wind charge. Also gain 1 engine stall. |
 | No | Common | Magic Missile | 1 | Attack 1. Repeat this attack if attuned 1/2/3 elements. Un-attune one element at random. | No longer un-attune a random element. | All attacks gain piercing. |
 | Yes | Common | Conjure Mana Blades | 0 | Add Mana Blade (Fire) and Mana Blade (Ice) to your hand. | Added cards have A upgrade. | Added cards have B upgrade. |
 | Yes | Common | Prestidigitation | 1 | Floppable. Deal 1 damage. / Gain 1 block. Add 1 of 2 cantrips to your hand. | Instead add 1 of 4 cantrips. | Increase damage by 1. / Add 1 temp shield. |
