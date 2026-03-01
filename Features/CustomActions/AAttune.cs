@@ -12,6 +12,8 @@ public sealed class AAttune : CardAction // NOTE: This should only be used to at
 
     public override void Begin(G g, State s, Combat c)
     {
+        timer = 0.0f;
+
         int currAttunement = s.ship.Get(ModEntry.Instance.Attunement.Status);
         int newAttunement = currAttunement | elementBitfieldModifier;
 

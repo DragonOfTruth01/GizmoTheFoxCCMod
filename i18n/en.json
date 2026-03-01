@@ -28,6 +28,10 @@
       "name": "Attune Water",
       "description": "<c=boldPink>Attune</c> the <c=3e71d6>water</c> element."
     },
+    "Attune Random": {
+      "name": "Attune Random",
+      "description": "<c=boldPink>Attune</c> a random element <c=boldPink>{{execCountString}}</c> times."
+    },
     "Attune Earth and Water": {
       "name": "Attune Earth and Water",
       "description": "<c=boldPink>Attune</c> the <c=796775>earth</c> and <c=3e71d6>water</c> elements."
@@ -36,25 +40,33 @@
       "name": "Attune Water and Earth",
       "description": "<c=boldPink>Attune</c> the <c=3e71d6>water</c> and <c=796775>earth</c> elements."
     },
+    "Attune Wind and Fire": {
+      "name": "Attune Wind and Fire",
+      "description": "<c=boldPink>Attune</c> the <c=e74c31>fire</c> and <c=14a02e>wind</c> elements."
+    },
+    "Attune Fire and Wind": {
+      "name": "Attune Fire and Wind",
+      "description": "<c=boldPink>Attune</c> the <c=14a02e>wind</c> and <c=e74c31>fire</c> elements."
+    },
     "Add Cantrip 2": {
       "name": "Add 1 of 2 Cantrips to Hand",
-      "description": "Add 1 of 2 <c=card>cantrips</c> to your hand."
+      "description": "Add 1 of 2 <c=card>cantrips</c> to your hand <c=boldPink>{{execCountString}}</c> times."
     },
     "Add Cantrip 4": {
       "name": "Add 1 of 4 Cantrips to Hand",
-      "description": "Add 1 of 4 <c=card>cantrips</c> to your hand."
+      "description": "Add 1 of 4 <c=card>cantrips</c> to your hand <c=boldPink>{{execCountString}}</c> times."
     },
     "Add Cantrip A": {
       "name": "Add 1 of 4 Cantrips A to Hand",
-      "description": "Add 1 of 4 <c=card>cantrips</c> with <c=cardtrait>A upgrade</c> to your hand."
+      "description": "Add 1 of 4 <c=card>cantrips</c> with <c=cardtrait>A upgrade</c> to your hand <c=boldPink>{{execCountString}}</c> times."
     },
     "Add Cantrip B": {
       "name": "Add 1 of 4 Cantrips B to Hand",
-      "description": "Add 1 of 4 <c=card>cantrips</c> with <c=cardtrait>B upgrade</c> to your hand."
+      "description": "Add 1 of 4 <c=card>cantrips</c> with <c=cardtrait>B upgrade</c> to your hand <c=boldPink>{{execCountString}}</c> times."
     },
     "Add Cantrip Random": {
       "name": "Add Random Cantrip to Hand",
-      "description": "Add {{execCountString}} random <c=card>cantrips</c> to your hand."
+      "description": "Add <c=boldPink>{{execCountString}}</c> random <c=card>cantrips</c> to your hand."
     }
   },
   "artifact": {
@@ -64,6 +76,14 @@
     }
   },
   "card": {
+    "Bloodstone Battleaxe": {
+      "name": "Bloodstone Battleaxe",
+      "description": {
+        "None": "Deal <c=boldPink>{{damageCalc}}</c> <c=keyword>pierce</c> dmg. <c=boldPink>Attune</c> <c=796775>earth</c>. Increase damage by 1.",
+        "A": "Deal <c=boldPink>{{damageCalc}}</c> <c=keyword>pierce</c> dmg. <c=boldPink>Attune</c> <c=796775>earth</c>. Increase damage by 1.",
+        "B": "Deal <c=boldPink>{{damageCalc}}</c> <c=keyword>pierce</c> dmg. <c=boldPink>Attune</c> <c=796775>earth</c>. Increase damage by 2."
+      }
+    },
     "Conjure Mana Blades": {
       "name": "Conjure Mana Blades",
       "description": {
@@ -71,6 +91,9 @@
         "A": "Add <c=card>Mana Blade (Fire) A</c> and <c=card>Mana Blade (Ice) A</c> to your hand.",
         "B": "Add <c=card>Mana Blade (Fire) B</c> and <c=card>Mana Blade (Ice) B</c> to your hand."
       }
+    },
+    "Diametric Decoction": {
+      "name": "Diametric Decoction"
     },
     "Evocation": {
       "name" : "Evocation",
@@ -80,17 +103,29 @@
         "B": "Add 1 of 4 <c=card>cantrips</c> with <c=cardtrait>B upgrade</c> to your hand."
       }
     },
+    "Flame Vortex": {
+      "name": "Flame Vortex"
+    },
     "Flare": {
       "name": "Flare"
     },
     "Flashbang": {
       "name": "Flashbang"
     },
+    "Flutter": {
+      "name": "Flutter"
+    },
+    "Forage": {
+      "name": "Forage"
+    },
     "Gust": {
       "name": "Gust"
     },
     "Ice Bomb": {
       "name": "Ice Bomb"
+    },
+    "Magic Missile": {
+      "name": "Magic Missile"
     },
     "Mana Blade (Fire)": {
       "name": "Mana Blade (Fire)"
@@ -118,6 +153,14 @@
     "Attunement": {
       "name": "Attunement",
       "description": "Currently <c=boldPink>attuned</c> elements. When all elements are <c=boldPink>attuned</c>, add 1 of 3 <c=boldPink>potions</c> to your hand."
+    },
+    "Wind Charge": {
+      "name": "Wind Charge",
+      "description": "After your next <c=boldPink>{0}</c> attacks, gain 1 <c=status>EVADE</c>. <c=downside>Goes away at the start of your next turn.</c>"
+    },
+    "AttunementCount": {
+      "name": "Attuned Elements",
+      "description": "The number of elements that are currently <c=boldPink>attuned</c>."
     }
   },
   "condition": {

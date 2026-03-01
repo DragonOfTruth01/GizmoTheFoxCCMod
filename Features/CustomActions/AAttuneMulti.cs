@@ -52,6 +52,30 @@ public sealed class AAttuneMulti : DynamicWidthCardAction
                     }
                 ];
         }
+        else if(elementBitfieldModifier1 == AttunementManager.WindBitMask && elementBitfieldModifier2 == AttunementManager.FireBitMask)
+        {
+            return [
+                    new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AttuneWindAndFire")
+                    {
+                        Icon = ModEntry.Instance.GizmoTheFoxCCMod_AttuneWindAndFire.Sprite,
+                        TitleColor = Colors.action,
+                        Title = ModEntry.Instance.Localizations.Localize(["action", "Attune Wind and Fire", "name"]),
+                        Description = ModEntry.Instance.Localizations.Localize(["action", "Attune Wind and Fire", "description"])
+                    }
+                ];
+        }
+        else if(elementBitfieldModifier1 == AttunementManager.FireBitMask && elementBitfieldModifier2 == AttunementManager.WindBitMask)
+        {
+            return [
+                    new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AttuneFireAndWind")
+                    {
+                        Icon = ModEntry.Instance.GizmoTheFoxCCMod_AttuneFireAndWind.Sprite,
+                        TitleColor = Colors.action,
+                        Title = ModEntry.Instance.Localizations.Localize(["action", "Attune Fire and Wind", "name"]),
+                        Description = ModEntry.Instance.Localizations.Localize(["action", "Attune Fire and Wind", "description"])
+                    }
+                ];
+        }
         else
         {
             return new List<Tooltip>();
@@ -67,6 +91,14 @@ public sealed class AAttuneMulti : DynamicWidthCardAction
         else if(elementBitfieldModifier1 == AttunementManager.WaterBitMask && elementBitfieldModifier2 == AttunementManager.EarthBitMask)
         {
             return ModEntry.Instance.GizmoTheFoxCCMod_AttuneWaterAndEarth.Sprite; 
+        }
+        else if(elementBitfieldModifier1 == AttunementManager.WindBitMask && elementBitfieldModifier2 == AttunementManager.FireBitMask)
+        {
+            return ModEntry.Instance.GizmoTheFoxCCMod_AttuneWindAndFire.Sprite; 
+        }
+        else if(elementBitfieldModifier1 == AttunementManager.FireBitMask && elementBitfieldModifier2 == AttunementManager.WindBitMask)
+        {
+            return ModEntry.Instance.GizmoTheFoxCCMod_AttuneFireAndWind.Sprite; 
         }
         else
         {

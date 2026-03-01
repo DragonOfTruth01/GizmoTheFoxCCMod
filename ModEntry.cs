@@ -34,6 +34,14 @@ public sealed class ModEntry : SimpleMod
     // Custom Card Arts
     internal ISpriteEntry GizmoTheFoxCCMod_Character_DefaultCardBG { get; }
 
+    // Common Cards
+    internal ISpriteEntry GizmoTheFoxCCMod_CardEvocationBG { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_CardPrestidigitationBGTop { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_CardPrestidigitationBGBottom { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_CardPrestidigitationBGTopCondensed { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_CardPrestidigitationBGBottomCondensed { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_CardConjureManaBladesBG { get; }
+
     // Artifact Arts
 
     // Animation Sprites
@@ -71,16 +79,20 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneWind { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneFire { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneWater { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AttuneRandom { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneEarthAndWater { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneWaterAndEarth { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AttuneWindAndFire { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AttuneFireAndWind { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AddCantrip2 { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AddCantrip4 { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AddCantripA { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AddCantripB { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AddCantripRandom { get; }
-    // Custom Status Icons
 
+    // Custom Status Icons
     internal ISpriteEntry GizmoTheFoxCCMod_Attunement { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_WindCharge { get; }
 
     // Custom Decks
     internal IDeckEntry GizmoTheFoxCCMod_Character_Deck { get; }
@@ -89,19 +101,30 @@ public sealed class ModEntry : SimpleMod
 
     // Custom Statuses
     internal IStatusEntry Attunement { get; }
+    internal IStatusEntry WindCharge { get; }
+    internal IStatusEntry AttunementCount { get; }
 
     // Card List Definitions
-    internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_CommonCard_Types { get; } = [
-        typeof(CardConjureManaBlades),
-        typeof(CardEvocation),
-        typeof(CardPrestidigitation),
-        typeof(CardSeaQuake),
+    internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_GeneratedCard_Types { get; } = [
         typeof(CardTremor),
         typeof(CardGust),
         typeof(CardFlare),
         typeof(CardWhirlpool),
         typeof(CardManaBladeFire),
         typeof(CardManaBladeIce)
+    ];
+
+    internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_CommonCard_Types { get; } = [
+        typeof(CardBloodstoneBattleaxe),
+        typeof(CardConjureManaBlades),
+        typeof(CardDiametricDecoction),
+        typeof(CardEvocation),
+        typeof(CardFlameVortex),
+        typeof(CardFlutter),
+        typeof(CardForage),
+        typeof(CardMagicMissile),
+        typeof(CardPrestidigitation),
+        typeof(CardSeaQuake)
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_UncommonCard_Types { get; } = [
@@ -128,6 +151,7 @@ public sealed class ModEntry : SimpleMod
 
     // Combine all the lists into a single object for reference
     internal static IEnumerable<Type> GizmoTheFoxCCMod_AllCard_Types = [
+        .. GizmoTheFoxCCMod_Character_GeneratedCard_Types,
         .. GizmoTheFoxCCMod_Character_CommonCard_Types,
         .. GizmoTheFoxCCMod_Character_UncommonCard_Types,
         .. GizmoTheFoxCCMod_Character_RareCard_Types,
@@ -189,6 +213,14 @@ public sealed class ModEntry : SimpleMod
         // Custom Card Arts
         GizmoTheFoxCCMod_Character_DefaultCardBG = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/GizmoTheFoxCCMod_character_cardbackground.png"));
 
+        // Common Cards
+        GizmoTheFoxCCMod_CardEvocationBG = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardEvocationBG.png"));
+        GizmoTheFoxCCMod_CardPrestidigitationBGTop = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardPrestidigitationBGTop.png"));
+        GizmoTheFoxCCMod_CardPrestidigitationBGBottom = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardPrestidigitationBGBottom.png"));
+        GizmoTheFoxCCMod_CardPrestidigitationBGTopCondensed = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardPrestidigitationBGTopCondensed.png"));
+        GizmoTheFoxCCMod_CardPrestidigitationBGBottomCondensed = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardPrestidigitationBGBottomCondensed.png"));
+        GizmoTheFoxCCMod_CardConjureManaBladesBG = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardConjureManaBladesBG.png"));
+
         // Artifact Arts
 
         // Animation Sprites
@@ -227,8 +259,11 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_AttuneWind = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneWind.png"));
         GizmoTheFoxCCMod_AttuneFire = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneFire.png"));
         GizmoTheFoxCCMod_AttuneWater = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneWater.png"));
+        GizmoTheFoxCCMod_AttuneRandom = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneRandom.png"));
         GizmoTheFoxCCMod_AttuneEarthAndWater = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneEarthAndWater.png"));
         GizmoTheFoxCCMod_AttuneWaterAndEarth = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneWaterAndEarth.png"));
+        GizmoTheFoxCCMod_AttuneWindAndFire = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneWindAndFire.png"));
+        GizmoTheFoxCCMod_AttuneFireAndWind = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneFireAndWind.png"));
         GizmoTheFoxCCMod_AddCantrip2 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantrip2.png"));
         GizmoTheFoxCCMod_AddCantrip4 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantrip4.png"));
         GizmoTheFoxCCMod_AddCantripA = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantripA.png"));
@@ -238,6 +273,7 @@ public sealed class ModEntry : SimpleMod
         // Custom Status Icons
 
         GizmoTheFoxCCMod_Attunement = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/attunement.png"));
+        GizmoTheFoxCCMod_WindCharge = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/windCharge.png"));
 
         // Register Custom Decks
 
@@ -428,7 +464,33 @@ public sealed class ModEntry : SimpleMod
             Name = AnyLocalizations.Bind(["status", "Attunement", "name"]).Localize,
             Description = AnyLocalizations.Bind(["status", "Attunement", "description"]).Localize
         });
+
+        WindCharge = helper.Content.Statuses.RegisterStatus("Wind Charge", new()
+        {
+            Definition = new()
+            {
+                icon = GizmoTheFoxCCMod_WindCharge.Sprite,
+                color = new("14a02e"),
+                isGood = true
+            },
+            Name = AnyLocalizations.Bind(["status", "Wind Charge", "name"]).Localize,
+            Description = AnyLocalizations.Bind(["status", "Wind Charge", "description"]).Localize
+        });
+
+        // Unused status to represent the number of elements attuned
+        AttunementCount = helper.Content.Statuses.RegisterStatus("AttunementCount", new()
+        {
+            Definition = new()
+            {
+                icon = GizmoTheFoxCCMod_Attunement.Sprite,
+                color = new("ff687d"),
+                isGood = true
+            },
+            Name = AnyLocalizations.Bind(["status", "AttunementCount", "name"]).Localize,
+            Description = AnyLocalizations.Bind(["status", "AttunementCount", "description"]).Localize
+        });
         
         _ = new AttunementManager();
+        _ = new WindChargeManager();
     }
 }
