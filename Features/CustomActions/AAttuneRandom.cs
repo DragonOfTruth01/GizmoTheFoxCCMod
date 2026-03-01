@@ -52,17 +52,16 @@ public sealed class AAttuneRandom : CardAction
 
     public override List<Tooltip> GetTooltips(State s)
         => [
-            new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AttuneEarth")
+            new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AttuneRandom")
             {
-                Icon = ModEntry.Instance.GizmoTheFoxCCMod_AttuneEarth.Sprite,
+                Icon = ModEntry.Instance.GizmoTheFoxCCMod_AttuneRandom.Sprite,
                 TitleColor = Colors.action,
-                Title = ModEntry.Instance.Localizations.Localize(["action", "Attune Earth", "name"]),
-                Description = ModEntry.Instance.Localizations.Localize(["action", "Attune Earth", "description"])
-            }
-        ];
+                Title = ModEntry.Instance.Localizations.Localize(["action", "Attune Random", "name"]),
+                Description = ModEntry.Instance.Localizations.Localize(["action", "Attune Random", "description"], new { execCountString = 1 })
+            }];
 
     private Spr GetStatusIcon()
     {
-        return ModEntry.Instance.GizmoTheFoxCCMod_AttuneEarth.Sprite;
+        return ModEntry.Instance.GizmoTheFoxCCMod_AttuneRandom.Sprite;
     }
 }
