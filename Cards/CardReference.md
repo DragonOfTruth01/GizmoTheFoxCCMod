@@ -13,7 +13,7 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Common | Conjure Mana Blades | 0 | Add Mana Blade (Fire) and Mana Blade (Ice) to your hand. | Added cards have A upgrade. | Added cards have B upgrade. |
 | Yes | Common | Prestidigitation | 1 | Floppable. Deal 1 damage. / Gain 1 block. Add 1 of 2 cantrips to your hand. | Instead add 1 of 4 cantrips. | Increase damage by 1. / Add 1 temp shield. |
 | Yes | Common | Sea Quake | 2 | Floppable. Gain 3 temp shield. Attune water. / Gain 2 shield. Attune earth. | Both actions attune earth and water. | Gain 5 temp shield / 3 shield. |
-| No | Common | Bloodstone Battleaxe | 1 | Deal 1 piercing damage. Attune earth. Increase damage by 1 this combat. | Increase base damage by 1. Card gains buoyant. | Card gains recycle and fleeting. |
+| Yes | Common | Bloodstone Battleaxe | 1 | Deal 1 piercing damage. Attune earth. Increase damage by 1 this combat. | Increase base damage by 1. Card gains buoyant. | Increase card's base damage, cost, and damage increase to 2. |
 ||||||||
 | No | Uncommon | Dimensional Storage | 0 | Move a card from the discard pile to your hand. Exhaust. | Increase cost to 1. Remove exhaust. | Instead move 2 cards from your discard pile to your hand. |
 | No | Uncommon | Imbue | 1 | If attuned earth, gain 1 stun charge. If attuned wind, gain 1 wind charge. If attuned fire, gain 1 overdrive. If attuned water, gain 1 flux. Attack for 0. Exhaust. | Remove attack for 0. Remove exhaust. | Card gains retain. |
