@@ -10,6 +10,8 @@ public sealed class AAttuneRandom : CardAction
 {
     public override void Begin(G g, State s, Combat c)
     {
+        timer = 0.0f;
+
         int currAttunement = s.ship.Get(ModEntry.Instance.Attunement.Status);
         List<int> elementSelectionlist = new List<int>();
         List<int> masks = new List<int>{AttunementManager.EarthBitMask,

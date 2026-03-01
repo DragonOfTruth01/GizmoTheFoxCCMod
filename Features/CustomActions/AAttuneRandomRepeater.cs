@@ -15,9 +15,11 @@ public sealed class AAttuneRandomRepeater : CardAction
 
     public override void Begin(G g, State s, Combat c)
     {
+        timer = 0.0f;
+
         for(int i = 0; i < execCount; ++i)
         {
-            c.Queue(new AAttuneRandom());
+            c.QueueImmediate(new AAttuneRandom());
         }
     }
 
