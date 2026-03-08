@@ -75,6 +75,38 @@ internal sealed class CardSeaQuake : Card, IGizmoTheFoxCCModCard
                     new AStatus()
                     {
                         status = Status.tempShield,
+                        statusAmount = 5,
+                        targetPlayer = true,
+                        disabled = flipped
+                    },
+                    new AAttune()
+                    {
+                        elementBitfieldModifier = AttunementManager.WaterBitMask,
+                        disabled = flipped
+                    },
+                    new ADummyAction(),
+                    new AStatus()
+                    {
+                        status = Status.shield,
+                        statusAmount = 3,
+                        targetPlayer = true,
+                        disabled = !flipped
+                    },
+                    new AAttune()
+                    {
+                        elementBitfieldModifier = AttunementManager.EarthBitMask,
+                        disabled = !flipped
+                    }
+                };
+                
+                break;
+
+            case Upgrade.B:
+                actions = new()
+                {
+                    new AStatus()
+                    {
+                        status = Status.tempShield,
                         statusAmount = 3,
                         targetPlayer = true,
                         disabled = flipped
@@ -99,37 +131,6 @@ internal sealed class CardSeaQuake : Card, IGizmoTheFoxCCModCard
                         elementBitfieldModifier2 = AttunementManager.WaterBitMask,
                         disabled = !flipped
                     },
-                };
-                break;
-
-            case Upgrade.B:
-                actions = new()
-                {
-                    new AStatus()
-                    {
-                        status = Status.tempShield,
-                        statusAmount = 5,
-                        targetPlayer = true,
-                        disabled = flipped
-                    },
-                    new AAttune()
-                    {
-                        elementBitfieldModifier = AttunementManager.WaterBitMask,
-                        disabled = flipped
-                    },
-                    new ADummyAction(),
-                    new AStatus()
-                    {
-                        status = Status.shield,
-                        statusAmount = 3,
-                        targetPlayer = true,
-                        disabled = !flipped
-                    },
-                    new AAttune()
-                    {
-                        elementBitfieldModifier = AttunementManager.EarthBitMask,
-                        disabled = !flipped
-                    }
                 };
                 break;
         }
