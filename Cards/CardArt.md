@@ -6,7 +6,7 @@ This document acts as a reference for which cards are part of this mod.
 |:-:|:-:|:-:|:-:|
 | Yes | Common | Evocation | Swirl of all four elements |
 | No | Common | Diametric Decoction | 0 |
-| No | Common | Flame Vortex | 0 |
+| No | Common | Steam Engine | 0 |
 | No | Common | Forage | 0 |
 | No | Common | Flutter | Silhouette of Gizmo darting some direction flying his ornithopter, with magic wind trails around him |
 | No | Common | Magic Missile | 0 |

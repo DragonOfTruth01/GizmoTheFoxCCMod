@@ -6,7 +6,7 @@ This document acts as a reference for which cards are part of this mod.
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | Yes | Common | Evocation | 1 | Add 1 of 4 cantrips to your hand. | Added card has A upgrade. | Added card has B upgrade. |
 | Yes | Common | Diametric Decoction | 1 | Floppable. Attune earth + wind. / Attune fire + water. | Reduce cost to 0. Attune earth + wind + fire + water. Card gains exhaust. | Card gains recycle. |
-| Yes | Common | Flame Vortex | 2 | Floppable. Gain 2 wind charge + attune wind / Gain 1 overdrive + attune fire. Then, attack 1. | Both actions attune fire and wind. | Increase damage to 2 and pierce. |
+| Yes | Common | Steam Engine | 2 | Floppable. Gain 1 wind charge + attune wind / Gain 1 overdrive + attune fire. Gain 1 energy next turn. | Instead gain 2 energy next turn. | Both actions attune fire and wind. |
 | Yes | Common | Forage | 1 | Attune a random non-attuned element. Draw 2 cards. | Instead draw 3 cards. | Attune two random non-attuned elements. | # Note - this could be a numbered action (e.g. Attune 2) - but it should queue individual actions separately to account for possible interruptions when attuning 1, getting a potion, then attuning again
 | Yes | Common | Flutter | 0 | Move 1 random. Gain 1 wind charge. Attune wind. | Also gain 1 hermes boots. | Instead gain 2 wind charge. Also gain 1 engine stall. |
 | Yes | Common | Magic Missile | 1 | Attack 1. Repeat this attack if attuned 2/3 elements. Un-attune all elements. | Also repeat attack if attuned 1 element. | All attacks gain piercing. |

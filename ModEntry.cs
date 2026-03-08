@@ -119,7 +119,7 @@ public sealed class ModEntry : SimpleMod
         typeof(CardConjureManaBlades),
         typeof(CardDiametricDecoction),
         typeof(CardEvocation),
-        typeof(CardFlameVortex),
+        typeof(CardSteamEngine),
         typeof(CardFlutter),
         typeof(CardForage),
         typeof(CardMagicMissile),

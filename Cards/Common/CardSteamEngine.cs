@@ -4,11 +4,11 @@ using System.Reflection;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod.Cards;
 
-internal sealed class CardFlameVortex : Card, IGizmoTheFoxCCModCard
+internal sealed class CardSteamEngine : Card, IGizmoTheFoxCCModCard
 {
     public static void Register(IModHelper helper)
     {
-        var entry = helper.Content.Cards.RegisterCard("Flame Vortex", new()
+        var entry = helper.Content.Cards.RegisterCard("Steam Engine", new()
         {
             CardType = MethodBase.GetCurrentMethod()!.DeclaringType!,
             Meta = new()
@@ -17,7 +17,7 @@ internal sealed class CardFlameVortex : Card, IGizmoTheFoxCCModCard
                 rarity = Rarity.common,
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
-            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Flame Vortex", "name"]).Localize
+            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Steam Engine", "name"]).Localize
         });
     }
 
@@ -27,8 +27,7 @@ internal sealed class CardFlameVortex : Card, IGizmoTheFoxCCModCard
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
             cost = 2,
-            floppable = true,
-            artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Character_CardOverlaySpellCommon.Sprite
+            floppable = true
         };
         return data;
     }
@@ -44,7 +43,7 @@ internal sealed class CardFlameVortex : Card, IGizmoTheFoxCCModCard
                     new AStatus()
                     {
                         status = ModEntry.Instance.WindCharge.Status,
-                        statusAmount = 2,
+                        statusAmount = 1,
                         targetPlayer = true,
                         disabled = flipped
                     },
@@ -65,9 +64,11 @@ internal sealed class CardFlameVortex : Card, IGizmoTheFoxCCModCard
                         elementBitfieldModifier = AttunementManager.FireBitMask,
                         disabled = !flipped
                     },
-                    new AAttack()
+                    new AStatus()
                     {
-                        damage = GetDmg(s, 1)
+                        status = Status.energyNextTurn,
+                        statusAmount = 1,
+                        targetPlayer = true
                     }
                 };
                 break;
@@ -78,7 +79,43 @@ internal sealed class CardFlameVortex : Card, IGizmoTheFoxCCModCard
                     new AStatus()
                     {
                         status = ModEntry.Instance.WindCharge.Status,
+                        statusAmount = 1,
+                        targetPlayer = true,
+                        disabled = flipped
+                    },
+                    new AAttune()
+                    {
+                        elementBitfieldModifier = AttunementManager.WindBitMask,
+                        disabled = flipped
+                    },
+                    new AStatus()
+                    {
+                        status = Status.overdrive,
+                        statusAmount = 1,
+                        targetPlayer = true,
+                        disabled = !flipped
+                    },
+                    new AAttune()
+                    {
+                        elementBitfieldModifier = AttunementManager.FireBitMask,
+                        disabled = !flipped
+                    },
+                    new AStatus()
+                    {
+                        status = Status.energyNextTurn,
                         statusAmount = 2,
+                        targetPlayer = true
+                    }
+                };
+                break;
+
+            case Upgrade.B:
+                actions = new()
+                {
+                    new AStatus()
+                    {
+                        status = ModEntry.Instance.WindCharge.Status,
+                        statusAmount = 1,
                         targetPlayer = true,
                         disabled = flipped
                     },
@@ -101,44 +138,11 @@ internal sealed class CardFlameVortex : Card, IGizmoTheFoxCCModCard
                         elementBitfieldModifier2 = AttunementManager.WindBitMask,
                         disabled = !flipped
                     },
-                    new AAttack()
-                    {
-                        damage = GetDmg(s, 1)
-                    }
-                };
-                break;
-
-            case Upgrade.B:
-                actions = new()
-                {
                     new AStatus()
                     {
-                        status = ModEntry.Instance.WindCharge.Status,
-                        statusAmount = 2,
-                        targetPlayer = true,
-                        disabled = flipped
-                    },
-                    new AAttune()
-                    {
-                        elementBitfieldModifier = AttunementManager.WindBitMask,
-                        disabled = flipped
-                    },
-                    new AStatus()
-                    {
-                        status = Status.overdrive,
+                        status = Status.energyNextTurn,
                         statusAmount = 1,
-                        targetPlayer = true,
-                        disabled = !flipped
-                    },
-                    new AAttune()
-                    {
-                        elementBitfieldModifier = AttunementManager.FireBitMask,
-                        disabled = !flipped
-                    },
-                    new AAttack()
-                    {
-                        damage = GetDmg(s, 2),
-                        piercing = true
+                        targetPlayer = true
                     }
                 };
                 break;
