@@ -11,3 +11,6 @@ This document acts as a reference for the statuses that are introduced in this m
 | Yes | Wind Charge | Start of Turn (lose all) | When attacking, gain 1 evade, then lower this status by 1. |
 |---|---|---|---|
 | No | Immutable (Card Trait) | N/A | This card's cost cannot be reduced. |
+|---|---|---|---|
+| No | Stone Construct | N/A | When destroyed, attune a random unattuned element twice. |
+| No | Imbued Stone Construct | N/A | Shoots a 1 damage shot when a cantrip is played. When destroyed, attune a random unattuned element twice. |

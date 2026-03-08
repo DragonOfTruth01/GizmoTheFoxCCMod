@@ -77,12 +77,7 @@
   },
   "card": {
     "Bloodstone Battleaxe": {
-      "name": "Bloodstone Battleaxe",
-      "description": {
-        "None": "Deal <c=boldPink>{{damageCalc}}</c> <c=keyword>pierce</c> dmg. <c=boldPink>Attune</c> <c=796775>earth</c>. Increase damage by 1.",
-        "A": "Deal <c=boldPink>{{damageCalc}}</c> <c=keyword>pierce</c> dmg. <c=boldPink>Attune</c> <c=796775>earth</c>. Increase damage by 1.",
-        "B": "Deal <c=boldPink>{{damageCalc}}</c> <c=keyword>pierce</c> dmg. <c=boldPink>Attune</c> <c=796775>earth</c>. Increase damage by 2."
-      }
+      "name": "Homunculus"
     },
     "Conjure Mana Blades": {
       "name": "Conjure Mana Blades",

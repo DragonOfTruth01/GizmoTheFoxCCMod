@@ -4,13 +4,11 @@ using System.Reflection;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod.Cards;
 
-internal sealed class CardBloodstoneBattleaxe : Card, IGizmoTheFoxCCModCard
+internal sealed class CardHomunculus : Card, IGizmoTheFoxCCModCard
 {
-    public int damageModifier = 0;
-
     public static void Register(IModHelper helper)
     {
-        helper.Content.Cards.RegisterCard("Bloodstone Battleaxe", new()
+        helper.Content.Cards.RegisterCard("Homunculus", new()
         {
             CardType = MethodBase.GetCurrentMethod()!.DeclaringType!,
             Meta = new()
@@ -19,18 +17,14 @@ internal sealed class CardBloodstoneBattleaxe : Card, IGizmoTheFoxCCModCard
                 rarity = Rarity.common,
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
-            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Bloodstone Battleaxe", "name"]).Localize
+            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Homunculus", "name"]).Localize
         });
     }
     public override CardData GetData(State state)
     {
-        int baseDamage = upgrade == Upgrade.None ? 1 : 2;
-        int damageCalc = baseDamage + damageModifier;
-
         CardData data = new CardData()
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
-            description = ModEntry.Instance.Localizations.Localize(["card", "Bloodstone Battleaxe", "description", upgrade.ToString()], new { damageCalc }),
             cost = upgrade == Upgrade.B ? 2 : 1,
             buoyant = upgrade == Upgrade.A
         };
@@ -45,14 +39,16 @@ internal sealed class CardBloodstoneBattleaxe : Card, IGizmoTheFoxCCModCard
             case Upgrade.None:
                 actions = new()
                 {
-                    new AAttack()
-                    {
-                        damage = GetDmg(s, 1 + damageModifier),
-                        piercing = true
-                    },
                     new AAttune()
                     {
                         elementBitfieldModifier = AttunementManager.EarthBitMask
+                    },
+                    new ASpawn()
+                    {
+                        thing = new ShieldDrone()
+                        {
+                            yAnimation = 0.0
+                        }
                     }
                 };
                 break;
@@ -60,14 +56,16 @@ internal sealed class CardBloodstoneBattleaxe : Card, IGizmoTheFoxCCModCard
             case Upgrade.A:
                 actions = new()
                 {
-                    new AAttack()
-                    {
-                        damage = GetDmg(s, 2 + damageModifier),
-                        piercing = true
-                    },
                     new AAttune()
                     {
                         elementBitfieldModifier = AttunementManager.EarthBitMask
+                    },
+                    new ASpawn()
+                    {
+                        thing = new ShieldDrone()
+                        {
+                            yAnimation = 0.0
+                        }
                     }
                 };
                 break;
@@ -75,33 +73,28 @@ internal sealed class CardBloodstoneBattleaxe : Card, IGizmoTheFoxCCModCard
             case Upgrade.B:
                 actions = new()
                 {
-                    new AAttack()
-                    {
-                        damage = GetDmg(s, 2 + damageModifier),
-                        piercing = true
-                    },
                     new AAttune()
                     {
                         elementBitfieldModifier = AttunementManager.EarthBitMask
-                    }
+                    },
+                    new ASpawn()
+                    {
+                        thing = new ShieldDrone()
+                        {
+                            yAnimation = 0.0
+                        }
+                    },
+                    new ASpawn()
+                    {
+                        thing = new ShieldDrone()
+                        {
+                            yAnimation = 0.0
+                        },
+                        offset = 1
+                    },
                 };
                 break;
         }
         return actions;
-    }
-
-    public override void OnExitCombat(State s, Combat c)
-    {
-        damageModifier = 0;
-    }
-
-    public override void AfterWasPlayed(State state, Combat c)
-    {
-        damageModifier++;
-        
-        if(upgrade == Upgrade.B)
-        {
-            damageModifier++;
-        }
     }
 }
