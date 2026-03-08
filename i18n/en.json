@@ -76,9 +76,6 @@
     }
   },
   "card": {
-    "Bloodstone Battleaxe": {
-      "name": "Homunculus"
-    },
     "Conjure Mana Blades": {
       "name": "Conjure Mana Blades",
       "description": {
@@ -116,6 +113,9 @@
     "Gust": {
       "name": "Gust"
     },
+    "Homunculus": {
+      "name": "Homunculus"
+    },
     "Ice Bomb": {
       "name": "Ice Bomb"
     },
@@ -142,6 +142,16 @@
     },
     "Whirlpool": {
       "name": "Whirlpool"
+    }
+  },
+  "midrow":{
+    "Stone Construct":{
+      "name": "Stone Construct",
+      "description": "Attune 2 random unattuned elements when destroyed."
+    },
+    "Imbued Stone Construct":{
+      "name": "Imbued Stone Construct",
+      "description": "Shoots a <c=boldPink>{{atkDmg}}</c> damage shot when a cantrip is played. Attune 2 random unattuned elements when destroyed."
     }
   },
   "status": {

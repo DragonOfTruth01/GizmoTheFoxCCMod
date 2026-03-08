@@ -13,7 +13,7 @@ This document acts as a reference for which cards are part of this mod.
 | No | Common | Conjure Mana Blades | 0 |
 | Yes | Common | Prestidigitation | Outstetched finger, with a spark at the end of it |
 | No | Common | Sea Quake | 0 |
-| No | Common | Bloodstone Battleaxe | Gripping an axe with a bloody stone in the center |
+| No | Common | Homunculus | 0 |
 ||||||||
 | No | Uncommon | Dimensional Storage | 0 |
 | No | Uncommon | Imbue | Gizmo holding a sword with one hand, and infusing it with purple magic from his hand with the other |

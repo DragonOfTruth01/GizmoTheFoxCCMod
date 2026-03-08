@@ -1,3 +1,4 @@
+using DragonOfTruth01.GizmoTheFoxCCMod.Midrow;
 using Nickel;
 using System.Collections.Generic;
 using System.Reflection;
@@ -25,8 +26,7 @@ internal sealed class CardHomunculus : Card, IGizmoTheFoxCCModCard
         CardData data = new CardData()
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
-            cost = upgrade == Upgrade.B ? 2 : 1,
-            buoyant = upgrade == Upgrade.A
+            cost = upgrade == Upgrade.B ? 2 : 1
         };
         return data;
     }
@@ -45,7 +45,7 @@ internal sealed class CardHomunculus : Card, IGizmoTheFoxCCModCard
                     },
                     new ASpawn()
                     {
-                        thing = new ShieldDrone()
+                        thing = new MidrowStoneConstruct()
                         {
                             yAnimation = 0.0
                         }
@@ -62,7 +62,7 @@ internal sealed class CardHomunculus : Card, IGizmoTheFoxCCModCard
                     },
                     new ASpawn()
                     {
-                        thing = new ShieldDrone()
+                        thing = new MidrowImbuedStoneConstruct()
                         {
                             yAnimation = 0.0
                         }
@@ -79,14 +79,14 @@ internal sealed class CardHomunculus : Card, IGizmoTheFoxCCModCard
                     },
                     new ASpawn()
                     {
-                        thing = new ShieldDrone()
+                        thing = new MidrowStoneConstruct()
                         {
                             yAnimation = 0.0
                         }
                     },
                     new ASpawn()
                     {
-                        thing = new ShieldDrone()
+                        thing = new MidrowStoneConstruct()
                         {
                             yAnimation = 0.0
                         },
