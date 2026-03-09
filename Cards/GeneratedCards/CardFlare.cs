@@ -51,6 +51,7 @@ internal sealed class CardFlare : Card, IGizmoTheFoxCCModCard, IHasCustomCardTra
             case Upgrade.None:
                 actions = new()
                 {
+                    new ADummyAction(), // for padding
                     new AAttune()
                     {
                         elementBitfieldModifier = AttunementManager.FireBitMask
@@ -67,6 +68,7 @@ internal sealed class CardFlare : Card, IGizmoTheFoxCCModCard, IHasCustomCardTra
             case Upgrade.A:
                 actions = new()
                 {
+                    new ADummyAction(), // for padding
                     new AAttune()
                     {
                         elementBitfieldModifier = AttunementManager.FireBitMask
@@ -83,6 +85,7 @@ internal sealed class CardFlare : Card, IGizmoTheFoxCCModCard, IHasCustomCardTra
             case Upgrade.B:
                 actions = new()
                 {
+                    new ADummyAction(), // for padding
                     new AAttune()
                     {
                         elementBitfieldModifier = AttunementManager.FireBitMask

@@ -51,6 +51,7 @@ internal sealed class CardWhirlpool : Card, IGizmoTheFoxCCModCard, IHasCustomCar
             case Upgrade.None:
                 actions = new()
                 {
+                    new ADummyAction(), // for padding
                     new AAttune()
                     {
                         elementBitfieldModifier = AttunementManager.WaterBitMask
@@ -67,6 +68,7 @@ internal sealed class CardWhirlpool : Card, IGizmoTheFoxCCModCard, IHasCustomCar
             case Upgrade.A:
                 actions = new()
                 {
+                    new ADummyAction(), // for padding
                     new AAttune()
                     {
                         elementBitfieldModifier = AttunementManager.WaterBitMask
@@ -83,6 +85,7 @@ internal sealed class CardWhirlpool : Card, IGizmoTheFoxCCModCard, IHasCustomCar
             case Upgrade.B:
                 actions = new()
                 {
+                    new ADummyAction(), // for padding
                     new AAttune()
                     {
                         elementBitfieldModifier = AttunementManager.WaterBitMask

@@ -51,6 +51,7 @@ internal sealed class CardGust : Card, IGizmoTheFoxCCModCard, IHasCustomCardTrai
             case Upgrade.None:
                 actions = new()
                 {
+                    new ADummyAction(), // for padding
                     new AAttune()
                     {
                         elementBitfieldModifier = AttunementManager.WindBitMask
@@ -67,6 +68,7 @@ internal sealed class CardGust : Card, IGizmoTheFoxCCModCard, IHasCustomCardTrai
             case Upgrade.A:
                 actions = new()
                 {
+                    new ADummyAction(), // for padding
                     new AAttune()
                     {
                         elementBitfieldModifier = AttunementManager.WindBitMask
@@ -83,6 +85,7 @@ internal sealed class CardGust : Card, IGizmoTheFoxCCModCard, IHasCustomCardTrai
             case Upgrade.B:
                 actions = new()
                 {
+                    new ADummyAction(), // for padding
                     new AAttune()
                     {
                         elementBitfieldModifier = AttunementManager.WindBitMask

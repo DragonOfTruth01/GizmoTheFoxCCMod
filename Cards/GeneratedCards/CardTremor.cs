@@ -51,6 +51,7 @@ internal sealed class CardTremor : Card, IGizmoTheFoxCCModCard, IHasCustomCardTr
             case Upgrade.None:
                 actions = new()
                 {
+                    new ADummyAction(), // for padding
                     new AAttune()
                     {
                         elementBitfieldModifier = AttunementManager.EarthBitMask
@@ -67,6 +68,7 @@ internal sealed class CardTremor : Card, IGizmoTheFoxCCModCard, IHasCustomCardTr
             case Upgrade.A:
                 actions = new()
                 {
+                    new ADummyAction(), // for padding
                     new AAttune()
                     {
                         elementBitfieldModifier = AttunementManager.EarthBitMask
@@ -83,6 +85,7 @@ internal sealed class CardTremor : Card, IGizmoTheFoxCCModCard, IHasCustomCardTr
             case Upgrade.B:
                 actions = new()
                 {
+                    new ADummyAction(), // for padding
                     new AAttune()
                     {
                         elementBitfieldModifier = AttunementManager.EarthBitMask
