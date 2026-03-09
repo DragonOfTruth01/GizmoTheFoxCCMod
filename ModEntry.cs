@@ -281,7 +281,7 @@ public sealed class ModEntry : SimpleMod
         // Custom Midrow Icons
 
         GizmoTheFoxCCMod_stoneConstruct = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/stoneConstruct.png"));
-        GizmoTheFoxCCMod_imbuedStoneConstruct = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/stoneConstruct.png"));
+        GizmoTheFoxCCMod_imbuedStoneConstruct = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/imbuedStoneConstruct.png"));
 
         // Custom Status Icons
 
