@@ -19,7 +19,7 @@ This document acts as a reference for which cards are part of this mod.
 | No | Uncommon | Imbue | Gizmo holding a sword with one hand, and infusing it with purple magic from his hand with the other |
 | No | Uncommon | Fermented Tincture | 0 |
 | No | Uncommon | Absorb Elements | 0 |
-| No | Uncommon | Synthesize | 0 |
+| No | Uncommon | Entropy | 0 |
 | No | Uncommon | Quick Brew | 0 |
 | No | Uncommon | Chromatic Orb | 0 |
 | No | Uncommon | Wild Magic | 0 |
