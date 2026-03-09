@@ -58,7 +58,9 @@ internal sealed class CardFlare : Card, IGizmoTheFoxCCModCard, IHasCustomCardTra
                     new ADrawCard()
                     {
                         count = 1
-                    }
+                    },
+                    // Trigger Imbued Construct Attack on Cantrip Play
+                    new AImbuedConstructShoot()
                 };
                 break;
 
@@ -72,7 +74,9 @@ internal sealed class CardFlare : Card, IGizmoTheFoxCCModCard, IHasCustomCardTra
                     new ADrawCard()
                     {
                         count = 1
-                    }
+                    },
+                    // Trigger Imbued Construct Attack on Cantrip Play
+                    new AImbuedConstructShoot()
                 };
                 break;
 
@@ -92,7 +96,9 @@ internal sealed class CardFlare : Card, IGizmoTheFoxCCModCard, IHasCustomCardTra
                         status = Status.tempShield,
                         statusAmount = 1,
                         targetPlayer = true
-                    }
+                    },
+                    // Trigger Imbued Construct Attack on Cantrip Play
+                    new AImbuedConstructShoot()
                 };
                 break;
         }
