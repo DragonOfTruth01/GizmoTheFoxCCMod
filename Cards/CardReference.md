@@ -13,7 +13,7 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Common | Conjure Mana Blades | 0 | Add Mana Blade (Fire) and Mana Blade (Ice) to your hand. | Added cards have A upgrade. | Added cards have B upgrade. |
 | Yes | Common | Prestidigitation | 1 | Floppable. Deal 1 damage. / Gain 1 block. Add 1 of 2 cantrips to your hand. | Instead add 1 of 4 cantrips. | Increase damage by 1. / Add 1 temp shield. |
 | Yes | Common | Sea Quake | 2 | Floppable. Gain 3 temp shield. Attune water. / Gain 2 shield. Attune earth. | Gain 5 temp shield / 3 shield. | Both actions attune earth and water. |
-| Yes | Common | Homunculus | 1 | Attune earth. Deploy a stone construct from the missile bay. | Deploy an imbued stone construct from the missile bay. | Increase cost to 2. Deploy a stone construct from the missile bay, and one to the right of the missile bay.
+| Yes | Common | Homunculus | 1 | Attune earth. Deploy a stone construct from the missile bay. | Deploy an imbued stone construct from the missile bay. | Increase cost to 2. Deploy a stone construct from the missile bay, and one to the right of the missile bay. |
 ||||||||
 | No | Uncommon | Dimensional Storage | 0 | Move a card from the discard pile to your hand. Exhaust. | Increase cost to 1. Remove exhaust. | Instead move 2 cards from your discard pile to your hand. |
 | No | Uncommon | Imbue | 1 | If attuned earth, gain 1 stun charge. If attuned wind, gain 1 wind charge. If attuned fire, gain 1 overdrive. If attuned water, gain 1 flux. Attack for 0. Exhaust. | Remove attack for 0. Remove exhaust. | Card gains retain. |
@@ -29,6 +29,7 @@ This document acts as a reference for which cards are part of this mod.
 | No | Rare | Conjure Mace of Seasons | 1 | Add Mace of Seasons (Winter) to your hand. Exhaust. | Reduce cost to 0. | Increase cost to 2. Added card has B upgrade. |
 | No | Rare | Prismatic Wall | 2 | If attuned earth, gain 2 shield. If attuned wind, gain 1 wind charge. If attuned fire, gain 2 temp payback. If attuned water, gain 3 temp shield. Unattune all elements. | No longer unattune elements. | Increase cost to 3. Increase all effects by 1. |
 | No | Rare | Shimmering Solution | 1 | Gain a random shimmering potion. Exhaust. | Reduce cost to 0. | Instead choose 1 of 2 shimmering potions. |
+| No | Rare | Vanguard | 1 | Deploy an imbued stone construct from the missile bay. Shift midrow right 1. Infinite. Fleeting. | Instead gain 1 droneshift. | Increase cost to 3. Deploy imbued stone constructs left 1, right 1, and centered on missile bay. Card loses fleeting and gains retain and exhaust. |
 ||||||||
 | Yes | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 3. Fleeting. Temporary. | Increase limited to 5. | Also gain 1 temp shield. |
 | Yes | Common (Cantrip) | Gust | 0 | Attune wind. Draw 1 card. Limited 3. Fleeting. Temporary. | Increase limited to 5. | Also gain 1 temp shield. |
