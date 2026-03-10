@@ -147,11 +147,11 @@
   "midrow":{
     "Stone Construct":{
       "name": "Stone Construct",
-      "description": "Attune 2 random unattuned elements when destroyed."
+      "description": "<c=boldPink>Attune</c> 2 random unattuned elements when destroyed."
     },
     "Imbued Stone Construct":{
       "name": "Imbued Stone Construct",
-      "description": "Shoots a <c=boldPink>{{atkDmg}}</c> damage shot when a cantrip is played. Attune 2 random unattuned elements when destroyed."
+      "description": "Shoots a <c=boldPink>{{atkDmg}}</c> damage shot when a cantrip is played. <c=boldPink>Attune</c> 2 random unattuned elements when destroyed."
     }
   },
   "status": {

@@ -16,7 +16,7 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Common | Homunculus | 1 | Attune earth. Deploy a stone construct from the missile bay. | Deploy an imbued stone construct from the missile bay. | Increase cost to 2. Deploy a stone construct from the missile bay, and one to the right of the missile bay. |
 ||||||||
 | No | Uncommon | Dimensional Storage | 0 | Move a card from the discard pile to your hand. Exhaust. | Increase cost to 1. Remove exhaust. | Instead move 2 cards from your discard pile to your hand. |
-| Yes | Uncommon | Forage | 1 | Attune a random non-attuned element. Draw 2 cards. | Instead draw 3 cards. | Attune two random non-attuned elements. |
+| Yes | Uncommon | Forage | 1 | Attune a random non-attuned element. Draw 3 cards. | Instead draw 5 cards. | Attune two random non-attuned elements. |
 | No | Uncommon | Imbue | 1 | If attuned earth, gain 1 stun charge. If attuned wind, gain 1 wind charge. If attuned fire, gain 1 overdrive. If attuned water, gain 1 flux. Attack for 0. Exhaust. | Card gains retain. | Increase cost to 2. Remove exhaust. |
 | No | Uncommon | Fermented Tincture | 7 | Permanently reduce cost by 1 when drawn. Gain 2 max hull. Single use. Fleeting. | Reduce current cost by 2. | Increase cost by 3 (max 10). Gain 3 max hull instead. |
 | No | Uncommon | Entropy | 0 | Gain 1 energy. If attuned 3 elements, gain an additional energy. Unattune all elements. | Decrease attunement requirement for additional energy to 2. | If attuned at least 3 elements, also gain 1 energy next turn.|
