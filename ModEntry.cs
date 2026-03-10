@@ -127,14 +127,13 @@ public sealed class ModEntry : SimpleMod
         typeof(CardEvocation),
         typeof(CardSteamEngine),
         typeof(CardFlutter),
-        typeof(CardForage),
         typeof(CardMagicMissile),
         typeof(CardPrestidigitation),
         typeof(CardSeaQuake)
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_UncommonCard_Types { get; } = [
-        
+        typeof(CardForage)
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_RareCard_Types { get; } = [

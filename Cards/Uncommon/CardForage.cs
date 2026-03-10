@@ -14,7 +14,7 @@ internal sealed class CardForage : Card, IGizmoTheFoxCCModCard
             Meta = new()
             {
                 deck = ModEntry.Instance.GizmoTheFoxCCMod_Character_Deck.Deck,
-                rarity = Rarity.common,
+                rarity = Rarity.uncommon,
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Forage", "name"]).Localize
@@ -45,7 +45,7 @@ internal sealed class CardForage : Card, IGizmoTheFoxCCModCard
                     },
                     new ADrawCard
                     {
-                        count = 2
+                        count = 3
                     }
                 };
                 break;
@@ -59,7 +59,7 @@ internal sealed class CardForage : Card, IGizmoTheFoxCCModCard
                     },
                     new ADrawCard
                     {
-                        count = 3
+                        count = 5
                     }
                 };
                 break;
@@ -73,7 +73,7 @@ internal sealed class CardForage : Card, IGizmoTheFoxCCModCard
                     },
                     new ADrawCard
                     {
-                        count = 2
+                        count = 3
                     }
                 };
                 break;

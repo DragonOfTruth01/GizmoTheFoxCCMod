@@ -4,10 +4,10 @@ This document acts as a reference for which cards are part of this mod.
 
 | Done? | Rarity | Name | Cost | Effect | Upgrade A | Upgrade B |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| No | ommon | Absorb Elements | 1 | Gain 2 temp shield. Gain 1 absorb. | Instead gain 2 shield. | Instead gain 3 temp shield. |
 | Yes | Common | Evocation | 1 | Add 1 of 4 cantrips to your hand. | Added card has A upgrade. | Added card has B upgrade. |
 | Yes | Common | Diametric Decoction | 1 | Floppable. Attune earth + wind. / Attune fire + water. | Reduce cost to 0. Attune earth + wind + fire + water. Card gains exhaust. | Card gains recycle. |
 | Yes | Common | Steam Engine | 2 | Floppable. Gain 1 wind charge + attune wind / Gain 1 overdrive + attune fire. Gain 1 energy next turn. | Instead gain 2 energy next turn. | Both actions attune fire and wind. |
-| Yes | Common | Forage | 1 | Attune a random non-attuned element. Draw 2 cards. | Instead draw 3 cards. | Attune two random non-attuned elements. | # Note - this could be a numbered action (e.g. Attune 2) - but it should queue individual actions separately to account for possible interruptions when attuning 1, getting a potion, then attuning again
 | Yes | Common | Flutter | 0 | Move 1 random. Gain 1 wind charge. Attune wind. | Also gain 1 hermes boots. | Instead gain 2 wind charge. Also gain 1 engine stall. |
 | Yes | Common | Magic Missile | 1 | Attack 1. Repeat this attack if attuned 2/3 elements. Un-attune all elements. | Also repeat attack if attuned 1 element. | All attacks gain piercing. |
 | Yes | Common | Conjure Mana Blades | 0 | Add Mana Blade (Fire) and Mana Blade (Ice) to your hand. | Added cards have A upgrade. | Added cards have B upgrade. |
@@ -16,9 +16,9 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Common | Homunculus | 1 | Attune earth. Deploy a stone construct from the missile bay. | Deploy an imbued stone construct from the missile bay. | Increase cost to 2. Deploy a stone construct from the missile bay, and one to the right of the missile bay. |
 ||||||||
 | No | Uncommon | Dimensional Storage | 0 | Move a card from the discard pile to your hand. Exhaust. | Increase cost to 1. Remove exhaust. | Instead move 2 cards from your discard pile to your hand. |
+| Yes | Uncommon | Forage | 1 | Attune a random non-attuned element. Draw 2 cards. | Instead draw 3 cards. | Attune two random non-attuned elements. |
 | No | Uncommon | Imbue | 1 | If attuned earth, gain 1 stun charge. If attuned wind, gain 1 wind charge. If attuned fire, gain 1 overdrive. If attuned water, gain 1 flux. Attack for 0. Exhaust. | Card gains retain. | Increase cost to 2. Remove exhaust. |
 | No | Uncommon | Fermented Tincture | 7 | Permanently reduce cost by 1 when drawn. Gain 2 max hull. Single use. Fleeting. | Reduce current cost by 2. | Increase cost by 3 (max 10). Gain 3 max hull instead. |
-| No | Uncommon | Absorb Elements | 1 | Gain 2 temp shield. Gain 1 absorb. | Instead gain 2 shield. | Instead gain 3 temp shield. |
 | No | Uncommon | Entropy | 0 | Gain 1 energy. If attuned 3 elements, gain an additional energy. Unattune all elements. | Decrease attunement requirement for additional energy to 2. | If attuned at least 3 elements, also gain 1 energy next turn.|
 | No | Uncommon | Quick Brew | 1 | Add a random potion to your hand. | Instead add 1 of 2 potions to your hand. | Add 3 random potions to your discard pile. Exhaust. |
 | No | Uncommon | Chromatic Orb | 1 | Attack 0. Increase by 1 for each potion or shimmering potion played this combat. | Also channel a random non-attuned element. | Increase damage to 2. Card gains retain and exhaust. |
