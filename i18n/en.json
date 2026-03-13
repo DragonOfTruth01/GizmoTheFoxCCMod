@@ -106,6 +106,9 @@
         "B": "Move two cards from your discard pile to your hand."
       }
     },
+    "Entropy": {
+      "name": "Entropy"
+    },
     "Flare": {
       "name": "Flare"
     },
