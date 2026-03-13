@@ -98,6 +98,14 @@
     "Steam Engine": {
       "name": "Steam Engine"
     },
+    "Dimensional Storage": {
+      "name": "Dimensional Storage",
+      "description": {
+        "None": "Move two cards from your discard pile to your hand.",
+        "A": "Move two cards from your discard pile to your hand.",
+        "B": "Move two cards from your discard pile to your hand."
+      }
+    },
     "Flare": {
       "name": "Flare"
     },
