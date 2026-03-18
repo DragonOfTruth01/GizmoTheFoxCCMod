@@ -70,4 +70,4 @@ This document acts as a reference for which cards are part of this mod.
 | No | Rare (Generated) | Mace of Seasons (Summer) | 1 | Deal 2 damage. Stun. Attune fire. Add Mace of Seasons (Autumn) to your hand. Limited 1. Temporary. Immutable. | Increase damage to 3. Summon A. | Card gains retain. Summon B. |
 | No | Rare (Generated) | Mace of Seasons (Autumn) | 1 | Deal 2 damage. Gain 1 shield. Attune earth. Add Mace of Seasons (Winter) to your hand. Limited 1. Temporary. Immutable. | Increase damage to 3. Summon A. | Card gains retain. Summon B. |
 ||||||||
-| No | Status | Discharged Capacitor | 1 | If attuned 3 elements, add an Arcane Capacitor to your hand. Set attunement to 0. Exhaust. | Reduce attunement requirement to 2. Add A. | Also draw 2 cards. Add B. |
+| Yes | Status | Discharged Capacitor | 1 | If attuned 3 elements, add an Arcane Capacitor to your hand. Set attunement to 0. Exhaust. | Reduce attunement requirement to 2. Add A. | Also draw 2 cards. Add B. |
