@@ -28,7 +28,7 @@ internal sealed class CardTremor : Card, IGizmoTheFoxCCModCard, IHasCustomCardTr
     }
 
     public IReadOnlySet<ICardTraitEntry> GetInnateTraits(State state)
-		=> new HashSet<ICardTraitEntry> { ModEntry.Instance.KokoroApi.Limited.Trait, ModEntry.Instance.KokoroApi.Fleeting.Trait };
+		=> new HashSet<ICardTraitEntry> { ModEntry.Instance.KokoroApi.Limited.Trait };
 
     public override CardData GetData(State state)
     {

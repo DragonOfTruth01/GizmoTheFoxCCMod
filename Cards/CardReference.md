@@ -31,10 +31,10 @@ This document acts as a reference for which cards are part of this mod.
 | No | Rare | Shimmering Solution | 1 | Gain a random shimmering potion. Exhaust. | Reduce cost to 0. | Instead choose 1 of 2 shimmering potions. |
 | No | Rare | Vanguard | 1 | Deploy an imbued stone construct from the missile bay. Shift midrow right 1. Infinite. Fleeting. | Instead gain 1 droneshift. | Increase cost to 3. Deploy imbued stone constructs left 1, right 1, and centered on missile bay. Card loses fleeting and gains retain and exhaust. |
 ||||||||
-| Yes | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 3. Fleeting. Temporary. | Increase limited to 5. | Also gain 1 temp shield. |
-| Yes | Common (Cantrip) | Gust | 0 | Attune wind. Draw 1 card. Limited 3. Fleeting. Temporary. | Increase limited to 5. | Also gain 1 temp shield. |
-| Yes | Common (Cantrip) | Flare | 0 | Attune fire. Draw 1 card. Limited 3. Fleeting. Temporary. | Increase limited to 5. | Also gain 1 temp shield. |
-| Yes | Common (Cantrip) | Whirlpool | 0 | Attune water. Draw 1 card. Limited 3. Fleeting. Temporary. | Increase limited to 5. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 3. Temporary. | Increase limited to 5. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Gust | 0 | Attune wind. Draw 1 card. Limited 3. Temporary. | Increase limited to 5. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Flare | 0 | Attune fire. Draw 1 card. Limited 3. Temporary. | Increase limited to 5. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Whirlpool | 0 | Attune water. Draw 1 card. Limited 3. Temporary. | Increase limited to 5. | Also gain 1 temp shield. |
 ||||||||
 | No | Uncommon (Potion) | Name | 0 | Deal 3 damage. Temporary. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Gain 2 flux. Temporary. |  |  |
