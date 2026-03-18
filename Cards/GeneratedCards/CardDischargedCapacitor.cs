@@ -4,22 +4,23 @@ using System.Reflection;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod.Cards;
 
-internal sealed class CardEntropy : Card, IGizmoTheFoxCCModCard
+internal sealed class CardDischargedCapacitor : Card, IGizmoTheFoxCCModCard
 {
     private static IKokoroApi.IV2.IConditionalApi Conditional => ModEntry.Instance.KokoroApi.Conditional;
 
     public static void Register(IModHelper helper)
     {
-        var entry = helper.Content.Cards.RegisterCard("Entropy", new()
+        helper.Content.Cards.RegisterCard("Discharged Capacitor", new()
         {
             CardType = MethodBase.GetCurrentMethod()!.DeclaringType!,
             Meta = new()
             {
-                deck = ModEntry.Instance.GizmoTheFoxCCMod_Character_Deck.Deck,
-                rarity = Rarity.uncommon,
-                upgradesTo = [Upgrade.A, Upgrade.B]
+                deck = Deck.trash,
+                rarity = Rarity.common,
+                upgradesTo = [Upgrade.A, Upgrade.B],
+                dontOffer = true
             },
-            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Entropy", "name"]).Localize
+            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Discharged Capacitor", "name"]).Localize
         });
     }
 
@@ -28,10 +29,13 @@ internal sealed class CardEntropy : Card, IGizmoTheFoxCCModCard
         CardData data = new CardData()
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
-            cost = 0
+            cost = 1,
+            temporary = true,
+            exhaust = true
         };
         return data;
     }
+
     public override List<CardAction> GetActions(State s, Combat c)
     {
         List<CardAction> actions = new();
@@ -39,19 +43,17 @@ internal sealed class CardEntropy : Card, IGizmoTheFoxCCModCard
         switch (upgrade)
         {
             case Upgrade.None:
-                CardAction act1CardU = GenerateAttuneConditionalEnergyGain(s, 3);
+                CardAction act1CardU = GenerateAttuneConditionalAddCard(s, 3, Upgrade.None);
 
                 actions = new()
                 {
-                    new AEnergy()
-                    {
-                        changeAmount = 1
-                    },
                     ModEntry.Instance.KokoroApi.SpoofedActions.MakeAction(
                         act1CardU,
-                        new AEnergy()
+                        new AAddCard()
                         {
-                            changeAmount = 1,
+                            card = new CardArcaneCapacitor() { upgrade = Upgrade.None, temporaryOverride = true },
+                            destination = CardDestination.Hand,
+                            amount = 1,
                             disabled = GetNumAttunedElements(s) < 3
                         }
                     ).AsCardAction,
@@ -66,19 +68,17 @@ internal sealed class CardEntropy : Card, IGizmoTheFoxCCModCard
                 break;
 
             case Upgrade.A:
-                CardAction act1CardA = GenerateAttuneConditionalEnergyGain(s, 2);
+                CardAction act1CardA = GenerateAttuneConditionalAddCard(s, 2, Upgrade.A);
 
                 actions = new()
                 {
-                    new AEnergy()
-                    {
-                        changeAmount = 1
-                    },
                     ModEntry.Instance.KokoroApi.SpoofedActions.MakeAction(
                         act1CardA,
-                        new AEnergy()
+                        new AAddCard()
                         {
-                            changeAmount = 1,
+                            card = new CardArcaneCapacitor() { upgrade = Upgrade.A, temporaryOverride = true },
+                            destination = CardDestination.Hand,
+                            amount = 1,
                             disabled = GetNumAttunedElements(s) < 2
                         }
                     ).AsCardAction,
@@ -93,33 +93,24 @@ internal sealed class CardEntropy : Card, IGizmoTheFoxCCModCard
                 break;
 
             case Upgrade.B:
-                CardAction act1CardB = GenerateAttuneConditionalEnergyGain(s, 3);
-                CardAction act2CardB = GenerateAttuneConditionalEnergyGainNextTurn(s, 3);
+                CardAction act1CardB = GenerateAttuneConditionalAddCard(s, 3, Upgrade.B);
 
                 actions = new()
                 {
-                    new AEnergy()
-                    {
-                        changeAmount = 1
-                    },
                     ModEntry.Instance.KokoroApi.SpoofedActions.MakeAction(
                         act1CardB,
-                        new AEnergy()
+                        new AAddCard()
                         {
-                            changeAmount = 1,
+                            card = new CardArcaneCapacitor() { upgrade = Upgrade.B, temporaryOverride = true },
+                            destination = CardDestination.Hand,
+                            amount = 1,
                             disabled = GetNumAttunedElements(s) < 3
                         }
                     ).AsCardAction,
-                    ModEntry.Instance.KokoroApi.SpoofedActions.MakeAction(
-                        act2CardB,
-                        new AStatus()
-                        {
-                            status = Status.energyNextTurn,
-                            statusAmount = 1,
-                            targetPlayer = true,
-                            disabled = GetNumAttunedElements(s) < 3
-                        }
-                    ).AsCardAction,
+                    new ADrawCard()
+                    {
+                        count = 2
+                    },
                     new AStatus()
                     {
                         mode = AStatusMode.Set,
@@ -133,7 +124,7 @@ internal sealed class CardEntropy : Card, IGizmoTheFoxCCModCard
         return actions;
     }
 
-    private CardAction GenerateAttuneConditionalEnergyGain(State s, int attuneAmount)
+    private CardAction GenerateAttuneConditionalAddCard(State s, int attuneAmount, Upgrade u)
     {
         IKokoroApi.IV2.IConditionalApi.IConditionalAction condAct = Conditional.MakeAction(
             Conditional.Equation(
@@ -142,31 +133,10 @@ internal sealed class CardEntropy : Card, IGizmoTheFoxCCModCard
                 Conditional.Constant(attuneAmount),
                 IKokoroApi.IV2.IConditionalApi.EquationStyle.Possession
             ).SetShowOperator(false),
-            new AEnergy(){
-                changeAmount = 1
-            }
-        );
-
-        condAct.SetFadeUnsatisfied(false);
-        CardAction cardAct = condAct.AsCardAction;
-        cardAct.disabled = GetNumAttunedElements(s) < attuneAmount;
-        
-        return cardAct;
-    }
-
-    private CardAction GenerateAttuneConditionalEnergyGainNextTurn(State s, int attuneAmount)
-    {
-        IKokoroApi.IV2.IConditionalApi.IConditionalAction condAct = Conditional.MakeAction(
-            Conditional.Equation(
-                Conditional.Status(ModEntry.Instance.AttunementCount.Status),
-                IKokoroApi.IV2.IConditionalApi.EquationOperator.GreaterThanOrEqual,
-                Conditional.Constant(attuneAmount),
-                IKokoroApi.IV2.IConditionalApi.EquationStyle.Possession
-            ).SetShowOperator(false),
-            new AStatus(){
-                status = Status.energyNextTurn,
-                statusAmount = 1,
-                targetPlayer = true
+            new AAddCard(){
+                card = new CardDischargedCapacitor() { upgrade = u, temporaryOverride = true },
+                destination = CardDestination.Hand,
+                amount = 1
             }
         );
 

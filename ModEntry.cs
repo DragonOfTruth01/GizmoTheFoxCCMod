@@ -117,7 +117,8 @@ public sealed class ModEntry : SimpleMod
         typeof(CardFlare),
         typeof(CardWhirlpool),
         typeof(CardManaBladeFire),
-        typeof(CardManaBladeIce)
+        typeof(CardManaBladeIce),
+        typeof(CardDischargedCapacitor)
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_CommonCard_Types { get; } = [
@@ -134,7 +135,7 @@ public sealed class ModEntry : SimpleMod
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_UncommonCard_Types { get; } = [
         typeof(CardDimensionalStorage),
-        typeof(CardEntropy),
+        typeof(CardArcaneCapacitor),
         typeof(CardForage)
     ];
 
