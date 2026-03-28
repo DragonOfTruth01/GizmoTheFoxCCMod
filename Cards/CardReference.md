@@ -61,6 +61,7 @@ This document acts as a reference for which cards are part of this mod.
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 1 ace. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 3 energy. Draw 3 cards. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Add 3 random potions to your hand. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Immurement | 0 | Change field effect somehow. Temporary. |  |  |
 ||||||||
 | Yes | Common (Generated) | Mana Blade (Fire) | 1 | Deal 1 damage. Attune fire. Retain. Exhaust. Temporary. | Increase damage by 1. | Gain 1 stun charge after attack. |
 | Yes | Common (Generated) | Mana Blade (Ice) | 1 | Deal 0 damage. Gain 1 shield. Attune water. Retain. Exhaust. Temporary. | Increase damage by 1. | Also gain 1 temp shield. |
