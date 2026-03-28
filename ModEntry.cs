@@ -137,7 +137,8 @@ public sealed class ModEntry : SimpleMod
         typeof(CardArcaneCapacitor),
         typeof(CardFermentedTincture),
         typeof(CardForage),
-        typeof(CardQuickBrew)
+        typeof(CardQuickBrew),
+        typeof(CardWildMagic)
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_RareCard_Types { get; } = [
