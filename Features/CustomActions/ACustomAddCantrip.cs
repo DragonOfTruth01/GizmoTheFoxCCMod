@@ -18,7 +18,8 @@ public sealed class ACustomAddCantrip : CardAction
         addCantripB
     };
 
-    public AddCantripType cantripType;
+    public required AddCantripType cantripType;
+    public required CardDestination dest;
     public int execCount = 1;
 
     public override void Begin(G g, State s, Combat c)
@@ -44,7 +45,7 @@ public sealed class ACustomAddCantrip : CardAction
 
                     c.QueueImmediate(new ASpecificCardOffering()
 			    			{
-			    				Destination = CardDestination.Hand,
+			    				Destination = dest,
 			    				Cards = [
 			    					card1,
 			    					card2

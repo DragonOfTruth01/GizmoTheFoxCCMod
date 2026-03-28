@@ -5,7 +5,7 @@ This document acts as a reference for which cards are part of this mod.
 | Done? | Rarity | Name | Cost | Effect | Upgrade A | Upgrade B |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | No | Common | Absorb Elements | 1 | Gain 2 temp shield. Gain 1 absorb. | Instead gain 2 shield. | Instead gain 3 temp shield. |
-| Yes | Common | Evocation | 1 | Add 1 of 4 cantrips to your hand. | Added card has A upgrade. | Added card has B upgrade. |
+| Yes | Common | Evocation | 1 | Add 1 of 4 cantrips to your hand. | Added card has A upgrade. Add card to draw pile instead. | Added card has B upgrade. |
 | Yes | Common | Diametric Decoction | 1 | Floppable. Attune earth + wind. / Attune fire + water. | Reduce cost to 0. Attune earth + wind + fire + water. Card gains exhaust. | Card gains recycle. |
 | Yes | Common | Steam Engine | 2 | Floppable. Gain 1 wind charge + attune wind / Gain 1 overdrive + attune fire. Gain 1 energy next turn. | Instead gain 2 energy next turn. | Both actions attune fire and wind. |
 | Yes | Common | Flutter | 0 | Move 1 random. Gain 1 wind charge. Attune wind. | Also gain 1 hermes boots. | Instead gain 2 wind charge. Also gain 1 engine stall. |
@@ -31,10 +31,10 @@ This document acts as a reference for which cards are part of this mod.
 | No | Rare | Shimmering Solution | 1 | Gain a random shimmering potion. Exhaust. | Reduce cost to 0. | Instead choose 1 of 2 shimmering potions. |
 | No | Rare | Vanguard | 1 | Deploy an imbued stone construct from the missile bay. Shift midrow right 1. Infinite. Fleeting. | Instead gain 1 droneshift. | Increase cost to 3. Deploy imbued stone constructs left 1, right 1, and centered on missile bay. Card loses fleeting and gains retain and exhaust. |
 ||||||||
-| Yes | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 3. Temporary. | Increase limited to 5. | Also gain 1 temp shield. |
-| Yes | Common (Cantrip) | Gust | 0 | Attune wind. Draw 1 card. Limited 3. Temporary. | Increase limited to 5. | Also gain 1 temp shield. |
-| Yes | Common (Cantrip) | Flare | 0 | Attune fire. Draw 1 card. Limited 3. Temporary. | Increase limited to 5. | Also gain 1 temp shield. |
-| Yes | Common (Cantrip) | Whirlpool | 0 | Attune water. Draw 1 card. Limited 3. Temporary. | Increase limited to 5. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 3. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Gust | 0 | Attune wind. Draw 1 card. Limited 3. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Flare | 0 | Attune fire. Draw 1 card. Limited 3. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Whirlpool | 0 | Attune water. Draw 1 card. Limited 3. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
 ||||||||
 | No | Uncommon (Potion) | Name | 0 | Deal 3 damage. Temporary. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Gain 2 flux. Temporary. |  |  |

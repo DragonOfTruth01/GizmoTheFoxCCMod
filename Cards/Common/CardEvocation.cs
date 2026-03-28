@@ -42,7 +42,8 @@ internal sealed class CardEvocation : Card, IGizmoTheFoxCCModCard
                 {
                     new ACustomAddCantrip()
                     {
-                        cantripType = ACustomAddCantrip.AddCantripType.addCantrip4
+                        cantripType = ACustomAddCantrip.AddCantripType.addCantrip4,
+                        dest = CardDestination.Hand
                     }
                 };
                 break;
@@ -52,7 +53,8 @@ internal sealed class CardEvocation : Card, IGizmoTheFoxCCModCard
                 {
                     new ACustomAddCantrip()
                     {
-                        cantripType = ACustomAddCantrip.AddCantripType.addCantripA
+                        cantripType = ACustomAddCantrip.AddCantripType.addCantripA,
+                        dest = CardDestination.Deck
                     }
                 };
                 break;
@@ -62,7 +64,8 @@ internal sealed class CardEvocation : Card, IGizmoTheFoxCCModCard
                 {
                     new ACustomAddCantrip()
                     {
-                        cantripType = ACustomAddCantrip.AddCantripType.addCantripB
+                        cantripType = ACustomAddCantrip.AddCantripType.addCantripB,
+                        dest = CardDestination.Hand
                     }
                 };
                 break;

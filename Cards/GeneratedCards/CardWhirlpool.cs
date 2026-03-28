@@ -23,7 +23,7 @@ internal sealed class CardWhirlpool : Card, IGizmoTheFoxCCModCard, IHasCustomCar
 
         // Set limited on cards
         ModEntry.Instance.KokoroApi.Limited.SetBaseLimitedUses(entry.UniqueName, Upgrade.None, 3);
-        ModEntry.Instance.KokoroApi.Limited.SetBaseLimitedUses(entry.UniqueName, Upgrade.A, 5);
+        ModEntry.Instance.KokoroApi.Limited.SetBaseLimitedUses(entry.UniqueName, Upgrade.A, 3);
         ModEntry.Instance.KokoroApi.Limited.SetBaseLimitedUses(entry.UniqueName, Upgrade.B, 3);
     }
 
@@ -75,7 +75,7 @@ internal sealed class CardWhirlpool : Card, IGizmoTheFoxCCModCard, IHasCustomCar
                     },
                     new ADrawCard()
                     {
-                        count = 1
+                        count = 2
                     },
                     // Trigger Imbued Construct Attack on Cantrip Play
                     new AImbuedConstructShoot()

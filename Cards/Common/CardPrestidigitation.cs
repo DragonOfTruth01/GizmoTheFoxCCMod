@@ -49,6 +49,7 @@ internal sealed class CardPrestidigitation : Card, IGizmoTheFoxCCModCard
                     new ACustomAddCantrip()
                     {
                         cantripType = ACustomAddCantrip.AddCantripType.addCantrip2,
+                        dest = CardDestination.Hand,
                         disabled = flipped
                     },
                     new ADummyAction(),
@@ -62,6 +63,7 @@ internal sealed class CardPrestidigitation : Card, IGizmoTheFoxCCModCard
                     new ACustomAddCantrip()
                     {
                         cantripType = ACustomAddCantrip.AddCantripType.addCantrip2,
+                        dest = CardDestination.Hand,
                         disabled = !flipped
                     }
                 };
@@ -78,6 +80,7 @@ internal sealed class CardPrestidigitation : Card, IGizmoTheFoxCCModCard
                     new ACustomAddCantrip()
                     {
                         cantripType = ACustomAddCantrip.AddCantripType.addCantrip4,
+                        dest = CardDestination.Hand,
                         disabled = flipped
                     },
                     new ADummyAction(),
@@ -91,6 +94,7 @@ internal sealed class CardPrestidigitation : Card, IGizmoTheFoxCCModCard
                     new ACustomAddCantrip()
                     {
                         cantripType = ACustomAddCantrip.AddCantripType.addCantrip4,
+                        dest = CardDestination.Hand,
                         disabled = !flipped
                     }
                 };
@@ -107,6 +111,7 @@ internal sealed class CardPrestidigitation : Card, IGizmoTheFoxCCModCard
                     new ACustomAddCantrip()
                     {
                         cantripType = ACustomAddCantrip.AddCantripType.addCantrip2,
+                        dest = CardDestination.Hand,
                         disabled = flipped
                     },
                     new AStatus()
@@ -126,6 +131,7 @@ internal sealed class CardPrestidigitation : Card, IGizmoTheFoxCCModCard
                     new ACustomAddCantrip()
                     {
                         cantripType = ACustomAddCantrip.AddCantripType.addCantrip2,
+                        dest = CardDestination.Hand,
                         disabled = !flipped
                     }
                 };
