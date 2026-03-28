@@ -5,10 +5,7 @@
       "description": "Your artificer/alchemist. His cards allow you to <c=boldPink>brew potions</c> (temporary 0-cost cards granting benefits) by <c=boldPink>attuning</c> the four elements."
     },
     "GizmoTheFoxCCMod_Potion": {
-      "name": "Potion"
-    },
-    "GizmoTheFoxCCMod_ShimmeringPotion": {
-      "name": "Shimmering Potion"
+      "name": "Gizmo Potions"
     }
   },
   "action": {
@@ -160,6 +157,14 @@
     },
     "Prestidigitation": {
       "name": "Prestidigi-tation"
+    },
+    "Quick Brew": {
+      "name": "Quick Brew",
+      "description": {
+        "None": "Obtain a random <c=card>potion</c>. After {{numPlaysString}}, raise cost by 1 this combat.",
+        "A": "Obtain 1 of 2 <c=card>potions</c>. After {{numPlaysString}}, raise cost by 1 this combat.",
+        "B": "Add 3 random <c=card>potions</c> to your draw pile."
+      }
     },
     "Sea Quake": {
       "name": "Sea Quake"

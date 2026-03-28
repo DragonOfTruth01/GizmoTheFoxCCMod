@@ -14,7 +14,7 @@ internal sealed class CardIceBomb : Card, IGizmoTheFoxCCModCard
             Meta = new()
             {
                 deck = ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
-                rarity = Rarity.common
+                rarity = Rarity.uncommon
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Ice Bomb", "name"]).Localize
         });

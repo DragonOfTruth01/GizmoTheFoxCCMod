@@ -103,7 +103,6 @@ public sealed class ModEntry : SimpleMod
     // Custom Decks
     internal IDeckEntry GizmoTheFoxCCMod_Character_Deck { get; }
     internal IDeckEntry GizmoTheFoxCCMod_Potion_Deck { get; }
-    internal IDeckEntry GizmoTheFoxCCMod_ShimmeringPotion_Deck { get; }
 
     // Custom Statuses
     internal IStatusEntry Attunement { get; }
@@ -137,7 +136,8 @@ public sealed class ModEntry : SimpleMod
         typeof(CardDimensionalStorage),
         typeof(CardArcaneCapacitor),
         typeof(CardFermentedTincture),
-        typeof(CardForage)
+        typeof(CardForage),
+        typeof(CardQuickBrew)
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_RareCard_Types { get; } = [
@@ -337,21 +337,6 @@ public sealed class ModEntry : SimpleMod
             BorderSprite = GizmoTheFoxCCMod_Character_CardFrame.Sprite,
 
             Name = AnyLocalizations.Bind(["character", "GizmoTheFoxCCMod_Potion", "name"]).Localize,
-        });
-
-        GizmoTheFoxCCMod_ShimmeringPotion_Deck = helper.Content.Decks.RegisterDeck("GizmoTheFoxCCModShimmeringPotionDeck", new DeckConfiguration()
-        {
-            Definition = new DeckDef()
-            {
-                color = new Color("f7af41"),
-
-                titleColor = new Color("000000")
-            },
-
-            DefaultCardArt = GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
-            BorderSprite = GizmoTheFoxCCMod_Character_CardFrame.Sprite,
-
-            Name = AnyLocalizations.Bind(["character", "GizmoTheFoxCCMod_ShimmeringPotion", "name"]).Localize,
         });
 
         // Register Animations

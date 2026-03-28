@@ -81,6 +81,7 @@ internal sealed class AttunementManager : IKokoroApi.IV2.IStatusRenderingApi.IHo
                 amount = 3,
                 limitDeck = ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
                 canSkip = false,
+                rarityOverride = Rarity.uncommon, // Non-shimmering potions
                 inCombat = true
             });
 
