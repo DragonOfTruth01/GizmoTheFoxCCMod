@@ -27,7 +27,7 @@
     },
     "Attune Random": {
       "name": "Attune Random",
-      "description": "<c=boldPink>Attune</c> a random element <c=boldPink>{{execCountString}}</c> times."
+      "description": "<c=boldPink>Attune</c> a random element {{execCountString}}</c> times."
     },
     "Attune Earth and Water": {
       "name": "Attune Earth and Water",
@@ -85,12 +85,7 @@
       "name": "Diametric Decoction"
     },
     "Evocation": {
-      "name" : "Evocation",
-      "description": {
-        "None": "Add 1 of 4 <c=card>cantrips</c> to your hand.",
-        "A": "Add 1 of 4 <c=card>cantrips</c> with <c=cardtrait>A upgrade</c> to your draw pile.",
-        "B": "Add 1 of 4 <c=card>cantrips</c> with <c=cardtrait>B upgrade</c> to your hand."
-      }
+      "name" : "Evocation"
     },
     "Steam Engine": {
       "name": "Steam Engine"
@@ -106,7 +101,7 @@
     "Arcane Capacitor": {
       "name": "Arcane Capacitor",
       "description": {
-        "None": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor</c> to your discard pile.",
+        "None": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor</c>  to your discard pile.",
         "A": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor A</c> to your discard pile.",
         "B": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor B</c> to your discard pile."
       }

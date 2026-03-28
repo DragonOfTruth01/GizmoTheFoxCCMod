@@ -27,6 +27,7 @@ internal sealed class CardWildMagic : Card, IGizmoTheFoxCCModCard
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
             cost = upgrade == Upgrade.A ? 0 : 1,
+            artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Character_CardOverlaySpellUncommon.Sprite,
             floppable = true,
             exhaust = true
         };
