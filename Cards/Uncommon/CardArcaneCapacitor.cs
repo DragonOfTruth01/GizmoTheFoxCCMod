@@ -28,6 +28,7 @@ internal sealed class CardArcaneCapacitor : Card, IGizmoTheFoxCCModCard
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
             description = ModEntry.Instance.Localizations.Localize(["card", "Arcane Capacitor", "description", upgrade.ToString()]),
             cost = 0,
+            retain = true,
             exhaust = true
         };
         return data;
