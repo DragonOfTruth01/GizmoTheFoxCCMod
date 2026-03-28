@@ -55,7 +55,7 @@ public sealed class ACustomAddCantrip : CardAction
                 case AddCantripType.addCantrip4:
                     c.QueueImmediate(new ASpecificCardOffering()
 			    			{
-			    				Destination = CardDestination.Hand,
+			    				Destination = dest,
 			    				Cards = [
 			    					new CardTremor(),
 			    					new CardGust(),
@@ -67,7 +67,7 @@ public sealed class ACustomAddCantrip : CardAction
                 case AddCantripType.addCantripA:
                     c.QueueImmediate(new ASpecificCardOffering()
 			    			{
-			    				Destination = CardDestination.Hand,
+			    				Destination = dest,
 			    				Cards = [
 			    					new CardTremor() { upgrade = Upgrade.A },
 			    					new CardGust() { upgrade = Upgrade.A },
@@ -79,7 +79,7 @@ public sealed class ACustomAddCantrip : CardAction
                 case AddCantripType.addCantripB:
                     c.QueueImmediate(new ASpecificCardOffering()
 			    			{
-			    				Destination = CardDestination.Hand,
+			    				Destination = dest,
 			    				Cards = [
 			    					new CardTremor() { upgrade = Upgrade.B },
 			    					new CardGust() { upgrade = Upgrade.B },
