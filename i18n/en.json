@@ -117,6 +117,14 @@
     "Discharged Capacitor": {
       "name": "Discharged Capacitor"
     },
+    "Fermented Tincture": {
+      "name": "Fermented Tincture",
+      "description": {
+        "None": "Permanently reduce cost by 1 when drawn. <c=heal>Gain 3 max hull.</c>",
+        "A": "Permanently reduce cost by 1 when drawn. <c=heal>Gain 3 max hull.</c>",
+        "B": "Permanently reduce cost by 1 when drawn. <c=heal>Gain 5 max hull.</c>"
+      }
+    },
     "Flare": {
       "name": "Flare"
     },
