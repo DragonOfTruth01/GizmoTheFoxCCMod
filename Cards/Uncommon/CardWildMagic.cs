@@ -49,10 +49,9 @@ internal sealed class CardWildMagic : Card, IGizmoTheFoxCCModCard
                         targetPlayer = true,
                         disabled = flipped
                     },
-                    new ACustomAddCantrip()
+                    new AAddRandomCantrip()
                     {
-                        cantripType = ACustomAddCantrip.AddCantripType.addCantripB,
-                        dest = CardDestination.Hand,
+                        upgr = Upgrade.None,
                         execCount = 2,
                         disabled = flipped
                     },
@@ -64,13 +63,12 @@ internal sealed class CardWildMagic : Card, IGizmoTheFoxCCModCard
                         targetPlayer = true,
                         disabled = !flipped
                     },
-                    new ACustomAddCantrip()
+                    new AAddRandomCantrip()
                     {
-                        cantripType = ACustomAddCantrip.AddCantripType.addCantripB,
-                        dest = CardDestination.Hand,
+                        upgr = Upgrade.None,
                         execCount = 2,
                         disabled = !flipped
-                    }
+                    },
                 };
                 break;
 
@@ -84,10 +82,9 @@ internal sealed class CardWildMagic : Card, IGizmoTheFoxCCModCard
                         targetPlayer = true,
                         disabled = flipped
                     },
-                    new ACustomAddCantrip()
+                    new AAddRandomCantrip()
                     {
-                        cantripType = ACustomAddCantrip.AddCantripType.addCantripB,
-                        dest = CardDestination.Hand,
+                        upgr = Upgrade.None,
                         execCount = 2,
                         disabled = flipped
                     },
@@ -99,13 +96,12 @@ internal sealed class CardWildMagic : Card, IGizmoTheFoxCCModCard
                         targetPlayer = true,
                         disabled = !flipped
                     },
-                    new ACustomAddCantrip()
+                    new AAddRandomCantrip()
                     {
-                        cantripType = ACustomAddCantrip.AddCantripType.addCantripB,
-                        dest = CardDestination.Hand,
+                        upgr = Upgrade.None,
                         execCount = 2,
                         disabled = !flipped
-                    }
+                    },
                 };
                 break;
 
@@ -114,33 +110,31 @@ internal sealed class CardWildMagic : Card, IGizmoTheFoxCCModCard
                 {
                     new AMove()
                     {
-                        dir = 1,
+                        dir = 2,
                         isRandom = true,
                         targetPlayer = true,
                         disabled = flipped
                     },
-                    new ACustomAddCantrip()
+                    new AAddRandomCantrip()
                     {
-                        cantripType = ACustomAddCantrip.AddCantripType.addCantripB,
-                        dest = CardDestination.Hand,
+                        upgr = Upgrade.B,
                         execCount = 2,
                         disabled = flipped
                     },
                     new ADummyAction(),
                     new AMove()
                     {
-                        dir = 5,
+                        dir = 4,
                         isRandom = true,
                         targetPlayer = true,
                         disabled = !flipped
                     },
-                    new ACustomAddCantrip()
+                    new AAddRandomCantrip()
                     {
-                        cantripType = ACustomAddCantrip.AddCantripType.addCantripB,
-                        dest = CardDestination.Hand,
+                        upgr = Upgrade.B,
                         execCount = 2,
                         disabled = !flipped
-                    }
+                    },
                 };
                 break;
         }

@@ -89,6 +89,7 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_AddCantripA { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AddCantripB { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AddCantripRandom { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AddCantripRandomB { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_stoneConstructSmall { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_imbuedStoneConstructSmall { get; }
 
@@ -279,6 +280,7 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_AddCantripA = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantripA.png"));
         GizmoTheFoxCCMod_AddCantripB = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantripB.png"));
         GizmoTheFoxCCMod_AddCantripRandom = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantripRandom.png"));
+        GizmoTheFoxCCMod_AddCantripRandomB = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantripRandomB.png"));
         GizmoTheFoxCCMod_stoneConstructSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/stoneConstructSmall.png"));
         GizmoTheFoxCCMod_imbuedStoneConstructSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/imbuedStoneConstructSmall.png"));
 
