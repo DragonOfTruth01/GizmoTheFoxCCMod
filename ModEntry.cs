@@ -103,6 +103,7 @@ public sealed class ModEntry : SimpleMod
 
     // Custom Status Icons
     internal ISpriteEntry GizmoTheFoxCCMod_Attunement { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Absorb { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_WindCharge { get; }
 
     // Custom Decks
@@ -111,6 +112,7 @@ public sealed class ModEntry : SimpleMod
 
     // Custom Statuses
     internal IStatusEntry Attunement { get; }
+    internal IStatusEntry Absorb { get; }
     internal IStatusEntry WindCharge { get; }
     internal IStatusEntry AttunementCount { get; }
 
@@ -127,6 +129,7 @@ public sealed class ModEntry : SimpleMod
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_CommonCard_Types { get; } = [
         typeof(CardHomunculus),
+        typeof(CardAbsorbElements),
         typeof(CardConjureManaBlades),
         typeof(CardDiametricDecoction),
         typeof(CardEvocation),
@@ -302,6 +305,7 @@ public sealed class ModEntry : SimpleMod
         // Custom Status Icons
 
         GizmoTheFoxCCMod_Attunement = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/attunement.png"));
+        GizmoTheFoxCCMod_Absorb = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/absorb.png"));
         GizmoTheFoxCCMod_WindCharge = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/windCharge.png"));
 
         // Register Custom Decks
@@ -479,6 +483,18 @@ public sealed class ModEntry : SimpleMod
             Description = AnyLocalizations.Bind(["status", "Attunement", "description"]).Localize
         });
 
+        Absorb = helper.Content.Statuses.RegisterStatus("Absorb", new()
+        {
+            Definition = new()
+            {
+                icon = GizmoTheFoxCCMod_Absorb.Sprite,
+                color = new("3068b3"),
+                isGood = true
+            },
+            Name = AnyLocalizations.Bind(["status", "Absorb", "name"]).Localize,
+            Description = AnyLocalizations.Bind(["status", "Absorb", "description"]).Localize
+        });
+
         WindCharge = helper.Content.Statuses.RegisterStatus("Wind Charge", new()
         {
             Definition = new()
@@ -504,6 +520,7 @@ public sealed class ModEntry : SimpleMod
             Description = AnyLocalizations.Bind(["status", "AttunementCount", "description"]).Localize
         });
         
+        _ = new AbsorbManager();
         _ = new AttunementManager();
         _ = new WindChargeManager();
     }

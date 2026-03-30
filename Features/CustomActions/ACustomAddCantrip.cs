@@ -124,6 +124,13 @@ public sealed class ACustomAddCantrip : CardAction
                         TitleColor = Colors.action,
                         Title = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip 2", "name"]),
                         Description = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip 2", "description"], new { execCountString })
+                    },
+                    new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::Cantrip")
+                    {
+                        Icon = ModEntry.Instance.GizmoTheFoxCCMod_AddCantrip4.Sprite,
+                        TitleColor = Colors.action,
+                        Title = ModEntry.Instance.Localizations.Localize(["action", "Cantrip", "name"]),
+                        Description = ModEntry.Instance.Localizations.Localize(["action", "Cantrip", "description"] )
                     }];
             case AddCantripType.addCantrip4:
                 return [new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AddCantrip4")
@@ -132,6 +139,13 @@ public sealed class ACustomAddCantrip : CardAction
                         TitleColor = Colors.action,
                         Title = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip 4", "name"]),
                         Description = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip 4", "description"], new { execCountString })
+                    },
+                    new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::Cantrip")
+                    {
+                        Icon = ModEntry.Instance.GizmoTheFoxCCMod_AddCantrip4.Sprite,
+                        TitleColor = Colors.action,
+                        Title = ModEntry.Instance.Localizations.Localize(["action", "Cantrip", "name"]),
+                        Description = ModEntry.Instance.Localizations.Localize(["action", "Cantrip", "description"] )
                     }];
             case AddCantripType.addCantripA:
                 return [new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AddCantripA")
@@ -140,6 +154,13 @@ public sealed class ACustomAddCantrip : CardAction
                         TitleColor = Colors.action,
                         Title = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip A", "name"]),
                         Description = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip A", "description"], new { execCountString })
+                    },
+                    new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::Cantrip")
+                    {
+                    Icon = ModEntry.Instance.GizmoTheFoxCCMod_AddCantrip4.Sprite,
+                    TitleColor = Colors.action,
+                    Title = ModEntry.Instance.Localizations.Localize(["action", "Cantrip", "name"]),
+                    Description = ModEntry.Instance.Localizations.Localize(["action", "Cantrip", "description"] )
                     }];
             case AddCantripType.addCantripB:
                 return [new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AddCantripB")
@@ -148,6 +169,13 @@ public sealed class ACustomAddCantrip : CardAction
                         TitleColor = Colors.action,
                         Title = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip B", "name"]),
                         Description = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip B", "description"], new { execCountString })
+                    },
+                    new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::Cantrip")
+                    {
+                        Icon = ModEntry.Instance.GizmoTheFoxCCMod_AddCantrip4.Sprite,
+                        TitleColor = Colors.action,
+                        Title = ModEntry.Instance.Localizations.Localize(["action", "Cantrip", "name"]),
+                        Description = ModEntry.Instance.Localizations.Localize(["action", "Cantrip", "description"] )
                     }];
             default:
                 return [new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AddCantripRandom")
@@ -156,6 +184,13 @@ public sealed class ACustomAddCantrip : CardAction
                         TitleColor = Colors.action,
                         Title = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip Random", "name"]),
                         Description = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip Random", "description"], new { execCountString })
+                    },
+                    new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::Cantrip")
+                    {
+                        Icon = ModEntry.Instance.GizmoTheFoxCCMod_AddCantrip4.Sprite,
+                        TitleColor = Colors.action,
+                        Title = ModEntry.Instance.Localizations.Localize(["action", "Cantrip", "name"]),
+                        Description = ModEntry.Instance.Localizations.Localize(["action", "Cantrip", "description"] )
                     }];
         }
     }

@@ -69,6 +69,10 @@
       "name": "Add Random Cantrip B to Hand",
       "description": "Add <c=boldPink>{{execCountString}}</c> random <c=card>cantrips</c> with <c=cardtrait>B upgrade</c> to your hand."
     },
+    "Cantrip": {
+      "name": "Cantrip",
+      "description": "A 0-cost card which <c=boldPink>attunes</c> a specific element and draws a card."
+    },
     "Is Attuned Earth": {
       "name": "EARTH IS ATTUNED",
       "description": "the <c=796775>earth</c> element is <c=boldPink>attuned</c>"
@@ -93,6 +97,9 @@
     }
   },
   "card": {
+    "Absorb Elements": {
+      "name": "Absorb Elements"
+    },
     "Conjure Mana Blades": {
       "name": "Conjure Mana Blades",
       "description": {
@@ -216,6 +223,10 @@
     }
   },
   "status": {
+    "Absorb": {
+      "name": "Absorb",
+      "description": "When hit by an attack, <c=boldPink>attune</c> a random non-attuned element. <c=downside>Goes away at the start of your next turn.</c>"
+    },
     "Attunement": {
       "name": "Attunement",
       "description": "Currently <c=boldPink>attuned</c> elements. When all elements are <c=boldPink>attuned</c>, add 1 of 3 <c=boldPink>potions</c> to your hand."
