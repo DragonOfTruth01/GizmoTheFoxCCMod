@@ -60,8 +60,8 @@ internal sealed class CardAbsorbElements : Card, IGizmoTheFoxCCModCard
                 {
                     new AStatus()
                     {
-                        status = Status.shield,
-                        statusAmount = 2,
+                        status = Status.tempShield,
+                        statusAmount = 3,
                         targetPlayer = true
                     },
                     new AStatus()
@@ -79,13 +79,13 @@ internal sealed class CardAbsorbElements : Card, IGizmoTheFoxCCModCard
                     new AStatus()
                     {
                         status = Status.tempShield,
-                        statusAmount = 3,
+                        statusAmount = 1,
                         targetPlayer = true
                     },
                     new AStatus()
                     {
                         status = ModEntry.Instance.Absorb.Status,
-                        statusAmount = 1,
+                        statusAmount = 2,
                         targetPlayer = true
                     }
                 };
