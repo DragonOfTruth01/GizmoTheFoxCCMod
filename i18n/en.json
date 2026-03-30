@@ -128,9 +128,9 @@
     "Arcane Capacitor": {
       "name": "Arcane Capacitor",
       "description": {
-        "None": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor</c>  to your discard pile.",
-        "A": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor A</c> to your discard pile.",
-        "B": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor B</c> to your discard pile."
+        "None": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor</c> to your draw pile.",
+        "A": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor A</c> to your  draw pile.",
+        "B": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor B</c> to your  draw pile."
       }
     },
     "Chromatic Orb": {

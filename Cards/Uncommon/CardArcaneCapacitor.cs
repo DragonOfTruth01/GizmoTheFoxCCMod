@@ -49,7 +49,7 @@ internal sealed class CardArcaneCapacitor : Card, IGizmoTheFoxCCModCard
                     new AAddCard()
                     {
                         card = new CardDischargedCapacitor() { upgrade = Upgrade.None },
-                        destination = CardDestination.Discard,
+                        destination = CardDestination.Deck,
                         amount = 1
                     }
                 };
@@ -65,7 +65,7 @@ internal sealed class CardArcaneCapacitor : Card, IGizmoTheFoxCCModCard
                     new AAddCard()
                     {
                         card = new CardDischargedCapacitor() { upgrade = Upgrade.A },
-                        destination = CardDestination.Discard,
+                        destination = CardDestination.Deck,
                         amount = 1
                     }
                 };
@@ -81,7 +81,7 @@ internal sealed class CardArcaneCapacitor : Card, IGizmoTheFoxCCModCard
                     new AAddCard()
                     {
                         card = new CardDischargedCapacitor() { upgrade = Upgrade.B },
-                        destination = CardDestination.Discard,
+                        destination = CardDestination.Deck,
                         amount = 1
                     }
                 };

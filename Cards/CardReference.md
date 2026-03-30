@@ -19,7 +19,7 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Uncommon | Forage | 1 | Attune a random non-attuned element. Draw 3 cards. | Instead draw 5 cards. | Attune two random non-attuned elements. |
 | Yes | Uncommon | Imbue | 1 | If attuned earth, gain 1 stun charge. If attuned wind, gain 1 wind charge. If attuned fire, gain 1 overdrive. If attuned water, gain 1 flux. Exhaust. | Card gains retain. | Remove exhaust. Also unattune all elements. |
 | Yes | Uncommon | Fermented Tincture | 8 | Gain 3 max hull. Permanently reduce cost by 1 when drawn. Single use. Fleeting. | Reduce cost by 2. | Increase cost by 3 (max 11). Gain 5 max hull instead. |
-| Yes | Uncommon | Arcane Capacitor | 0 | Gain 2 energy. Add a Discharged Capacitor to your discard pile. Retain. Exhaust. | Discharged Capacitor gains A upgrade. | Discharged capacitor gains B upgrade. |
+| Yes | Uncommon | Arcane Capacitor | 0 | Gain 2 energy. Add a Discharged Capacitor to your draw pile. Retain. Exhaust. | Discharged Capacitor gains A upgrade. | Discharged capacitor gains B upgrade. |
 | Yes | Uncommon | Quick Brew | 0 | Add a random potion to your hand. Every 2 plays, increase cost by 1. | Instead add 1 of 2 potions to your hand. | Instead add 3 random potions to your draw pile. Exhaust. |
 | Yes | Uncommon | Chromatic Orb | 1 | Attack 2. Draw a card for each attuned element. Unattune all elements. | Increase damage to 3. | Instead add a cantrip with A upgrade to hand for each corresponding element. Exhaust. |
 | Yes | Uncommon | Wild Magic | 1 | Floppable. Move 2 / 4 random. Add 2 random cantrips to your hand. Exhaust. | Reduce cost to 0. | Added cantrips gain B upgrade. |
