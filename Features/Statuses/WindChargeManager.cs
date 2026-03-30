@@ -1,14 +1,6 @@
-﻿namespace DragonOfTruth01.GizmoTheFoxCCMod;
+﻿using HarmonyLib;
 
-using HarmonyLib;
-using FSPRO;
-using System;
-using System.Linq;
-using System.Collections.Generic;
-using System.Collections.Immutable;
-using OneOf.Types;
-using System.Runtime.CompilerServices;
-using System.Reflection.Metadata;
+namespace DragonOfTruth01.GizmoTheFoxCCMod;
 
 [HarmonyPatch]
 internal sealed class WindChargeManager : IKokoroApi.IV2.IStatusLogicApi.IHook
@@ -30,7 +22,8 @@ internal sealed class WindChargeManager : IKokoroApi.IV2.IStatusLogicApi.IHook
         var ship = GetShip(__instance, s);
 
         // If we have at least 1 wind charge, immediately lose 1 wind charge and gain one evade
-        if(ship.Get(ModEntry.Instance.WindCharge.Status) > 0)
+        if(ship.Get(ModEntry.Instance.WindCharge.Status) > 0
+           && __instance.fromDroneX == null)
         {
             c.QueueImmediate(new AStatus
             {

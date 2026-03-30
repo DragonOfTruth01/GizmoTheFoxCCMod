@@ -23,12 +23,12 @@ internal sealed class CardFlare : Card, IGizmoTheFoxCCModCard, IHasCustomCardTra
 
         // Set limited on cards
         ModEntry.Instance.KokoroApi.Limited.SetBaseLimitedUses(entry.UniqueName, Upgrade.None, 3);
-        ModEntry.Instance.KokoroApi.Limited.SetBaseLimitedUses(entry.UniqueName, Upgrade.A, 5);
+        ModEntry.Instance.KokoroApi.Limited.SetBaseLimitedUses(entry.UniqueName, Upgrade.A, 3);
         ModEntry.Instance.KokoroApi.Limited.SetBaseLimitedUses(entry.UniqueName, Upgrade.B, 3);
     }
 
     public IReadOnlySet<ICardTraitEntry> GetInnateTraits(State state)
-		=> new HashSet<ICardTraitEntry> { ModEntry.Instance.KokoroApi.Limited.Trait, ModEntry.Instance.KokoroApi.Fleeting.Trait };
+		=> new HashSet<ICardTraitEntry> { ModEntry.Instance.KokoroApi.Limited.Trait };
 
     public override CardData GetData(State state)
     {
@@ -51,6 +51,7 @@ internal sealed class CardFlare : Card, IGizmoTheFoxCCModCard, IHasCustomCardTra
             case Upgrade.None:
                 actions = new()
                 {
+                    new ADummyAction(), // for padding
                     new AAttune()
                     {
                         elementBitfieldModifier = AttunementManager.FireBitMask
@@ -58,27 +59,33 @@ internal sealed class CardFlare : Card, IGizmoTheFoxCCModCard, IHasCustomCardTra
                     new ADrawCard()
                     {
                         count = 1
-                    }
+                    },
+                    // Trigger Imbued Construct Attack on Cantrip Play
+                    new AImbuedConstructShoot()
                 };
                 break;
 
             case Upgrade.A:
                 actions = new()
                 {
+                    new ADummyAction(), // for padding
                     new AAttune()
                     {
                         elementBitfieldModifier = AttunementManager.FireBitMask
                     },
                     new ADrawCard()
                     {
-                        count = 1
-                    }
+                        count = 2
+                    },
+                    // Trigger Imbued Construct Attack on Cantrip Play
+                    new AImbuedConstructShoot()
                 };
                 break;
 
             case Upgrade.B:
                 actions = new()
                 {
+                    new ADummyAction(), // for padding
                     new AAttune()
                     {
                         elementBitfieldModifier = AttunementManager.FireBitMask
@@ -92,7 +99,9 @@ internal sealed class CardFlare : Card, IGizmoTheFoxCCModCard, IHasCustomCardTra
                         status = Status.tempShield,
                         statusAmount = 1,
                         targetPlayer = true
-                    }
+                    },
+                    // Trigger Imbued Construct Attack on Cantrip Play
+                    new AImbuedConstructShoot()
                 };
                 break;
         }

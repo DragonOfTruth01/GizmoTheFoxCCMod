@@ -2,13 +2,10 @@
   "character": {
     "GizmoTheFoxCCMod_Character": {
       "name": "Gizmo",
-      "description": "Your artificer/alchemist. His cards allow you to <c=boldPink>brew potions</c> (temporary 0-cost cards granting benefits) by <c=boldPink>attuning</c> the four elements."
+      "description": "An artificer from a distant realm. His cards allow <c=boldPink>attunement</c> of the four elements to brew <c=boldPink>potions</c> and perform other effects."
     },
     "GizmoTheFoxCCMod_Potion": {
-      "name": "Potion"
-    },
-    "GizmoTheFoxCCMod_ShimmeringPotion": {
-      "name": "Shimmering Potion"
+      "name": "Gizmo Potions"
     }
   },
   "action": {
@@ -30,7 +27,7 @@
     },
     "Attune Random": {
       "name": "Attune Random",
-      "description": "<c=boldPink>Attune</c> a random element <c=boldPink>{{execCountString}}</c> times."
+      "description": "<c=boldPink>Attune</c> a random element {{execCountString}}</c> times."
     },
     "Attune Earth and Water": {
       "name": "Attune Earth and Water",
@@ -67,6 +64,30 @@
     "Add Cantrip Random": {
       "name": "Add Random Cantrip to Hand",
       "description": "Add <c=boldPink>{{execCountString}}</c> random <c=card>cantrips</c> to your hand."
+    },
+    "Add Cantrip Random B": {
+      "name": "Add Random Cantrip B to Hand",
+      "description": "Add <c=boldPink>{{execCountString}}</c> random <c=card>cantrips</c> with <c=cardtrait>B upgrade</c> to your hand."
+    },
+    "Cantrip": {
+      "name": "Cantrip",
+      "description": "A 0-cost card which <c=boldPink>attunes</c> a specific element and draws a card."
+    },
+    "Is Attuned Earth": {
+      "name": "EARTH IS ATTUNED",
+      "description": "the <c=796775>earth</c> element is <c=boldPink>attuned</c>"
+    },
+    "Is Attuned Wind": {
+      "name": "WIND IS ATTUNED",
+      "description": "the <c=14a02e>wind</c> element is <c=boldPink>attuned</c>"
+    },
+    "Is Attuned Fire": {
+      "name": "FIRE IS ATTUNED",
+      "description": "the <c=e74c31>fire</c> element is <c=boldPink>attuned</c>"
+    },
+    "Is Attuned Water": {
+      "name": "WATER IS ATTUNED",
+      "description": "the <c=3e71d6>water</c> element is <c=boldPink>attuned</c>"
     }
   },
   "artifact": {
@@ -76,13 +97,8 @@
     }
   },
   "card": {
-    "Bloodstone Battleaxe": {
-      "name": "Bloodstone Battleaxe",
-      "description": {
-        "None": "Deal <c=boldPink>{{damageCalc}}</c> <c=keyword>pierce</c> dmg. <c=boldPink>Attune</c> <c=796775>earth</c>. Increase damage by 1.",
-        "A": "Deal <c=boldPink>{{damageCalc}}</c> <c=keyword>pierce</c> dmg. <c=boldPink>Attune</c> <c=796775>earth</c>. Increase damage by 1.",
-        "B": "Deal <c=boldPink>{{damageCalc}}</c> <c=keyword>pierce</c> dmg. <c=boldPink>Attune</c> <c=796775>earth</c>. Increase damage by 2."
-      }
+    "Absorb Elements": {
+      "name": "Absorb Elements"
     },
     "Conjure Mana Blades": {
       "name": "Conjure Mana Blades",
@@ -96,15 +112,45 @@
       "name": "Diametric Decoction"
     },
     "Evocation": {
-      "name" : "Evocation",
+      "name" : "Evocation"
+    },
+    "Steam Engine": {
+      "name": "Steam Engine"
+    },
+    "Dimensional Storage": {
+      "name": "Dimensional Storage",
       "description": {
-        "None": "Add 1 of 4 <c=card>cantrips</c> to your hand.",
-        "A": "Add 1 of 4 <c=card>cantrips</c> with <c=cardtrait>A upgrade</c> to your hand.",
-        "B": "Add 1 of 4 <c=card>cantrips</c> with <c=cardtrait>B upgrade</c> to your hand."
+        "None": "Move two cards from your discard pile to your hand.",
+        "A": "Move two cards from your discard pile to your hand.",
+        "B": "Move two cards from your discard pile to your hand."
       }
     },
-    "Flame Vortex": {
-      "name": "Flame Vortex"
+    "Arcane Capacitor": {
+      "name": "Arcane Capacitor",
+      "description": {
+        "None": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor</c> to your draw pile.",
+        "A": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor A</c> to your  draw pile.",
+        "B": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor B</c> to your  draw pile."
+      }
+    },
+    "Chromatic Orb": {
+      "name": "Chromatic Orb",
+      "description": {
+        "None": "Deal <c=redd>{{damageString}}</c> dmg. Draw 1 card for each <c=boldPink>attuned element</c>, then <c=boldPink>unattune</c>.",
+        "A": "Deal <c=redd>{{damageString}}</c> dmg. Draw 1 card for each <c=boldPink>attuned element</c>, then <c=boldPink>unattune</c>.",
+        "B": "Deal <c=redd>{{damageString}}</c> dmg. Add a <c=card>cantrip A</c> for each <c=boldPink>attuned element</c>, then <c=boldPink>unattune</c>."
+      }
+    },
+    "Discharged Capacitor": {
+      "name": "Discharged Capacitor"
+    },
+    "Fermented Tincture": {
+      "name": "Fermented Tincture",
+      "description": {
+        "None": "Permanently reduce cost by 1 when drawn. <c=heal>Gain 3 max hull.</c>",
+        "A": "Permanently reduce cost by 1 when drawn. <c=heal>Gain 3 max hull.</c>",
+        "B": "Permanently reduce cost by 1 when drawn. <c=heal>Gain 5 max hull.</c>"
+      }
     },
     "Flare": {
       "name": "Flare"
@@ -121,8 +167,14 @@
     "Gust": {
       "name": "Gust"
     },
+    "Homunculus": {
+      "name": "Homunculus"
+    },
     "Ice Bomb": {
       "name": "Ice Bomb"
+    },
+    "Imbue": {
+      "name": "Imbue"
     },
     "Magic Missile": {
       "name": "Magic Missile"
@@ -139,6 +191,14 @@
     "Prestidigitation": {
       "name": "Prestidigi-tation"
     },
+    "Quick Brew": {
+      "name": "Quick Brew",
+      "description": {
+        "None": "Obtain a random <c=card>potion</c>. After {{numPlaysString}}, raise cost by 1 this combat.",
+        "A": "Obtain 1 of 2 <c=card>potions</c>. After {{numPlaysString}}, raise cost by 1 this combat.",
+        "B": "Add 3 random <c=card>potions</c> to your draw pile."
+      }
+    },
     "Sea Quake": {
       "name": "Sea Quake"
     },
@@ -147,9 +207,26 @@
     },
     "Whirlpool": {
       "name": "Whirlpool"
+    },
+    "Wild Magic": {
+      "name": "Wild Magic"
+    }
+  },
+  "midrow":{
+    "Stone Construct":{
+      "name": "Stone Construct",
+      "description": "<c=boldPink>Attune</c> 2 random unattuned elements when destroyed."
+    },
+    "Imbued Stone Construct":{
+      "name": "Imbued Stone Construct",
+      "description": "Shoots a <c=boldPink>{{atkDmg}}</c> damage shot when a cantrip is played. <c=boldPink>Attune</c> 2 random unattuned elements when destroyed."
     }
   },
   "status": {
+    "Absorb": {
+      "name": "Absorb",
+      "description": "When hit by an attack, <c=boldPink>attune</c> a random non-attuned element. <c=downside>Goes away at the start of your next turn.</c>"
+    },
     "Attunement": {
       "name": "Attunement",
       "description": "Currently <c=boldPink>attuned</c> elements. When all elements are <c=boldPink>attuned</c>, add 1 of 3 <c=boldPink>potions</c> to your hand."

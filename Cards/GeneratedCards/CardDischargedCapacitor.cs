@@ -1,26 +1,26 @@
 using Nickel;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Reflection;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod.Cards;
 
-internal sealed class CardMagicMissile : Card, IGizmoTheFoxCCModCard
+internal sealed class CardDischargedCapacitor : Card, IGizmoTheFoxCCModCard
 {
     private static IKokoroApi.IV2.IConditionalApi Conditional => ModEntry.Instance.KokoroApi.Conditional;
 
     public static void Register(IModHelper helper)
     {
-        var entry = helper.Content.Cards.RegisterCard("Magic Missile", new()
+        helper.Content.Cards.RegisterCard("Discharged Capacitor", new()
         {
             CardType = MethodBase.GetCurrentMethod()!.DeclaringType!,
             Meta = new()
             {
-                deck = ModEntry.Instance.GizmoTheFoxCCMod_Character_Deck.Deck,
+                deck = Deck.trash,
                 rarity = Rarity.common,
-                upgradesTo = [Upgrade.A, Upgrade.B]
+                upgradesTo = [Upgrade.A, Upgrade.B],
+                dontOffer = true
             },
-            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Magic Missile", "name"]).Localize
+            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Discharged Capacitor", "name"]).Localize
         });
     }
 
@@ -30,10 +30,12 @@ internal sealed class CardMagicMissile : Card, IGizmoTheFoxCCModCard
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
             cost = 1,
-            artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Character_CardOverlaySpellCommon.Sprite
+            temporary = true,
+            exhaust = true
         };
         return data;
     }
+
     public override List<CardAction> GetActions(State s, Combat c)
     {
         List<CardAction> actions = new();
@@ -41,29 +43,17 @@ internal sealed class CardMagicMissile : Card, IGizmoTheFoxCCModCard
         switch (upgrade)
         {
             case Upgrade.None:
-
-            CardAction act2CardU = GenerateAttuneConditionalAttack(s, 2, false);
-            CardAction act3CardU = GenerateAttuneConditionalAttack(s, 3, false);
+                CardAction act1CardU = GenerateAttuneConditionalAddCard(s, 3, Upgrade.None);
 
                 actions = new()
                 {
-                    new AAttack
-                    {
-                        damage = GetDmg(s, 1)
-                    },
                     ModEntry.Instance.KokoroApi.SpoofedActions.MakeAction(
-                        act2CardU,
-                        new AAttack()
+                        act1CardU,
+                        new AAddCard()
                         {
-                            damage = GetDmg(s, 1),
-                            disabled = GetNumAttunedElements(s) < 2
-                        }
-                    ).AsCardAction,
-                    ModEntry.Instance.KokoroApi.SpoofedActions.MakeAction(
-                        act3CardU,
-                        new AAttack()
-                        {
-                            damage = GetDmg(s, 1),
+                            card = new CardArcaneCapacitor() { upgrade = Upgrade.None, temporaryOverride = true },
+                            destination = CardDestination.Hand,
+                            amount = 1,
                             disabled = GetNumAttunedElements(s) < 3
                         }
                     ).AsCardAction,
@@ -78,38 +68,18 @@ internal sealed class CardMagicMissile : Card, IGizmoTheFoxCCModCard
                 break;
 
             case Upgrade.A:
-                CardAction act1CardA = GenerateAttuneConditionalAttack(s, 1, false);
-                CardAction act2CardA = GenerateAttuneConditionalAttack(s, 2, false);
-                CardAction act3CardA = GenerateAttuneConditionalAttack(s, 3, false);
+                CardAction act1CardA = GenerateAttuneConditionalAddCard(s, 2, Upgrade.A);
 
                 actions = new()
                 {
-                    new AAttack
-                    {
-                        damage = GetDmg(s, 1)
-                    },
                     ModEntry.Instance.KokoroApi.SpoofedActions.MakeAction(
                         act1CardA,
-                        new AAttack()
+                        new AAddCard()
                         {
-                            damage = GetDmg(s, 1),
-                            disabled = GetNumAttunedElements(s) < 1
-                        }
-                    ).AsCardAction,
-                    ModEntry.Instance.KokoroApi.SpoofedActions.MakeAction(
-                        act2CardA,
-                        new AAttack()
-                        {
-                            damage = GetDmg(s, 1),
+                            card = new CardArcaneCapacitor() { upgrade = Upgrade.A, temporaryOverride = true },
+                            destination = CardDestination.Hand,
+                            amount = 1,
                             disabled = GetNumAttunedElements(s) < 2
-                        }
-                    ).AsCardAction,
-                    ModEntry.Instance.KokoroApi.SpoofedActions.MakeAction(
-                        act3CardA,
-                        new AAttack()
-                        {
-                            damage = GetDmg(s, 1),
-                            disabled = GetNumAttunedElements(s) < 3
                         }
                     ).AsCardAction,
                     new AStatus()
@@ -123,34 +93,24 @@ internal sealed class CardMagicMissile : Card, IGizmoTheFoxCCModCard
                 break;
 
             case Upgrade.B:
-                CardAction act2CardB = GenerateAttuneConditionalAttack(s, 2, true);
-                CardAction act3CardB = GenerateAttuneConditionalAttack(s, 3, true);
+                CardAction act1CardB = GenerateAttuneConditionalAddCard(s, 3, Upgrade.B);
 
                 actions = new()
                 {
-                    new AAttack
-                    {
-                        damage = GetDmg(s, 1),
-                        piercing = true
-                    },
                     ModEntry.Instance.KokoroApi.SpoofedActions.MakeAction(
-                        act2CardB,
-                        new AAttack()
+                        act1CardB,
+                        new AAddCard()
                         {
-                            damage = GetDmg(s, 1),
-                            piercing = true,
-                            disabled = GetNumAttunedElements(s) < 2
-                        }
-                    ).AsCardAction,
-                    ModEntry.Instance.KokoroApi.SpoofedActions.MakeAction(
-                        act3CardB,
-                        new AAttack()
-                        {
-                            damage = GetDmg(s, 1),
-                            piercing = true,
+                            card = new CardArcaneCapacitor() { upgrade = Upgrade.B, temporaryOverride = true },
+                            destination = CardDestination.Hand,
+                            amount = 1,
                             disabled = GetNumAttunedElements(s) < 3
                         }
                     ).AsCardAction,
+                    new ADrawCard()
+                    {
+                        count = 2
+                    },
                     new AStatus()
                     {
                         mode = AStatusMode.Set,
@@ -164,7 +124,7 @@ internal sealed class CardMagicMissile : Card, IGizmoTheFoxCCModCard
         return actions;
     }
 
-    private CardAction GenerateAttuneConditionalAttack(State s, int attuneAmount, bool isPiercing)
+    private CardAction GenerateAttuneConditionalAddCard(State s, int attuneAmount, Upgrade u)
     {
         IKokoroApi.IV2.IConditionalApi.IConditionalAction condAct = Conditional.MakeAction(
             Conditional.Equation(
@@ -173,9 +133,10 @@ internal sealed class CardMagicMissile : Card, IGizmoTheFoxCCModCard
                 Conditional.Constant(attuneAmount),
                 IKokoroApi.IV2.IConditionalApi.EquationStyle.Possession
             ).SetShowOperator(false),
-            new AAttack(){
-                damage = GetDmg(s, 1),
-                piercing = isPiercing
+            new AAddCard(){
+                card = new CardDischargedCapacitor() { upgrade = u, temporaryOverride = true },
+                destination = CardDestination.Hand,
+                amount = 1
             }
         );
 
@@ -194,7 +155,7 @@ internal sealed class CardMagicMissile : Card, IGizmoTheFoxCCModCard
         {
             return 3;
         }
-
+        
         int retVal = 0;
         int currAttunement = s.ship.Get(ModEntry.Instance.Attunement.Status);
 

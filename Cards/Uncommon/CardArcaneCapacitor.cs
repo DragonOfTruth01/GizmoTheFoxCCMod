@@ -4,20 +4,20 @@ using System.Reflection;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod.Cards;
 
-internal sealed class CardForage : Card, IGizmoTheFoxCCModCard
+internal sealed class CardArcaneCapacitor : Card, IGizmoTheFoxCCModCard
 {
     public static void Register(IModHelper helper)
     {
-        var entry = helper.Content.Cards.RegisterCard("Forage", new()
+        helper.Content.Cards.RegisterCard("Arcane Capacitor", new()
         {
             CardType = MethodBase.GetCurrentMethod()!.DeclaringType!,
             Meta = new()
             {
                 deck = ModEntry.Instance.GizmoTheFoxCCMod_Character_Deck.Deck,
-                rarity = Rarity.common,
+                rarity = Rarity.uncommon,
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
-            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Forage", "name"]).Localize
+            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Arcane Capacitor", "name"]).Localize
         });
     }
 
@@ -26,7 +26,10 @@ internal sealed class CardForage : Card, IGizmoTheFoxCCModCard
         CardData data = new CardData()
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
-            cost = 1
+            description = ModEntry.Instance.Localizations.Localize(["card", "Arcane Capacitor", "description", upgrade.ToString()]),
+            cost = 0,
+            retain = true,
+            exhaust = true
         };
         return data;
     }
@@ -39,13 +42,15 @@ internal sealed class CardForage : Card, IGizmoTheFoxCCModCard
             case Upgrade.None:
                 actions = new()
                 {
-                    new AAttuneRandomRepeater
+                    new AEnergy()
                     {
-                        execCount = 1
+                        changeAmount = 2
                     },
-                    new ADrawCard
+                    new AAddCard()
                     {
-                        count = 2
+                        card = new CardDischargedCapacitor() { upgrade = Upgrade.None },
+                        destination = CardDestination.Deck,
+                        amount = 1
                     }
                 };
                 break;
@@ -53,13 +58,15 @@ internal sealed class CardForage : Card, IGizmoTheFoxCCModCard
             case Upgrade.A:
                 actions = new()
                 {
-                    new AAttuneRandomRepeater
+                    new AEnergy()
                     {
-                        execCount = 1
+                        changeAmount = 2
                     },
-                    new ADrawCard
+                    new AAddCard()
                     {
-                        count = 3
+                        card = new CardDischargedCapacitor() { upgrade = Upgrade.A },
+                        destination = CardDestination.Deck,
+                        amount = 1
                     }
                 };
                 break;
@@ -67,13 +74,15 @@ internal sealed class CardForage : Card, IGizmoTheFoxCCModCard
             case Upgrade.B:
                 actions = new()
                 {
-                    new AAttuneRandomRepeater
+                    new AEnergy()
                     {
-                        execCount = 2
+                        changeAmount = 2
                     },
-                    new ADrawCard
+                    new AAddCard()
                     {
-                        count = 2
+                        card = new CardDischargedCapacitor() { upgrade = Upgrade.B },
+                        destination = CardDestination.Deck,
+                        amount = 1
                     }
                 };
                 break;

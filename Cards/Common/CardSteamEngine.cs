@@ -4,11 +4,11 @@ using System.Reflection;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod.Cards;
 
-internal sealed class CardSeaQuake : Card, IGizmoTheFoxCCModCard
+internal sealed class CardSteamEngine : Card, IGizmoTheFoxCCModCard
 {
     public static void Register(IModHelper helper)
     {
-        var entry = helper.Content.Cards.RegisterCard("Sea Quake", new()
+        var entry = helper.Content.Cards.RegisterCard("Steam Engine", new()
         {
             CardType = MethodBase.GetCurrentMethod()!.DeclaringType!,
             Meta = new()
@@ -17,7 +17,7 @@ internal sealed class CardSeaQuake : Card, IGizmoTheFoxCCModCard
                 rarity = Rarity.common,
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
-            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Sea Quake", "name"]).Localize
+            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Steam Engine", "name"]).Localize
         });
     }
 
@@ -27,8 +27,7 @@ internal sealed class CardSeaQuake : Card, IGizmoTheFoxCCModCard
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
             cost = 2,
-            floppable = true,
-            artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Character_CardOverlaySpellCommon.Sprite
+            floppable = true
         };
         return data;
     }
@@ -43,28 +42,33 @@ internal sealed class CardSeaQuake : Card, IGizmoTheFoxCCModCard
                 {
                     new AStatus()
                     {
-                        status = Status.tempShield,
-                        statusAmount = 3,
+                        status = ModEntry.Instance.WindCharge.Status,
+                        statusAmount = 1,
                         targetPlayer = true,
                         disabled = flipped
                     },
                     new AAttune()
                     {
-                        elementBitfieldModifier = AttunementManager.WaterBitMask,
+                        elementBitfieldModifier = AttunementManager.WindBitMask,
                         disabled = flipped
                     },
-                    new ADummyAction(),
                     new AStatus()
                     {
-                        status = Status.shield,
-                        statusAmount = 2,
+                        status = Status.overdrive,
+                        statusAmount = 1,
                         targetPlayer = true,
                         disabled = !flipped
                     },
                     new AAttune()
                     {
-                        elementBitfieldModifier = AttunementManager.EarthBitMask,
+                        elementBitfieldModifier = AttunementManager.FireBitMask,
                         disabled = !flipped
+                    },
+                    new AStatus()
+                    {
+                        status = Status.energyNextTurn,
+                        statusAmount = 1,
+                        targetPlayer = true
                     }
                 };
                 break;
@@ -74,31 +78,35 @@ internal sealed class CardSeaQuake : Card, IGizmoTheFoxCCModCard
                 {
                     new AStatus()
                     {
-                        status = Status.tempShield,
-                        statusAmount = 5,
+                        status = ModEntry.Instance.WindCharge.Status,
+                        statusAmount = 1,
                         targetPlayer = true,
                         disabled = flipped
                     },
                     new AAttune()
                     {
-                        elementBitfieldModifier = AttunementManager.WaterBitMask,
+                        elementBitfieldModifier = AttunementManager.WindBitMask,
                         disabled = flipped
                     },
-                    new ADummyAction(),
                     new AStatus()
                     {
-                        status = Status.shield,
-                        statusAmount = 3,
+                        status = Status.overdrive,
+                        statusAmount = 1,
                         targetPlayer = true,
                         disabled = !flipped
                     },
                     new AAttune()
                     {
-                        elementBitfieldModifier = AttunementManager.EarthBitMask,
+                        elementBitfieldModifier = AttunementManager.FireBitMask,
                         disabled = !flipped
+                    },
+                    new AStatus()
+                    {
+                        status = Status.energyNextTurn,
+                        statusAmount = 2,
+                        targetPlayer = true
                     }
                 };
-                
                 break;
 
             case Upgrade.B:
@@ -106,31 +114,36 @@ internal sealed class CardSeaQuake : Card, IGizmoTheFoxCCModCard
                 {
                     new AStatus()
                     {
-                        status = Status.tempShield,
-                        statusAmount = 3,
+                        status = ModEntry.Instance.WindCharge.Status,
+                        statusAmount = 1,
                         targetPlayer = true,
                         disabled = flipped
                     },
                     new AAttuneMulti()
                     {
-                        elementBitfieldModifier1 = AttunementManager.WaterBitMask,
-                        elementBitfieldModifier2 = AttunementManager.EarthBitMask,
+                        elementBitfieldModifier1 = AttunementManager.WindBitMask,
+                        elementBitfieldModifier2 = AttunementManager.FireBitMask,
                         disabled = flipped
                     },
-                    new ADummyAction(),
                     new AStatus()
                     {
-                        status = Status.shield,
-                        statusAmount = 2,
+                        status = Status.overdrive,
+                        statusAmount = 1,
                         targetPlayer = true,
                         disabled = !flipped
                     },
                     new AAttuneMulti()
                     {
-                        elementBitfieldModifier1 = AttunementManager.EarthBitMask,
-                        elementBitfieldModifier2 = AttunementManager.WaterBitMask,
+                        elementBitfieldModifier1 = AttunementManager.FireBitMask,
+                        elementBitfieldModifier2 = AttunementManager.WindBitMask,
                         disabled = !flipped
                     },
+                    new AStatus()
+                    {
+                        status = Status.energyNextTurn,
+                        statusAmount = 1,
+                        targetPlayer = true
+                    }
                 };
                 break;
         }

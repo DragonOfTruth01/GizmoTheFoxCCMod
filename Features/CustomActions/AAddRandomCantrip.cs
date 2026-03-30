@@ -11,6 +11,7 @@ namespace DragonOfTruth01.GizmoTheFoxCCMod;
 public sealed class AAddRandomCantrip : CardAction
 {
     public int execCount = 1;
+    public required Upgrade upgr;
 
     public override void Begin(G g, State s, Combat c)
     {
@@ -18,10 +19,10 @@ public sealed class AAddRandomCantrip : CardAction
         {
             List<Card> offeringList = new List<Card>()
 		    {
-		    	new CardTremor(),
-		    	new CardGust(),
-		    	new CardFlare(),
-		    	new CardWhirlpool()
+		    	new CardTremor(){ upgrade = upgr },
+		    	new CardGust(){ upgrade = upgr },
+		    	new CardFlare(){ upgrade = upgr },
+		    	new CardWhirlpool(){ upgrade = upgr }
 		    };
 
             c.QueueImmediate(new AAddCard()
@@ -35,21 +36,52 @@ public sealed class AAddRandomCantrip : CardAction
 
     public override Icon? GetIcon(State s)
     {
-        return new Icon(ModEntry.Instance.GizmoTheFoxCCMod_AddCantripRandom.Sprite, number: execCount, color: Colors.textMain, flipY: false);
+        if(upgr == Upgrade.B)
+        {
+            return new Icon(ModEntry.Instance.GizmoTheFoxCCMod_AddCantripRandomB.Sprite, number: execCount, color: Colors.textMain, flipY: false);
+        }
+        else
+        {
+            return new Icon(ModEntry.Instance.GizmoTheFoxCCMod_AddCantripRandom.Sprite, number: execCount, color: Colors.textMain, flipY: false);
+        }
+        
     }
 
 	public override List<Tooltip> GetTooltips(State s)
     {
         string execCountString = "<c=boldPink>" + execCount + "</c>";
 
-        return [
-            new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AddCantripRandom")
-            {
-                Icon = ModEntry.Instance.GizmoTheFoxCCMod_AddCantripRandom.Sprite,
-                TitleColor = Colors.action,
-                Title = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip Random", "name"]),
-                Description = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip Random", "description"], new { execCountString } )
-            }
-        ];
+        if(upgr == Upgrade.B)
+        {
+            return [
+                new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AddCantripRandom")
+                {
+                    Icon = ModEntry.Instance.GizmoTheFoxCCMod_AddCantripRandomB.Sprite,
+                    TitleColor = Colors.action,
+                    Title = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip Random B", "name"]),
+                    Description = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip Random B", "description"], new { execCountString } )
+                },
+                new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::Cantrip")
+                {
+                    Icon = ModEntry.Instance.GizmoTheFoxCCMod_AddCantrip4.Sprite,
+                    TitleColor = Colors.action,
+                    Title = ModEntry.Instance.Localizations.Localize(["action", "Cantrip", "name"]),
+                    Description = ModEntry.Instance.Localizations.Localize(["action", "Cantrip", "description"] )
+                }
+            ];
+        }
+
+        else
+        {
+            return [
+                new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AddCantripRandom")
+                {
+                    Icon = ModEntry.Instance.GizmoTheFoxCCMod_AddCantripRandom.Sprite,
+                    TitleColor = Colors.action,
+                    Title = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip Random", "name"]),
+                    Description = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip Random", "description"], new { execCountString } )
+                }
+            ];
+        }        
     }
 }

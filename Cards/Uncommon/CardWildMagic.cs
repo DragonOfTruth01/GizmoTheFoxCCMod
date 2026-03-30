@@ -4,20 +4,20 @@ using System.Reflection;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod.Cards;
 
-internal sealed class CardFlameVortex : Card, IGizmoTheFoxCCModCard
+internal sealed class CardWildMagic : Card, IGizmoTheFoxCCModCard
 {
     public static void Register(IModHelper helper)
     {
-        var entry = helper.Content.Cards.RegisterCard("Flame Vortex", new()
+        var entry = helper.Content.Cards.RegisterCard("Wild Magic", new()
         {
             CardType = MethodBase.GetCurrentMethod()!.DeclaringType!,
             Meta = new()
             {
                 deck = ModEntry.Instance.GizmoTheFoxCCMod_Character_Deck.Deck,
-                rarity = Rarity.common,
+                rarity = Rarity.uncommon,
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
-            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Flame Vortex", "name"]).Localize
+            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Wild Magic", "name"]).Localize
         });
     }
 
@@ -26,9 +26,10 @@ internal sealed class CardFlameVortex : Card, IGizmoTheFoxCCModCard
         CardData data = new CardData()
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
-            cost = 2,
+            cost = upgrade == Upgrade.A ? 0 : 1,
+            artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Character_CardOverlaySpellUncommon.Sprite,
             floppable = true,
-            artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Character_CardOverlaySpellCommon.Sprite
+            exhaust = true
         };
         return data;
     }
@@ -41,105 +42,99 @@ internal sealed class CardFlameVortex : Card, IGizmoTheFoxCCModCard
             case Upgrade.None:
                 actions = new()
                 {
-                    new AStatus()
+                    new AMove()
                     {
-                        status = ModEntry.Instance.WindCharge.Status,
-                        statusAmount = 2,
+                        dir = 2,
+                        isRandom = true,
                         targetPlayer = true,
                         disabled = flipped
                     },
-                    new AAttune()
+                    new AAddRandomCantrip()
                     {
-                        elementBitfieldModifier = AttunementManager.WindBitMask,
+                        upgr = Upgrade.None,
+                        execCount = 2,
                         disabled = flipped
                     },
-                    new AStatus()
+                    new ADummyAction(),
+                    new AMove()
                     {
-                        status = Status.overdrive,
-                        statusAmount = 1,
+                        dir = 4,
+                        isRandom = true,
                         targetPlayer = true,
                         disabled = !flipped
                     },
-                    new AAttune()
+                    new AAddRandomCantrip()
                     {
-                        elementBitfieldModifier = AttunementManager.FireBitMask,
+                        upgr = Upgrade.None,
+                        execCount = 2,
                         disabled = !flipped
                     },
-                    new AAttack()
-                    {
-                        damage = GetDmg(s, 1)
-                    }
                 };
                 break;
 
             case Upgrade.A:
                 actions = new()
                 {
-                    new AStatus()
+                    new AMove()
                     {
-                        status = ModEntry.Instance.WindCharge.Status,
-                        statusAmount = 2,
+                        dir = 2,
+                        isRandom = true,
                         targetPlayer = true,
                         disabled = flipped
                     },
-                    new AAttuneMulti()
+                    new AAddRandomCantrip()
                     {
-                        elementBitfieldModifier1 = AttunementManager.WindBitMask,
-                        elementBitfieldModifier2 = AttunementManager.FireBitMask,
+                        upgr = Upgrade.None,
+                        execCount = 2,
                         disabled = flipped
                     },
-                    new AStatus()
+                    new ADummyAction(),
+                    new AMove()
                     {
-                        status = Status.overdrive,
-                        statusAmount = 1,
+                        dir = 4,
+                        isRandom = true,
                         targetPlayer = true,
                         disabled = !flipped
                     },
-                    new AAttuneMulti()
+                    new AAddRandomCantrip()
                     {
-                        elementBitfieldModifier1 = AttunementManager.FireBitMask,
-                        elementBitfieldModifier2 = AttunementManager.WindBitMask,
+                        upgr = Upgrade.None,
+                        execCount = 2,
                         disabled = !flipped
                     },
-                    new AAttack()
-                    {
-                        damage = GetDmg(s, 1)
-                    }
                 };
                 break;
 
             case Upgrade.B:
                 actions = new()
                 {
-                    new AStatus()
+                    new AMove()
                     {
-                        status = ModEntry.Instance.WindCharge.Status,
-                        statusAmount = 2,
+                        dir = 2,
+                        isRandom = true,
                         targetPlayer = true,
                         disabled = flipped
                     },
-                    new AAttune()
+                    new AAddRandomCantrip()
                     {
-                        elementBitfieldModifier = AttunementManager.WindBitMask,
+                        upgr = Upgrade.B,
+                        execCount = 2,
                         disabled = flipped
                     },
-                    new AStatus()
+                    new ADummyAction(),
+                    new AMove()
                     {
-                        status = Status.overdrive,
-                        statusAmount = 1,
+                        dir = 4,
+                        isRandom = true,
                         targetPlayer = true,
                         disabled = !flipped
                     },
-                    new AAttune()
+                    new AAddRandomCantrip()
                     {
-                        elementBitfieldModifier = AttunementManager.FireBitMask,
+                        upgr = Upgrade.B,
+                        execCount = 2,
                         disabled = !flipped
                     },
-                    new AAttack()
-                    {
-                        damage = GetDmg(s, 2),
-                        piercing = true
-                    }
                 };
                 break;
         }

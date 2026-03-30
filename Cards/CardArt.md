@@ -6,20 +6,20 @@ This document acts as a reference for which cards are part of this mod.
 |:-:|:-:|:-:|:-:|
 | Yes | Common | Evocation | Swirl of all four elements |
 | No | Common | Diametric Decoction | 0 |
-| No | Common | Flame Vortex | 0 |
+| No | Common | Steam Engine | 0 |
 | No | Common | Forage | 0 |
 | No | Common | Flutter | Silhouette of Gizmo darting some direction flying his ornithopter, with magic wind trails around him |
 | No | Common | Magic Missile | 0 |
 | No | Common | Conjure Mana Blades | 0 |
 | Yes | Common | Prestidigitation | Outstetched finger, with a spark at the end of it |
 | No | Common | Sea Quake | 0 |
-| No | Common | Bloodstone Battleaxe | Gripping an axe with a bloody stone in the center |
+| No | Common | Homunculus | 0 |
 ||||||||
 | No | Uncommon | Dimensional Storage | 0 |
 | No | Uncommon | Imbue | Gizmo holding a sword with one hand, and infusing it with purple magic from his hand with the other |
 | No | Uncommon | Fermented Tincture | 0 |
 | No | Uncommon | Absorb Elements | 0 |
-| No | Uncommon | Synthesize | 0 |
+| No | Uncommon | Arcane Capacitor | 0 |
 | No | Uncommon | Quick Brew | 0 |
 | No | Uncommon | Chromatic Orb | 0 |
 | No | Uncommon | Wild Magic | 0 |
@@ -67,3 +67,5 @@ This document acts as a reference for which cards are part of this mod.
 | No | Rare (Generated) | Mace of Seasons (Spring) | 0 |
 | No | Rare (Generated) | Mace of Seasons (Summer) | 0 |
 | No | Rare (Generated) | Mace of Seasons (Autumn) | 0 |
+||||||||
+| No | Status | Discharged Capacitor | 0 |

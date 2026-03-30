@@ -6,19 +6,12 @@ using System.Linq;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod;
 
+[HarmonyPatch]
 public sealed class ASpecificCardOffering : CardAction
 {
 	public List<Card> Cards { get; set; } = [];
 	public bool CanSkip { get; set; } = false;
-	public CardDestination Destination { get; set; } = CardDestination.Hand;
-
-	internal static void ApplyPatches(IHarmony harmony, ILogger logger)
-	{
-		harmony.Patch(
-			original: AccessTools.DeclaredMethod(typeof(CardReward), nameof(CardReward.TakeCard)),
-			postfix: new HarmonyMethod(typeof(ASpecificCardOffering), nameof(CardReward_TakeCard_Postfix))
-		);
-	}
+	public required CardDestination Destination { get; set; }
 
 	public override Route? BeginWithRoute(G g, State s, Combat c)
 	{
@@ -41,6 +34,8 @@ public sealed class ASpecificCardOffering : CardAction
 			new TTGlossary("action.cardOffering")
 		];
 
+	[HarmonyPostfix]
+    [HarmonyPatch(typeof(CardReward), nameof(CardReward.TakeCard))]
 	private static void CardReward_TakeCard_Postfix(CardReward __instance, G g, Card card)
 	{
 		if (__instance is not CustomCardReward custom)
@@ -68,6 +63,6 @@ public sealed class ASpecificCardOffering : CardAction
 
 	public sealed class CustomCardReward : CardReward
 	{
-		public CardDestination Destination { get; set; } = CardDestination.Hand;
+		public required CardDestination Destination { get; set; }
 	}
 }

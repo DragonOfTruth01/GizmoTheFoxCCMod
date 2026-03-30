@@ -75,6 +75,10 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_Character_Smug_3 { get; }
 
     // Custom Action Icons
+    internal ISpriteEntry GizmoTheFoxCCMod_Earth { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Wind { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Fire { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Water { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneEarth { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneWind { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneFire { get; }
@@ -89,18 +93,26 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_AddCantripA { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AddCantripB { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AddCantripRandom { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_AddCantripRandomB { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_stoneConstructSmall { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_imbuedStoneConstructSmall { get; }
+
+    // Custom Midrow Icons
+    internal ISpriteEntry GizmoTheFoxCCMod_stoneConstruct { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_imbuedStoneConstruct { get; }
 
     // Custom Status Icons
     internal ISpriteEntry GizmoTheFoxCCMod_Attunement { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Absorb { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_WindCharge { get; }
 
     // Custom Decks
     internal IDeckEntry GizmoTheFoxCCMod_Character_Deck { get; }
     internal IDeckEntry GizmoTheFoxCCMod_Potion_Deck { get; }
-    internal IDeckEntry GizmoTheFoxCCMod_ShimmeringPotion_Deck { get; }
 
     // Custom Statuses
     internal IStatusEntry Attunement { get; }
+    internal IStatusEntry Absorb { get; }
     internal IStatusEntry WindCharge { get; }
     internal IStatusEntry AttunementCount { get; }
 
@@ -111,24 +123,32 @@ public sealed class ModEntry : SimpleMod
         typeof(CardFlare),
         typeof(CardWhirlpool),
         typeof(CardManaBladeFire),
-        typeof(CardManaBladeIce)
+        typeof(CardManaBladeIce),
+        typeof(CardDischargedCapacitor)
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_CommonCard_Types { get; } = [
-        typeof(CardBloodstoneBattleaxe),
+        typeof(CardHomunculus),
+        typeof(CardAbsorbElements),
         typeof(CardConjureManaBlades),
         typeof(CardDiametricDecoction),
         typeof(CardEvocation),
-        typeof(CardFlameVortex),
+        typeof(CardSteamEngine),
         typeof(CardFlutter),
-        typeof(CardForage),
         typeof(CardMagicMissile),
         typeof(CardPrestidigitation),
         typeof(CardSeaQuake)
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_UncommonCard_Types { get; } = [
-        
+        typeof(CardDimensionalStorage),
+        typeof(CardArcaneCapacitor),
+        typeof(CardChromaticOrb),
+        typeof(CardFermentedTincture),
+        typeof(CardForage),
+        typeof(CardImbue),
+        typeof(CardQuickBrew),
+        typeof(CardWildMagic)
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_RareCard_Types { get; } = [
@@ -255,6 +275,10 @@ public sealed class ModEntry : SimpleMod
 
         // Custom Action Icons
 
+        GizmoTheFoxCCMod_Earth = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/earth.png"));
+        GizmoTheFoxCCMod_Wind = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/wind.png"));
+        GizmoTheFoxCCMod_Fire = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/fire.png"));
+        GizmoTheFoxCCMod_Water = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/water.png"));
         GizmoTheFoxCCMod_AttuneEarth = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneEarth.png"));
         GizmoTheFoxCCMod_AttuneWind = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneWind.png"));
         GizmoTheFoxCCMod_AttuneFire = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneFire.png"));
@@ -269,10 +293,19 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_AddCantripA = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantripA.png"));
         GizmoTheFoxCCMod_AddCantripB = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantripB.png"));
         GizmoTheFoxCCMod_AddCantripRandom = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantripRandom.png"));
+        GizmoTheFoxCCMod_AddCantripRandomB = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantripRandomB.png"));
+        GizmoTheFoxCCMod_stoneConstructSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/stoneConstructSmall.png"));
+        GizmoTheFoxCCMod_imbuedStoneConstructSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/imbuedStoneConstructSmall.png"));
+
+        // Custom Midrow Icons
+
+        GizmoTheFoxCCMod_stoneConstruct = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/stoneConstruct.png"));
+        GizmoTheFoxCCMod_imbuedStoneConstruct = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/imbuedStoneConstruct.png"));
 
         // Custom Status Icons
 
         GizmoTheFoxCCMod_Attunement = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/attunement.png"));
+        GizmoTheFoxCCMod_Absorb = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/absorb.png"));
         GizmoTheFoxCCMod_WindCharge = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/windCharge.png"));
 
         // Register Custom Decks
@@ -321,21 +354,6 @@ public sealed class ModEntry : SimpleMod
             BorderSprite = GizmoTheFoxCCMod_Character_CardFrame.Sprite,
 
             Name = AnyLocalizations.Bind(["character", "GizmoTheFoxCCMod_Potion", "name"]).Localize,
-        });
-
-        GizmoTheFoxCCMod_ShimmeringPotion_Deck = helper.Content.Decks.RegisterDeck("GizmoTheFoxCCModShimmeringPotionDeck", new DeckConfiguration()
-        {
-            Definition = new DeckDef()
-            {
-                color = new Color("f7af41"),
-
-                titleColor = new Color("000000")
-            },
-
-            DefaultCardArt = GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
-            BorderSprite = GizmoTheFoxCCMod_Character_CardFrame.Sprite,
-
-            Name = AnyLocalizations.Bind(["character", "GizmoTheFoxCCMod_ShimmeringPotion", "name"]).Localize,
         });
 
         // Register Animations
@@ -465,6 +483,18 @@ public sealed class ModEntry : SimpleMod
             Description = AnyLocalizations.Bind(["status", "Attunement", "description"]).Localize
         });
 
+        Absorb = helper.Content.Statuses.RegisterStatus("Absorb", new()
+        {
+            Definition = new()
+            {
+                icon = GizmoTheFoxCCMod_Absorb.Sprite,
+                color = new("3068b3"),
+                isGood = true
+            },
+            Name = AnyLocalizations.Bind(["status", "Absorb", "name"]).Localize,
+            Description = AnyLocalizations.Bind(["status", "Absorb", "description"]).Localize
+        });
+
         WindCharge = helper.Content.Statuses.RegisterStatus("Wind Charge", new()
         {
             Definition = new()
@@ -490,6 +520,7 @@ public sealed class ModEntry : SimpleMod
             Description = AnyLocalizations.Bind(["status", "AttunementCount", "description"]).Localize
         });
         
+        _ = new AbsorbManager();
         _ = new AttunementManager();
         _ = new WindChargeManager();
     }

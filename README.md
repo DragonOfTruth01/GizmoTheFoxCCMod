@@ -3,8 +3,9 @@ This README was made using Louis3797's awesome-readme-template
 -->
 <div align="center">
   <h1>Gizmo the Fox Mod</h1>
+  <img src="assets/character/sprites/GizmoTheFoxCCMod_character_neutral_0.png" alt="logo" width="auto" height="auto" />
   <p>
-    [Description here]
+    An artificer from a distant realm. His cards allow <c=boldPink>attunement</c> of the four elements to brew <c=boldPink>potions</c> and perform other effects.
   </p>
 </div>
 
@@ -18,7 +19,10 @@ This mod adds the following:
   - <b>???</b> common
   - <b>???</b> uncommon
   - <b>???</b> rare
-  - <b>???</b> other
+  - <b>???</b> potions
+  - <b>???</b> generated cards
+  - <b>1/1</b> status
+  - <b>0/2</b> EXE cards
 - <b>???</b> Artifacts
   - <b>???</b> common
   - <b>???</b> boss
@@ -29,4 +33,6 @@ This mod adds the following:
 
 # Screenshots
 
+<img src="README_assets/screenshots/gameplay_screenshot.png" alt="screenshot" width="auto" height="auto" />
+<img src="README_assets/screenshots/card_reward.png" alt="screenshot" width="auto" height="auto" />
 
