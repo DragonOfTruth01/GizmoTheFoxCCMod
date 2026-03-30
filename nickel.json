@@ -2,7 +2,7 @@
   "UniqueName": "DragonOfTruth01.GizmoTheFoxCCMod",
   "Version": "0.1.0",
   "Author": "DragonOfTruth01",
-  "Description": "TBD",
+  "Description": "An artificer from a distant realm. His cards allow attunement of the four elements to brew potions and perform other effects.",
   "RequiredApiVersion": "0.6.0",
   "EntryPointAssembly": "GizmoTheFoxCCMod.dll",
   "Dependencies": [

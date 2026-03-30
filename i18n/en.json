@@ -2,7 +2,7 @@
   "character": {
     "GizmoTheFoxCCMod_Character": {
       "name": "Gizmo",
-      "description": "Your artificer/alchemist. His cards allow you to <c=boldPink>brew potions</c> (temporary 0-cost cards granting benefits) by <c=boldPink>attuning</c> the four elements."
+      "description": "An artificer from a distant realm. His cards allow <c=boldPink>attunement</c> of the four elements to brew <c=boldPink>potions</c> and perform other effects."
     },
     "GizmoTheFoxCCMod_Potion": {
       "name": "Gizmo Potions"
