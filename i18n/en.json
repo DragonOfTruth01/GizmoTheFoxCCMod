@@ -68,6 +68,22 @@
     "Add Cantrip Random B": {
       "name": "Add Random Cantrip B to Hand",
       "description": "Add <c=boldPink>{{execCountString}}</c> random <c=card>cantrips</c> with <c=cardtrait>B upgrade</c> to your hand."
+    },
+    "Is Attuned Earth": {
+      "name": "EARTH IS ATTUNED",
+      "description": "the <c=796775>earth</c> element is <c=boldPink>attuned</c>"
+    },
+    "Is Attuned Wind": {
+      "name": "WIND IS ATTUNED",
+      "description": "the <c=14a02e>wind</c> element is <c=boldPink>attuned</c>"
+    },
+    "Is Attuned Fire": {
+      "name": "FIRE IS ATTUNED",
+      "description": "the <c=e74c31>fire</c> element is <c=boldPink>attuned</c>"
+    },
+    "Is Attuned Water": {
+      "name": "WATER IS ATTUNED",
+      "description": "the <c=3e71d6>water</c> element is <c=boldPink>attuned</c>"
     }
   },
   "artifact": {
@@ -110,6 +126,14 @@
         "B": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor B</c> to your discard pile."
       }
     },
+    "Chromatic Orb": {
+      "name": "Chromatic Orb",
+      "description": {
+        "None": "Deal <c=redd>{{damageString}}</c> dmg. Draw 1 card for each <c=boldPink>attuned element</c>, then <c=boldPink>unattune</c>.",
+        "A": "Deal <c=redd>{{damageString}}</c> dmg. Draw 1 card for each <c=boldPink>attuned element</c>, then <c=boldPink>unattune</c>.",
+        "B": "Deal <c=redd>{{damageString}}</c> dmg. Add a <c=card>cantrip A</c> for each <c=boldPink>attuned element</c>, then <c=boldPink>unattune</c>."
+      }
+    },
     "Discharged Capacitor": {
       "name": "Discharged Capacitor"
     },
@@ -141,6 +165,9 @@
     },
     "Ice Bomb": {
       "name": "Ice Bomb"
+    },
+    "Imbue": {
+      "name": "Imbue"
     },
     "Magic Missile": {
       "name": "Magic Missile"

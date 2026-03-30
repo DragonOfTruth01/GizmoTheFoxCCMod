@@ -75,6 +75,10 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_Character_Smug_3 { get; }
 
     // Custom Action Icons
+    internal ISpriteEntry GizmoTheFoxCCMod_Earth { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Wind { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Fire { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Water { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneEarth { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneWind { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_AttuneFire { get; }
@@ -136,8 +140,10 @@ public sealed class ModEntry : SimpleMod
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_UncommonCard_Types { get; } = [
         typeof(CardDimensionalStorage),
         typeof(CardArcaneCapacitor),
+        typeof(CardChromaticOrb),
         typeof(CardFermentedTincture),
         typeof(CardForage),
+        typeof(CardImbue),
         typeof(CardQuickBrew),
         typeof(CardWildMagic)
     ];
@@ -266,6 +272,10 @@ public sealed class ModEntry : SimpleMod
 
         // Custom Action Icons
 
+        GizmoTheFoxCCMod_Earth = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/earth.png"));
+        GizmoTheFoxCCMod_Wind = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/wind.png"));
+        GizmoTheFoxCCMod_Fire = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/fire.png"));
+        GizmoTheFoxCCMod_Water = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/water.png"));
         GizmoTheFoxCCMod_AttuneEarth = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneEarth.png"));
         GizmoTheFoxCCMod_AttuneWind = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneWind.png"));
         GizmoTheFoxCCMod_AttuneFire = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/attuneFire.png"));

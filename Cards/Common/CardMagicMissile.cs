@@ -188,6 +188,13 @@ internal sealed class CardMagicMissile : Card, IGizmoTheFoxCCModCard
 
     private int GetNumAttunedElements(State s)
     {
+        // If not looking at this card in combat,
+        // consider three elements attuned for rendering purposes
+        if (s.route == null)
+        {
+            return 3;
+        }
+
         int retVal = 0;
         int currAttunement = s.ship.Get(ModEntry.Instance.Attunement.Status);
 
