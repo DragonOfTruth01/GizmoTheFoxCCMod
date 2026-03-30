@@ -53,7 +53,7 @@ internal sealed class CardEvocation : Card, IGizmoTheFoxCCModCard
                     new ACustomAddCantrip()
                     {
                         cantripType = ACustomAddCantrip.AddCantripType.addCantripA,
-                        dest = CardDestination.Deck
+                        dest = CardDestination.Hand
                     }
                 };
                 break;
