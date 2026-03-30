@@ -26,7 +26,8 @@ internal sealed class CardHomunculus : Card, IGizmoTheFoxCCModCard
         CardData data = new CardData()
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
-            cost = upgrade == Upgrade.B ? 2 : 1
+            cost = upgrade == Upgrade.B ? 2 : 1,
+            flippable = upgrade == Upgrade.B
         };
         return data;
     }
