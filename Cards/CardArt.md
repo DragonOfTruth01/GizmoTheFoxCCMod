@@ -24,41 +24,27 @@ This document acts as a reference for which cards are part of this mod.
 | No | Uncommon | Chromatic Orb | 0 |
 | No | Uncommon | Wild Magic | 0 |
 ||||||||
+| No | Rare | Dynamo | 0 |
 | No | Rare | Leyline Tapping | 0 |
 | No | Rare | Conjure Mace of Seasons | Pixel art of the Mace of Seasons from Outward |
 | No | Rare | Prismatic Wall | 0 |
 | No | Rare | Shimmering Solution | 0 |
+| No | Rare | Seize Time | 0 |
 ||||||||
 | No | Common (Cantrip) | Tremor | Gizmo's leg stomping the ground, creating a small fissure in the earth |
 | No | Common (Cantrip) | Gust | 0 |
 | No | Common (Cantrip) | Flare | Close-up of a fan of flames coming out of Gizmo's hand |
 | No | Common (Cantrip) | Whirlpool | 0 |
 ||||||||
-| No | Uncommon (Potion) | Name | 0 |
-| No | Uncommon (Potion) | Name | 0 |
-| No | Uncommon (Potion) | Name | 0 |
-| No | Uncommon (Potion) | Name | 0 |
+| No | Uncommon (Potion) | Potion of Strength | 0 |
 | No | Uncommon (Potion) | Potion of Haste | 0 |
-| No | Uncommon (Potion) | Name | 0 |
 | No | Uncommon (Potion) | Flashbang | 0 |
-| No | Uncommon (Potion) | Name | 0 |
-| No | Uncommon (Potion) | Name | 0 |
-| No | Uncommon (Potion) | Name | 0 |
-| No | Uncommon (Potion) | Name | 0 |
-| No | Uncommon (Potion) | Name | 0 |
 | No | Uncommon (Potion) | Ice Bomb | 0 |
 ||||||||
-| No | Rare (Shimmering Potion) | Name | 0 |
-| No | Rare (Shimmering Potion) | Name | 0 |
-| No | Rare (Shimmering Potion) | Name | 0 |
-| No | Rare (Shimmering Potion) | Name | 0 |
-| No | Rare (Shimmering Potion) | Name | 0 |
-| No | Rare (Shimmering Potion) | Name | 0 |
-| No | Rare (Shimmering Potion) | Name | 0 |
-| No | Rare (Shimmering Potion) | Name | 0 |
-| No | Rare (Shimmering Potion) | Name | 0 |
-| No | Rare (Shimmering Potion) | Name | 0 |
-| No | Rare (Shimmering Potion) | Name | 0 |
+| No | Rare (Shimmering Potion) | Elixir of Might | 0 |
+| No | Rare (Shimmering Potion) | Caustic Brew | 0 |
+| No | Rare (Shimmering Potion) | Potion of Dragon's Breath | 0 |
+| No | Rare (Shimmering Potion) | Potion of Invincibility | 0 |
 ||||||||
 | No | Common (Generated) | Mana Blade (Fire) | 0 |
 | No | Common (Generated) | Mana Blade (Ice) | 0 |

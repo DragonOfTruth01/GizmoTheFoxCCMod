@@ -27,9 +27,9 @@ This document acts as a reference for which cards are part of this mod.
 | No | Rare | Dynamo | 2 | Gain 1 dynamo. Exhaust. | Reduce cost to 1. | Increase cost to 3. Instead gain 2 dynamo. |
 | No | Rare | Leyline Tapping | 1 | Gain 1 accumulate. Exhaust. | Reduce cost to 0. | Increase cost to 2. Gain 2 accumulate. |
 | No | Rare | Conjure Mace of Seasons | 1 | Add Mace of Seasons (Winter) to your hand. Exhaust. | Reduce cost to 0. | Increase cost to 2. Added card has B upgrade. |
-| No | Rare | Prismatic Wall | 2 | If attuned earth, gain 2 shield. If attuned wind, gain 1 wind charge. If attuned fire, gain 2 temp payback. If attuned water, gain 3 temp shield. Unattune all elements. | No longer unattune elements. | Increase cost to 3. Increase all effects by 1. |
+| No | Rare | Prismatic Wall | 2 | If attuned earth, gain 3 shield. If attuned wind, gain 1 evade. If attuned fire, gain 2 temp payback. If attuned water, gain 4 temp shield. Unattune all elements. | No longer unattune elements. | Increase cost to 3. Increase all effects by 1. |
 | No | Rare | Shimmering Solution | 1 | Gain a random shimmering potion. Exhaust. | Reduce cost to 0. | Instead choose 1 of 2 shimmering potions. |
-| No | Rare | Vanguard | 1 | Deploy an imbued stone construct from the missile bay. Shift midrow right 1. Infinite. Fleeting. | Instead gain 1 droneshift. | Increase cost to 3. Deploy imbued stone constructs left 1, right 1, and centered on missile bay. Card loses fleeting and gains retain and exhaust. |
+| No | Rare | Seize Time | 2 | Gain 2 time stop. Exhaust. | Also gain 1 energy next turn. | Increase cost to 3 and time stop to 4. |
 ||||||||
 | Yes | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 3. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
 | Yes | Common (Cantrip) | Gust | 0 | Attune wind. Draw 1 card. Limited 3. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
@@ -38,7 +38,7 @@ This document acts as a reference for which cards are part of this mod.
 ||||||||
 | No | Uncommon (Potion) | Name | 0 | Deal 3 damage. Temporary. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Gain 2 flux. Temporary. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Gain 1 overdrive. Temporary. |  |  |
+| No | Uncommon (Potion) | Potion of Strength | 0 | Gain 1 overdrive. Temporary. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Draw 3 cards. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Potion of Haste | 0 | Gain 1 energy. Draw 1 card. Temporary. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Move 3 flippable. Temporary. |  |  |
@@ -50,18 +50,17 @@ This document acts as a reference for which cards are part of this mod.
 | No | Uncommon (Potion) | Name | 0 | Gain 2 temp payback. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Ice Bomb | 0 | Deal 0 damage. Apply 1 engine lock. Temporary. |  |  |
 ||||||||
-| No | Rare (Shimmering Potion) | Name | 0 | Gain 1 powerdrive. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Elixir of Might | 0 | Gain 1 powerdrive. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Deal 9 damage. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Deal 0 damage. Apply 2 corrode. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Deal 2 x 3 piercing damage. Temporary. |  |  | # Potion of Dragon's Breath?
+| No | Rare (Shimmering Potion) | Caustic Brew | 0 | Apply 2 corrode (outgoing). Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Potion of Dragon's Breath | 0 | Deal 2 x 4 piercing damage. Temporary. |  |  | # Or, potion of fire breath[ing]? (depends on available space)
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 1 stun source. Gain 1 stun charge. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Gain 1 perfect shield. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Potion of Invincibility | 0 | Gain 1 perfect shield. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 3 max shield. Gain 3 shield. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Gain 12 temp shield. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Gain 10 temp shield. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 1 ace. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 3 energy. Draw 3 cards. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Add 3 random potions to your hand. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Immurement | 0 | Change field effect somehow. Temporary. |  |  |
 ||||||||
 | Yes | Common (Generated) | Mana Blade (Fire) | 1 | Deal 1 damage. Attune fire. Retain. Exhaust. Temporary. | Increase damage by 1. | Gain 1 stun charge after attack. |
 | Yes | Common (Generated) | Mana Blade (Ice) | 1 | Deal 0 damage. Gain 1 shield. Attune water. Retain. Exhaust. Temporary. | Increase damage by 1. | Also gain 1 temp shield. |
