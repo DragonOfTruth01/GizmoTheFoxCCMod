@@ -26,6 +26,7 @@ internal sealed class CardSeizeTime : Card, IGizmoTheFoxCCModCard
         CardData data = new CardData()
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
+            artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Character_CardOverlaySpellRare.Sprite,
             cost = upgrade == Upgrade.B ? 3 : 2,
             exhaust = true
         };

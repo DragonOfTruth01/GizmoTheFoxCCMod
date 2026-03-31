@@ -152,6 +152,7 @@ public sealed class ModEntry : SimpleMod
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_RareCard_Types { get; } = [
+        typeof(CardPrismaticWall),
         typeof(CardSeizeTime)
     ];
 
