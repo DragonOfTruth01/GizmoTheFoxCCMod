@@ -152,7 +152,7 @@ public sealed class ModEntry : SimpleMod
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_RareCard_Types { get; } = [
-        
+        typeof(CardSeizeTime)
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Potion_Types { get; } = [
