@@ -15,9 +15,9 @@ This document acts as a reference for which cards are part of this mod.
 | No | Common | Sea Quake | 0 |
 | No | Common | Homunculus | 0 |
 ||||||||
-| No | Uncommon | Dimensional Storage | 0 |
+| No | Uncommon | Dimensional Storage | Gizmo's hand reaching through a portal, gripping a potion |
 | No | Uncommon | Imbue | Gizmo holding a sword with one hand, and infusing it with purple magic from his hand with the other |
-| No | Uncommon | Fermented Tincture | 0 |
+| No | Uncommon | Fermented Tincture | Potion sitting on a table, steeping/fermenting |
 | No | Uncommon | Absorb Elements | 0 |
 | No | Uncommon | Arcane Capacitor | 0 |
 | No | Uncommon | Quick Brew | 0 |
@@ -29,12 +29,12 @@ This document acts as a reference for which cards are part of this mod.
 | No | Rare | Conjure Mace of Seasons | Pixel art of the Mace of Seasons from Outward |
 | No | Rare | Prismatic Wall | 0 |
 | No | Rare | Shimmering Solution | 0 |
-| No | Rare | Seize Time | 0 |
+| No | Rare | Seize Time | Gizmo triumphantly holding up a time gear, with a radiant background |
 ||||||||
 | No | Common (Cantrip) | Tremor | Gizmo's leg stomping the ground, creating a small fissure in the earth |
-| No | Common (Cantrip) | Gust | 0 |
+| No | Common (Cantrip) | Gust | Gizmo shooting a gust of wind sideways |
 | No | Common (Cantrip) | Flare | Close-up of a fan of flames coming out of Gizmo's hand |
-| No | Common (Cantrip) | Whirlpool | 0 |
+| No | Common (Cantrip) | Whirlpool | Gizmo's finger dipping into a small whirlpool of water |
 ||||||||
 | No | Uncommon (Potion) | Potion of Strength | 0 |
 | No | Uncommon (Potion) | Potion of Haste | 0 |
@@ -54,4 +54,4 @@ This document acts as a reference for which cards are part of this mod.
 | No | Rare (Generated) | Mace of Seasons (Summer) | 0 |
 | No | Rare (Generated) | Mace of Seasons (Autumn) | 0 |
 ||||||||
-| No | Status | Discharged Capacitor | 0 |
+| No | Status | Discharged Capacitor | Gizmo shooting magic from his hands at the discharged battery |
