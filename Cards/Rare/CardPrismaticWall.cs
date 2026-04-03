@@ -16,7 +16,7 @@ internal sealed class CardPrismaticWall : Card, IGizmoTheFoxCCModCard
             Meta = new()
             {
                 deck = ModEntry.Instance.GizmoTheFoxCCMod_Character_Deck.Deck,
-                rarity = Rarity.uncommon,
+                rarity = Rarity.rare,
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Prismatic Wall", "name"]).Localize
