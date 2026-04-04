@@ -24,7 +24,7 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Uncommon | Chromatic Orb | 1 | Attack 2. Draw a card for each attuned element. Unattune all elements. | Increase damage to 3. | Instead add a cantrip with A upgrade to hand for each corresponding element. Exhaust. |
 | Yes | Uncommon | Wild Magic | 1 | Floppable. Move 2 / 4 random. Add 2 random cantrips to your hand. Exhaust. | Reduce cost to 0. | Added cantrips gain B upgrade. |
 ||||||||
-| No | Rare | Dynamo | 2 | Gain 1 dynamo. Exhaust. | Reduce cost to 1. | Increase cost to 3. Instead gain 2 dynamo. |
+| No | Rare | Counterspell | 3 | Total stun. | ??? | ??? |
 | No | Rare | Leyline Tapping | 1 | Gain 1 accumulate. Exhaust. | Reduce cost to 0. | Increase cost to 2. Gain 2 accumulate. |
 | No | Rare | Conjure Mace of Seasons | 1 | Add Mace of Seasons (Winter) to your hand. Exhaust. | Reduce cost to 0. | Increase cost to 2. Added card has B upgrade. |
 | Yes | Rare | Prismatic Wall | 2 | If attuned earth, gain 3 shield. If attuned wind, gain 1 evade. If attuned fire, gain 2 temp payback. If attuned water, gain 4 temp shield. Unattune all elements. | No longer unattune elements. | Increase cost to 3. Increase all effects by 1. |
