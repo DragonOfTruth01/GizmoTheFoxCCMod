@@ -96,6 +96,7 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_AddCantripRandomB { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_stoneConstructSmall { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_imbuedStoneConstructSmall { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_EnemyMissingHull { get; }
 
     // Custom Midrow Icons
     internal ISpriteEntry GizmoTheFoxCCMod_stoneConstruct { get; }
@@ -298,6 +299,7 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_AddCantripRandomB = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantripRandomB.png"));
         GizmoTheFoxCCMod_stoneConstructSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/stoneConstructSmall.png"));
         GizmoTheFoxCCMod_imbuedStoneConstructSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/imbuedStoneConstructSmall.png"));
+        GizmoTheFoxCCMod_EnemyMissingHull = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/enemyMissingHull.png"));
 
         // Custom Midrow Icons
 
