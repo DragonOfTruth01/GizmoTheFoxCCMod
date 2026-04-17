@@ -38,7 +38,7 @@ This document acts as a reference for which cards are part of this mod.
 ||||||||
 | No | Uncommon (Potion) | Name | 0 | Deal 3 damage. Temporary. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Gain 2 flux. Temporary. |  |  |
-| No | Uncommon (Potion) | Potion of Strength | 0 | Gain 1 overdrive. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Potion of Strength | 0 | Gain 1 overdrive. Temporary. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Draw 3 cards. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Potion of Haste | 0 | Gain 1 energy. Draw 1 card. Temporary. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Move 3 flippable. Temporary. |  |  |

@@ -159,7 +159,8 @@ public sealed class ModEntry : SimpleMod
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Potion_Types { get; } = [
         typeof(CardFlashbang),
         typeof(CardIceBomb),
-        typeof(CardPotionOfHaste)
+        typeof(CardPotionOfHaste),
+        typeof(CardPotionOfStrength)
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_ShimmeringPotion_Types { get; } = [
