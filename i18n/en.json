@@ -141,6 +141,9 @@
         "B": "Deal <c=redd>{{damageString}}</c> dmg. Add a <c=card>cantrip A</c> for each <c=boldPink>attuned element</c>, then <c=boldPink>unattune</c>."
       }
     },
+    "Dark Lightning": {
+      "name": "Dark Lightning"
+    },
     "Discharged Capacitor": {
       "name": "Discharged Capacitor"
     },
