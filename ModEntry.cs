@@ -96,7 +96,6 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_AddCantripRandomB { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_stoneConstructSmall { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_imbuedStoneConstructSmall { get; }
-    internal ISpriteEntry GizmoTheFoxCCMod_EnemyMissingHull { get; }
 
     // Custom Midrow Icons
     internal ISpriteEntry GizmoTheFoxCCMod_stoneConstruct { get; }
@@ -106,6 +105,7 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_Attunement { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_Absorb { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_WindCharge { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_EnemyMissingHull { get; }
 
     // Custom Decks
     internal IDeckEntry GizmoTheFoxCCMod_Character_Deck { get; }
@@ -116,6 +116,7 @@ public sealed class ModEntry : SimpleMod
     internal IStatusEntry Absorb { get; }
     internal IStatusEntry WindCharge { get; }
     internal IStatusEntry AttunementCount { get; }
+    internal IStatusEntry EnemyMissingHull { get; }
 
     // Card List Definitions
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_GeneratedCard_Types { get; } = [
@@ -299,7 +300,6 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_AddCantripRandomB = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantripRandomB.png"));
         GizmoTheFoxCCMod_stoneConstructSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/stoneConstructSmall.png"));
         GizmoTheFoxCCMod_imbuedStoneConstructSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/imbuedStoneConstructSmall.png"));
-        GizmoTheFoxCCMod_EnemyMissingHull = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/enemyMissingHull.png"));
 
         // Custom Midrow Icons
 
@@ -311,6 +311,7 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_Attunement = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/attunement.png"));
         GizmoTheFoxCCMod_Absorb = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/absorb.png"));
         GizmoTheFoxCCMod_WindCharge = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/windCharge.png"));
+        GizmoTheFoxCCMod_EnemyMissingHull = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/enemyMissingHull.png"));
 
         // Register Custom Decks
 
@@ -522,6 +523,19 @@ public sealed class ModEntry : SimpleMod
             },
             Name = AnyLocalizations.Bind(["status", "AttunementCount", "name"]).Localize,
             Description = AnyLocalizations.Bind(["status", "AttunementCount", "description"]).Localize
+        });
+
+        // Unused status to represent the enemy's missing hull
+        EnemyMissingHull = helper.Content.Statuses.RegisterStatus("EnemyMissingHull", new()
+        {
+            Definition = new()
+            {
+                icon = GizmoTheFoxCCMod_EnemyMissingHull.Sprite,
+                color = new("450606"),
+                isGood = false
+            },
+            Name = AnyLocalizations.Bind(["status", "EnemyMissingHull", "name"]).Localize,
+            Description = AnyLocalizations.Bind(["status", "EnemyMissingHull", "description"]).Localize
         });
         
         _ = new AbsorbManager();
