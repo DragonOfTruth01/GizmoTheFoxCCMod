@@ -247,6 +247,10 @@
     "AttunementCount": {
       "name": "Attuned Elements",
       "description": "The number of elements that are currently <c=boldPink>attuned</c>."
+    },
+    "EnemyMissingHull": {
+      "name": "Enemy's Missing Hull",
+      "description": "The enemy's missing hull."
     }
   },
   "condition": {
