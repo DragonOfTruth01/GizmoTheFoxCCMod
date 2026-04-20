@@ -1,4 +1,5 @@
 using Nickel;
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 
@@ -45,7 +46,7 @@ internal sealed class CardDarkLightning : Card, IGizmoTheFoxCCModCard
                         status = ModEntry.Instance.EnemyMissingHull.Status
                     },
                     new AAttack(){
-                        damage = 0,
+                        damage = Math.Max(0, c.otherShip.hullMax - c.otherShip.hull),
                         piercing = true,
                         xHint = 1
                     }
@@ -60,7 +61,7 @@ internal sealed class CardDarkLightning : Card, IGizmoTheFoxCCModCard
                         status = ModEntry.Instance.EnemyMissingHull.Status
                     },
                     new AAttack(){
-                        damage = 0,
+                        damage = Math.Max(0, c.otherShip.hullMax - c.otherShip.hull),
                         piercing = true,
                         xHint = 1
                     }
@@ -70,12 +71,17 @@ internal sealed class CardDarkLightning : Card, IGizmoTheFoxCCModCard
             case Upgrade.B:
                 actions = new()
                 {
+                    new AHurt()
+                    {
+                        hurtAmount = 2,
+                        targetPlayer = true
+                    },
                     new AVariableHint()
                     {
                         status = ModEntry.Instance.EnemyMissingHull.Status
                     },
                     new AAttack(){
-                        damage = 0,
+                        damage = Math.Max(0, c.otherShip.hullMax - c.otherShip.hull),
                         piercing = true,
                         xHint = 1
                     }
