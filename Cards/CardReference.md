@@ -28,7 +28,7 @@ This document acts as a reference for which cards are part of this mod.
 | No | Rare | Leyline Tapping | 1 | Gain 1 accumulate. Exhaust. | Reduce cost to 0. | Increase cost to 2. Gain 2 accumulate. |
 | No | Rare | Conjure Mace of Seasons | 1 | Add Mace of Seasons (Winter) to your hand. Exhaust. | Reduce cost to 0. | Increase cost to 2. Added card has B upgrade. |
 | Yes | Rare | Prismatic Wall | 2 | If attuned earth, gain 3 shield. If attuned wind, gain 1 evade. If attuned fire, gain 2 temp payback. If attuned water, gain 4 temp shield. Unattune all elements. | No longer unattune elements. | Increase cost to 3. Increase all effects by 1. |
-| No | Rare | Shimmering Solution | 1 | Gain a random shimmering potion. Exhaust. | Reduce cost to 0. | Instead choose 1 of 2 shimmering potions. |
+| Yes | Rare | Shimmering Solution | 1 | Gain a random shimmering potion. Exhaust. | Reduce cost to 0. | Instead choose 1 of 2 shimmering potions. |
 | Yes | Rare | Seize Time | 2 | Gain 2 time stop. Exhaust. | Also gain 1 energy next turn. | Increase cost to 3 and time stop to 4. |
 ||||||||
 | Yes | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 3. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
@@ -55,7 +55,7 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Rare (Shimmering Potion) | Caustic Brew | 0 | Apply 2 corrode (outgoing). Temporary. |  |  |
 | Yes | Rare (Shimmering Potion) | Potion of Dragon's Breath | 0 | Deal 2 x 4 piercing damage. Temporary. |  |  | # Or, potion of fire breath[ing]? (depends on available space)
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 1 stun source. Gain 1 stun charge. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Potion of Invincibility | 0 | Gain 1 perfect shield. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Potion of Invincibility | 0 | Gain 1 perfect shield. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 3 max shield. Gain 3 shield. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 10 temp shield. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 1 ace. Temporary. |  |  |

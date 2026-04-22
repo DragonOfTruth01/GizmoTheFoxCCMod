@@ -229,6 +229,14 @@
     "Seize Time": {
       "name": "Seize Time"
     },
+    "Shimmering Solution": {
+      "name": "Shimmering Solution",
+      "description": {
+        "None": "Obtain a random <c=card>shimmering potion</c>.",
+        "A": "Obtain a random <c=card>shimmering potion</c>.",
+        "B": "Obtain 1 of 2 <c=card>shimmering potions</c>."
+      }
+    },
     "Tremor": {
       "name": "Tremor"
     },
