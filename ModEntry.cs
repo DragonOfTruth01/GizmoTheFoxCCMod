@@ -160,14 +160,14 @@ public sealed class ModEntry : SimpleMod
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Potion_Types { get; } = [
+        typeof(CardCausticBrew),
+        typeof(CardElixirOfMight),
         typeof(CardFlashbang),
         typeof(CardIceBomb),
+        typeof(CardPotionOfFireBreath),
         typeof(CardPotionOfHaste),
-        typeof(CardPotionOfStrength)
-    ];
-
-    internal static IReadOnlyList<Type> GizmoTheFoxCCMod_ShimmeringPotion_Types { get; } = [
-        
+        typeof(CardPotionOfInvincibility),
+        typeof(CardPotionOfStrength),
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_ExeCard_Types { get; } = [
@@ -181,7 +181,6 @@ public sealed class ModEntry : SimpleMod
         .. GizmoTheFoxCCMod_Character_UncommonCard_Types,
         .. GizmoTheFoxCCMod_Character_RareCard_Types,
         .. GizmoTheFoxCCMod_Potion_Types,
-        .. GizmoTheFoxCCMod_ShimmeringPotion_Types,
         .. GizmoTheFoxCCMod_Character_ExeCard_Types
     ];
 

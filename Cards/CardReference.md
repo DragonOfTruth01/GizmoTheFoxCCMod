@@ -50,10 +50,10 @@ This document acts as a reference for which cards are part of this mod.
 | No | Uncommon (Potion) | Name | 0 | Gain 2 temp payback. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Ice Bomb | 0 | Deal 0 damage. Apply 1 engine lock. Temporary. |  |  |
 ||||||||
-| No | Rare (Shimmering Potion) | Elixir of Might | 0 | Gain 1 powerdrive. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Elixir of Might | 0 | Gain 1 powerdrive. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Deal 9 damage. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Caustic Brew | 0 | Apply 2 corrode (outgoing). Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Potion of Dragon's Breath | 0 | Deal 2 x 4 piercing damage. Temporary. |  |  | # Or, potion of fire breath[ing]? (depends on available space)
+| Yes | Rare (Shimmering Potion) | Caustic Brew | 0 | Apply 2 corrode (outgoing). Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Potion of Dragon's Breath | 0 | Deal 2 x 4 piercing damage. Temporary. |  |  | # Or, potion of fire breath[ing]? (depends on available space)
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 1 stun source. Gain 1 stun charge. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Potion of Invincibility | 0 | Gain 1 perfect shield. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 3 max shield. Gain 3 shield. Temporary. |  |  |

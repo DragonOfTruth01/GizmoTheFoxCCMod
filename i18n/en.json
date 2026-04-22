@@ -133,6 +133,9 @@
         "B": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor B</c> to your  draw pile."
       }
     },
+    "Caustic Brew": {
+      "name": "Caustic Brew"
+    },
     "Chromatic Orb": {
       "name": "Chromatic Orb",
       "description": {
@@ -146,6 +149,9 @@
     },
     "Discharged Capacitor": {
       "name": "Discharged Capacitor"
+    },
+    "Elixir of Might": {
+      "name": "Elixir of Might"
     },
     "Fermented Tincture": {
       "name": "Fermented Tincture",
@@ -188,8 +194,17 @@
     "Mana Blade (Ice)": {
       "name": "Mana Blade (Ice)"
     },
+    "Potion of Fire Breath": {
+      "name": "Potion of Fire Breath"
+    },
     "Potion of Haste": {
       "name": "Potion of Haste"
+    },
+    "Potion of Invincibility": {
+      "name": "Potion of Invincibility"
+    },
+    "Potion of Might": {
+      "name": "Potion of Might"
     },
     "Potion of Strength": {
       "name": "Potion of Strength"
