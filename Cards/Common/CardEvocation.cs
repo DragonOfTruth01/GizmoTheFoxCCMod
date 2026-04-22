@@ -39,6 +39,12 @@ internal sealed class CardEvocation : Card, IGizmoTheFoxCCModCard
             case Upgrade.None:
                 actions = new()
                 {
+                    new AStatus()
+                    {
+                        status = Status.tempShield,
+                        statusAmount = 1,
+                        targetPlayer = true
+                    },
                     new ACustomAddCantrip()
                     {
                         cantripType = ACustomAddCantrip.AddCantripType.addCantrip4,
@@ -50,6 +56,12 @@ internal sealed class CardEvocation : Card, IGizmoTheFoxCCModCard
             case Upgrade.A:
                 actions = new()
                 {
+                    new AStatus()
+                    {
+                        status = Status.tempShield,
+                        statusAmount = 1,
+                        targetPlayer = true
+                    },
                     new ACustomAddCantrip()
                     {
                         cantripType = ACustomAddCantrip.AddCantripType.addCantripA,
@@ -61,6 +73,12 @@ internal sealed class CardEvocation : Card, IGizmoTheFoxCCModCard
             case Upgrade.B:
                 actions = new()
                 {
+                    new AStatus()
+                    {
+                        status = Status.tempShield,
+                        statusAmount = 1,
+                        targetPlayer = true
+                    },
                     new ACustomAddCantrip()
                     {
                         cantripType = ACustomAddCantrip.AddCantripType.addCantripB,
