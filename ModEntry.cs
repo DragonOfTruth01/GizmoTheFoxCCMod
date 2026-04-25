@@ -495,7 +495,8 @@ public sealed class ModEntry : SimpleMod
             {
                 icon = GizmoTheFoxCCMod_Absorb.Sprite,
                 color = new("3068b3"),
-                isGood = true
+                isGood = true,
+                affectedByTimestop = true
             },
             Name = AnyLocalizations.Bind(["status", "Absorb", "name"]).Localize,
             Description = AnyLocalizations.Bind(["status", "Absorb", "description"]).Localize
@@ -507,7 +508,8 @@ public sealed class ModEntry : SimpleMod
             {
                 icon = GizmoTheFoxCCMod_WindCharge.Sprite,
                 color = new("14a02e"),
-                isGood = true
+                isGood = true,
+                affectedByTimestop = true
             },
             Name = AnyLocalizations.Bind(["status", "Wind Charge", "name"]).Localize,
             Description = AnyLocalizations.Bind(["status", "Wind Charge", "description"]).Localize
