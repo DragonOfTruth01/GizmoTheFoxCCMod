@@ -104,6 +104,7 @@ public sealed class ModEntry : SimpleMod
     // Custom Status Icons
     internal ISpriteEntry GizmoTheFoxCCMod_Attunement { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_Absorb { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Accumulate { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_WindCharge { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_EnemyMissingHull { get; }
 
@@ -114,6 +115,7 @@ public sealed class ModEntry : SimpleMod
     // Custom Statuses
     internal IStatusEntry Attunement { get; }
     internal IStatusEntry Absorb { get; }
+    internal IStatusEntry Accumulate { get; }
     internal IStatusEntry WindCharge { get; }
     internal IStatusEntry AttunementCount { get; }
     internal IStatusEntry EnemyMissingHull { get; }
@@ -311,6 +313,7 @@ public sealed class ModEntry : SimpleMod
 
         GizmoTheFoxCCMod_Attunement = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/attunement.png"));
         GizmoTheFoxCCMod_Absorb = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/absorb.png"));
+        GizmoTheFoxCCMod_Accumulate = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/accumulate.png"));
         GizmoTheFoxCCMod_WindCharge = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/windCharge.png"));
         GizmoTheFoxCCMod_EnemyMissingHull = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/enemyMissingHull.png"));
 
@@ -515,6 +518,18 @@ public sealed class ModEntry : SimpleMod
             Description = AnyLocalizations.Bind(["status", "Wind Charge", "description"]).Localize
         });
 
+        Accumulate = helper.Content.Statuses.RegisterStatus("Accumulate", new()
+        {
+            Definition = new()
+            {
+                icon = GizmoTheFoxCCMod_Accumulate.Sprite,
+                color = new("6c3baa"),
+                isGood = true
+            },
+            Name = AnyLocalizations.Bind(["status", "Accumulate", "name"]).Localize,
+            Description = AnyLocalizations.Bind(["status", "Accumulate", "description"]).Localize
+        });
+
         // Unused status to represent the number of elements attuned
         AttunementCount = helper.Content.Statuses.RegisterStatus("AttunementCount", new()
         {
@@ -543,6 +558,7 @@ public sealed class ModEntry : SimpleMod
         
         _ = new AbsorbManager();
         _ = new AttunementManager();
+        _ = new AccumulateManager();
         _ = new WindChargeManager();
     }
 }
