@@ -4,7 +4,7 @@ This document acts as a reference for which cards are part of this mod.
 
 | Done? | Rarity | Name | Cost | Effect | Upgrade A | Upgrade B |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| Yes | Common | Absorb Elements | 1 | Gain 2 temp shield. Gain 1 absorb. | Increase temp shield to 3. | Decrease temp shield to 1. Increase absorb to 2. |
+| Yes | Common | Absorb Elements | 1 | Gain 1 temp shield. Gain 1 absorb. | Increase temp shield to 2. | Increase absorb to 2. |
 | Yes | Common | Evocation | 1 | Gain 1 temp shield. Add 1 of 4 cantrips to your hand. | Added card has A upgrade. | Added card has B upgrade. |
 | Yes | Common | Diametric Decoction | 1 | Floppable. Attune earth + wind. / Attune fire + water. Recycle. Draw 1 card next turn. | Card instead gains infinite. | Reduce cost to 0. Attune 4 random elements. Card instead gains exhaust and draws 1 card immediately. |
 | Yes | Common | Steam Engine | 2 | Floppable. Gain 1 wind charge + attune wind / Gain 1 overdrive + attune fire. Gain 1 energy next turn. | Instead gain 2 energy next turn. | Both actions attune fire and wind. |
