@@ -134,7 +134,11 @@ public sealed class ModEntry : SimpleMod
         typeof(CardWhirlpool),
         typeof(CardManaBladeFire),
         typeof(CardManaBladeIce),
-        typeof(CardDischargedCapacitor)
+        typeof(CardDischargedCapacitor),
+        typeof(CardMaceOfSeasonsWinter),
+        typeof(CardMaceOfSeasonsSpring),
+        typeof(CardMaceOfSeasonsSummer),
+        typeof(CardMaceOfSeasonsAutumn)
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_CommonCard_Types { get; } = [
