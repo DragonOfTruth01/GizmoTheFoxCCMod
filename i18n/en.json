@@ -289,7 +289,7 @@
   "trait": {
     "Immutable": {
       "name": "Immutable",
-      "description": "This card's cost cannot be reduced in combat."
+      "description": "This card's cost cannot be reduced by other card traits or statuses."
     }
   }
 }
