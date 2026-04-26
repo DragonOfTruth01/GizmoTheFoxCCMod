@@ -26,7 +26,7 @@ This document acts as a reference for which cards are part of this mod.
 ||||||||
 | Yes | Rare | Dark Lightning | 3 | Deal piercing damage equal to the enemy's missing hull. | Reduce cost to 2. | Reduce cost to 0. Lose 2 hull before the attack. |
 | Yes | Rare | Leyline Tapping | 1 | Gain 1 accumulate. Exhaust. | Reduce cost to 0. | Increase cost to 2. Gain 2 accumulate. |
-| No | Rare | Conjure Mace of Seasons | 1 | Add a random variant of Mace of Seasons to your hand. Exhaust. | Reduce cost to 0. | Increase cost to 2. Added card has B upgrade. |
+| Yes | Rare | Conjure Mace of Seasons | 1 | Add a random variant of Mace of Seasons to your hand. Exhaust. | Reduce cost to 0. | Increase cost to 2. Added card has B upgrade. |
 | Yes | Rare | Prismatic Wall | 2 | If attuned earth, gain 3 shield. If attuned wind, gain 1 evade. If attuned fire, gain 2 temp payback. If attuned water, gain 4 temp shield. Unattune all elements. | No longer unattune elements. | Increase cost to 3. Increase all effects by 1. |
 | Yes | Rare | Shimmering Solution | 1 | Gain a random shimmering potion. Exhaust. | Reduce cost to 0. | Instead choose 1 of 2 shimmering potions. |
 | Yes | Rare | Seize Time | 2 | Gain 2 time stop. Exhaust. | Also gain 1 energy next turn. | Increase cost to 3 and time stop to 4. |
