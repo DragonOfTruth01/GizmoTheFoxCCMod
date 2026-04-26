@@ -37,20 +37,24 @@ public sealed class AAddRandomMaceOfSeasonsVariant : CardAction
 	public override List<Tooltip> GetTooltips(State s)
     {
         Card selectedCard;
-        long currTimeInSecondsMod4 = DateTimeOffset.UtcNow.ToUnixTimeSeconds() % 4;
+        long currTimeInSecondsMod8 = DateTimeOffset.UtcNow.ToUnixTimeSeconds() % 8;
 
-        switch (currTimeInSecondsMod4)
+        switch (currTimeInSecondsMod8)
         {
             case 0:
+            case 1:
                 selectedCard = new CardMaceOfSeasonsWinter() { upgrade = upgr };
                 break;
-            case 1:
+            case 2:
+            case 3:
                 selectedCard = new CardMaceOfSeasonsSpring() { upgrade = upgr };
                 break;
-            case 2:
+            case 4:
+            case 5:
                 selectedCard = new CardMaceOfSeasonsSummer() { upgrade = upgr };
                 break;
-            case 3:
+            case 6:
+            case 7:
             default:
                 selectedCard = new CardMaceOfSeasonsAutumn() { upgrade = upgr };
                 break;
