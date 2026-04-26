@@ -30,19 +30,19 @@
       "description": "<c=boldPink>Attune</c> a random element {{execCountString}}</c> times."
     },
     "Attune Earth and Water": {
-      "name": "Attune Earth and Water",
+      "name": "     Attune Earth and Water",
       "description": "<c=boldPink>Attune</c> the <c=796775>earth</c> and <c=3e71d6>water</c> elements."
     },
     "Attune Water and Earth": {
-      "name": "Attune Water and Earth",
+      "name": "     Attune Water and Earth",
       "description": "<c=boldPink>Attune</c> the <c=3e71d6>water</c> and <c=796775>earth</c> elements."
     },
     "Attune Wind and Fire": {
-      "name": "Attune Wind and Fire",
+      "name": "     Attune Wind and Fire",
       "description": "<c=boldPink>Attune</c> the <c=e74c31>fire</c> and <c=14a02e>wind</c> elements."
     },
     "Attune Fire and Wind": {
-      "name": "Attune Fire and Wind",
+      "name": "     Attune Fire and Wind",
       "description": "<c=boldPink>Attune</c> the <c=14a02e>wind</c> and <c=e74c31>fire</c> elements."
     },
     "Add Cantrip 2": {
