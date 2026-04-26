@@ -16,17 +16,17 @@ This mod adds the following:
 
 - <b>1</b> Character
 - <b>???</b> Cards
-  - <b>???</b> common
-  - <b>???</b> uncommon
-  - <b>???</b> rare
+  - <b>10/10</b> common
+  - <b>8/8</b> uncommon
+  - <b>6/6</b> rare
   - <b>???</b> potions
-  - <b>???</b> generated cards
+  - <b>10/10</b> generated cards
   - <b>1/1</b> status
   - <b>0/2</b> EXE cards
 - <b>???</b> Artifacts
   - <b>???</b> common
   - <b>???</b> boss
-- <b>???</b> Statuses
+- <b>1/1</b> Statuses
 
 # Content Infographics
 
