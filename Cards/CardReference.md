@@ -31,10 +31,10 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Rare | Shimmering Solution | 1 | Gain a random shimmering potion. Exhaust. | Reduce cost to 0. | Instead choose 1 of 2 shimmering potions. |
 | Yes | Rare | Seize Time | 2 | Gain 2 time stop. Exhaust. | Also gain 1 energy next turn. | Increase cost to 3 and time stop to 4. |
 ||||||||
-| Yes | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 3. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
-| Yes | Common (Cantrip) | Gust | 0 | Attune wind. Draw 1 card. Limited 3. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
-| Yes | Common (Cantrip) | Flare | 0 | Attune fire. Draw 1 card. Limited 3. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
-| Yes | Common (Cantrip) | Whirlpool | 0 | Attune water. Draw 1 card. Limited 3. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 2. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Gust | 0 | Attune wind. Draw 1 card. Limited 2. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Flare | 0 | Attune fire. Draw 1 card. Limited 2. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Whirlpool | 0 | Attune water. Draw 1 card. Limited 2. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
 ||||||||
 | No | Uncommon (Potion) | Name | 0 | Deal 3 damage. Temporary. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Gain 2 flux. Temporary. |  |  |
