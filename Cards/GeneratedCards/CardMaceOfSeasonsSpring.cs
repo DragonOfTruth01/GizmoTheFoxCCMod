@@ -57,9 +57,14 @@ internal sealed class CardMaceOfSeasonsSpring : Card, IGizmoTheFoxCCModCard
                         statusAmount = 1,
                         targetPlayer = true
                     },
+                    new AAttune()
+                    {
+                        elementBitfieldModifier = AttunementManager.WindBitMask
+                    },
                     new AAddCard()
                     {
-                        card = new CardMaceOfSeasonsSummer()
+                        card = new CardMaceOfSeasonsSummer(),
+                        destination = CardDestination.Hand
                     }
                 };
                 break;
@@ -77,9 +82,14 @@ internal sealed class CardMaceOfSeasonsSpring : Card, IGizmoTheFoxCCModCard
                         statusAmount = 1,
                         targetPlayer = true
                     },
+                    new AAttune()
+                    {
+                        elementBitfieldModifier = AttunementManager.WindBitMask
+                    },
                     new AAddCard()
                     {
-                        card = new CardMaceOfSeasonsSummer() { upgrade = Upgrade.A }
+                        card = new CardMaceOfSeasonsSummer() { upgrade = Upgrade.A },
+                        destination = CardDestination.Hand
                     }
                 };
                 break;
@@ -97,9 +107,14 @@ internal sealed class CardMaceOfSeasonsSpring : Card, IGizmoTheFoxCCModCard
                         statusAmount = 1,
                         targetPlayer = true
                     },
+                    new AAttune()
+                    {
+                        elementBitfieldModifier = AttunementManager.WindBitMask
+                    },
                     new AAddCard()
                     {
-                        card = new CardMaceOfSeasonsSummer() { upgrade = Upgrade.B }
+                        card = new CardMaceOfSeasonsSummer() { upgrade = Upgrade.B },
+                        destination = CardDestination.Hand
                     }
                 };
                 break;

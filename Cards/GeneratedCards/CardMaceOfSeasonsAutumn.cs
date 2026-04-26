@@ -57,9 +57,14 @@ internal sealed class CardMaceOfSeasonsAutumn : Card, IGizmoTheFoxCCModCard
                         statusAmount = 1,
                         targetPlayer = true
                     },
+                    new AAttune()
+                    {
+                        elementBitfieldModifier = AttunementManager.EarthBitMask
+                    },
                     new AAddCard()
                     {
-                        card = new CardMaceOfSeasonsWinter()
+                        card = new CardMaceOfSeasonsWinter(),
+                        destination = CardDestination.Hand
                     }
                 };
                 break;
@@ -77,9 +82,14 @@ internal sealed class CardMaceOfSeasonsAutumn : Card, IGizmoTheFoxCCModCard
                         statusAmount = 1,
                         targetPlayer = true
                     },
+                    new AAttune()
+                    {
+                        elementBitfieldModifier = AttunementManager.EarthBitMask
+                    },
                     new AAddCard()
                     {
-                        card = new CardMaceOfSeasonsWinter() { upgrade = Upgrade.A }
+                        card = new CardMaceOfSeasonsWinter() { upgrade = Upgrade.A },
+                        destination = CardDestination.Hand
                     }
                 };
                 break;
@@ -97,9 +107,14 @@ internal sealed class CardMaceOfSeasonsAutumn : Card, IGizmoTheFoxCCModCard
                         statusAmount = 1,
                         targetPlayer = true
                     },
+                    new AAttune()
+                    {
+                        elementBitfieldModifier = AttunementManager.EarthBitMask
+                    },
                     new AAddCard()
                     {
-                        card = new CardMaceOfSeasonsWinter() { upgrade = Upgrade.B }
+                        card = new CardMaceOfSeasonsWinter() { upgrade = Upgrade.B },
+                        destination = CardDestination.Hand
                     }
                 };
                 break;

@@ -69,6 +69,14 @@
       "name": "Add Random Cantrip B to Hand",
       "description": "Add <c=boldPink>{{execCountString}}</c> random <c=card>cantrips</c> with <c=cardtrait>B upgrade</c> to your hand."
     },
+    "Add Random Mace of Seasons Variant": {
+      "name": "Add Random Mace of Seasons Variant to Hand",
+      "description": "Add a random variant of <c=card>Mace of Seasons</c> to your hand."
+    },
+    "Add Random Mace of Seasons Variant B": {
+      "name": "Add Random Mace of Seasons Variant B to Hand",
+      "description": "Add a random variant of <c=card>Mace of Seasons</c> with <c=cardtrait>B upgrade</c> to your hand."
+    },
     "Cantrip": {
       "name": "Cantrip",
       "description": "A 0-cost card which <c=boldPink>attunes</c> a specific element and draws a card."
@@ -142,6 +150,14 @@
         "None": "Deal <c=redd>{{damageString}}</c> dmg. Draw 1 card for each <c=boldPink>attuned element</c>, then <c=boldPink>unattune</c>.",
         "A": "Deal <c=redd>{{damageString}}</c> dmg. Draw 1 card for each <c=boldPink>attuned element</c>, then <c=boldPink>unattune</c>.",
         "B": "Deal <c=redd>{{damageString}}</c> dmg. Add a <c=card>cantrip A</c> for each <c=boldPink>attuned element</c>, then <c=boldPink>unattune</c>."
+      }
+    },
+    "Conjure Mace of Seasons": {
+      "name": "Conjure Mace of Seasons",
+      "description": {
+        "None": "Add a random variant of <c=card>Mace of Seasons</c> to your hand.",
+        "A": "Add a random variant of <c=card>Mace of Seasons</c> to your hand.",
+        "B": "Add a random variant of <c=card>Mace of Seasons</c> with <c=cardtrait>B upgrade</c> to your hand."
       }
     },
     "Dark Lightning": {

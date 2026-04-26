@@ -80,6 +80,13 @@ public sealed class AAddRandomCantrip : CardAction
                     TitleColor = Colors.action,
                     Title = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip Random", "name"]),
                     Description = ModEntry.Instance.Localizations.Localize(["action", "Add Cantrip Random", "description"], new { execCountString } )
+                },
+                new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::Cantrip")
+                {
+                    Icon = ModEntry.Instance.GizmoTheFoxCCMod_AddCantrip4.Sprite,
+                    TitleColor = Colors.action,
+                    Title = ModEntry.Instance.Localizations.Localize(["action", "Cantrip", "name"]),
+                    Description = ModEntry.Instance.Localizations.Localize(["action", "Cantrip", "description"] )
                 }
             ];
         }        

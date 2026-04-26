@@ -57,9 +57,14 @@ internal sealed class CardMaceOfSeasonsWinter : Card, IGizmoTheFoxCCModCard
                     {
                         damage = GetDmg(s, 2)
                     },
+                    new AAttune()
+                    {
+                        elementBitfieldModifier = AttunementManager.WaterBitMask
+                    },
                     new AAddCard()
                     {
-                        card = new CardMaceOfSeasonsSpring()
+                        card = new CardMaceOfSeasonsSpring(),
+                        destination = CardDestination.Hand
                     }
                 };
                 break;
@@ -77,9 +82,14 @@ internal sealed class CardMaceOfSeasonsWinter : Card, IGizmoTheFoxCCModCard
                     {
                         damage = GetDmg(s, 3)
                     },
+                    new AAttune()
+                    {
+                        elementBitfieldModifier = AttunementManager.WaterBitMask
+                    },
                     new AAddCard()
                     {
-                        card = new CardMaceOfSeasonsSpring() { upgrade = Upgrade.A }
+                        card = new CardMaceOfSeasonsSpring() { upgrade = Upgrade.A },
+                        destination = CardDestination.Hand
                     }
                 };
                 break;
@@ -97,9 +107,14 @@ internal sealed class CardMaceOfSeasonsWinter : Card, IGizmoTheFoxCCModCard
                     {
                         damage = GetDmg(s, 2)
                     },
+                    new AAttune()
+                    {
+                        elementBitfieldModifier = AttunementManager.WaterBitMask
+                    },
                     new AAddCard()
                     {
-                        card = new CardMaceOfSeasonsSpring() { upgrade = Upgrade.B }
+                        card = new CardMaceOfSeasonsSpring() { upgrade = Upgrade.B },
+                        destination = CardDestination.Hand
                     }
                 };
                 break;

@@ -52,9 +52,14 @@ internal sealed class CardMaceOfSeasonsSummer : Card, IGizmoTheFoxCCModCard
                         damage = GetDmg(s, 2),
                         stunEnemy = true
                     },
+                    new AAttune()
+                    {
+                        elementBitfieldModifier = AttunementManager.FireBitMask
+                    },
                     new AAddCard()
                     {
-                        card = new CardMaceOfSeasonsAutumn()
+                        card = new CardMaceOfSeasonsAutumn(),
+                        destination = CardDestination.Hand
                     }
                 };
                 break;
@@ -67,9 +72,14 @@ internal sealed class CardMaceOfSeasonsSummer : Card, IGizmoTheFoxCCModCard
                         damage = GetDmg(s, 3),
                         stunEnemy = true
                     },
+                    new AAttune()
+                    {
+                        elementBitfieldModifier = AttunementManager.FireBitMask
+                    },
                     new AAddCard()
                     {
-                        card = new CardMaceOfSeasonsAutumn() { upgrade = Upgrade.A }
+                        card = new CardMaceOfSeasonsAutumn() { upgrade = Upgrade.A },
+                        destination = CardDestination.Hand
                     }
                 };
                 break;
@@ -82,9 +92,14 @@ internal sealed class CardMaceOfSeasonsSummer : Card, IGizmoTheFoxCCModCard
                         damage = GetDmg(s, 2),
                         stunEnemy = true
                     },
+                    new AAttune()
+                    {
+                        elementBitfieldModifier = AttunementManager.FireBitMask
+                    },
                     new AAddCard()
                     {
-                        card = new CardMaceOfSeasonsAutumn() { upgrade = Upgrade.B }
+                        card = new CardMaceOfSeasonsAutumn() { upgrade = Upgrade.B },
+                        destination = CardDestination.Hand
                     }
                 };
                 break;
