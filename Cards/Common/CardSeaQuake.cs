@@ -30,6 +30,9 @@ internal sealed class CardSeaQuake : Card, IGizmoTheFoxCCModCard
             floppable = true,
             artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Character_CardOverlaySpellCommon.Sprite
         };
+
+        discount = upgrade == Upgrade.B ? -1 : 0;
+
         return data;
     }
     public override List<CardAction> GetActions(State s, Combat c)
