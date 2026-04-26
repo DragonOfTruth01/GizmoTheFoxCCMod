@@ -26,10 +26,11 @@ internal sealed class CardDiametricDecoction : Card, IGizmoTheFoxCCModCard
         CardData data = new CardData()
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
-            cost = upgrade == Upgrade.A ? 0 : 1,
-            exhaust = upgrade == Upgrade.A,
-            recycle = upgrade == Upgrade.B,
-            floppable = upgrade != Upgrade.A
+            cost = upgrade == Upgrade.B ? 0 : 1,
+            exhaust = upgrade == Upgrade.B,
+            recycle = upgrade == Upgrade.None,
+            infinite = upgrade == Upgrade.A,
+            floppable = upgrade != Upgrade.B
         };
         return data;
     }
@@ -52,7 +53,6 @@ internal sealed class CardDiametricDecoction : Card, IGizmoTheFoxCCModCard
                         elementBitfieldModifier = AttunementManager.WindBitMask,
                         disabled = flipped
                     },
-                    new ADummyAction(),
                     new AAttune()
                     {
                         elementBitfieldModifier = AttunementManager.FireBitMask,
@@ -63,32 +63,16 @@ internal sealed class CardDiametricDecoction : Card, IGizmoTheFoxCCModCard
                         elementBitfieldModifier = AttunementManager.WaterBitMask,
                         disabled = !flipped
                     },
+                    new AStatus()
+                    {
+                        status = Status.drawNextTurn,
+                        statusAmount = 1,
+                        targetPlayer = true
+                    }
                 };
                 break;
 
             case Upgrade.A:
-                actions = new()
-                {
-                    new AAttune()
-                    {
-                        elementBitfieldModifier = AttunementManager.EarthBitMask
-                    },
-                    new AAttune()
-                    {
-                        elementBitfieldModifier = AttunementManager.WindBitMask
-                    },
-                    new AAttune()
-                    {
-                        elementBitfieldModifier = AttunementManager.FireBitMask
-                    },
-                    new AAttune()
-                    {
-                        elementBitfieldModifier = AttunementManager.WaterBitMask
-                    },
-                };
-                break;
-
-            case Upgrade.B:
                 actions = new()
                 {
                     new AAttune()
@@ -101,7 +85,6 @@ internal sealed class CardDiametricDecoction : Card, IGizmoTheFoxCCModCard
                         elementBitfieldModifier = AttunementManager.WindBitMask,
                         disabled = flipped
                     },
-                    new ADummyAction(),
                     new AAttune()
                     {
                         elementBitfieldModifier = AttunementManager.FireBitMask,
@@ -112,6 +95,26 @@ internal sealed class CardDiametricDecoction : Card, IGizmoTheFoxCCModCard
                         elementBitfieldModifier = AttunementManager.WaterBitMask,
                         disabled = !flipped
                     },
+                    new AStatus()
+                    {
+                        status = Status.drawNextTurn,
+                        statusAmount = 1,
+                        targetPlayer = true
+                    }
+                };
+                break;
+
+            case Upgrade.B:
+                actions = new()
+                {
+                    new AAttuneRandomRepeater
+                    {
+                        execCount = 4
+                    },
+                    new ADrawCard()
+                    {
+                        count = 1
+                    }
                 };
                 break;
         }
