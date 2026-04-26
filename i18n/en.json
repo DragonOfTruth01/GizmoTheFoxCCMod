@@ -286,6 +286,10 @@
       "description": "The enemy's missing hull."
     }
   },
-  "condition": {
+  "trait": {
+    "Immutable": {
+      "name": "Immutable",
+      "description": "This card's cost cannot be reduced in combat."
+    }
   }
 }

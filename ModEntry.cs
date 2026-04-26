@@ -108,6 +108,9 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_WindCharge { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_EnemyMissingHull { get; }
 
+    // Custom Trait Icons
+    internal ISpriteEntry GizmoTheFoxCCMod_Immutable { get; }
+
     // Custom Decks
     internal IDeckEntry GizmoTheFoxCCMod_Character_Deck { get; }
     internal IDeckEntry GizmoTheFoxCCMod_Potion_Deck { get; }
@@ -119,6 +122,9 @@ public sealed class ModEntry : SimpleMod
     internal IStatusEntry WindCharge { get; }
     internal IStatusEntry AttunementCount { get; }
     internal IStatusEntry EnemyMissingHull { get; }
+
+    // Custom Traits
+    internal ICardTraitEntry Immutable { get; }
 
     // Card List Definitions
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_GeneratedCard_Types { get; } = [
@@ -317,6 +323,10 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_Accumulate = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/accumulate.png"));
         GizmoTheFoxCCMod_WindCharge = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/windCharge.png"));
         GizmoTheFoxCCMod_EnemyMissingHull = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/enemyMissingHull.png"));
+
+        // Custom Trait Icons
+
+        GizmoTheFoxCCMod_Immutable = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/trait/immutable.png"));
 
         // Register Custom Decks
 
@@ -555,6 +565,22 @@ public sealed class ModEntry : SimpleMod
             },
             Name = AnyLocalizations.Bind(["status", "EnemyMissingHull", "name"]).Localize,
             Description = AnyLocalizations.Bind(["status", "EnemyMissingHull", "description"]).Localize
+        });
+
+        // Register Custom Traits
+        Immutable = helper.Content.Cards.RegisterTrait("Immutable", new()
+        {
+            Icon = (_, _) => GizmoTheFoxCCMod_Immutable.Sprite,
+            Name = AnyLocalizations.Bind(["trait", "Immutable", "name"]).Localize,
+            Tooltips = (_, _) => [
+                new GlossaryTooltip($"cardtrait.{Instance.Package.Manifest.UniqueName}::Immutable")
+                {
+                    Icon = GizmoTheFoxCCMod_Immutable.Sprite,
+                    TitleColor = Colors.cardtrait,
+                    Title = Localizations.Localize(["trait", "Immutable", "name"]),
+                    Description = Localizations.Localize(["trait", "Immutable", "description"]),
+                }
+            ]
         });
         
         _ = new AbsorbManager();
