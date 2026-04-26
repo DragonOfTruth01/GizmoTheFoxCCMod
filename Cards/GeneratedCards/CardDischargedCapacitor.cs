@@ -16,7 +16,7 @@ internal sealed class CardDischargedCapacitor : Card, IGizmoTheFoxCCModCard
             Meta = new()
             {
                 deck = Deck.trash,
-                rarity = Rarity.common,
+                rarity = Rarity.uncommon,
                 upgradesTo = [Upgrade.A, Upgrade.B],
                 dontOffer = true
             },

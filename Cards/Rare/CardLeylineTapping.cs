@@ -4,29 +4,30 @@ using System.Reflection;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod.Cards;
 
-internal sealed class CardEvocation : Card, IGizmoTheFoxCCModCard
+internal sealed class CardLeylineTapping : Card, IGizmoTheFoxCCModCard
 {
     public static void Register(IModHelper helper)
     {
-        helper.Content.Cards.RegisterCard("Evocation", new()
+        var entry = helper.Content.Cards.RegisterCard("Leyline Tapping", new()
         {
             CardType = MethodBase.GetCurrentMethod()!.DeclaringType!,
             Meta = new()
             {
                 deck = ModEntry.Instance.GizmoTheFoxCCMod_Character_Deck.Deck,
-                rarity = Rarity.common,
+                rarity = Rarity.rare,
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
-            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Evocation", "name"]).Localize
+            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Leyline Tapping", "name"]).Localize
         });
     }
+
     public override CardData GetData(State state)
     {
         CardData data = new CardData()
         {
-            art = ModEntry.Instance.GizmoTheFoxCCMod_CardEvocationBG.Sprite,
-            cost = 1,
-            artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Character_CardOverlaySpellCommon.Sprite
+            art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
+            cost = upgrade == Upgrade.A ? 0 : upgrade == Upgrade.B ? 2 : 1,
+            exhaust = true
         };
         return data;
     }
@@ -39,16 +40,11 @@ internal sealed class CardEvocation : Card, IGizmoTheFoxCCModCard
             case Upgrade.None:
                 actions = new()
                 {
-                    new AStatus()
+                    new AStatus
                     {
-                        status = Status.tempShield,
+                        status = ModEntry.Instance.Accumulate.Status,
                         statusAmount = 1,
                         targetPlayer = true
-                    },
-                    new ACustomAddCantrip()
-                    {
-                        cantripType = ACustomAddCantrip.AddCantripType.addCantrip4,
-                        dest = CardDestination.Hand
                     }
                 };
                 break;
@@ -56,16 +52,11 @@ internal sealed class CardEvocation : Card, IGizmoTheFoxCCModCard
             case Upgrade.A:
                 actions = new()
                 {
-                    new AStatus()
+                    new AStatus
                     {
-                        status = Status.tempShield,
+                        status = ModEntry.Instance.Accumulate.Status,
                         statusAmount = 1,
                         targetPlayer = true
-                    },
-                    new ACustomAddCantrip()
-                    {
-                        cantripType = ACustomAddCantrip.AddCantripType.addCantripA,
-                        dest = CardDestination.Hand
                     }
                 };
                 break;
@@ -73,16 +64,11 @@ internal sealed class CardEvocation : Card, IGizmoTheFoxCCModCard
             case Upgrade.B:
                 actions = new()
                 {
-                    new AStatus()
+                    new AStatus
                     {
-                        status = Status.tempShield,
-                        statusAmount = 1,
+                        status = ModEntry.Instance.Accumulate.Status,
+                        statusAmount = 2,
                         targetPlayer = true
-                    },
-                    new ACustomAddCantrip()
-                    {
-                        cantripType = ACustomAddCantrip.AddCantripType.addCantripB,
-                        dest = CardDestination.Hand
                     }
                 };
                 break;

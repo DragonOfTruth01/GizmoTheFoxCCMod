@@ -5,8 +5,8 @@ This document acts as a reference for which cards are part of this mod.
 | Done? | Rarity | Name | Cost | Effect | Upgrade A | Upgrade B |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | Yes | Common | Absorb Elements | 1 | Gain 2 temp shield. Gain 1 absorb. | Increase temp shield to 3. | Decrease temp shield to 1. Increase absorb to 2. |
-| Yes | Common | Evocation | 1 | Add 1 of 4 cantrips to your hand. | Added card has A upgrade. Add card to draw pile instead. | Added card has B upgrade. |
-| Yes | Common | Diametric Decoction | 1 | Floppable. Attune earth + wind. / Attune fire + water. | Reduce cost to 0. Attune earth + wind + fire + water. Card gains exhaust. | Card gains recycle. |
+| Yes | Common | Evocation | 1 | Gain 1 temp shield. Add 1 of 4 cantrips to your hand. | Added card has A upgrade. | Added card has B upgrade. |
+| Yes | Common | Diametric Decoction | 1 | Floppable. Attune earth + wind. / Attune fire + water. Recycle. Draw 1 card next turn. | Card instead gains infinite. | Reduce cost to 0. Attune 4 random elements. Card instead gains exhaust and draws 1 card immediately. |
 | Yes | Common | Steam Engine | 2 | Floppable. Gain 1 wind charge + attune wind / Gain 1 overdrive + attune fire. Gain 1 energy next turn. | Instead gain 2 energy next turn. | Both actions attune fire and wind. |
 | Yes | Common | Flutter | 0 | Move 1 random. Gain 1 wind charge. Attune wind. | Also gain 1 hermes boots. | Instead gain 2 wind charge. Also gain 1 engine stall. |
 | Yes | Common | Magic Missile | 1 | Attack 1. Repeat this attack if attuned 2/3 elements. Un-attune all elements. | Also repeat attack if attuned 1 element. | All attacks gain piercing. |
@@ -24,12 +24,12 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Uncommon | Chromatic Orb | 1 | Attack 2. Draw a card for each attuned element. Unattune all elements. | Increase damage to 3. | Instead add a cantrip with A upgrade to hand for each corresponding element. Exhaust. |
 | Yes | Uncommon | Wild Magic | 1 | Floppable. Move 2 / 4 random. Add 2 random cantrips to your hand. Exhaust. | Reduce cost to 0. | Added cantrips gain B upgrade. |
 ||||||||
-| No | Rare | Dynamo | 2 | Gain 1 dynamo. Exhaust. | Reduce cost to 1. | Increase cost to 3. Instead gain 2 dynamo. |
-| No | Rare | Leyline Tapping | 1 | Gain 1 accumulate. Exhaust. | Reduce cost to 0. | Increase cost to 2. Gain 2 accumulate. |
-| No | Rare | Conjure Mace of Seasons | 1 | Add Mace of Seasons (Winter) to your hand. Exhaust. | Reduce cost to 0. | Increase cost to 2. Added card has B upgrade. |
-| No | Rare | Prismatic Wall | 2 | If attuned earth, gain 2 shield. If attuned wind, gain 1 wind charge. If attuned fire, gain 2 temp payback. If attuned water, gain 3 temp shield. Unattune all elements. | No longer unattune elements. | Increase cost to 3. Increase all effects by 1. |
-| No | Rare | Shimmering Solution | 1 | Gain a random shimmering potion. Exhaust. | Reduce cost to 0. | Instead choose 1 of 2 shimmering potions. |
-| No | Rare | Vanguard | 1 | Deploy an imbued stone construct from the missile bay. Shift midrow right 1. Infinite. Fleeting. | Instead gain 1 droneshift. | Increase cost to 3. Deploy imbued stone constructs left 1, right 1, and centered on missile bay. Card loses fleeting and gains retain and exhaust. |
+| Yes | Rare | Dark Lightning | 3 | Deal piercing damage equal to the enemy's missing hull. | Reduce cost to 2. | Reduce cost to 0. Lose 2 hull before the attack. |
+| Yes | Rare | Leyline Tapping | 1 | Gain 1 accumulate. Exhaust. | Reduce cost to 0. | Increase cost to 2. Gain 2 accumulate. |
+| Yes | Rare | Conjure Mace of Seasons | 1 | Add a random variant of Mace of Seasons to your hand. Exhaust. | Reduce cost to 0. | Increase cost to 2. Added card has B upgrade. |
+| Yes | Rare | Prismatic Wall | 2 | If attuned earth, gain 3 shield. If attuned wind, gain 1 evade. If attuned fire, gain 2 temp payback. If attuned water, gain 4 temp shield. Unattune all elements. | No longer unattune elements. | Increase cost to 3. Increase all effects by 1. |
+| Yes | Rare | Shimmering Solution | 1 | Gain a random shimmering potion. Exhaust. | Reduce cost to 0. | Instead choose 1 of 2 shimmering potions. |
+| Yes | Rare | Seize Time | 2 | Gain 2 time stop. Exhaust. | Also gain 1 energy next turn. | Increase cost to 3 and time stop to 4. |
 ||||||||
 | Yes | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 3. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
 | Yes | Common (Cantrip) | Gust | 0 | Attune wind. Draw 1 card. Limited 3. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
@@ -38,7 +38,7 @@ This document acts as a reference for which cards are part of this mod.
 ||||||||
 | No | Uncommon (Potion) | Name | 0 | Deal 3 damage. Temporary. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Gain 2 flux. Temporary. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Gain 1 overdrive. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Potion of Strength | 0 | Gain 1 overdrive. Temporary. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Draw 3 cards. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Potion of Haste | 0 | Gain 1 energy. Draw 1 card. Temporary. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Move 3 flippable. Temporary. |  |  |
@@ -50,25 +50,24 @@ This document acts as a reference for which cards are part of this mod.
 | No | Uncommon (Potion) | Name | 0 | Gain 2 temp payback. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Ice Bomb | 0 | Deal 0 damage. Apply 1 engine lock. Temporary. |  |  |
 ||||||||
-| No | Rare (Shimmering Potion) | Name | 0 | Gain 1 powerdrive. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Elixir of Might | 0 | Gain 1 powerdrive. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Deal 9 damage. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Deal 0 damage. Apply 2 corrode. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Deal 2 x 3 piercing damage. Temporary. |  |  | # Potion of Dragon's Breath?
+| Yes | Rare (Shimmering Potion) | Caustic Brew | 0 | Apply 2 corrode (outgoing). Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Potion of Dragon's Breath | 0 | Deal 2 x 4 piercing damage. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 1 stun source. Gain 1 stun charge. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Gain 1 perfect shield. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Potion of Invincibility | 0 | Gain 1 perfect shield. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 3 max shield. Gain 3 shield. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Gain 12 temp shield. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Name | 0 | Gain 10 temp shield. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 1 ace. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 3 energy. Draw 3 cards. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Add 3 random potions to your hand. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Immurement | 0 | Change field effect somehow. Temporary. |  |  |
 ||||||||
 | Yes | Common (Generated) | Mana Blade (Fire) | 1 | Deal 1 damage. Attune fire. Retain. Exhaust. Temporary. | Increase damage by 1. | Gain 1 stun charge after attack. |
 | Yes | Common (Generated) | Mana Blade (Ice) | 1 | Deal 0 damage. Gain 1 shield. Attune water. Retain. Exhaust. Temporary. | Increase damage by 1. | Also gain 1 temp shield. |
 ||||||||
-| No | Rare (Generated) | Mace of Seasons (Winter) | 1 | Gain 1 flux. Deal 2 damage. Attune water. Add Mace of Seasons (Spring) to your hand. Limited 1. Temporary. Immutable. | Increase damage to 3. Summon A. | Card gains retain. Summon B. |
-| No | Rare (Generated) | Mace of Seasons (Spring) | 1 | Deal 2 damage. Gain 1 evade. Attune wind. Add Mace of Seasons (Summer) to your hand. Limited 1. Temporary. Immutable. | Increase damage to 3. Summon A. | Card gains retain. Summon B. |
-| No | Rare (Generated) | Mace of Seasons (Summer) | 1 | Deal 2 damage. Stun. Attune fire. Add Mace of Seasons (Autumn) to your hand. Limited 1. Temporary. Immutable. | Increase damage to 3. Summon A. | Card gains retain. Summon B. |
-| No | Rare (Generated) | Mace of Seasons (Autumn) | 1 | Deal 2 damage. Gain 1 shield. Attune earth. Add Mace of Seasons (Winter) to your hand. Limited 1. Temporary. Immutable. | Increase damage to 3. Summon A. | Card gains retain. Summon B. |
+| Yes | Rare (Generated) | Mace of Seasons (Winter) | 1 | Gain 1 flux. Deal 2 damage. Attune water. Add Mace of Seasons (Spring) to your hand. Exhaust. Temporary. Immutable. | Increase damage to 3. Summon A. | Card gains retain. Summon B. |
+| Yes | Rare (Generated) | Mace of Seasons (Spring) | 1 | Deal 2 damage. Gain 1 evade. Attune wind. Add Mace of Seasons (Summer) to your hand. Exhaust 1. Temporary. Immutable. | Increase damage to 3. Summon A. | Card gains retain. Summon B. |
+| Yes | Rare (Generated) | Mace of Seasons (Summer) | 1 | Deal 2 damage. Stun. Attune fire. Add Mace of Seasons (Autumn) to your hand. Exhaust 1. Temporary. Immutable. | Increase damage to 3. Summon A. | Card gains retain. Summon B. |
+| Yes | Rare (Generated) | Mace of Seasons (Autumn) | 1 | Deal 2 damage. Gain 1 shield. Attune earth. Add Mace of Seasons (Winter) to your hand. Exhaust 1. Temporary. Immutable. | Increase damage to 3. Summon A. | Card gains retain. Summon B. |
 ||||||||
 | Yes | Status | Discharged Capacitor | 1 | If attuned 3 elements, add an Arcane Capacitor to your hand. Set attunement to 0. Exhaust. | Reduce attunement requirement to 2. Add A. | Also draw 2 cards. Add B. |

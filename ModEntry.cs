@@ -104,7 +104,12 @@ public sealed class ModEntry : SimpleMod
     // Custom Status Icons
     internal ISpriteEntry GizmoTheFoxCCMod_Attunement { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_Absorb { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Accumulate { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_WindCharge { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_EnemyMissingHull { get; }
+
+    // Custom Trait Icons
+    internal ISpriteEntry GizmoTheFoxCCMod_Immutable { get; }
 
     // Custom Decks
     internal IDeckEntry GizmoTheFoxCCMod_Character_Deck { get; }
@@ -113,8 +118,13 @@ public sealed class ModEntry : SimpleMod
     // Custom Statuses
     internal IStatusEntry Attunement { get; }
     internal IStatusEntry Absorb { get; }
+    internal IStatusEntry Accumulate { get; }
     internal IStatusEntry WindCharge { get; }
     internal IStatusEntry AttunementCount { get; }
+    internal IStatusEntry EnemyMissingHull { get; }
+
+    // Custom Traits
+    internal ICardTraitEntry Immutable { get; }
 
     // Card List Definitions
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_GeneratedCard_Types { get; } = [
@@ -124,7 +134,11 @@ public sealed class ModEntry : SimpleMod
         typeof(CardWhirlpool),
         typeof(CardManaBladeFire),
         typeof(CardManaBladeIce),
-        typeof(CardDischargedCapacitor)
+        typeof(CardDischargedCapacitor),
+        typeof(CardMaceOfSeasonsWinter),
+        typeof(CardMaceOfSeasonsSpring),
+        typeof(CardMaceOfSeasonsSummer),
+        typeof(CardMaceOfSeasonsAutumn)
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_CommonCard_Types { get; } = [
@@ -152,17 +166,23 @@ public sealed class ModEntry : SimpleMod
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_RareCard_Types { get; } = [
-        
+        typeof(CardConjureMaceOfSeasons),
+        typeof(CardDarkLightning),
+        typeof(CardLeylineTapping),
+        typeof(CardPrismaticWall),
+        typeof(CardSeizeTime),
+        typeof(CardShimmeringSolution)
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Potion_Types { get; } = [
+        typeof(CardCausticBrew),
+        typeof(CardElixirOfMight),
         typeof(CardFlashbang),
         typeof(CardIceBomb),
-        typeof(CardPotionOfHaste)
-    ];
-
-    internal static IReadOnlyList<Type> GizmoTheFoxCCMod_ShimmeringPotion_Types { get; } = [
-        
+        typeof(CardPotionOfFireBreath),
+        typeof(CardPotionOfHaste),
+        typeof(CardPotionOfInvincibility),
+        typeof(CardPotionOfStrength),
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_ExeCard_Types { get; } = [
@@ -176,7 +196,6 @@ public sealed class ModEntry : SimpleMod
         .. GizmoTheFoxCCMod_Character_UncommonCard_Types,
         .. GizmoTheFoxCCMod_Character_RareCard_Types,
         .. GizmoTheFoxCCMod_Potion_Types,
-        .. GizmoTheFoxCCMod_ShimmeringPotion_Types,
         .. GizmoTheFoxCCMod_Character_ExeCard_Types
     ];
 
@@ -306,7 +325,13 @@ public sealed class ModEntry : SimpleMod
 
         GizmoTheFoxCCMod_Attunement = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/attunement.png"));
         GizmoTheFoxCCMod_Absorb = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/absorb.png"));
+        GizmoTheFoxCCMod_Accumulate = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/accumulate.png"));
         GizmoTheFoxCCMod_WindCharge = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/windCharge.png"));
+        GizmoTheFoxCCMod_EnemyMissingHull = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/enemyMissingHull.png"));
+
+        // Custom Trait Icons
+
+        GizmoTheFoxCCMod_Immutable = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/trait/immutable.png"));
 
         // Register Custom Decks
 
@@ -489,7 +514,8 @@ public sealed class ModEntry : SimpleMod
             {
                 icon = GizmoTheFoxCCMod_Absorb.Sprite,
                 color = new("3068b3"),
-                isGood = true
+                isGood = true,
+                affectedByTimestop = true
             },
             Name = AnyLocalizations.Bind(["status", "Absorb", "name"]).Localize,
             Description = AnyLocalizations.Bind(["status", "Absorb", "description"]).Localize
@@ -501,10 +527,23 @@ public sealed class ModEntry : SimpleMod
             {
                 icon = GizmoTheFoxCCMod_WindCharge.Sprite,
                 color = new("14a02e"),
-                isGood = true
+                isGood = true,
+                affectedByTimestop = true
             },
             Name = AnyLocalizations.Bind(["status", "Wind Charge", "name"]).Localize,
             Description = AnyLocalizations.Bind(["status", "Wind Charge", "description"]).Localize
+        });
+
+        Accumulate = helper.Content.Statuses.RegisterStatus("Accumulate", new()
+        {
+            Definition = new()
+            {
+                icon = GizmoTheFoxCCMod_Accumulate.Sprite,
+                color = new("6c3baa"),
+                isGood = true
+            },
+            Name = AnyLocalizations.Bind(["status", "Accumulate", "name"]).Localize,
+            Description = AnyLocalizations.Bind(["status", "Accumulate", "description"]).Localize
         });
 
         // Unused status to represent the number of elements attuned
@@ -519,9 +558,39 @@ public sealed class ModEntry : SimpleMod
             Name = AnyLocalizations.Bind(["status", "AttunementCount", "name"]).Localize,
             Description = AnyLocalizations.Bind(["status", "AttunementCount", "description"]).Localize
         });
+
+        // Unused status to represent the enemy's missing hull
+        EnemyMissingHull = helper.Content.Statuses.RegisterStatus("EnemyMissingHull", new()
+        {
+            Definition = new()
+            {
+                icon = GizmoTheFoxCCMod_EnemyMissingHull.Sprite,
+                color = new("450606"),
+                isGood = false
+            },
+            Name = AnyLocalizations.Bind(["status", "EnemyMissingHull", "name"]).Localize,
+            Description = AnyLocalizations.Bind(["status", "EnemyMissingHull", "description"]).Localize
+        });
+
+        // Register Custom Traits
+        Immutable = helper.Content.Cards.RegisterTrait("Immutable", new()
+        {
+            Icon = (_, _) => GizmoTheFoxCCMod_Immutable.Sprite,
+            Name = AnyLocalizations.Bind(["trait", "Immutable", "name"]).Localize,
+            Tooltips = (_, _) => [
+                new GlossaryTooltip($"cardtrait.{Instance.Package.Manifest.UniqueName}::Immutable")
+                {
+                    Icon = GizmoTheFoxCCMod_Immutable.Sprite,
+                    TitleColor = Colors.cardtrait,
+                    Title = Localizations.Localize(["trait", "Immutable", "name"]),
+                    Description = Localizations.Localize(["trait", "Immutable", "description"]),
+                }
+            ]
+        });
         
         _ = new AbsorbManager();
         _ = new AttunementManager();
+        _ = new AccumulateManager();
         _ = new WindChargeManager();
     }
 }
