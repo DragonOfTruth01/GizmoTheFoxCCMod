@@ -61,7 +61,7 @@ public sealed class AAddRandomMaceOfSeasonsVariant : CardAction
         }
 
 
-        if(upgr == Upgrade.B)
+        if(upgr != Upgrade.B)
         {
             return [
                 new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AddRandomMaceOfSeasonsVariant")
@@ -74,7 +74,7 @@ public sealed class AAddRandomMaceOfSeasonsVariant : CardAction
                 new TTCard
                 {
                     card = selectedCard,
-                    showCardTraitTooltips = false
+                    showCardTraitTooltips = true
                 }
             ];
         }
@@ -92,7 +92,7 @@ public sealed class AAddRandomMaceOfSeasonsVariant : CardAction
                 new TTCard
                 {
                     card = selectedCard,
-                    showCardTraitTooltips = false
+                    showCardTraitTooltips = true
                 }
             ];
         }        

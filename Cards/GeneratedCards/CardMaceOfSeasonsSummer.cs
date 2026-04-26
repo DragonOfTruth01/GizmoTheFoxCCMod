@@ -4,7 +4,7 @@ using System.Reflection;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod.Cards;
 
-internal sealed class CardMaceOfSeasonsSummer : Card, IGizmoTheFoxCCModCard
+internal sealed class CardMaceOfSeasonsSummer : Card, IGizmoTheFoxCCModCard, IHasCustomCardTraits
 {
     public static void Register(IModHelper helper)
     {
