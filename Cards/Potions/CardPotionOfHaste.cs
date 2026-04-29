@@ -39,10 +39,6 @@ internal sealed class CardPotionOfHaste : Card, IGizmoTheFoxCCModCard
 
         actions = new()
         {
-            new ADrawCard()
-            {
-                count = 1
-            },
             new AEnergy()
             {
                 changeAmount = 1

@@ -40,18 +40,18 @@ This document acts as a reference for which cards are part of this mod.
 | No | Uncommon (Potion) | Name | 0 | Gain 2 flux. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Potion of Strength | 0 | Gain 1 overdrive. Temporary. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Draw 3 cards. Temporary. |  |  |
-| Yes | Uncommon (Potion) | Potion of Haste | 0 | Gain 1 energy. Draw 1 card. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Potion of Haste | 0 | Gain 1 energy. Temporary. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Move 3 flippable. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Flashbang | 0 | Deal 1 damage. Stun. Temporary. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Gain 2 hermes boots. Temporary. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Gain 2 evade. Temporary. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Gain 3 block. Temporary. |  |  |
+| No | Uncommon (Potion) | Barrier Potion | 0 | Gain 1 shield and 2 temp shield. Temporary. |  |  |
 | No | Uncommon (Potion) | Name | 0 | Gain 1 boost. Temporary. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Gain 2 temp payback. Temporary. |  |  |
+| No | Uncommon (Potion) | Potion of Thorns | 0 | Gain 2 temp payback. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Ice Bomb | 0 | Deal 0 damage. Apply 1 engine lock. Temporary. |  |  |
 ||||||||
 | Yes | Rare (Shimmering Potion) | Elixir of Might | 0 | Gain 1 powerdrive. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Deal 9 damage. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Solvent of Decay | 0 | Enemy loses 9 hull. Temporary. |  |  |
 | Yes | Rare (Shimmering Potion) | Caustic Brew | 0 | Deal 1 damage. Apply 2 corrode. Temporary. |  |  |
 | Yes | Rare (Shimmering Potion) | Potion of Dragon's Breath | 0 | Deal 2 x 4 piercing damage. Temporary. |  |  |
 | Yes | Rare (Shimmering Potion) | Elixir of Cacophony | 0 | Gain 1 stun source. Temporary. |  |  |
