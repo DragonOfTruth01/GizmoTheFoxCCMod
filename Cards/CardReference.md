@@ -52,13 +52,13 @@ This document acts as a reference for which cards are part of this mod.
 ||||||||
 | Yes | Rare (Shimmering Potion) | Elixir of Might | 0 | Gain 1 powerdrive. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Deal 9 damage. Temporary. |  |  |
-| Yes | Rare (Shimmering Potion) | Caustic Brew | 0 | Apply 2 corrode (outgoing). Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Caustic Brew | 0 | Deal 1 damage. Apply 2 corrode. Temporary. |  |  |
 | Yes | Rare (Shimmering Potion) | Potion of Dragon's Breath | 0 | Deal 2 x 4 piercing damage. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 1 stun source. Gain 1 stun charge. Temporary. |  |  |
 | Yes | Rare (Shimmering Potion) | Potion of Invincibility | 0 | Gain 1 perfect shield. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 3 max shield. Gain 3 shield. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 10 temp shield. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Gain 1 ace. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Quickstep Elixir | 0 | Gain 1 ace. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Gain 3 energy. Draw 3 cards. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Name | 0 | Add 3 random potions to your hand. Temporary. |  |  |
 ||||||||
