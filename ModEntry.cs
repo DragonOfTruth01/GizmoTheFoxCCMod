@@ -183,6 +183,7 @@ public sealed class ModEntry : SimpleMod
         typeof(CardPotionOfHaste),
         typeof(CardPotionOfInvincibility),
         typeof(CardPotionOfStrength),
+        typeof(CardQuickstepElixir)
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_ExeCard_Types { get; } = [

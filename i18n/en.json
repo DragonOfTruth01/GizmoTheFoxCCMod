@@ -254,6 +254,9 @@
         "B": "Add 3 random <c=card>potions</c> to your draw pile."
       }
     },
+    "Quickstep Elixir": {
+      "name": "Quickstep Elixir"
+    },
     "Sea Quake": {
       "name": "Sea Quake"
     },
