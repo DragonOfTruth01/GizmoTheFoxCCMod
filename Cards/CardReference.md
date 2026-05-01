@@ -59,7 +59,7 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Rare (Shimmering Potion) | Elixir of Cacophony | 0 | Gain 1 stun source. Temporary. |  |  |
 | Yes | Rare (Shimmering Potion) | Potion of Invincibility | 0 | Gain 1 perfect shield. Temporary. |  |  |
 | Yes | Rare (Shimmering Potion) | Quickstep Elixir | 0 | Gain 1 ace. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Duplication Potion | 0 | Make a temp, exhaust, 0-cost copy of a card in hand. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Duplication Potion | 0 | Make a temp, exhaust, 0-cost copy of a card in hand. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Potion of Foresight | 0 | Next turn, draw 3 cards and gain 2 energy. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Potion of Fortification | 0 | Gain 3 max shield. Gain 3 shield. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Volatile Catalyst | 0 | Gain 2 boost. Temporary. |  |  |
