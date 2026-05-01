@@ -183,6 +183,7 @@ public sealed class ModEntry : SimpleMod
         typeof(CardPotionOfAether),
         typeof(CardPotionOfAgility),
         typeof(CardPotionOfHaste),
+        typeof(CardPotionOfLeaping),
         typeof(CardPotionOfStrength),
         typeof(CardPotionOfSwiftness),
         typeof(CardPotionOfThorns),

@@ -50,7 +50,7 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Uncommon (Potion) | Potion of Swiftness | 0 | Draw 3 cards. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Potion of Aether | 0 | Gain 2 wind charge. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Alchemist's Fire | 0 | Deal 4 damage. Temporary. |  |  |
-| No | Uncommon (Potion) | Potion of Leaping | 0 | Gain 1 hermes boots. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Potion of Leaping | 0 | Gain 1 hermes boots. Temporary. |  |  |
 ||||||||
 | Yes | Rare (Shimmering Potion) | Elixir of Might | 0 | Gain 1 powerdrive. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Alchemist's Decay | 0 | Enemy loses 10 hull. Temporary. |  |  |
