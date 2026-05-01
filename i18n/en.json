@@ -141,6 +141,9 @@
         "B": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor\nB</c> to your\ndraw pile."
       }
     },
+    "Barrier Potion": {
+      "name": "Barrier Potion"
+    },
     "Caustic Brew": {
       "name": "Caustic Brew"
     },

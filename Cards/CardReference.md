@@ -39,9 +39,9 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Uncommon (Potion) | Potion of Strength | 0 | Gain 1 overdrive. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Potion of Haste | 0 | Gain 1 energy. Gain 1 energy next turn. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Flashbang | 0 | Deal 1 damage. Stun. Temporary. |  |  |
-| No | Uncommon (Potion) | Barrier Potion | 0 | Gain 1 shield and 2 temp shield. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Barrier Potion | 0 | Gain 1 shield and 2 temp shield. Temporary. |  |  |
 | No | Uncommon (Potion) | Potion of Thorns | 0 | Gain 2 temp payback. Temporary. |  |  |
-| No (name change) | Uncommon (Potion) | Alchemist's Frost | 0 | Deal 0 damage. Apply 1 engine lock. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Alchemist's Frost | 0 | Deal 0 damage. Apply 1 engine lock. Temporary. |  |  |
 | No | Uncommon (Potion) | Berserker Potion | 0 | Gain 2 flux. Temporary. |  |  |
 | No | Uncommon (Potion) | Reflex Potion | 0 | Gain 1 autododge right. Temporary. |  |  |
 | No | Uncommon (Potion) | Space-Grade Sealant | 0 | Bubble shield. Temporary. |  |  |
