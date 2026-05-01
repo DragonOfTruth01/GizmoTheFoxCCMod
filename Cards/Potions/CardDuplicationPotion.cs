@@ -42,7 +42,7 @@ internal sealed class CardDuplicationPotion : Card, IGizmoTheFoxCCModCard
         {
             new ACardSelect()
             {
-                browseAction = new ChooseCardToMakeTempFreeCopyOfAndPutInHand(),
+                browseAction = new ChooseCardToMakeTempExhaustFreeCopyOfAndPutInHand(),
                 browseSource = CardBrowse.Source.Hand
             }
         };

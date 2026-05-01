@@ -130,7 +130,7 @@
     },
     "Duplication Potion": {
       "name": "Duplication Potion",
-      "description": "Make a <c=cardtrait>temp</c>, <c=cardtrait>exhaust</c> copy of a card in hand. It costs 0."
+      "description": "Make a <c=cardtrait>temp,</c> <c=cardtrait>exhaust</c> copy of a card in hand. It costs 0 until played."
     },
     "Evocation": {
       "name" : "Evocation"

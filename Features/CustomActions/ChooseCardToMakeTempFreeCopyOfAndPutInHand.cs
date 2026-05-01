@@ -1,6 +1,6 @@
 namespace DragonOfTruth01.GizmoTheFoxCCMod;
 
-public class ChooseCardToMakeTempFreeCopyOfAndPutInHand : CardAction
+public class ChooseCardToMakeTempExhaustFreeCopyOfAndPutInHand : CardAction
 {
 	public override void Begin(G g, State s, Combat c)
 	{
@@ -10,6 +10,7 @@ public class ChooseCardToMakeTempFreeCopyOfAndPutInHand : CardAction
 			Card card2 = card.CopyWithNewId();
 			card2.temporaryOverride = true;
             card2.discount = -99;
+			card2.exhaustOverride = true;
 			c.QueueImmediate(new AAddCard
 			{
 				card = card2,
