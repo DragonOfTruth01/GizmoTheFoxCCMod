@@ -4,11 +4,11 @@ using System.Reflection;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod.Cards;
 
-internal sealed class CardBerserkerPotion : Card, IGizmoTheFoxCCModCard
+internal sealed class CardReflexPotion : Card, IGizmoTheFoxCCModCard
 {
     public static void Register(IModHelper helper)
     {
-        var entry = helper.Content.Cards.RegisterCard("Berserker Potion", new()
+        var entry = helper.Content.Cards.RegisterCard("Reflex Potion", new()
         {
             CardType = MethodBase.GetCurrentMethod()!.DeclaringType!,
             Meta = new()
@@ -16,7 +16,7 @@ internal sealed class CardBerserkerPotion : Card, IGizmoTheFoxCCModCard
                 deck = ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
                 rarity = Rarity.uncommon
             },
-            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Berserker Potion", "name"]).Localize
+            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Reflex Potion", "name"]).Localize
         });
     }
 
@@ -41,7 +41,7 @@ internal sealed class CardBerserkerPotion : Card, IGizmoTheFoxCCModCard
         {
             new AStatus()
             {
-                status = Status.libra,
+                status = Status.autododgeRight,
                 statusAmount = 1,
                 targetPlayer = true
             }
