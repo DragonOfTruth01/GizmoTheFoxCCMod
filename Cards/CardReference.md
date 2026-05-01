@@ -46,7 +46,7 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Uncommon (Potion) | Reflex Potion | 0 | Gain 1 autododge right. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Space-Grade Sealant | 0 | Bubble shield. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Potion of Agility | 0 | Gain 1 autopilot. Temporary. |  |  |
-| No | Uncommon (Potion) | Time Immurement | 0 | Gain 1 timestop. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Time Immurement | 0 | Gain 1 timestop. Temporary. |  |  |
 | No | Uncommon (Potion) | Potion of Swiftness | 0 | Draw 3 cards. Temporary. |  |  |
 | No | Uncommon (Potion) | Potion of Winds | 0 | Gain 2 wind charge. Temporary. |  |  |
 | No | Uncommon (Potion) | Alchemist's Fire | 0 | Deal 4 damage. Temporary. |  |  |

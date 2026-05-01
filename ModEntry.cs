@@ -184,7 +184,8 @@ public sealed class ModEntry : SimpleMod
         typeof(CardPotionOfStrength),
         typeof(CardPotionOfThorns),
         typeof(CardReflexPotion),
-        typeof(CardSpaceGradeSealant)
+        typeof(CardSpaceGradeSealant),
+        typeof(CardTimeImmurement)
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Shimmering_Potion_Types { get; } = [
