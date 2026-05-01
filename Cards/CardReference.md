@@ -63,7 +63,7 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Rare (Shimmering Potion) | Potion of Foresight | 0 | Next turn, draw 3 cards and gain 3 energy. Temporary. |  |  |
 | Yes | Rare (Shimmering Potion) | Potion of Fortification | 0 | Gain 3 max shield. Gain 3 shield. Temporary. |  |  |
 | Yes | Rare (Shimmering Potion) | Volatile Catalyst | 0 | Gain 2 boost. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Potion of Teleportation | 0 | Move 6 flippable. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Displacer Potion | 0 | Move 7 flippable. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Illuminator Potion | 0 | Gain 2 accumulate. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Potion of Health | 0 | Restore 3 hull. Temporary. |  |  |
 | No | Rare (Shimmering Potion) | Potion of Chaos | 0 | Obtain 1 of 3 temp rare cards from ANY deck. It costs 0 until played. Temporary. |  |  |
