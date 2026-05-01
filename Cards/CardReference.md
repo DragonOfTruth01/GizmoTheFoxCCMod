@@ -66,7 +66,7 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Rare (Shimmering Potion) | Displacer Potion | 0 | Move 7 flippable. Temporary. |  |  |
 | Yes | Rare (Shimmering Potion) | Illuminator Potion | 0 | Gain 2 accumulate. Temporary. |  |  |
 | Yes | Rare (Shimmering Potion) | Potion of Healing | 0 | Restore 3 hull. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Potion of Chaos | 0 | Obtain 1 of 3 temp rare cards from ANY deck. It costs 0 until played. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Potion of Chaos | 0 | Obtain 1 of 3 temp rare cards from ANY deck. It costs 0 until played. Temporary. |  |  |
 ||||||||
 | Yes | Common (Generated) | Mana Blade (Fire) | 1 | Deal 1 damage. Attune fire. Retain. Exhaust. Temporary. | Increase damage by 1. | Gain 1 stun charge after attack. |
 | Yes | Common (Generated) | Mana Blade (Ice) | 1 | Deal 0 damage. Gain 1 shield. Attune water. Retain. Exhaust. Temporary. | Increase damage by 1. | Also gain 1 temp shield. |

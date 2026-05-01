@@ -256,6 +256,10 @@
     "Potion of Agility": {
       "name": "Potion of Agility"
     },
+    "Potion of Chaos": {
+      "name": "Potion of Chaos",
+      "description": "Obtain 1 of 3 <c=cardtrait>temp</c> rare cards from any char. It costs 0 until played."
+    },
     "Potion of Fire Breath": {
       "name": "Potion of Fire Breath"
     },

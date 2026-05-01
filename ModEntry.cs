@@ -198,6 +198,7 @@ public sealed class ModEntry : SimpleMod
         typeof(CardDuplicationPotion),
         typeof(CardElixirOfCacophony),
         typeof(CardElixirOfMight),
+        typeof(CardPotionOfChaos),
         typeof(CardPotionOfFireBreath),
         typeof(CardPotionOfForesight),
         typeof(CardPotionOfFortification),

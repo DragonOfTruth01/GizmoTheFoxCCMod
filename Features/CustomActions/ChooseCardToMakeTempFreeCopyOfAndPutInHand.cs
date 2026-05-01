@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace DragonOfTruth01.GizmoTheFoxCCMod;
 
 public class ChooseCardToMakeTempExhaustFreeCopyOfAndPutInHand : CardAction
@@ -24,4 +27,7 @@ public class ChooseCardToMakeTempExhaustFreeCopyOfAndPutInHand : CardAction
 	{
 		return Loc.T("action.ChooseCardToMakeTempCopyOfAndPutInHand.GetCardSelectText", "Pick a card in your hand to make a temporary copy of.");
 	}
+
+	public override List<Tooltip> GetTooltips(State s)
+    => [new TTGlossary("cardtrait.discount", Math.Abs(99)), new TTGlossary("cardtrait.temporary"), new TTGlossary("cardtrait.exhaust")];
 }
