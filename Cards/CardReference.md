@@ -49,7 +49,7 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Uncommon (Potion) | Time Immurement | 0 | Gain 1 timestop. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Potion of Swiftness | 0 | Draw 3 cards. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Potion of Aether | 0 | Gain 2 wind charge. Temporary. |  |  |
-| No | Uncommon (Potion) | Alchemist's Fire | 0 | Deal 4 damage. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Alchemist's Fire | 0 | Deal 4 damage. Temporary. |  |  |
 | No | Uncommon (Potion) | Potion of Leaping | 0 | Gain 1 hermes boots. Temporary. |  |  |
 ||||||||
 | Yes | Rare (Shimmering Potion) | Elixir of Might | 0 | Gain 1 powerdrive. Temporary. |  |  |

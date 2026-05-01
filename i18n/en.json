@@ -108,6 +108,12 @@
     "Absorb Elements": {
       "name": "Absorb Elements"
     },
+    "Alchemist's Fire": {
+      "name": "Alchemist's Fire"
+    },
+    "Alchemist's Frost": {
+      "name": "Alchemist's Frost"
+    },
     "Conjure Mana Blades": {
       "name": "Conjure Mana Blades",
       "description": {
@@ -203,9 +209,6 @@
     },
     "Homunculus": {
       "name": "Homunculus"
-    },
-    "Alchemist's Frost": {
-      "name": "Alchemist's Frost"
     },
     "Imbue": {
       "name": "Imbue"
