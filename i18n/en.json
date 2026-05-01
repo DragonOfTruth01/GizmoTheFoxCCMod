@@ -144,6 +144,9 @@
     "Barrier Potion": {
       "name": "Barrier Potion"
     },
+    "Berserker Potion": {
+      "name": "Berserker Potion"
+    },
     "Caustic Brew": {
       "name": "Caustic Brew"
     },
@@ -245,6 +248,9 @@
     },
     "Potion of Strength": {
       "name": "Potion of Strength"
+    },
+    "Potion of Thorns": {
+      "name": "Potion of Thorns"
     },
     "Prestidigitation": {
       "name": "Prestidigi-tation"
