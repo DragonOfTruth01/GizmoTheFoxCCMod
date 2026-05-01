@@ -193,6 +193,7 @@ public sealed class ModEntry : SimpleMod
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Shimmering_Potion_Types { get; } = [
+        typeof(CardAlchemistsDecay),
         typeof(CardCausticBrew),
         typeof(CardElixirOfCacophony),
         typeof(CardElixirOfMight),

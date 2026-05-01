@@ -53,7 +53,7 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Uncommon (Potion) | Potion of Leaping | 0 | Gain 1 hermes boots. Temporary. |  |  |
 ||||||||
 | Yes | Rare (Shimmering Potion) | Elixir of Might | 0 | Gain 1 powerdrive. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Alchemist's Decay | 0 | Enemy loses 10 hull. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Alchemist's Decay | 0 | Enemy loses 10 hull. Temporary. |  |  |
 | Yes | Rare (Shimmering Potion) | Caustic Brew | 0 | Deal 2 damage. Apply 2 corrode. Temporary. |  |  |
 | Yes | Rare (Shimmering Potion) | Potion of Fire Breath | 0 | Deal 2 x 4 piercing damage. Temporary. |  |  |
 | Yes | Rare (Shimmering Potion) | Elixir of Cacophony | 0 | Gain 1 stun source. Temporary. |  |  |
