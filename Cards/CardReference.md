@@ -36,31 +36,37 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Common (Cantrip) | Flare | 0 | Attune fire. Draw 1 card. Limited 2. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
 | Yes | Common (Cantrip) | Whirlpool | 0 | Attune water. Draw 1 card. Limited 2. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
 ||||||||
-| No | Uncommon (Potion) | Name | 0 | Deal 3 damage. Temporary. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Gain 2 flux. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Potion of Strength | 0 | Gain 1 overdrive. Temporary. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Draw 3 cards. Temporary. |  |  |
-| Yes | Uncommon (Potion) | Potion of Haste | 0 | Gain 1 energy. Temporary. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Move 3 flippable. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Potion of Haste | 0 | Gain 1 energy. Gain 1 energy next turn. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Flashbang | 0 | Deal 1 damage. Stun. Temporary. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Gain 2 hermes boots. Temporary. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Gain 2 evade. Temporary. |  |  |
 | No | Uncommon (Potion) | Barrier Potion | 0 | Gain 1 shield and 2 temp shield. Temporary. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Gain 1 boost. Temporary. |  |  |
 | No | Uncommon (Potion) | Potion of Thorns | 0 | Gain 2 temp payback. Temporary. |  |  |
-| Yes | Uncommon (Potion) | Ice Bomb | 0 | Deal 0 damage. Apply 1 engine lock. Temporary. |  |  |
+| No (name change) | Uncommon (Potion) | Alchemist's Frost | 0 | Deal 0 damage. Apply 1 engine lock. Temporary. |  |  |
+| No | Uncommon (Potion) | Berserker Potion | 0 | Gain 2 flux. Temporary. |  |  |
+| No | Uncommon (Potion) | Reflex Potion | 0 | Gain 1 autododge right. Temporary. |  |  |
+| No | Uncommon (Potion) | Space-Grade Sealant | 0 | Bubble shield. Temporary. |  |  |
+| No | Uncommon (Potion) | Potion of Agility | 0 | Gain 1 autopilot. Temporary. |  |  |
+| No | Uncommon (Potion) | Time Immurement | 0 | Gain 1 timestop. Temporary. |  |  |
+| No | Uncommon (Potion) | Potion of Swiftness | 0 | Draw 3 cards. Temporary. |  |  |
+| No | Uncommon (Potion) | Potion of Winds | 0 | Gain 2 wind charge. Temporary. |  |  |
+| No | Uncommon (Potion) | Alchemist's Fire | 0 | Deal 4 damage. Temporary. |  |  |
+| No | Uncommon (Potion) | Potion of Leaping | 0 | Gain 1 hermes boots. Temporary. |  |  |
 ||||||||
 | Yes | Rare (Shimmering Potion) | Elixir of Might | 0 | Gain 1 powerdrive. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Solvent of Decay | 0 | Enemy loses 9 hull. Temporary. |  |  |
-| Yes | Rare (Shimmering Potion) | Caustic Brew | 0 | Deal 1 damage. Apply 2 corrode. Temporary. |  |  |
-| Yes | Rare (Shimmering Potion) | Potion of Dragon's Breath | 0 | Deal 2 x 4 piercing damage. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Alchemist's Decay | 0 | Enemy loses 10 hull. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Caustic Brew | 0 | Deal 2 damage. Apply 2 corrode. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Potion of Fire Breath | 0 | Deal 2 x 4 piercing damage. Temporary. |  |  |
 | Yes | Rare (Shimmering Potion) | Elixir of Cacophony | 0 | Gain 1 stun source. Temporary. |  |  |
 | Yes | Rare (Shimmering Potion) | Potion of Invincibility | 0 | Gain 1 perfect shield. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Gain 3 max shield. Gain 3 shield. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Gain 10 temp shield. Temporary. |  |  |
 | Yes | Rare (Shimmering Potion) | Quickstep Elixir | 0 | Gain 1 ace. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Gain 3 energy. Draw 3 cards. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Add 3 random potions to your hand. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Duplication Potion | 0 | Make a temp, exhaust, 0-cost copy of a card in hand. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Potion of Foresight | 0 | Next turn, draw 3 cards and gain 2 energy. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Potion of Fortification | 0 | Gain 3 max shield. Gain 3 shield. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Volatile Catalyst | 0 | Gain 2 boost. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Potion of Teleportation | 0 | Move 6 flippable. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Illuminator Potion | 0 | Gain 2 accumulate. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Potion of Health | 0 | Restore 3 hull. Temporary. |  |  |
+| No | Rare (Shimmering Potion) | Golden Potion | 0 | Obtain 1 of 3 rare cards from a random character. It costs 0 until played. Temporary. |  |  |
 ||||||||
 | Yes | Common (Generated) | Mana Blade (Fire) | 1 | Deal 1 damage. Attune fire. Retain. Exhaust. Temporary. | Increase damage by 1. | Gain 1 stun charge after attack. |
 | Yes | Common (Generated) | Mana Blade (Ice) | 1 | Deal 0 damage. Gain 1 shield. Attune water. Retain. Exhaust. Temporary. | Increase damage by 1. | Also gain 1 temp shield. |
