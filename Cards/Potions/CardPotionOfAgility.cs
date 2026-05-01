@@ -4,11 +4,11 @@ using System.Reflection;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod.Cards;
 
-internal sealed class CardSpaceGradeSealant : Card, IGizmoTheFoxCCModCard
+internal sealed class CardPotionOfAgility : Card, IGizmoTheFoxCCModCard
 {
     public static void Register(IModHelper helper)
     {
-        var entry = helper.Content.Cards.RegisterCard("Space Grade Sealant", new()
+        var entry = helper.Content.Cards.RegisterCard("Potion of Agility", new()
         {
             CardType = MethodBase.GetCurrentMethod()!.DeclaringType!,
             Meta = new()
@@ -16,7 +16,7 @@ internal sealed class CardSpaceGradeSealant : Card, IGizmoTheFoxCCModCard
                 deck = ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
                 rarity = Rarity.uncommon
             },
-            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Space Grade Sealant", "name"]).Localize
+            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Potion of Agility", "name"]).Localize
         });
     }
 
@@ -39,7 +39,12 @@ internal sealed class CardSpaceGradeSealant : Card, IGizmoTheFoxCCModCard
 
         actions = new()
         {
-            new ABubbleField()
+            new AStatus()
+            {
+                status = Status.autopilot,
+                statusAmount = 1,
+                targetPlayer = true
+            }
         };
         
         return actions;
