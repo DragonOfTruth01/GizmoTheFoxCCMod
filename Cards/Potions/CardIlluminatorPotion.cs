@@ -4,19 +4,19 @@ using System.Reflection;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod.Cards;
 
-internal sealed class CardPotionOfHaste : Card, IGizmoTheFoxCCModCard
+internal sealed class CardIlluminatorPotion : Card, IGizmoTheFoxCCModCard
 {
     public static void Register(IModHelper helper)
     {
-        var entry = helper.Content.Cards.RegisterCard("Potion of Haste", new()
+        var entry = helper.Content.Cards.RegisterCard("Illuminator Potion", new()
         {
             CardType = MethodBase.GetCurrentMethod()!.DeclaringType!,
             Meta = new()
             {
                 deck = ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
-                rarity = Rarity.uncommon
+                rarity = Rarity.rare
             },
-            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Potion of Haste", "name"]).Localize
+            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Illuminator Potion", "name"]).Localize
         });
     }
 
@@ -28,7 +28,7 @@ internal sealed class CardPotionOfHaste : Card, IGizmoTheFoxCCModCard
             cost = 0,
             exhaust = true,
             temporary = true,
-            artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Potion_CardOverlay.Sprite
+            artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_ShimmeringPotion_CardOverlay.Sprite
         };
         return data;
     }
@@ -39,9 +39,11 @@ internal sealed class CardPotionOfHaste : Card, IGizmoTheFoxCCModCard
 
         actions = new()
         {
-            new AEnergy()
+            new AStatus()
             {
-                changeAmount = 1
+                status = ModEntry.Instance.Accumulate.Status,
+                statusAmount = 2,
+                targetPlayer = true
             }
         };
         

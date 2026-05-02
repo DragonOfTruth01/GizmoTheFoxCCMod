@@ -30,19 +30,19 @@
       "description": "<c=boldPink>Attune</c> a random element {{execCountString}}</c> times."
     },
     "Attune Earth and Water": {
-      "name": "Attune Earth and Water",
+      "name": "     Attune Earth and Water",
       "description": "<c=boldPink>Attune</c> the <c=796775>earth</c> and <c=3e71d6>water</c> elements."
     },
     "Attune Water and Earth": {
-      "name": "Attune Water and Earth",
+      "name": "     Attune Water and Earth",
       "description": "<c=boldPink>Attune</c> the <c=3e71d6>water</c> and <c=796775>earth</c> elements."
     },
     "Attune Wind and Fire": {
-      "name": "Attune Wind and Fire",
+      "name": "     Attune Wind and Fire",
       "description": "<c=boldPink>Attune</c> the <c=e74c31>fire</c> and <c=14a02e>wind</c> elements."
     },
     "Attune Fire and Wind": {
-      "name": "Attune Fire and Wind",
+      "name": "     Attune Fire and Wind",
       "description": "<c=boldPink>Attune</c> the <c=14a02e>wind</c> and <c=e74c31>fire</c> elements."
     },
     "Add Cantrip 2": {
@@ -108,6 +108,15 @@
     "Absorb Elements": {
       "name": "Absorb Elements"
     },
+    "Alchemist's Decay": {
+      "name": "Alchemist's Decay"
+    },
+    "Alchemist's Fire": {
+      "name": "Alchemist's Fire"
+    },
+    "Alchemist's Frost": {
+      "name": "Alchemist's Frost"
+    },
     "Conjure Mana Blades": {
       "name": "Conjure Mana Blades",
       "description": {
@@ -118,6 +127,10 @@
     },
     "Diametric Decoction": {
       "name": "Diametric Decoction"
+    },
+    "Duplication Potion": {
+      "name": "Duplication Potion",
+      "description": "Make a <c=cardtrait>temp,</c> <c=cardtrait>exhaust</c> copy of a card in hand. It costs 0 until played."
     },
     "Evocation": {
       "name" : "Evocation"
@@ -136,10 +149,16 @@
     "Arcane Capacitor": {
       "name": "Arcane Capacitor",
       "description": {
-        "None": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor</c> to your draw pile.",
-        "A": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor A</c> to your  draw pile.",
-        "B": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor B</c> to your  draw pile."
+        "None": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor</c>\nto your\ndraw pile.",
+        "A": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor\nA</c> to your\ndraw pile.",
+        "B": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor\nB</c> to your\ndraw pile."
       }
+    },
+    "Barrier Potion": {
+      "name": "Barrier Potion"
+    },
+    "Berserker Potion": {
+      "name": "Berserker Potion"
     },
     "Caustic Brew": {
       "name": "Caustic Brew"
@@ -165,6 +184,12 @@
     },
     "Discharged Capacitor": {
       "name": "Discharged Capacitor"
+    },
+    "Displacer Potion": {
+      "name": "Displacer Potion"
+    },
+    "Elixir of Cacophony": {
+      "name": "Elixir of Cacophony"
     },
     "Elixir of Might": {
       "name": "Elixir of Might"
@@ -195,8 +220,8 @@
     "Homunculus": {
       "name": "Homunculus"
     },
-    "Ice Bomb": {
-      "name": "Ice Bomb"
+    "Illuminator Potion": {
+      "name": "Illuminator Potion"
     },
     "Imbue": {
       "name": "Imbue"
@@ -225,20 +250,48 @@
     "Mana Blade (Ice)": {
       "name": "Mana Blade (Ice)"
     },
+    "Potion of Aether": {
+      "name": "Potion of Aether"
+    },
+    "Potion of Agility": {
+      "name": "Potion of Agility"
+    },
+    "Potion of Chaos": {
+      "name": "Potion of Chaos",
+      "description": "Obtain 1 of 3 <c=cardtrait>temp</c> rare cards from any char. It costs 0 until played."
+    },
     "Potion of Fire Breath": {
       "name": "Potion of Fire Breath"
+    },
+    "Potion of Foresight": {
+      "name": "Potion of Foresight"
+    },
+    "Potion of Fortification": {
+      "name": "Potion of Fortification"
     },
     "Potion of Haste": {
       "name": "Potion of Haste"
     },
+    "Potion of Healing": {
+      "name": "Potion of Healing"
+    },
     "Potion of Invincibility": {
       "name": "Potion of Invincibility"
+    },
+    "Potion of Leaping": {
+      "name": "Potion of Leaping"
     },
     "Potion of Might": {
       "name": "Potion of Might"
     },
     "Potion of Strength": {
       "name": "Potion of Strength"
+    },
+    "Potion of Swiftness": {
+      "name": "Potion of Swiftness"
+    },
+    "Potion of Thorns": {
+      "name": "Potion of Thorns"
     },
     "Prestidigitation": {
       "name": "Prestidigi-tation"
@@ -254,6 +307,12 @@
         "B": "Add 3 random <c=card>potions</c> to your draw pile."
       }
     },
+    "Quickstep Elixir": {
+      "name": "Quickstep Elixir"
+    },
+    "Reflex Potion": {
+      "name": "Reflex Potion"
+    },
     "Sea Quake": {
       "name": "Sea Quake"
     },
@@ -268,8 +327,17 @@
         "B": "Obtain 1 of 2 <c=card>shimmering potions</c>."
       }
     },
+    "Space Grade Sealant": {
+      "name": "Space Grade Sealant"
+    },
+    "Time Immurement": {
+      "name": "Time Immurement"
+    },
     "Tremor": {
       "name": "Tremor"
+    },
+    "Volatile Catalyst": {
+      "name": "Volatile Catalyst"
     },
     "Whirlpool": {
       "name": "Whirlpool"

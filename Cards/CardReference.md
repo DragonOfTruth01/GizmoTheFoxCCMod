@@ -4,15 +4,15 @@ This document acts as a reference for which cards are part of this mod.
 
 | Done? | Rarity | Name | Cost | Effect | Upgrade A | Upgrade B |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| Yes | Common | Absorb Elements | 1 | Gain 2 temp shield. Gain 1 absorb. | Increase temp shield to 3. | Decrease temp shield to 1. Increase absorb to 2. |
+| Yes | Common | Absorb Elements | 1 | Gain 1 temp shield. Gain 1 absorb. | Increase temp shield to 2. | Increase absorb to 2. |
 | Yes | Common | Evocation | 1 | Gain 1 temp shield. Add 1 of 4 cantrips to your hand. | Added card has A upgrade. | Added card has B upgrade. |
 | Yes | Common | Diametric Decoction | 1 | Floppable. Attune earth + wind. / Attune fire + water. Recycle. Draw 1 card next turn. | Card instead gains infinite. | Reduce cost to 0. Attune 4 random elements. Card instead gains exhaust and draws 1 card immediately. |
-| Yes | Common | Steam Engine | 2 | Floppable. Gain 1 wind charge + attune wind / Gain 1 overdrive + attune fire. Gain 1 energy next turn. | Instead gain 2 energy next turn. | Both actions attune fire and wind. |
+| Yes | Common | Steam Engine | 2 | Floppable. Gain 1 wind charge + attune wind / Gain 1 overdrive + attune fire. Gain 1 energy next turn. | Instead gain 2 energy next turn. | Both actions attune fire and wind. Card gains discounted 1. |
 | Yes | Common | Flutter | 0 | Move 1 random. Gain 1 wind charge. Attune wind. | Also gain 1 hermes boots. | Instead gain 2 wind charge. Also gain 1 engine stall. |
 | Yes | Common | Magic Missile | 1 | Attack 1. Repeat this attack if attuned 2/3 elements. Un-attune all elements. | Also repeat attack if attuned 1 element. | All attacks gain piercing. |
 | Yes | Common | Conjure Mana Blades | 0 | Add Mana Blade (Fire) and Mana Blade (Ice) to your hand. | Added cards have A upgrade. | Added cards have B upgrade. |
 | Yes | Common | Prestidigitation | 1 | Floppable. Deal 1 damage. / Gain 1 block. Add 1 of 2 cantrips to your hand. | Instead add 1 of 4 cantrips. | Increase damage by 1. / Add 1 temp shield. |
-| Yes | Common | Sea Quake | 2 | Floppable. Gain 3 temp shield. Attune water. / Gain 2 shield. Attune earth. | Gain 5 temp shield / 3 shield. | Both actions attune earth and water. |
+| Yes | Common | Sea Quake | 2 | Floppable. Gain 3 temp shield. Attune water. / Gain 2 shield. Attune earth. | Gain 5 temp shield / 3 shield. | Both actions attune earth and water. Card gains discounted 1. |
 | Yes | Common | Homunculus | 1 | Attune earth. Deploy a stone construct from the missile bay. | Deploy an imbued stone construct from the missile bay. | Increase cost to 2. Deploy a stone construct from the missile bay, and one to the right of the missile bay. Card gains flippable. |
 ||||||||
 | Yes | Uncommon | Dimensional Storage | 1 | Move two cards from the discard pile to your hand. Exhaust. | Reduce cost to 0. | Increase cost to 2. Remove exhaust. |
@@ -31,36 +31,42 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Rare | Shimmering Solution | 1 | Gain a random shimmering potion. Exhaust. | Reduce cost to 0. | Instead choose 1 of 2 shimmering potions. |
 | Yes | Rare | Seize Time | 2 | Gain 2 time stop. Exhaust. | Also gain 1 energy next turn. | Increase cost to 3 and time stop to 4. |
 ||||||||
-| Yes | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 3. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
-| Yes | Common (Cantrip) | Gust | 0 | Attune wind. Draw 1 card. Limited 3. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
-| Yes | Common (Cantrip) | Flare | 0 | Attune fire. Draw 1 card. Limited 3. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
-| Yes | Common (Cantrip) | Whirlpool | 0 | Attune water. Draw 1 card. Limited 3. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 2. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Gust | 0 | Attune wind. Draw 1 card. Limited 2. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Flare | 0 | Attune fire. Draw 1 card. Limited 2. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Whirlpool | 0 | Attune water. Draw 1 card. Limited 2. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
 ||||||||
-| No | Uncommon (Potion) | Name | 0 | Deal 3 damage. Temporary. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Gain 2 flux. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Potion of Strength | 0 | Gain 1 overdrive. Temporary. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Draw 3 cards. Temporary. |  |  |
-| Yes | Uncommon (Potion) | Potion of Haste | 0 | Gain 1 energy. Draw 1 card. Temporary. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Move 3 flippable. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Potion of Haste | 0 | Gain 1 energy. Gain 1 energy next turn. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Flashbang | 0 | Deal 1 damage. Stun. Temporary. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Gain 2 hermes boots. Temporary. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Gain 2 evade. Temporary. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Gain 3 block. Temporary. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Gain 1 boost. Temporary. |  |  |
-| No | Uncommon (Potion) | Name | 0 | Gain 2 temp payback. Temporary. |  |  |
-| Yes | Uncommon (Potion) | Ice Bomb | 0 | Deal 0 damage. Apply 1 engine lock. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Barrier Potion | 0 | Gain 1 shield and 2 temp shield. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Potion of Thorns | 0 | Gain 2 temp payback. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Alchemist's Frost | 0 | Deal 0 damage. Apply 1 engine lock. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Berserker Potion | 0 | Gain 1 flux. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Reflex Potion | 0 | Gain 1 autododge right. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Space-Grade Sealant | 0 | Bubble shield. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Potion of Agility | 0 | Gain 1 autopilot. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Time Immurement | 0 | Gain 1 timestop. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Potion of Swiftness | 0 | Draw 3 cards. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Potion of Aether | 0 | Gain 2 wind charge. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Alchemist's Fire | 0 | Deal 4 damage. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Potion of Leaping | 0 | Gain 1 hermes boots. Temporary. |  |  |
 ||||||||
 | Yes | Rare (Shimmering Potion) | Elixir of Might | 0 | Gain 1 powerdrive. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Deal 9 damage. Temporary. |  |  |
-| Yes | Rare (Shimmering Potion) | Caustic Brew | 0 | Apply 2 corrode (outgoing). Temporary. |  |  |
-| Yes | Rare (Shimmering Potion) | Potion of Dragon's Breath | 0 | Deal 2 x 4 piercing damage. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Gain 1 stun source. Gain 1 stun charge. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Alchemist's Decay | 0 | Enemy loses 10 hull. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Caustic Brew | 0 | Deal 2 damage. Apply 2 corrode. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Potion of Fire Breath | 0 | Deal 2 x 4 piercing damage. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Elixir of Cacophony | 0 | Gain 1 stun source. Temporary. |  |  |
 | Yes | Rare (Shimmering Potion) | Potion of Invincibility | 0 | Gain 1 perfect shield. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Gain 3 max shield. Gain 3 shield. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Gain 10 temp shield. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Gain 1 ace. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Gain 3 energy. Draw 3 cards. Temporary. |  |  |
-| No | Rare (Shimmering Potion) | Name | 0 | Add 3 random potions to your hand. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Quickstep Elixir | 0 | Gain 1 ace. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Duplication Potion | 0 | Make a temp, exhaust, 0-cost copy of a card in hand. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Potion of Foresight | 0 | Next turn, draw 3 cards and gain 3 energy. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Potion of Fortification | 0 | Gain 3 max shield. Gain 3 shield. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Volatile Catalyst | 0 | Gain 2 boost. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Displacer Potion | 0 | Move 7 flippable. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Illuminator Potion | 0 | Gain 2 accumulate. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Potion of Healing | 0 | Restore 3 hull. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Potion of Chaos | 0 | Obtain 1 of 3 temp rare cards from ANY deck. It costs 0 until played. Temporary. |  |  |
 ||||||||
 | Yes | Common (Generated) | Mana Blade (Fire) | 1 | Deal 1 damage. Attune fire. Retain. Exhaust. Temporary. | Increase damage by 1. | Gain 1 stun charge after attack. |
 | Yes | Common (Generated) | Mana Blade (Ice) | 1 | Deal 0 damage. Gain 1 shield. Attune water. Retain. Exhaust. Temporary. | Increase damage by 1. | Also gain 1 temp shield. |
@@ -70,4 +76,4 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Rare (Generated) | Mace of Seasons (Summer) | 1 | Deal 2 damage. Stun. Attune fire. Add Mace of Seasons (Autumn) to your hand. Exhaust 1. Temporary. Immutable. | Increase damage to 3. Summon A. | Card gains retain. Summon B. |
 | Yes | Rare (Generated) | Mace of Seasons (Autumn) | 1 | Deal 2 damage. Gain 1 shield. Attune earth. Add Mace of Seasons (Winter) to your hand. Exhaust 1. Temporary. Immutable. | Increase damage to 3. Summon A. | Card gains retain. Summon B. |
 ||||||||
-| Yes | Status | Discharged Capacitor | 1 | If attuned 3 elements, add an Arcane Capacitor to your hand. Set attunement to 0. Exhaust. | Reduce attunement requirement to 2. Add A. | Also draw 2 cards. Add B. |
+| Yes | Status | Discharged Capacitor | 1 | If attuned 3 elements, add an Arcane Capacitor to your hand. Set attunement to 0. Retain. Exhaust. | Reduce attunement requirement to 2. Add A. | Also draw 1 card. Add B. |

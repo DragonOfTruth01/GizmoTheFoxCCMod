@@ -31,6 +31,7 @@ internal sealed class CardDischargedCapacitor : Card, IGizmoTheFoxCCModCard
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
             cost = 1,
             temporary = true,
+            retain = true,
             exhaust = true
         };
         return data;
@@ -109,7 +110,7 @@ internal sealed class CardDischargedCapacitor : Card, IGizmoTheFoxCCModCard
                     ).AsCardAction,
                     new ADrawCard()
                     {
-                        count = 2
+                        count = 1
                     },
                     new AStatus()
                     {
@@ -134,7 +135,7 @@ internal sealed class CardDischargedCapacitor : Card, IGizmoTheFoxCCModCard
                 IKokoroApi.IV2.IConditionalApi.EquationStyle.Possession
             ).SetShowOperator(false),
             new AAddCard(){
-                card = new CardDischargedCapacitor() { upgrade = u, temporaryOverride = true },
+                card = new CardArcaneCapacitor() { upgrade = u, temporaryOverride = true },
                 destination = CardDestination.Hand,
                 amount = 1
             }

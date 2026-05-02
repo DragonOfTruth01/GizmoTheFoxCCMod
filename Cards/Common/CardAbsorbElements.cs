@@ -43,7 +43,7 @@ internal sealed class CardAbsorbElements : Card, IGizmoTheFoxCCModCard
                     new AStatus()
                     {
                         status = Status.tempShield,
-                        statusAmount = 2,
+                        statusAmount = 1,
                         targetPlayer = true
                     },
                     new AStatus()
@@ -61,7 +61,7 @@ internal sealed class CardAbsorbElements : Card, IGizmoTheFoxCCModCard
                     new AStatus()
                     {
                         status = Status.tempShield,
-                        statusAmount = 3,
+                        statusAmount = 2,
                         targetPlayer = true
                     },
                     new AStatus()

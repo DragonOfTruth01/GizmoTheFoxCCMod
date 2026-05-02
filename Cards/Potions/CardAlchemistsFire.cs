@@ -4,11 +4,11 @@ using System.Reflection;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod.Cards;
 
-internal sealed class CardPotionOfHaste : Card, IGizmoTheFoxCCModCard
+internal sealed class CardAlchemistsFire : Card, IGizmoTheFoxCCModCard
 {
     public static void Register(IModHelper helper)
     {
-        var entry = helper.Content.Cards.RegisterCard("Potion of Haste", new()
+        var entry = helper.Content.Cards.RegisterCard("Alchemist's Fire", new()
         {
             CardType = MethodBase.GetCurrentMethod()!.DeclaringType!,
             Meta = new()
@@ -16,7 +16,7 @@ internal sealed class CardPotionOfHaste : Card, IGizmoTheFoxCCModCard
                 deck = ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
                 rarity = Rarity.uncommon
             },
-            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Potion of Haste", "name"]).Localize
+            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Alchemist's Fire", "name"]).Localize
         });
     }
 
@@ -39,9 +39,9 @@ internal sealed class CardPotionOfHaste : Card, IGizmoTheFoxCCModCard
 
         actions = new()
         {
-            new AEnergy()
+            new AAttack()
             {
-                changeAmount = 1
+                damage = GetDmg(s, 4)
             }
         };
         

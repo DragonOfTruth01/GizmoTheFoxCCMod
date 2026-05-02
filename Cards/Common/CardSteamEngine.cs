@@ -29,6 +29,9 @@ internal sealed class CardSteamEngine : Card, IGizmoTheFoxCCModCard
             cost = 2,
             floppable = true
         };
+
+        discount = upgrade == Upgrade.B ? -1 : 0;
+
         return data;
     }
     public override List<CardAction> GetActions(State s, Combat c)
