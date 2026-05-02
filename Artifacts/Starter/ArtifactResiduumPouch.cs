@@ -6,7 +6,7 @@ namespace DragonOfTruth01.GizmoTheFoxCCMod.Artifacts;
 
 internal sealed class ArtifactResiduumPouch : Artifact, IGizmoTheFoxCCModArtifact
 {
-    public bool isConsumed = false;
+    public bool hasTriggeredThisCombat = false;
 
     public static void Register(IModHelper helper)
     {
@@ -16,7 +16,8 @@ internal sealed class ArtifactResiduumPouch : Artifact, IGizmoTheFoxCCModArtifac
             Meta = new()
             {
                 owner = ModEntry.Instance.GizmoTheFoxCCMod_Character_Deck.Deck,
-                pools = [ArtifactPool.EventOnly]
+                pools = [ArtifactPool.Common],
+                unremovable = true
             },
             Sprite = ModEntry.Instance.GizmoTheFoxCCMod_ArtifactResiduumPouch.Sprite,
             Name = ModEntry.Instance.AnyLocalizations.Bind(["artifact", "starter", "Residuum Pouch", "name"]).Localize,
@@ -37,11 +38,11 @@ internal sealed class ArtifactResiduumPouch : Artifact, IGizmoTheFoxCCModArtifac
 
     public override void OnCombatEnd(State state)
     {
-        isConsumed = false;
+        hasTriggeredThisCombat = false;
     }
     
     public override Spr GetSprite()
     {
-        return ModEntry.Instance.GizmoTheFoxCCMod_ArtifactResiduumPouch.Sprite;
+        return hasTriggeredThisCombat ? ModEntry.Instance.GizmoTheFoxCCMod_ArtifactResiduumPouchDisabled.Sprite : ModEntry.Instance.GizmoTheFoxCCMod_ArtifactResiduumPouch.Sprite;
     }
 }
