@@ -72,10 +72,27 @@ internal sealed class AttunementManager : IKokoroApi.IV2.IStatusRenderingApi.IHo
         {
             bool isShimmering = false;
 
-            var residuumPouch = s.EnumerateAllArtifacts().OfType<ArtifactResiduumPouch>().FirstOrDefault();
+            var residuumSatchel = s.EnumerateAllArtifacts().OfType<ArtifactResiduumSatchel>().FirstOrDefault();
+            var residuumPouch   = s.EnumerateAllArtifacts().OfType<ArtifactResiduumPouch>().FirstOrDefault();
 
-            // If we have residum pouch, roll for a chance at a shimmering potion
-            if(residuumPouch != null)
+            // If we have residum satchel (and it's not consumed), roll for a 33% chance at a shimmering potion
+            if(residuumSatchel != null)
+            {
+                if (residuumSatchel.numTriggersRemainingThisCombat > 0)
+                {
+                    int rng = s.rngActions.NextInt() % 3; // 33% chance
+
+                    if(rng == 0)
+                    {
+                        isShimmering = true;
+                        residuumSatchel.Pulse();
+                        residuumSatchel.numTriggersRemainingThisCombat -= 1;
+                    }
+                }
+            }
+
+            // Otherwise, if we have residum pouch (and it's not consumed), roll for a 25% chance at a shimmering potion
+            else if(residuumPouch != null)
             {
                 if (!residuumPouch.hasTriggeredThisCombat)
                 {
