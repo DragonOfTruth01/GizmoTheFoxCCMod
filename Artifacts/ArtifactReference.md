@@ -5,8 +5,9 @@ This document acts as a reference for the artifacts that are introduced in this 
 | Done? | Rarity | Name | Effect |
 |:-:|:-:|:-:|:-:|
 | No | Starter | Residuum Pouch | Potion rewards received from attunement have a 25% chance to be shimmering. Can trigger once per combat. |
-| No | Common | Bismuth Diadem | Start each combat with 1 accumulate. |
+| No | Common | Arcane Prism | Start each combat with 1 accumulate. |
 | No | Common | Bag of Holding | At the start of combat, add a random potion to your hand. |
-| No | Common | Arcane Prism |  |
+| No | Common | Gravity Bird | The first time you use a potion each combat, restore 1 hull. |
+| No | Common | Bismuth Diadem | Start each combat with an imbued stone construct near your ship. |
 | No | Boss | Residuum Satchel | Replaces Residuum Pouch. Potion rewards received from attunement have a 33% chance to be shimmering. Can trigger twice per combat. |
 | No | Boss | Potion Belt | All potions retain. |
