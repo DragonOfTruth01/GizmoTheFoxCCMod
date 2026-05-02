@@ -1,4 +1,16 @@
 {
+  "artifact": {
+    "starter": {
+      "Residuum Pouch": {
+        "name": "Residuum Pouch",
+        "description": "Potion rewards received from <c=boldPink>attunement</c> have a <c=boldPink>25%</c> chance to be shimmering potions. Can trigger once per combat."
+      }
+    },
+    "boss": {
+    },
+    "common": {
+    }
+  },
   "character": {
     "GizmoTheFoxCCMod_Character": {
       "name": "Gizmo",
@@ -96,12 +108,6 @@
     "Is Attuned Water": {
       "name": "WATER IS ATTUNED",
       "description": "the <c=3e71d6>water</c> element is <c=boldPink>attuned</c>"
-    }
-  },
-  "artifact": {
-    "boss": {
-    },
-    "common": {
     }
   },
   "card": {
