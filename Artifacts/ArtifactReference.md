@@ -6,7 +6,7 @@ This document acts as a reference for the artifacts that are introduced in this 
 |:-:|:-:|:-:|:-:|
 | No | Starter | Residuum Pouch | Potion rewards received from attunement have a 25% chance to be shimmering. Can trigger once per combat. |
 | No | Common | Bismuth Diadem | Start each combat with 1 accumulate. |
-| No | Common | Bag of Holding | The first time you play a cantrip each combat, gain 1 energy. |
-| No | Common | Arcane Prism | At the start of combat, add a random cantrip with A upgrade to your hand. |
+| No | Common | Bag of Holding | At the start of combat, add a random potion to your hand. |
+| No | Common | Arcane Prism |  |
 | No | Boss | Residuum Satchel | Replaces Residuum Pouch. Potion rewards received from attunement have a 33% chance to be shimmering. Can trigger twice per combat. |
 | No | Boss | Potion Belt | All potions retain. |
