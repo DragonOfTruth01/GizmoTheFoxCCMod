@@ -9,6 +9,7 @@ using System.Collections.Immutable;
 using OneOf.Types;
 using System.Runtime.CompilerServices;
 using System.Reflection.Metadata;
+using DragonOfTruth01.GizmoTheFoxCCMod.Artifacts;
 
 [HarmonyPatch]
 internal sealed class AttunementManager : IKokoroApi.IV2.IStatusRenderingApi.IHook
@@ -72,6 +73,21 @@ internal sealed class AttunementManager : IKokoroApi.IV2.IStatusRenderingApi.IHo
     private static void AStatus_Begin_Postfix(AStatus __instance, State s, Combat c, HarmonyRef __state)
     {
         var ship = GetShip(__instance, s);
+        bool isShimmering = false;
+
+        var residuumPouch = s.EnumerateAllArtifacts().OfType<ArtifactResiduumPouch>().FirstOrDefault();
+
+        // If we have residum pouch, roll for a chance at a shimmering potion
+        if(residuumPouch != null && !residuumPouch.isConsumed)
+        {
+            int rng = s.rngActions.NextInt() % 4; // 25% chance
+
+            if(rng == 0)
+            {
+                isShimmering = true;
+                residuumPouch.isConsumed = true;
+            }
+        }
 
         // Do this logic if all element slots are attuned
         if(ship.Get(ModEntry.Instance.Attunement.Status) >= AllElementBitMask)
@@ -81,7 +97,7 @@ internal sealed class AttunementManager : IKokoroApi.IV2.IStatusRenderingApi.IHo
                 amount = 3,
                 limitDeck = ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
                 canSkip = false,
-                rarityOverride = Rarity.uncommon, // Non-shimmering potions
+                rarityOverride = isShimmering ? Rarity.rare : Rarity.uncommon,
                 inCombat = true
             });
 

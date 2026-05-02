@@ -6,6 +6,8 @@ namespace DragonOfTruth01.GizmoTheFoxCCMod.Artifacts;
 
 internal sealed class ArtifactResiduumPouch : Artifact, IGizmoTheFoxCCModArtifact
 {
+    public bool isConsumed = false;
+
     public static void Register(IModHelper helper)
     {
         helper.Content.Artifacts.RegisterArtifact("Residuum Pouch", new()
@@ -24,8 +26,19 @@ internal sealed class ArtifactResiduumPouch : Artifact, IGizmoTheFoxCCModArtifac
 
     public override List<Tooltip>? GetExtraTooltips()
     => [
-        .. StatusMeta.GetTooltips(ModEntry.Instance.Attunement.Status, 1)
+        new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::Potion")
+            {
+                Icon = ModEntry.Instance.GizmoTheFoxCCMod_Potion.Sprite,
+                TitleColor = Colors.card,
+                Title = ModEntry.Instance.Localizations.Localize(["action", "Potion", "name"]),
+                Description = ModEntry.Instance.Localizations.Localize(["action", "Potion", "description"])
+            }
     ];
+
+    public override void OnCombatEnd(State state)
+    {
+        isConsumed = false;
+    }
     
     public override Spr GetSprite()
     {

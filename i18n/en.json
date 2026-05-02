@@ -14,7 +14,7 @@
   "character": {
     "GizmoTheFoxCCMod_Character": {
       "name": "Gizmo",
-      "description": "An artificer from a distant realm. His cards allow <c=boldPink>attunement</c> of the four elements to brew <c=boldPink>potions</c> and perform other effects."
+      "description": "An artificer from a distant realm. His cards allow <c=boldPink>attunement</c> of the four elements to brew <c=card>potions</c> and perform other effects."
     },
     "GizmoTheFoxCCMod_Potion": {
       "name": "Gizmo Potions"
@@ -108,6 +108,10 @@
     "Is Attuned Water": {
       "name": "WATER IS ATTUNED",
       "description": "the <c=3e71d6>water</c> element is <c=boldPink>attuned</c>"
+    },
+    "Potion": {
+      "name": "Potion",
+      "description": "A <c=cardtrait>temporary, exhausting</c> 0-cost card with a simple effect. <c=card>Shimmering potions</c> are more powerful."
     }
   },
   "card": {
@@ -369,7 +373,7 @@
     },
     "Attunement": {
       "name": "Attunement",
-      "description": "Currently <c=boldPink>attuned</c> elements. When all elements are <c=boldPink>attuned</c>, add 1 of 3 <c=boldPink>potions</c> to your hand."
+      "description": "Currently <c=boldPink>attuned</c> elements. When all elements are <c=boldPink>attuned</c>, add 1 of 3 <c=card>potions</c> to your hand."
     },
     "Accumulate": {
       "name": "Accumulate",

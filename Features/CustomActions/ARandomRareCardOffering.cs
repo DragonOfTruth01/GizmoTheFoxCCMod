@@ -17,7 +17,7 @@ public class ARandomRareCardOffering : CardAction
 
         for(int i = 0; i < amount; ++i)
         {
-            chosenDecks.Add(charDecks[s.rngCardOfferings.NextInt() % charDecks.Count()]);
+            chosenDecks.Add(charDecks[s.rngCardOfferingsMidcombat.NextInt() % charDecks.Count()]);
         }
 
 		for(int i = 0; i < amount; ++i)
