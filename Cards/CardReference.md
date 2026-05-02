@@ -76,4 +76,7 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Rare (Generated) | Mace of Seasons (Summer) | 1 | Deal 2 damage. Stun. Attune fire. Add Mace of Seasons (Autumn) to your hand. Exhaust 1. Temporary. Immutable. | Increase damage to 3. Summon A. | Card gains retain. Summon B. |
 | Yes | Rare (Generated) | Mace of Seasons (Autumn) | 1 | Deal 2 damage. Gain 1 shield. Attune earth. Add Mace of Seasons (Winter) to your hand. Exhaust 1. Temporary. Immutable. | Increase damage to 3. Summon A. | Card gains retain. Summon B. |
 ||||||||
+| No | CAT | GIZMO.EXE | 1 | Attune 2. Add 1 of 3 discount, temp Gizmo cards to your hand. | Reduce cost to 0. | Add 1 of 5 cards instead. |
+| No | CAT | POTION.EXE | 1 | Add 1 of 3 potions of any rarity to your hand. | Reduce cost to 0. | Add 1 of 5 potions instead. |
+||||||||
 | Yes | Status | Discharged Capacitor | 1 | If attuned 3 elements, add an Arcane Capacitor to your hand. Set attunement to 0. Retain. Exhaust. | Reduce attunement requirement to 2. Add A. | Also draw 1 card. Add B. |
