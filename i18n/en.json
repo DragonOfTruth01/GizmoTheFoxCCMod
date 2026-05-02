@@ -112,6 +112,10 @@
     "Potion": {
       "name": "Potion",
       "description": "A <c=cardtrait>temporary, exhausting</c> 0-cost card with a simple effect. <c=card>Shimmering potions</c> are more powerful."
+    },
+    "Potion of the Phoenix": {
+      "name": "Potion of the Phoenix",
+      "description": "When this ship should lose all hull on its turn, instead survive with 1 hull and reduce this status by 1."
     }
   },
   "card": {
@@ -282,9 +286,6 @@
     "Potion of Haste": {
       "name": "Potion of Haste"
     },
-    "Potion of Healing": {
-      "name": "Potion of Healing"
-    },
     "Potion of Invincibility": {
       "name": "Potion of Invincibility"
     },
@@ -299,6 +300,9 @@
     },
     "Potion of Swiftness": {
       "name": "Potion of Swiftness"
+    },
+    "Potion of the Phoenix": {
+      "name": "Potion of the Phoenix"
     },
     "Potion of Thorns": {
       "name": "Potion of Thorns"

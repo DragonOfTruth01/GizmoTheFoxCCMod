@@ -11,7 +11,6 @@ public class AIncrementQuickBrew : CardAction
 {
     public int uuid;
 
-    // This method is called by each cantrip, every time one is played
     public override void Begin(G g, State s, Combat c)
     {
         Card? card = s.FindCard(uuid);
