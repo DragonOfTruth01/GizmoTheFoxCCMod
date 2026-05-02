@@ -28,8 +28,7 @@ internal sealed class CardDiametricDecoction : Card, IGizmoTheFoxCCModCard
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
             cost = upgrade == Upgrade.B ? 0 : 1,
             exhaust = upgrade == Upgrade.B,
-            recycle = upgrade == Upgrade.None,
-            infinite = upgrade == Upgrade.A,
+            recycle = upgrade != Upgrade.B,
             floppable = upgrade != Upgrade.B
         };
         return data;
@@ -62,12 +61,6 @@ internal sealed class CardDiametricDecoction : Card, IGizmoTheFoxCCModCard
                     {
                         elementBitfieldModifier = AttunementManager.WaterBitMask,
                         disabled = !flipped
-                    },
-                    new AStatus()
-                    {
-                        status = Status.drawNextTurn,
-                        statusAmount = 1,
-                        targetPlayer = true
                     }
                 };
                 break;
@@ -110,10 +103,6 @@ internal sealed class CardDiametricDecoction : Card, IGizmoTheFoxCCModCard
                     new AAttuneRandomRepeater
                     {
                         execCount = 4
-                    },
-                    new ADrawCard()
-                    {
-                        count = 1
                     }
                 };
                 break;

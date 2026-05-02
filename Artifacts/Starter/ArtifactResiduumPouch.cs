@@ -28,7 +28,7 @@ internal sealed class ArtifactResiduumPouch : Artifact, IGizmoTheFoxCCModArtifac
     => [
         new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::Potion")
             {
-                Icon = ModEntry.Instance.GizmoTheFoxCCMod_Potion.Sprite,
+                Icon = null,
                 TitleColor = Colors.card,
                 Title = ModEntry.Instance.Localizations.Localize(["action", "Potion", "name"]),
                 Description = ModEntry.Instance.Localizations.Localize(["action", "Potion", "description"])
