@@ -16,7 +16,7 @@ internal sealed class ArtifactResiduumPouch : Artifact, IGizmoTheFoxCCModArtifac
             Meta = new()
             {
                 owner = ModEntry.Instance.GizmoTheFoxCCMod_Character_Deck.Deck,
-                pools = [ArtifactPool.Common],
+                pools = [ArtifactPool.EventOnly],
                 unremovable = true
             },
             Sprite = ModEntry.Instance.GizmoTheFoxCCMod_ArtifactResiduumPouch.Sprite,
