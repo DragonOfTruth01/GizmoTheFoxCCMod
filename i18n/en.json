@@ -135,35 +135,6 @@
     "Alchemist's Frost": {
       "name": "Alchemist's Frost"
     },
-    "Conjure Mana Blades": {
-      "name": "Conjure Mana Blades",
-      "description": {
-        "None": "Add <c=card>Mana Blade (Fire)</c> and <c=card>Mana Blade (Ice)</c> to your hand.",
-        "A": "Add <c=card>Mana Blade (Fire) A</c> and <c=card>Mana Blade (Ice) A</c> to your hand.",
-        "B": "Add <c=card>Mana Blade (Fire) B</c> and <c=card>Mana Blade (Ice) B</c> to your hand."
-      }
-    },
-    "Diametric Decoction": {
-      "name": "Diametric Decoction"
-    },
-    "Duplication Potion": {
-      "name": "Duplication Potion",
-      "description": "Make a <c=cardtrait>temp,</c> <c=cardtrait>exhaust</c> copy of a card in hand. It costs 0 until played."
-    },
-    "Evocation": {
-      "name" : "Evocation"
-    },
-    "Steam Engine": {
-      "name": "Steam Engine"
-    },
-    "Dimensional Storage": {
-      "name": "Dimensional Storage",
-      "description": {
-        "None": "Move two cards from your discard pile to your hand.",
-        "A": "Move two cards from your discard pile to your hand.",
-        "B": "Move two cards from your discard pile to your hand."
-      }
-    },
     "Arcane Capacitor": {
       "name": "Arcane Capacitor",
       "description": {
@@ -192,8 +163,27 @@
         "B": "Add a random <c=card>Mace of Seasons</c> with <c=cardtrait>B upgrade</c> to your hand."
       }
     },
+    "Conjure Mana Blades": {
+      "name": "Conjure Mana Blades",
+      "description": {
+        "None": "Add <c=card>Mana Blade (Fire)</c> and <c=card>Mana Blade (Ice)</c> to your hand.",
+        "A": "Add <c=card>Mana Blade (Fire) A</c> and <c=card>Mana Blade (Ice) A</c> to your hand.",
+        "B": "Add <c=card>Mana Blade (Fire) B</c> and <c=card>Mana Blade (Ice) B</c> to your hand."
+      }
+    },
     "Dark Lightning": {
       "name": "Dark Lightning"
+    },
+    "Diametric Decoction": {
+      "name": "Diametric Decoction"
+    },
+    "Dimensional Storage": {
+      "name": "Dimensional Storage",
+      "description": {
+        "None": "Move two cards from your discard pile to your hand.",
+        "A": "Move two cards from your discard pile to your hand.",
+        "B": "Move three cards from your discard pile to your hand."
+      }
     },
     "Discharged Capacitor": {
       "name": "Discharged Capacitor"
@@ -201,11 +191,18 @@
     "Displacer Potion": {
       "name": "Displacer Potion"
     },
+    "Duplication Potion": {
+      "name": "Duplication Potion",
+      "description": "Make a <c=cardtrait>temp,</c> <c=cardtrait>exhaust</c> copy of a card in hand. It costs 0 until played."
+    },
     "Elixir of Cacophony": {
       "name": "Elixir of Cacophony"
     },
     "Elixir of Might": {
       "name": "Elixir of Might"
+    },
+    "Evocation": {
+      "name" : "Evocation"
     },
     "Fermented Tincture": {
       "name": "Fermented Tincture",
@@ -342,6 +339,9 @@
     },
     "Space Grade Sealant": {
       "name": "Space Grade Sealant"
+    },
+    "Steam Engine": {
+      "name": "Steam Engine"
     },
     "Time Immurement": {
       "name": "Time Immurement"

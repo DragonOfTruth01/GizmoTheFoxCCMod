@@ -28,7 +28,7 @@ internal sealed class CardDimensionalStorage : Card, IGizmoTheFoxCCModCard
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
             description = ModEntry.Instance.Localizations.Localize(["card", "Dimensional Storage", "description", upgrade.ToString()]),
             artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Character_CardOverlaySpellUncommon.Sprite,
-            cost = upgrade == Upgrade.A ? 0 : upgrade == Upgrade.B ? 2 : 1,
+            cost = upgrade == Upgrade.A ? 0 : 1,
             exhaust = upgrade != Upgrade.B
         };
         return data;
@@ -74,6 +74,11 @@ internal sealed class CardDimensionalStorage : Card, IGizmoTheFoxCCModCard
             case Upgrade.B:
                 actions = new()
                 {
+                    new ACardSelect()
+                    {
+                        browseAction = new PutDiscardedCardInYourHand(),
+                        browseSource = CardBrowse.Source.DiscardPile
+                    },
                     new ACardSelect()
                     {
                         browseAction = new PutDiscardedCardInYourHand(),
