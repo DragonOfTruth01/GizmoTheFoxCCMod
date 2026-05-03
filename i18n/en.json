@@ -182,12 +182,7 @@
       "name": "Caustic Brew"
     },
     "Chromatic Orb": {
-      "name": "Chromatic Orb",
-      "description": {
-        "None": "Deal <c=redd>{{damageString}}</c> dmg. Draw 1 card for each <c=boldPink>attuned element</c>, then <c=boldPink>unattune</c>.",
-        "A": "Deal <c=redd>{{damageString}}</c> dmg. Draw 1 card for each <c=boldPink>attuned element</c>, then <c=boldPink>unattune</c>.",
-        "B": "Deal <c=redd>{{damageString}}</c> dmg. Add a <c=card>cantrip A</c> for each <c=boldPink>attuned element</c>, then <c=boldPink>unattune</c>."
-      }
+      "name": "Chromatic Orb"
     },
     "Conjure Mace of Seasons": {
       "name": "Conjure Mace of Seasons",
