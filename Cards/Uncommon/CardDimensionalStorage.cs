@@ -29,7 +29,7 @@ internal sealed class CardDimensionalStorage : Card, IGizmoTheFoxCCModCard
             description = ModEntry.Instance.Localizations.Localize(["card", "Dimensional Storage", "description", upgrade.ToString()]),
             artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Character_CardOverlaySpellUncommon.Sprite,
             cost = upgrade == Upgrade.A ? 0 : 1,
-            exhaust = upgrade != Upgrade.B
+            exhaust = true
         };
         return data;
     }
