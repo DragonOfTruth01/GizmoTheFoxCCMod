@@ -45,6 +45,7 @@ public sealed class ModEntry : SimpleMod
     // Artifact Arts
     internal ISpriteEntry GizmoTheFoxCCMod_ArtifactResiduumPouch { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_ArtifactResiduumPouchDisabled { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_ArtifactArcanePrism { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_ArtifactResiduumSatchel { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_ArtifactResiduumSatchelDisabled { get; }
 
@@ -236,7 +237,7 @@ public sealed class ModEntry : SimpleMod
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_CommonArtifact_Types { get; } = [
-        
+        typeof(ArtifactArcanePrism)
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_BossArtifact_Types { get; } = [
@@ -299,6 +300,7 @@ public sealed class ModEntry : SimpleMod
         // Artifact Arts
         GizmoTheFoxCCMod_ArtifactResiduumPouch = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/starter/residuumPouch.png"));
         GizmoTheFoxCCMod_ArtifactResiduumPouchDisabled = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/starter/residuumPouchDisabled.png"));
+        GizmoTheFoxCCMod_ArtifactArcanePrism = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/common/arcanePrism.png"));
         GizmoTheFoxCCMod_ArtifactResiduumSatchel = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/boss/residuumSatchel.png"));
         GizmoTheFoxCCMod_ArtifactResiduumSatchelDisabled = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/boss/residuumSatchelDisabled.png"));
 

@@ -6,13 +6,17 @@
         "description": "Potion rewards received from <c=boldPink>attunement</c> have a <c=boldPink>25%</c> chance to be shimmering potions. Can trigger once per combat."
       }
     },
+    "common": {
+      "Arcane Prism": {
+        "name": "ARCANE PRISM",
+        "description": "Start each combat with 1 <c=status>ACCUMULATE</c>."
+      }
+    },
     "boss": {
       "Residuum Satchel": {
         "name": "RESIDUUM SATCHEL",
         "description": "Replaces <c=artifact>RESIDUUM POUCH</c>. Potion rewards received from <c=boldPink>attunement</c> have a <c=boldPink>33%</c> chance to be shimmering potions. Can trigger twice per combat."
       }
-    },
-    "common": {
     }
   },
   "character": {
