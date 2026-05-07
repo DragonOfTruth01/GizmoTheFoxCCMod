@@ -1,9 +1,12 @@
 using Nickel;
 using System.Collections.Generic;
 using System.Reflection;
+using HarmonyLib;
+using System.Linq;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod.Artifacts;
 
+[HarmonyPatch]
 internal sealed class ArtifactRestorativeSolute : Artifact, IGizmoTheFoxCCModArtifact
 {
     public bool hasTriggeredThisCombat = false;
@@ -43,5 +46,41 @@ internal sealed class ArtifactRestorativeSolute : Artifact, IGizmoTheFoxCCModArt
     public override Spr GetSprite()
     {
         return hasTriggeredThisCombat ? ModEntry.Instance.GizmoTheFoxCCMod_ArtifactRestorativeSoluteDisabled.Sprite : ModEntry.Instance.GizmoTheFoxCCMod_ArtifactRestorativeSolute.Sprite;
+    }
+
+    [HarmonyPostfix]
+    [HarmonyPatch(typeof(Combat), nameof(Combat.TryPlayCard))]
+    public static void Combat_TryPlayCard_Postfix(Combat __instance, State s, Card card, bool playNoMatterWhatForFree, bool exhaustNoMatterWhat, ref bool __result)
+    {
+        // If the card played successfully...
+        if(__result == true)
+        {
+            // If the played card was a potion...
+            if(card.GetMeta().deck == ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck)
+            {
+                var restorativeSolute = s.EnumerateAllArtifacts().OfType<ArtifactRestorativeSolute>().FirstOrDefault();
+
+                // If we have restorative solute...
+                if (restorativeSolute != null)
+                {
+                    // And it hasn't proc'd yet this combat...
+                    if (!restorativeSolute.hasTriggeredThisCombat)
+                    {
+                        // Queue a heal action
+                        __instance.Queue(
+                            new AHeal()
+                            {
+                                healAmount = 1,
+                                targetPlayer = true
+                            }
+                        );
+
+                        // Then disable the artifact
+                        restorativeSolute.Pulse();
+                        restorativeSolute.hasTriggeredThisCombat = true;
+                    }
+                }
+            }
+        }
     }
 }
