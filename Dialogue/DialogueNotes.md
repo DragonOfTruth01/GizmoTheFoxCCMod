@@ -1,0 +1,31 @@
+- Combat Barks
+  - Beginning Loop Quotes
+    - "Such surreal technology...how does it all work?"
+    - "After merely gazing up at stars for so long, it's strange to finally travel among them..."
+    - "Sailing through the stars...it's more majestic than I imagined."
+    - "Ha! The thrill of these space jumps will never get old."
+    - All systems nominal...I think...what does this blinking red light mean?
+- Story Dialogue
+  - Gizmo + Isaac
+    - Isaac: "Alright Sparky, good as new!"
+    - Construct: "...!!!"
+    - Isaac: "Ahhh!"
+    - an explosion occurs
+    - Gizmo: "Ah, sorry about that. They get threatened by constructs they don't recognize."
+    - Isaac: "Constructs...oh, you mean my drones?"
+    - Gizmo: "Yes. Yours are powered by electricity?"
+    - Isaac: "Yeah..."
+    - Isaac: "Wait, yours aren't?"
+    - Gizmo: "I use earth magic to animate my stone constructs."
+    - Gizmo: "Observe..."
+    - a construct is created
+    - Construct: "..."
+    - Isaac: "Woah! Amazing! And super cute!"
+    - Isaac: "What's its name?"
+    - Gizmo: "Hmmm...I don't usually give them names..."
+    - Isaac: "But you have to! Look how cute it is!"
+    - Construct: "...?"
+    - Gizmo: "How about...Harthaa."
+    - Isaac: "Harthaa? Is that someone you know?"
+    - Gizmo: "Indeed. Stubborn as a stone construct, she was..."
+    - Gizmo: "...I hope she's doing okay."
