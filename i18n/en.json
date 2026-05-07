@@ -10,6 +10,10 @@
       "Arcane Prism": {
         "name": "ARCANE PRISM",
         "description": "Start each combat with 1 <c=status>ACCUMULATE</c>."
+      },
+      "Restorative Solute": {
+        "name": "RESTORATIVE SOLUTE",
+        "description": "The first time each combat you play a <c=card>potion</c>, <c=heal>heal 1</c>."
       }
     },
     "boss": {

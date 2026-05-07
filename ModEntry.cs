@@ -42,10 +42,16 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_CardPrestidigitationBGBottomCondensed { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_CardConjureManaBladesBG { get; }
 
-    // Artifact Arts
+    // Starter Artifacts
     internal ISpriteEntry GizmoTheFoxCCMod_ArtifactResiduumPouch { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_ArtifactResiduumPouchDisabled { get; }
+
+    // Common Artifacts
     internal ISpriteEntry GizmoTheFoxCCMod_ArtifactArcanePrism { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_ArtifactRestorativeSolute { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_ArtifactRestorativeSoluteDisabled { get; }
+
+    // Boss Artifacts
     internal ISpriteEntry GizmoTheFoxCCMod_ArtifactResiduumSatchel { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_ArtifactResiduumSatchelDisabled { get; }
 
@@ -237,7 +243,8 @@ public sealed class ModEntry : SimpleMod
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_CommonArtifact_Types { get; } = [
-        typeof(ArtifactArcanePrism)
+        typeof(ArtifactArcanePrism),
+        typeof(ArtifactRestorativeSolute)
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_BossArtifact_Types { get; } = [
@@ -297,10 +304,16 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_CardPrestidigitationBGBottomCondensed = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardPrestidigitationBGBottomCondensed.png"));
         GizmoTheFoxCCMod_CardConjureManaBladesBG = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardConjureManaBladesBG.png"));
 
-        // Artifact Arts
+        // Starter Artifacts
         GizmoTheFoxCCMod_ArtifactResiduumPouch = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/starter/residuumPouch.png"));
         GizmoTheFoxCCMod_ArtifactResiduumPouchDisabled = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/starter/residuumPouchDisabled.png"));
+
+        // Common Artifacts
         GizmoTheFoxCCMod_ArtifactArcanePrism = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/common/arcanePrism.png"));
+        GizmoTheFoxCCMod_ArtifactRestorativeSolute = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/common/restorativeSolute.png"));
+        GizmoTheFoxCCMod_ArtifactRestorativeSoluteDisabled = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/common/restorativeSoluteDisabled.png"));
+
+        // Boss Artifacts
         GizmoTheFoxCCMod_ArtifactResiduumSatchel = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/boss/residuumSatchel.png"));
         GizmoTheFoxCCMod_ArtifactResiduumSatchelDisabled = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/boss/residuumSatchelDisabled.png"));
 
