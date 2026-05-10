@@ -40,6 +40,10 @@
       "Potion Belt": {
         "name": "POTION BELT",
         "description": "All <c=card>potions</c> generated in combat gain <c=cardtrait>retain</c>."
+      },
+      "Sorcerer's Dynamo": {
+        "name": "SORCERER'S DYNAMO",
+        "description": "At the start of your turn, gain 1 <c=status>ENERGY</c> and <c=downside>unattune all elements</c>."
       }
     }
   },
