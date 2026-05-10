@@ -57,7 +57,7 @@ internal sealed class CardChromaticOrb : Card, IGizmoTheFoxCCModCard
                     },
                     new ASpawn()
                     {
-                        thing = new MidrowStoneConstruct()
+                        thing = new MidrowImbuedStoneConstruct()
                         {
                             yAnimation = 0.0
                         }
