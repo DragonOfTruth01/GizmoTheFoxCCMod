@@ -7,7 +7,6 @@ using Microsoft.Extensions.Logging;
 using Nanoray.PluginManager;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod;
 
@@ -58,6 +57,7 @@ public sealed class ModEntry : SimpleMod
     // Boss Artifacts
     internal ISpriteEntry GizmoTheFoxCCMod_ArtifactResiduumSatchel { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_ArtifactResiduumSatchelDisabled { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_ArtifactPotionBelt { get; }
 
     // Animation Sprites
     internal ISpriteEntry GizmoTheFoxCCMod_Character_Neutral_0 { get; }
@@ -243,6 +243,7 @@ public sealed class ModEntry : SimpleMod
 
     // Define our artifact lists
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_StarterArtifact_Types { get; } = [
+        typeof(ArtifactPotionBelt),
         typeof(ArtifactResiduumPouch)
     ];
 
@@ -328,6 +329,7 @@ public sealed class ModEntry : SimpleMod
         // Boss Artifacts
         GizmoTheFoxCCMod_ArtifactResiduumSatchel = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/boss/residuumSatchel.png"));
         GizmoTheFoxCCMod_ArtifactResiduumSatchelDisabled = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/boss/residuumSatchelDisabled.png"));
+        GizmoTheFoxCCMod_ArtifactPotionBelt = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/boss/potionBelt.png"));
 
         // Animation Sprites
         GizmoTheFoxCCMod_Character_Neutral_0 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_neutral_0.png"));

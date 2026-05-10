@@ -3,7 +3,7 @@
     "starter": {
       "Residuum Pouch": {
         "name": "RESIDUUM POUCH",
-        "description": "Potion rewards received from <c=boldPink>attunement</c> have a <c=boldPink>25%</c> chance to be shimmering potions. Can trigger once per combat."
+        "description": "<c=card>Potion</c> rewards received from <c=boldPink>attunement</c> have a <c=boldPink>25%</c> chance to be <c=card>shimmering potions</c>. Can trigger <c=boldPink>1</c> time per combat."
       }
     },
     "common": {
@@ -35,7 +35,11 @@
     "boss": {
       "Residuum Satchel": {
         "name": "RESIDUUM SATCHEL",
-        "description": "Replaces <c=artifact>RESIDUUM POUCH</c>. Potion rewards received from <c=boldPink>attunement</c> have a <c=boldPink>33%</c> chance to be shimmering potions. Can trigger twice per combat."
+        "description": "Replaces <c=artifact>RESIDUUM POUCH</c>. <c=card>Potion</c> rewards received from <c=boldPink>attunement</c> have a <c=boldPink>33%</c> chance to be <c=card>shimmering potions</c>. Can trigger <c=boldPink>2</c> times per combat."
+      },
+      "Potion Belt": {
+        "name": "POTION BELT",
+        "description": "All <c=card>potions</c> generated in combat gain <c=cardtrait>retain</c>."
       }
     }
   },
