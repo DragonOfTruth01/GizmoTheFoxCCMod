@@ -50,9 +50,19 @@ internal sealed class CardQuickBrew : Card, IGizmoTheFoxCCModCard
         switch (upgrade)
         {
             case Upgrade.None:
+                Card selectedCard = CardReward.GetOffering(
+                                    s: s,
+                                    count: 1,
+                                    limitDeck: ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
+                                    rarityOverride: Rarity.uncommon, // Non-shimmering potions
+                                    inCombat: true,
+                                    isEvent: false) [0]; // We only have one card so index the first one
+
+                selectedCard.flipAnim = 0.0f;
+
                 actions = new()
                 {
-                    // Need to spoof this action so we don't try to display a card before CardReward.GetOffering
+                                        // Need to spoof this action so we don't try to display a card before CardReward.GetOffering
                     ModEntry.Instance.KokoroApi.SpoofedActions.MakeAction(
                         new ACardOffering()
                         {
@@ -64,14 +74,7 @@ internal sealed class CardQuickBrew : Card, IGizmoTheFoxCCModCard
                         },
                         new AAddCard()
                         {
-                            card = CardReward.GetOffering(
-                                s: s,
-                                count: 1,
-                                limitDeck: ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
-                                rarityOverride: Rarity.uncommon, // Non-shimmering potions
-                                inCombat: true,
-                                isEvent: false)
-                            [0], // We only have one card so index the first one
+                            card = selectedCard,
                             destination = CardDestination.Hand,
                             amount = 1
                         }
@@ -96,6 +99,34 @@ internal sealed class CardQuickBrew : Card, IGizmoTheFoxCCModCard
                 break;
 
             case Upgrade.B:
+                Card selectedCard1 = CardReward.GetOffering(
+                                    s: s,
+                                    count: 1,
+                                    limitDeck: ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
+                                    rarityOverride: Rarity.uncommon, // Non-shimmering potions
+                                    inCombat: true,
+                                    isEvent: false) [0]; // We only have one card so index the first one
+
+                Card selectedCard2 = CardReward.GetOffering(
+                                    s: s,
+                                    count: 1,
+                                    limitDeck: ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
+                                    rarityOverride: Rarity.uncommon,
+                                    inCombat: true,
+                                    isEvent: false) [0];
+
+                Card selectedCard3 = CardReward.GetOffering(
+                                    s: s,
+                                    count: 1,
+                                    limitDeck: ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
+                                    rarityOverride: Rarity.uncommon,
+                                    inCombat: true,
+                                    isEvent: false) [0];
+
+                selectedCard1.flipAnim = 0.0f;
+                selectedCard2.flipAnim = 0.0f;
+                selectedCard3.flipAnim = 0.0f;
+
                 actions = new()
                 {
                     ModEntry.Instance.KokoroApi.SpoofedActions.MakeAction(
@@ -109,14 +140,7 @@ internal sealed class CardQuickBrew : Card, IGizmoTheFoxCCModCard
                         },
                         new AAddCard()
                         {
-                            card = CardReward.GetOffering(
-                                s: s,
-                                count: 1,
-                                limitDeck: ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
-                                rarityOverride: Rarity.uncommon, // Non-shimmering potions
-                                inCombat: true,
-                                isEvent: false)
-                            [0], // We only have one card so index the first one
+                            card = selectedCard1,
                             destination = CardDestination.Deck,
                             amount = 1
                         }
@@ -132,14 +156,7 @@ internal sealed class CardQuickBrew : Card, IGizmoTheFoxCCModCard
                         },
                         new AAddCard()
                         {
-                            card = CardReward.GetOffering(
-                                s: s,
-                                count: 1,
-                                limitDeck: ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
-                                rarityOverride: Rarity.uncommon, // Non-shimmering potions
-                                inCombat: true,
-                                isEvent: false)
-                            [0], // We only have one card so index the first one
+                            card = selectedCard2,
                             destination = CardDestination.Deck,
                             amount = 1
                         }
@@ -155,14 +172,7 @@ internal sealed class CardQuickBrew : Card, IGizmoTheFoxCCModCard
                         },
                         new AAddCard()
                         {
-                            card = CardReward.GetOffering(
-                                s: s,
-                                count: 1,
-                                limitDeck: ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
-                                rarityOverride: Rarity.uncommon, // Non-shimmering potions
-                                inCombat: true,
-                                isEvent: false)
-                            [0], // We only have one card so index the first one
+                            card = selectedCard3,
                             destination = CardDestination.Deck,
                             amount = 1
                         }

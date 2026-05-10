@@ -30,6 +30,8 @@ internal sealed class ArtifactWandOfChaos : Artifact, IGizmoTheFoxCCModArtifact
 
     public override void OnCombatStart(State state, Combat combat)
     {
+        Pulse();
+
         List<Deck> charDecks = state.storyVars.GetUnlockedChars().ToList();
 
         Deck chosenDeck;
@@ -46,6 +48,8 @@ internal sealed class ArtifactWandOfChaos : Artifact, IGizmoTheFoxCCModArtifact
 				makeAllCardsTemporary: true,
 				discount: -99
 			)[0];
+
+        chosenCard.flipAnim = 0.0f;
 
         combat.Queue(
             new AAddCard()

@@ -34,6 +34,8 @@ public class ARandomRareCardOffering : CardAction
 					discount: -99
 				)[0]
 			);
+
+			chosenCards[i].flipAnim = 0.0f;
 		}
 
 		timer = 0.0;
