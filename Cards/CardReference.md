@@ -6,7 +6,7 @@ This document acts as a reference for which cards are part of this mod.
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | Yes | Common | Absorb Elements | 1 | Gain 1 temp shield. Gain 1 absorb. | Increase temp shield to 2. | Increase absorb to 2. |
 | Yes | Common | Evocation | 1 | Gain 1 temp shield. Add 1 of 4 cantrips to your hand. | Added card has A upgrade. | Added card has B upgrade. |
-| Yes | Common | Diametric Decoction | 1 | Floppable. Attune earth + wind. / Attune fire + water. Recycle. Draw 1 card next turn. | Card instead gains infinite. | Reduce cost to 0. Attune 4 random elements. Card instead gains exhaust and draws 1 card immediately. |
+| Yes | Common | Diametric Decoction | 1 | Floppable. Attune earth + wind. / Attune fire + water. Recycle. | Also draw 1 card next turn. | Reduce cost to 0. Attune 4 random elements. Card instead gains exhaust. |
 | Yes | Common | Steam Engine | 2 | Floppable. Gain 1 wind charge + attune wind / Gain 1 overdrive + attune fire. Gain 1 energy next turn. | Instead gain 2 energy next turn. | Both actions attune fire and wind. Card gains discounted 1. |
 | Yes | Common | Flutter | 0 | Move 1 random. Gain 1 wind charge. Attune wind. | Also gain 1 hermes boots. | Instead gain 2 wind charge. Also gain 1 engine stall. |
 | Yes | Common | Magic Missile | 1 | Attack 1. Repeat this attack if attuned 2/3 elements. Un-attune all elements. | Also repeat attack if attuned 1 element. | All attacks gain piercing. |
@@ -15,13 +15,13 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Common | Sea Quake | 2 | Floppable. Gain 3 temp shield. Attune water. / Gain 2 shield. Attune earth. | Gain 5 temp shield / 3 shield. | Both actions attune earth and water. Card gains discounted 1. |
 | Yes | Common | Homunculus | 1 | Attune earth. Deploy a stone construct from the missile bay. | Deploy an imbued stone construct from the missile bay. | Increase cost to 2. Deploy a stone construct from the missile bay, and one to the right of the missile bay. Card gains flippable. |
 ||||||||
-| Yes | Uncommon | Dimensional Storage | 1 | Move two cards from the discard pile to your hand. Exhaust. | Reduce cost to 0. | Increase cost to 2. Remove exhaust. |
+| Yes | Uncommon | Dimensional Storage | 1 | Move two cards from the discard pile to your hand. Exhaust. | Reduce cost to 0. | Instead move three cards to the draw pile. |
 | Yes | Uncommon | Forage | 1 | Attune a random non-attuned element. Draw 3 cards. | Instead draw 5 cards. | Attune two random non-attuned elements. |
 | Yes | Uncommon | Imbue | 1 | If attuned earth, gain 1 stun charge. If attuned wind, gain 1 wind charge. If attuned fire, gain 1 overdrive. If attuned water, gain 1 flux. Exhaust. | Card gains retain. | Remove exhaust. Also unattune all elements. |
 | Yes | Uncommon | Fermented Tincture | 8 | Gain 3 max hull. Permanently reduce cost by 1 when drawn. Single use. Fleeting. | Reduce cost by 2. | Increase cost by 3 (max 11). Gain 5 max hull instead. |
 | Yes | Uncommon | Arcane Capacitor | 0 | Gain 2 energy. Add a Discharged Capacitor to your draw pile. Retain. Exhaust. | Discharged Capacitor gains A upgrade. | Discharged capacitor gains B upgrade. |
-| Yes | Uncommon | Quick Brew | 0 | Add a random potion to your hand. Every 2 plays, increase cost by 1. | Instead add 1 of 2 potions to your hand. | Instead add 3 random potions to your draw pile. Exhaust. |
-| Yes | Uncommon | Chromatic Orb | 1 | Attack 2. Draw a card for each attuned element. Unattune all elements. | Increase damage to 3. | Instead add a cantrip with A upgrade to hand for each corresponding element. Exhaust. |
+| Yes | Uncommon | Quick Brew | 0 | Add a random potion to your hand. Limited 3. | Instead add 1 of 2 potions to your hand. | Instead add 3 random potions to your draw pile. Exhaust (instead of limited). |
+| Yes | Uncommon | Chromatic Orb | 1 | Attack 1. Gain 1 droneshift. Deploy an imbued stone construct. | Increase attack to 2 and gain pierce. | Increase droneshift to 2. |
 | Yes | Uncommon | Wild Magic | 1 | Floppable. Move 2 / 4 random. Add 2 random cantrips to your hand. Exhaust. | Reduce cost to 0. | Added cantrips gain B upgrade. |
 ||||||||
 | Yes | Rare | Dark Lightning | 3 | Deal piercing damage equal to the enemy's missing hull. | Reduce cost to 2. | Reduce cost to 0. Lose 2 hull before the attack. |
@@ -31,10 +31,10 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Rare | Shimmering Solution | 1 | Gain a random shimmering potion. Exhaust. | Reduce cost to 0. | Instead choose 1 of 2 shimmering potions. |
 | Yes | Rare | Seize Time | 2 | Gain 2 time stop. Exhaust. | Also gain 1 energy next turn. | Increase cost to 3 and time stop to 4. |
 ||||||||
-| Yes | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 2. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
-| Yes | Common (Cantrip) | Gust | 0 | Attune wind. Draw 1 card. Limited 2. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
-| Yes | Common (Cantrip) | Flare | 0 | Attune fire. Draw 1 card. Limited 2. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
-| Yes | Common (Cantrip) | Whirlpool | 0 | Attune water. Draw 1 card. Limited 2. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 3. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Gust | 0 | Attune wind. Draw 1 card. Limited 3. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Flare | 0 | Attune fire. Draw 1 card. Limited 3. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
+| Yes | Common (Cantrip) | Whirlpool | 0 | Attune water. Draw 1 card. Limited 3. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
 ||||||||
 | Yes | Uncommon (Potion) | Potion of Strength | 0 | Gain 1 overdrive. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Potion of Haste | 0 | Gain 1 energy. Gain 1 energy next turn. Temporary. |  |  |
@@ -65,7 +65,7 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Rare (Shimmering Potion) | Volatile Catalyst | 0 | Gain 2 boost. Temporary. |  |  |
 | Yes | Rare (Shimmering Potion) | Displacer Potion | 0 | Move 7 flippable. Temporary. |  |  |
 | Yes | Rare (Shimmering Potion) | Illuminator Potion | 0 | Gain 2 accumulate. Temporary. |  |  |
-| Yes | Rare (Shimmering Potion) | Potion of Healing | 0 | Restore 3 hull. Temporary. |  |  |
+| Yes | Rare (Shimmering Potion) | Potion of the Phoenix | 0 | Gain 1 survive. Temporary. |  |  |
 | Yes | Rare (Shimmering Potion) | Potion of Chaos | 0 | Obtain 1 of 3 temp rare cards from ANY deck. It costs 0 until played. Temporary. |  |  |
 ||||||||
 | Yes | Common (Generated) | Mana Blade (Fire) | 1 | Deal 1 damage. Attune fire. Retain. Exhaust. Temporary. | Increase damage by 1. | Gain 1 stun charge after attack. |
@@ -75,5 +75,8 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Rare (Generated) | Mace of Seasons (Spring) | 1 | Deal 2 damage. Gain 1 evade. Attune wind. Add Mace of Seasons (Summer) to your hand. Exhaust 1. Temporary. Immutable. | Increase damage to 3. Summon A. | Card gains retain. Summon B. |
 | Yes | Rare (Generated) | Mace of Seasons (Summer) | 1 | Deal 2 damage. Stun. Attune fire. Add Mace of Seasons (Autumn) to your hand. Exhaust 1. Temporary. Immutable. | Increase damage to 3. Summon A. | Card gains retain. Summon B. |
 | Yes | Rare (Generated) | Mace of Seasons (Autumn) | 1 | Deal 2 damage. Gain 1 shield. Attune earth. Add Mace of Seasons (Winter) to your hand. Exhaust 1. Temporary. Immutable. | Increase damage to 3. Summon A. | Card gains retain. Summon B. |
+||||||||
+| No | CAT | GIZMO.EXE | 1 | Attune 2. Add 1 of 3 discount, temp Gizmo cards to your hand. | Reduce cost to 0. | Add 1 of 5 cards instead. |
+| No | CAT | POTION.EXE | 1 | Add 1 of 3 potions of any rarity to your hand. | Reduce cost to 0. | Add 1 of 5 potions instead. |
 ||||||||
 | Yes | Status | Discharged Capacitor | 1 | If attuned 3 elements, add an Arcane Capacitor to your hand. Set attunement to 0. Retain. Exhaust. | Reduce attunement requirement to 2. Add A. | Also draw 1 card. Add B. |

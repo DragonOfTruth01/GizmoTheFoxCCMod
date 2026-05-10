@@ -4,9 +4,15 @@ This document acts as a reference for the artifacts that are introduced in this 
 
 | Done? | Rarity | Name | Effect |
 |:-:|:-:|:-:|:-:|
-| No | Starter | Residuum Pouch | Potion rewards received from attunement have a 25% chance to be shimmering. Can trigger once per combat. |
-| No | Common | Bag of Holding | Start each combat with 1 accumulate. |
-| No | Common | Potion Belt | All potions retain. |
-| No | Common | Arcane Prism | At the start of combat, add a random cantrip with A upgrade to your hand. |
-| No | Boss | Residuum Satchel | Replaces Residuum Pouch. Potion rewards received from attunement have a 33% chance to be shimmering. Can trigger twice per combat. |
-| No | Boss | Sorcerer's Dynamo | The first time you play a cantrip each turn, gain 1 energy. |
+| Yes | Starter | Residuum Pouch | Potion rewards received from attunement have a 25% chance to be shimmering. Can trigger once per combat. |
+| Yes | Common | Arcane Prism | Start each combat with 1 accumulate. |
+| Yes | Common | Restorative Solute | The first time you use a potion each combat, restore 1 hull. |
+| Yes | Common | Bismuth Crown | Every 3 turns, deploy an imbued stone construct from your missile bay. |
+| Yes | Common | Elemental Radiometer | Every 7 times you attune an element, draw 2 cards. |
+| Yes | Common | Plasma Globe | Each time you attune all elements, the enemy loses 1 hull. |
+| Yes | Common | Wand of Chaos | At the start of each combat, add a random temp card from any character into your hand. It costs 0 until played. |
+| Yes | Boss | Residuum Satchel | Replaces Residuum Pouch. Potion rewards received from attunement have a 33% chance to be shimmering. Can trigger twice per combat. |
+| Yes | Boss | Potion Belt | All potions generated in combat gain retain. |
+| Yes | Boss | Sorcerer's Dynamo | At the start of your turn, gain 1 energy and unattune all elements. |
+|:-:|:-:|:-:|:-:|
+| No | Duo (Dizzy) | Particle Reactor | ??? |

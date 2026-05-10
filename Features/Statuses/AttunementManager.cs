@@ -1,14 +1,8 @@
-﻿namespace DragonOfTruth01.GizmoTheFoxCCMod;
-
-using HarmonyLib;
-using FSPRO;
-using System;
+﻿using HarmonyLib;
 using System.Linq;
-using System.Collections.Generic;
-using System.Collections.Immutable;
-using OneOf.Types;
-using System.Runtime.CompilerServices;
-using System.Reflection.Metadata;
+using DragonOfTruth01.GizmoTheFoxCCMod.Artifacts;
+
+namespace DragonOfTruth01.GizmoTheFoxCCMod;
 
 [HarmonyPatch]
 internal sealed class AttunementManager : IKokoroApi.IV2.IStatusRenderingApi.IHook
@@ -76,13 +70,94 @@ internal sealed class AttunementManager : IKokoroApi.IV2.IStatusRenderingApi.IHo
         // Do this logic if all element slots are attuned
         if(ship.Get(ModEntry.Instance.Attunement.Status) >= AllElementBitMask)
         {
-            c.QueueImmediate(new ACardOffering()
+            bool isShimmering = false;
+            bool retainPotions = false;
+
+            var residuumSatchel = s.EnumerateAllArtifacts().OfType<ArtifactResiduumSatchel>().FirstOrDefault();
+            var residuumPouch   = s.EnumerateAllArtifacts().OfType<ArtifactResiduumPouch>().FirstOrDefault();
+            var potionBelt = s.EnumerateAllArtifacts().OfType<ArtifactPotionBelt>().FirstOrDefault();
+
+            // If we have a potion belt, all potions retain
+            if (potionBelt != null)
             {
-                amount = 3,
-                limitDeck = ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
-                canSkip = false,
-                rarityOverride = Rarity.uncommon, // Non-shimmering potions
-                inCombat = true
+                retainPotions = true;
+            }
+
+            // If we have residum satchel (and it's not consumed), roll for a 33% chance at a shimmering potion
+            if(residuumSatchel != null)
+            {
+                if (residuumSatchel.numTriggersRemainingThisCombat > 0)
+                {
+                    int rng = s.rngActions.NextInt() % 3; // 33% chance
+
+                    if(rng == 0)
+                    {
+                        isShimmering = true;
+                        residuumSatchel.Pulse();
+                        residuumSatchel.numTriggersRemainingThisCombat -= 1;
+                    }
+                }
+            }
+
+            // Otherwise, if we have residum pouch (and it's not consumed), roll for a 25% chance at a shimmering potion
+            else if(residuumPouch != null)
+            {
+                if (!residuumPouch.hasTriggeredThisCombat)
+                {
+                    int rng = s.rngActions.NextInt() % 4; // 25% chance
+
+                    if(rng == 0)
+                    {
+                        isShimmering = true;
+                        residuumPouch.Pulse();
+                        residuumPouch.hasTriggeredThisCombat = true;
+                    }
+                }
+            }
+
+            Card selectedCard1 = CardReward.GetOffering(
+                                    s: s,
+                                    count: 1,
+                                    limitDeck: ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
+                                    rarityOverride: isShimmering ? Rarity.rare : Rarity.uncommon,
+                                    inCombat: true,
+                                    isEvent: false) [0]; // We only have one card so index the first one
+
+            Card selectedCard2 = CardReward.GetOffering(
+                                    s: s,
+                                    count: 1,
+                                    limitDeck: ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
+                                    rarityOverride: isShimmering ? Rarity.rare : Rarity.uncommon,
+                                    inCombat: true,
+                                    isEvent: false) [0]; // We only have one card so index the first one
+
+            Card selectedCard3 = CardReward.GetOffering(
+                                    s: s,
+                                    count: 1,
+                                    limitDeck: ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
+                                    rarityOverride: isShimmering ? Rarity.rare : Rarity.uncommon,
+                                    inCombat: true,
+                                    isEvent: false) [0]; // We only have one card so index the first one
+
+            selectedCard1.flipAnim = 1.0f;
+            selectedCard2.flipAnim = 1.0f;
+            selectedCard3.flipAnim = 1.0f;
+
+            if (retainPotions)
+                {
+                    selectedCard1.retainOverride = true;
+                    selectedCard2.retainOverride = true;
+                    selectedCard3.retainOverride = true;
+                }
+
+            c.QueueImmediate(new ASpecificCardOffering()
+            {
+                Destination = CardDestination.Hand,
+                Cards = [
+                    selectedCard1,
+                    selectedCard2,
+                    selectedCard3
+                ]
             });
 
             c.QueueImmediate(new AStatus
@@ -92,6 +167,20 @@ internal sealed class AttunementManager : IKokoroApi.IV2.IStatusRenderingApi.IHo
                 statusAmount = 0,
                 targetPlayer = __instance.targetPlayer
             });
+
+            var plasmaGlobe = s.EnumerateAllArtifacts().OfType<ArtifactPlasmaGlobe>().FirstOrDefault();
+
+            // If we have a plasma globe, enemy loses 1 hull before everything else
+            if (plasmaGlobe != null)
+            {
+                c.QueueImmediate(new AHurt()
+                {
+                    hurtAmount = 1,
+                    targetPlayer = false
+                });
+
+                plasmaGlobe.Pulse();
+            }
         }
     }
 

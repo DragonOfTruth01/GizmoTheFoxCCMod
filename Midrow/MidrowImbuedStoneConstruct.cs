@@ -33,7 +33,7 @@ internal sealed class MidrowImbuedStoneConstruct : StuffBase
         return tooltips;
     }
 
-    public int AttackDamage() => 1;
+    public static int AttackDamage() => 1;
 
     public override bool IsFriendly()
     {

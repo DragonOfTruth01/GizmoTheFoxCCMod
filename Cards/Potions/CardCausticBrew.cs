@@ -41,7 +41,7 @@ internal sealed class CardCausticBrew : Card, IGizmoTheFoxCCModCard
         {
             new AAttack()
             {
-                damage = GetDmg(s, 1),
+                damage = GetDmg(s, 2),
                 status = Status.corrode,
                 statusAmount = 2
             }

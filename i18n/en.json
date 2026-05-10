@@ -1,8 +1,56 @@
 {
+  "artifact": {
+    "starter": {
+      "Residuum Pouch": {
+        "name": "RESIDUUM POUCH",
+        "description": "<c=card>Potion</c> rewards received from <c=boldPink>attunement</c> have a <c=boldPink>25%</c> chance to be <c=card>shimmering potions</c>. Can trigger <c=boldPink>1</c> time per combat."
+      }
+    },
+    "common": {
+      "Arcane Prism": {
+        "name": "ARCANE PRISM",
+        "description": "Start each combat with 1 <c=status>ACCUMULATE</c>."
+      },
+      "Bismuth Crown": {
+        "name": "BISMUTH CROWN",
+        "description": "Every 3 turns, launch an <c=midrow>imbued stone construct</c> from your missile bay."
+      },
+      "Elemental Radiometer": {
+        "name": "ELEMENTAL RADIOMETER",
+        "description": "Every 7 times you <c=boldPink>attune</c> an element, draw 2 cards."
+      },
+      "Plasma Globe": {
+        "name": "PLASMA GLOBE",
+        "description": "Each time you <c=boldPink>attune</c> all elements, the enemy loses 1 hull."
+      },
+      "Restorative Solute": {
+        "name": "RESTORATIVE SOLUTE",
+        "description": "The first time each combat you play a <c=card>potion</c>, <c=heal>heal 1</c>."
+      },
+      "Wand of Chaos": {
+        "name": "WAND OF CHAOS",
+        "description": "At the start of combat, obtain a random <c=cardtrait>temp</c> card from any character. It costs 0 until played."
+      }
+    },
+    "boss": {
+      "Residuum Satchel": {
+        "name": "RESIDUUM SATCHEL",
+        "description": "Replaces <c=artifact>RESIDUUM POUCH</c>. <c=card>Potion</c> rewards received from <c=boldPink>attunement</c> have a <c=boldPink>33%</c> chance to be <c=card>shimmering potions</c>. Can trigger <c=boldPink>2</c> times per combat."
+      },
+      "Potion Belt": {
+        "name": "POTION BELT",
+        "description": "All <c=card>potions</c> generated in combat gain <c=cardtrait>retain</c>."
+      },
+      "Sorcerer's Dynamo": {
+        "name": "SORCERER'S DYNAMO",
+        "description": "At the start of your turn, gain 1 <c=status>ENERGY</c> and <c=downside>unattune all elements</c>."
+      }
+    }
+  },
   "character": {
     "GizmoTheFoxCCMod_Character": {
       "name": "Gizmo",
-      "description": "An artificer from a distant realm. His cards allow <c=boldPink>attunement</c> of the four elements to brew <c=boldPink>potions</c> and perform other effects."
+      "description": "An artificer from a distant realm. His cards allow <c=boldPink>attunement</c> of the four elements to brew <c=card>potions</c> and perform other effects."
     },
     "GizmoTheFoxCCMod_Potion": {
       "name": "Gizmo Potions"
@@ -96,12 +144,14 @@
     "Is Attuned Water": {
       "name": "WATER IS ATTUNED",
       "description": "the <c=3e71d6>water</c> element is <c=boldPink>attuned</c>"
-    }
-  },
-  "artifact": {
-    "boss": {
     },
-    "common": {
+    "Potion": {
+      "name": "Potion",
+      "description": "A <c=cardtrait>temporary, exhausting</c> 0-cost card with a simple effect. <c=card>Shimmering potions</c> are more powerful."
+    },
+    "Potion of the Phoenix": {
+      "name": "Potion of the Phoenix",
+      "description": "When this ship should lose all hull on its turn, instead survive with 1 hull and reduce this status by 1."
     }
   },
   "card": {
@@ -116,35 +166,6 @@
     },
     "Alchemist's Frost": {
       "name": "Alchemist's Frost"
-    },
-    "Conjure Mana Blades": {
-      "name": "Conjure Mana Blades",
-      "description": {
-        "None": "Add <c=card>Mana Blade (Fire)</c> and <c=card>Mana Blade (Ice)</c> to your hand.",
-        "A": "Add <c=card>Mana Blade (Fire) A</c> and <c=card>Mana Blade (Ice) A</c> to your hand.",
-        "B": "Add <c=card>Mana Blade (Fire) B</c> and <c=card>Mana Blade (Ice) B</c> to your hand."
-      }
-    },
-    "Diametric Decoction": {
-      "name": "Diametric Decoction"
-    },
-    "Duplication Potion": {
-      "name": "Duplication Potion",
-      "description": "Make a <c=cardtrait>temp,</c> <c=cardtrait>exhaust</c> copy of a card in hand. It costs 0 until played."
-    },
-    "Evocation": {
-      "name" : "Evocation"
-    },
-    "Steam Engine": {
-      "name": "Steam Engine"
-    },
-    "Dimensional Storage": {
-      "name": "Dimensional Storage",
-      "description": {
-        "None": "Move two cards from your discard pile to your hand.",
-        "A": "Move two cards from your discard pile to your hand.",
-        "B": "Move two cards from your discard pile to your hand."
-      }
     },
     "Arcane Capacitor": {
       "name": "Arcane Capacitor",
@@ -164,12 +185,7 @@
       "name": "Caustic Brew"
     },
     "Chromatic Orb": {
-      "name": "Chromatic Orb",
-      "description": {
-        "None": "Deal <c=redd>{{damageString}}</c> dmg. Draw 1 card for each <c=boldPink>attuned element</c>, then <c=boldPink>unattune</c>.",
-        "A": "Deal <c=redd>{{damageString}}</c> dmg. Draw 1 card for each <c=boldPink>attuned element</c>, then <c=boldPink>unattune</c>.",
-        "B": "Deal <c=redd>{{damageString}}</c> dmg. Add a <c=card>cantrip A</c> for each <c=boldPink>attuned element</c>, then <c=boldPink>unattune</c>."
-      }
+      "name": "Chromatic Orb"
     },
     "Conjure Mace of Seasons": {
       "name": "Conjure Mace of Seasons",
@@ -179,8 +195,27 @@
         "B": "Add a random <c=card>Mace of Seasons</c> with <c=cardtrait>B upgrade</c> to your hand."
       }
     },
+    "Conjure Mana Blades": {
+      "name": "Conjure Mana Blades",
+      "description": {
+        "None": "Add <c=card>Mana Blade (Fire)</c> and <c=card>Mana Blade (Ice)</c> to your hand.",
+        "A": "Add <c=card>Mana Blade (Fire) A</c> and <c=card>Mana Blade (Ice) A</c> to your hand.",
+        "B": "Add <c=card>Mana Blade (Fire) B</c> and <c=card>Mana Blade (Ice) B</c> to your hand."
+      }
+    },
     "Dark Lightning": {
       "name": "Dark Lightning"
+    },
+    "Diametric Decoction": {
+      "name": "Diametric Decoction"
+    },
+    "Dimensional Storage": {
+      "name": "Dimensional Storage",
+      "description": {
+        "None": "Move two cards from your discard pile to your hand.",
+        "A": "Move two cards from your discard pile to your hand.",
+        "B": "Move three cards from your discard pile to your hand."
+      }
     },
     "Discharged Capacitor": {
       "name": "Discharged Capacitor"
@@ -188,11 +223,18 @@
     "Displacer Potion": {
       "name": "Displacer Potion"
     },
+    "Duplication Potion": {
+      "name": "Duplication Potion",
+      "description": "Make a <c=cardtrait>temp,</c> <c=cardtrait>exhaust</c> copy of a card in hand. It costs 0 until played."
+    },
     "Elixir of Cacophony": {
       "name": "Elixir of Cacophony"
     },
     "Elixir of Might": {
       "name": "Elixir of Might"
+    },
+    "Evocation": {
+      "name" : "Evocation"
     },
     "Fermented Tincture": {
       "name": "Fermented Tincture",
@@ -272,9 +314,6 @@
     "Potion of Haste": {
       "name": "Potion of Haste"
     },
-    "Potion of Healing": {
-      "name": "Potion of Healing"
-    },
     "Potion of Invincibility": {
       "name": "Potion of Invincibility"
     },
@@ -290,6 +329,9 @@
     "Potion of Swiftness": {
       "name": "Potion of Swiftness"
     },
+    "Potion of the Phoenix": {
+      "name": "Potion of the Phoenix"
+    },
     "Potion of Thorns": {
       "name": "Potion of Thorns"
     },
@@ -302,8 +344,8 @@
     "Quick Brew": {
       "name": "Quick Brew",
       "description": {
-        "None": "Obtain a random <c=card>potion</c>. After {{numPlaysString}}, raise cost by 1 this combat.",
-        "A": "Obtain 1 of 2 <c=card>potions</c>. After {{numPlaysString}}, raise cost by 1 this combat.",
+        "None": "Add a random <c=card>potion</c> to your hand.",
+        "A": "Add 1 of 2 <c=card>potions</c> to your hand.",
         "B": "Add 3 random <c=card>potions</c> to your draw pile."
       }
     },
@@ -329,6 +371,9 @@
     },
     "Space Grade Sealant": {
       "name": "Space Grade Sealant"
+    },
+    "Steam Engine": {
+      "name": "Steam Engine"
     },
     "Time Immurement": {
       "name": "Time Immurement"
@@ -363,7 +408,7 @@
     },
     "Attunement": {
       "name": "Attunement",
-      "description": "Currently <c=boldPink>attuned</c> elements. When all elements are <c=boldPink>attuned</c>, add 1 of 3 <c=boldPink>potions</c> to your hand."
+      "description": "Currently <c=boldPink>attuned</c> elements. When all elements are <c=boldPink>attuned</c>, add 1 of 3 <c=card>potions</c> to your hand."
     },
     "Accumulate": {
       "name": "Accumulate",

@@ -2,12 +2,11 @@
 using Nickel.Common;
 using HarmonyLib;
 using DragonOfTruth01.GizmoTheFoxCCMod.Cards;
-// using DragonOfTruth01.GizmoTheFoxCCMod.Artifacts;
+using DragonOfTruth01.GizmoTheFoxCCMod.Artifacts;
 using Microsoft.Extensions.Logging;
 using Nanoray.PluginManager;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod;
 
@@ -42,7 +41,24 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_CardPrestidigitationBGBottomCondensed { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_CardConjureManaBladesBG { get; }
 
-    // Artifact Arts
+    // Starter Artifacts
+    internal ISpriteEntry GizmoTheFoxCCMod_ArtifactResiduumPouch { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_ArtifactResiduumPouchDisabled { get; }
+
+    // Common Artifacts
+    internal ISpriteEntry GizmoTheFoxCCMod_ArtifactArcanePrism { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_ArtifactRestorativeSolute { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_ArtifactRestorativeSoluteDisabled { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_ArtifactBismuthCrown { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_ArtifactElementalRadiometer { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_ArtifactPlasmaGlobe { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_ArtifactWandOfChaos { get; }
+
+    // Boss Artifacts
+    internal ISpriteEntry GizmoTheFoxCCMod_ArtifactResiduumSatchel { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_ArtifactResiduumSatchelDisabled { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_ArtifactPotionBelt { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_ArtifactSorcerersDynamo { get; }
 
     // Animation Sprites
     internal ISpriteEntry GizmoTheFoxCCMod_Character_Neutral_0 { get; }
@@ -96,6 +112,7 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_AddCantripRandomB { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_stoneConstructSmall { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_imbuedStoneConstructSmall { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Potion { get; }
 
     // Custom Midrow Icons
     internal ISpriteEntry GizmoTheFoxCCMod_stoneConstruct { get; }
@@ -202,7 +219,7 @@ public sealed class ModEntry : SimpleMod
         typeof(CardPotionOfFireBreath),
         typeof(CardPotionOfForesight),
         typeof(CardPotionOfFortification),
-        typeof(CardPotionOfHealing),
+        typeof(CardPotionOfThePhoenix),
         typeof(CardPotionOfInvincibility),
         typeof(CardDisplacerPotion),
         typeof(CardIlluminatorPotion),
@@ -226,16 +243,28 @@ public sealed class ModEntry : SimpleMod
     ];
 
     // Define our artifact lists
+    internal static IReadOnlyList<Type> GizmoTheFoxCCMod_StarterArtifact_Types { get; } = [
+        typeof(ArtifactPotionBelt),
+        typeof(ArtifactResiduumPouch),
+        typeof(ArtifactSorcerersDynamo)
+    ];
+
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_CommonArtifact_Types { get; } = [
-        
+        typeof(ArtifactArcanePrism),
+        typeof(ArtifactBismuthCrown),
+        typeof(ArtifactElementalRadiometer),
+        typeof(ArtifactPlasmaGlobe),
+        typeof(ArtifactRestorativeSolute),
+        typeof(ArtifactWandOfChaos)
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_BossArtifact_Types { get; } = [
-        
+        typeof(ArtifactResiduumSatchel)
     ];
 
     // Combine all the artifacts into a single list
     internal static IEnumerable<Type> GizmoTheFoxCCMod_AllArtifact_Types = [
+        .. GizmoTheFoxCCMod_StarterArtifact_Types,
         .. GizmoTheFoxCCMod_CommonArtifact_Types,
         .. GizmoTheFoxCCMod_BossArtifact_Types
     ];
@@ -286,7 +315,24 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_CardPrestidigitationBGBottomCondensed = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardPrestidigitationBGBottomCondensed.png"));
         GizmoTheFoxCCMod_CardConjureManaBladesBG = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardConjureManaBladesBG.png"));
 
-        // Artifact Arts
+        // Starter Artifacts
+        GizmoTheFoxCCMod_ArtifactResiduumPouch = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/starter/residuumPouch.png"));
+        GizmoTheFoxCCMod_ArtifactResiduumPouchDisabled = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/starter/residuumPouchDisabled.png"));
+
+        // Common Artifacts
+        GizmoTheFoxCCMod_ArtifactArcanePrism = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/common/arcanePrism.png"));
+        GizmoTheFoxCCMod_ArtifactRestorativeSolute = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/common/restorativeSolute.png"));
+        GizmoTheFoxCCMod_ArtifactRestorativeSoluteDisabled = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/common/restorativeSoluteDisabled.png"));
+        GizmoTheFoxCCMod_ArtifactBismuthCrown = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/common/bismuthCrown.png"));
+        GizmoTheFoxCCMod_ArtifactElementalRadiometer = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/common/elementalRadiometer.png"));
+        GizmoTheFoxCCMod_ArtifactPlasmaGlobe = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/common/plasmaGlobe.png"));
+        GizmoTheFoxCCMod_ArtifactWandOfChaos = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/common/wandOfChaos.png"));
+
+        // Boss Artifacts
+        GizmoTheFoxCCMod_ArtifactResiduumSatchel = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/boss/residuumSatchel.png"));
+        GizmoTheFoxCCMod_ArtifactResiduumSatchelDisabled = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/boss/residuumSatchelDisabled.png"));
+        GizmoTheFoxCCMod_ArtifactPotionBelt = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/boss/potionBelt.png"));
+        GizmoTheFoxCCMod_ArtifactSorcerersDynamo = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/boss/sorcerersDynamo.png"));
 
         // Animation Sprites
         GizmoTheFoxCCMod_Character_Neutral_0 = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/sprites/GizmoTheFoxCCMod_character_neutral_0.png"));
@@ -341,6 +387,7 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_AddCantripRandomB = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/addCantripRandomB.png"));
         GizmoTheFoxCCMod_stoneConstructSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/stoneConstructSmall.png"));
         GizmoTheFoxCCMod_imbuedStoneConstructSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/imbuedStoneConstructSmall.png"));
+        GizmoTheFoxCCMod_Potion = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/potion.png"));
 
         // Custom Midrow Icons
 
@@ -383,9 +430,12 @@ public sealed class ModEntry : SimpleMod
                 deck: GizmoTheFoxCCMod_Character_Deck.Deck,
                 starterDeck: new StarterDeck
                 {
+                    artifacts = [
+                        new ArtifactResiduumPouch()
+                    ],
                     cards = [
-                        new CardPrestidigitation(),
-                        new CardSeaQuake()
+                        new CardAbsorbElements(),
+                        new CardMagicMissile()
                     ]
                 }
 
@@ -502,6 +552,9 @@ public sealed class ModEntry : SimpleMod
 
             Starters = new()
             {
+                artifacts = [
+                    new ArtifactResiduumPouch()
+                ],
                 cards = [
                     new CardEvocation(),
                     new CardConjureManaBlades()

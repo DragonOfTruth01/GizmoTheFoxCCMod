@@ -1,6 +1,7 @@
 using Nickel;
 using System.Collections.Generic;
 using System.Reflection;
+using DragonOfTruth01.GizmoTheFoxCCMod.Midrow;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod.Cards;
 
@@ -30,10 +31,8 @@ internal sealed class CardChromaticOrb : Card, IGizmoTheFoxCCModCard
         CardData data = new CardData()
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
-            description = ModEntry.Instance.Localizations.Localize(["card", "Chromatic Orb", "description", upgrade.ToString()], new { damageString }),
             artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Character_CardOverlaySpellUncommon.Sprite,
-            cost = 1,
-            exhaust = upgrade == Upgrade.B
+            cost = 1
         };
         return data;
     }
@@ -48,18 +47,20 @@ internal sealed class CardChromaticOrb : Card, IGizmoTheFoxCCModCard
                 {
                     new AAttack
                     {
-                        damage = GetDmg(s, 2),
-                    },
-                    new ADrawCard
-                    {
-                        count = GetNumAttunedElements(s)
+                        damage = GetDmg(s, 1),
                     },
                     new AStatus()
                     {
-                        mode = AStatusMode.Set,
-                        status = ModEntry.Instance.Attunement.Status,
-                        statusAmount = 0,
+                        status = Status.droneShift,
+                        statusAmount = 1,
                         targetPlayer = true
+                    },
+                    new ASpawn()
+                    {
+                        thing = new MidrowImbuedStoneConstruct()
+                        {
+                            yAnimation = 0.0
+                        }
                     }
                 };
                 break;
@@ -69,18 +70,20 @@ internal sealed class CardChromaticOrb : Card, IGizmoTheFoxCCModCard
                 {
                     new AAttack
                     {
-                        damage = GetDmg(s, 2),
-                    },
-                    new ADrawCard
-                    {
-                        count = GetNumAttunedElements(s)
+                        damage = GetDmg(s, 1),
                     },
                     new AStatus()
                     {
-                        mode = AStatusMode.Set,
-                        status = ModEntry.Instance.Attunement.Status,
-                        statusAmount = 0,
+                        status = Status.droneShift,
+                        statusAmount = 2,
                         targetPlayer = true
+                    },
+                    new ASpawn()
+                    {
+                        thing = new MidrowImbuedStoneConstruct()
+                        {
+                            yAnimation = 0.0
+                        }
                     }
                 };
                 break;
@@ -91,72 +94,24 @@ internal sealed class CardChromaticOrb : Card, IGizmoTheFoxCCModCard
                     new AAttack
                     {
                         damage = GetDmg(s, 2),
+                        piercing = true
                     },
-                    Conditional.MakeAction(
-                        new AttunedCondition(true, AttunementManager.EarthBitMask),
-                        new AAddCard(){
-                            card = new CardTremor(){ upgrade = Upgrade.A },
-                            destination = CardDestination.Hand
-                        }
-                    ).AsCardAction,
-                    Conditional.MakeAction(
-                        new AttunedCondition(true, AttunementManager.WindBitMask),
-                        new AAddCard(){
-                            card = new CardGust(){ upgrade = Upgrade.A },
-                            destination = CardDestination.Hand
-                        }
-                    ).AsCardAction,
-                    Conditional.MakeAction(
-                        new AttunedCondition(true, AttunementManager.FireBitMask),
-                        new AAddCard(){
-                            card = new CardFlare(){ upgrade = Upgrade.A },
-                            destination = CardDestination.Hand
-                        }
-                    ).AsCardAction,
-                    Conditional.MakeAction(
-                        new AttunedCondition(true, AttunementManager.WaterBitMask),
-                        new AAddCard(){
-                            card = new CardWhirlpool(){ upgrade = Upgrade.A },
-                            destination = CardDestination.Hand
-                        }
-                    ).AsCardAction,
                     new AStatus()
                     {
-                        mode = AStatusMode.Set,
-                        status = ModEntry.Instance.Attunement.Status,
-                        statusAmount = 0,
+                        status = Status.droneShift,
+                        statusAmount = 1,
                         targetPlayer = true
+                    },
+                    new ASpawn()
+                    {
+                        thing = new MidrowImbuedStoneConstruct()
+                        {
+                            yAnimation = 0.0
+                        }
                     }
                 };
                 break;
         }
         return actions;
-    }
-
-    private int GetNumAttunedElements(State s)
-    {
-        // If not looking at this card in combat,
-        // consider three elements attuned for rendering purposes
-        if (s.route == null)
-        {
-            return 3;
-        }
-
-        int retVal = 0;
-        int currAttunement = s.ship.Get(ModEntry.Instance.Attunement.Status);
-
-        List<int> masks = new List<int>{AttunementManager.EarthBitMask,
-                                        AttunementManager.WindBitMask,
-                                        AttunementManager.FireBitMask,
-                                        AttunementManager.WaterBitMask};
-        foreach (int mask in masks)
-        {
-            if( (currAttunement & mask) != 0)
-            {
-                ++retVal;
-            }
-        }
-
-        return retVal;
     }
 }

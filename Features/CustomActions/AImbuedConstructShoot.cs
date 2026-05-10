@@ -23,7 +23,7 @@ public class AImbuedConstructShoot : CardAction
                 MidrowImbuedStoneConstruct imbuedConstruct = (MidrowImbuedStoneConstruct)item.Value;
                 AAttack atk = new AAttack()
                 {
-                    damage = imbuedConstruct.AttackDamage()
+                    damage = MidrowImbuedStoneConstruct.AttackDamage()
                 };
 
                 // Originate the attack from this drone

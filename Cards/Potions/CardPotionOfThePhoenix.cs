@@ -4,11 +4,11 @@ using System.Reflection;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod.Cards;
 
-internal sealed class CardPotionOfHealing : Card, IGizmoTheFoxCCModCard
+internal sealed class CardPotionOfThePhoenix : Card, IGizmoTheFoxCCModCard
 {
     public static void Register(IModHelper helper)
     {
-        var entry = helper.Content.Cards.RegisterCard("Potion of Healing", new()
+        var entry = helper.Content.Cards.RegisterCard("Potion of the Phoenix", new()
         {
             CardType = MethodBase.GetCurrentMethod()!.DeclaringType!,
             Meta = new()
@@ -16,7 +16,7 @@ internal sealed class CardPotionOfHealing : Card, IGizmoTheFoxCCModCard
                 deck = ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
                 rarity = Rarity.rare
             },
-            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Potion of Healing", "name"]).Localize
+            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Potion of the Phoenix", "name"]).Localize
         });
     }
 
@@ -39,11 +39,14 @@ internal sealed class CardPotionOfHealing : Card, IGizmoTheFoxCCModCard
 
         actions = new()
         {
-            new AHeal()
+            new ADummyAction(), // For padding
+            new AStatus()
             {
-                healAmount = 3,
+                status = Status.survive,
+                statusAmount = 1,
                 targetPlayer = true
-            }
+            },
+            new APotionOfThePhoenixTooltip() // For survive tooltip rendering
         };
         
         return actions;

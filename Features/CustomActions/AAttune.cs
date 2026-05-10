@@ -2,6 +2,8 @@ using Nickel;
 using FSPRO;
 using System.Collections.Generic;
 using HarmonyLib;
+using System.Linq;
+using DragonOfTruth01.GizmoTheFoxCCMod.Artifacts;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod;
 
@@ -25,6 +27,13 @@ public sealed class AAttune : CardAction // NOTE: This should only be used to at
                 statusAmount = newAttunement,
                 targetPlayer = true
             });
+
+            var elementalRadiometer = s.EnumerateAllArtifacts().OfType<ArtifactElementalRadiometer>().FirstOrDefault();
+
+            if(elementalRadiometer != null)
+            {
+                elementalRadiometer.CheckIfTriggered(s, c);
+            }
         }
     }
 
