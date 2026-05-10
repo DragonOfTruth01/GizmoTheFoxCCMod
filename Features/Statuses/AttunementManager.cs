@@ -123,6 +123,20 @@ internal sealed class AttunementManager : IKokoroApi.IV2.IStatusRenderingApi.IHo
                 statusAmount = 0,
                 targetPlayer = __instance.targetPlayer
             });
+
+            var plasmaGlobe = s.EnumerateAllArtifacts().OfType<ArtifactPlasmaGlobe>().FirstOrDefault();
+
+            // If we have a plasma globe, enemy loses 1 hull before everything else
+            if (plasmaGlobe != null)
+            {
+                c.QueueImmediate(new AHurt()
+                {
+                    hurtAmount = 1,
+                    targetPlayer = false
+                });
+
+                plasmaGlobe.Pulse();
+            }
         }
     }
 

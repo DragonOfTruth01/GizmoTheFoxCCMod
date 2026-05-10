@@ -19,6 +19,10 @@
         "name": "ELEMENTAL RADIOMETER",
         "description": "Every 7 times you <c=boldPink>attune</c> an element, draw 2 cards."
       },
+      "Plasma Globe": {
+        "name": "PLASMA GLOBE",
+        "description": "Each time you <c=boldPink>attune</c> all elements, the enemy loses 1 hull."
+      },
       "Restorative Solute": {
         "name": "RESTORATIVE SOLUTE",
         "description": "The first time each combat you play a <c=card>potion</c>, <c=heal>heal 1</c>."
