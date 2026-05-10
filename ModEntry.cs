@@ -51,6 +51,7 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_ArtifactRestorativeSolute { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_ArtifactRestorativeSoluteDisabled { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_ArtifactBismuthCrown { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_ArtifactElementalRadiometer { get; }
 
     // Boss Artifacts
     internal ISpriteEntry GizmoTheFoxCCMod_ArtifactResiduumSatchel { get; }
@@ -246,6 +247,7 @@ public sealed class ModEntry : SimpleMod
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_CommonArtifact_Types { get; } = [
         typeof(ArtifactArcanePrism),
         typeof(ArtifactBismuthCrown),
+        typeof(ArtifactElementalRadiometer),
         typeof(ArtifactRestorativeSolute)
     ];
 
@@ -315,6 +317,7 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_ArtifactRestorativeSolute = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/common/restorativeSolute.png"));
         GizmoTheFoxCCMod_ArtifactRestorativeSoluteDisabled = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/common/restorativeSoluteDisabled.png"));
         GizmoTheFoxCCMod_ArtifactBismuthCrown = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/common/bismuthCrown.png"));
+        GizmoTheFoxCCMod_ArtifactElementalRadiometer = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/common/elementalRadiometer.png"));
 
         // Boss Artifacts
         GizmoTheFoxCCMod_ArtifactResiduumSatchel = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/boss/residuumSatchel.png"));

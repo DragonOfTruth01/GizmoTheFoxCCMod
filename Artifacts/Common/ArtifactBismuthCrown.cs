@@ -28,7 +28,7 @@ internal sealed class ArtifactBismuthCrown : Artifact, IGizmoTheFoxCCModArtifact
 
     public override int? GetDisplayNumber(State s)
     {
-        return s.route is Combat ? turnCounter : null;
+        return turnCounter;
     }
 
     public override List<Tooltip>? GetExtraTooltips()

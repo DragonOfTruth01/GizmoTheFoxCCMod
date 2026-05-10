@@ -15,6 +15,10 @@
         "name": "BISMUTH CROWN",
         "description": "Every 3 turns, launch an <c=midrow>imbued stone construct</c> from your missile bay."
       },
+      "Elemental Radiometer": {
+        "name": "ELEMENTAL RADIOMETER",
+        "description": "Every 7 times you <c=boldPink>attune</c> an element, draw 2 cards."
+      },
       "Restorative Solute": {
         "name": "RESTORATIVE SOLUTE",
         "description": "The first time each combat you play a <c=card>potion</c>, <c=heal>heal 1</c>."
