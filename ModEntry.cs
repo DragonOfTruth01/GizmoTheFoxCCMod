@@ -563,7 +563,9 @@ public sealed class ModEntry : SimpleMod
 
             Description = AnyLocalizations.Bind(["character", "GizmoTheFoxCCMod_Character", "description"]).Localize,
 
-            BorderSprite = GizmoTheFoxCCMod_Character_Panel.Sprite
+            BorderSprite = GizmoTheFoxCCMod_Character_Panel.Sprite,
+
+            ExeCardType = typeof(CardGizmoEXE)
         });
 
         // Register Cards
