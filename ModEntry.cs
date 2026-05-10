@@ -228,7 +228,7 @@ public sealed class ModEntry : SimpleMod
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_ExeCard_Types { get; } = [
-        
+        typeof(CardGizmoEXE)
     ];
 
     // Combine all the lists into a single object for reference

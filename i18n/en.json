@@ -256,6 +256,14 @@
     "Forage": {
       "name": "Forage"
     },
+    "Gizmo.EXE": {
+      "name": "Gizmo.EXE",
+      "description": {
+        "None": "<c=boldPink>Attune</c> 2. Add 1 of 3 <c=cardtrait>discount, temp</c> <c=d1c3ac>Gizmo</c> cards to your hand.",
+        "A": "<c=boldPink>Attune</c> 2. Add 1 of 3 <c=cardtrait>discount, temp</c> <c=d1c3ac>Gizmo</c> cards to your hand.",
+        "B": "<c=boldPink>Attune</c> 3. Add 1 of 5 <c=cardtrait>discount, temp</c> <c=d1c3ac>Gizmo</c> cards to your hand."
+      }
+    },
     "Gust": {
       "name": "Gust"
     },
