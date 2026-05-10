@@ -11,6 +11,10 @@
         "name": "ARCANE PRISM",
         "description": "Start each combat with 1 <c=status>ACCUMULATE</c>."
       },
+      "Bismuth Crown": {
+        "name": "BISMUTH CROWN",
+        "description": "Every 3 turns, launch an <c=midrow>imbued stone construct</c> from your missile bay."
+      },
       "Restorative Solute": {
         "name": "RESTORATIVE SOLUTE",
         "description": "The first time each combat you play a <c=card>potion</c>, <c=heal>heal 1</c>."

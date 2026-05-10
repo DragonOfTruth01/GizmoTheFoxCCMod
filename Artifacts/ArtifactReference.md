@@ -7,7 +7,7 @@ This document acts as a reference for the artifacts that are introduced in this 
 | Yes | Starter | Residuum Pouch | Potion rewards received from attunement have a 25% chance to be shimmering. Can trigger once per combat. |
 | Yes | Common | Arcane Prism | Start each combat with 1 accumulate. |
 | Yes | Common | Restorative Solute | The first time you use a potion each combat, restore 1 hull. |
-| No | Common | Bismuth Crown | At the start of every 2 turns, deploy a stone construct from your missile bay. Every 4th turn, deploy an imbued stone construct instead. |
+| Yes | Common | Bismuth Crown | Every 3 turns, deploy an imbued stone construct from your missile bay. |
 | No | Common | Elemental Radiometer | Every 5 times you attune an element, draw 1 card. |
 | No | Common | Enchanted Diffuser | Each time you attune all elements, the enemy loses 1 hull. |
 | No | Common | Wand of Chaos | At the start of each combat, add a random temp card from any character into your hand. It costs 0 until played. |
