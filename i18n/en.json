@@ -26,6 +26,10 @@
       "Restorative Solute": {
         "name": "RESTORATIVE SOLUTE",
         "description": "The first time each combat you play a <c=card>potion</c>, <c=heal>heal 1</c>."
+      },
+      "Wand of Chaos": {
+        "name": "WAND OF CHAOS",
+        "description": "At the start of combat, obtain a random <c=cardtrait>temp</c> card from any character. It costs 0 until played."
       }
     },
     "boss": {
