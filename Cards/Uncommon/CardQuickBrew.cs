@@ -4,7 +4,7 @@ using System.Reflection;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod.Cards;
 
-internal sealed class CardQuickBrew : Card, IGizmoTheFoxCCModCard
+internal sealed class CardQuickBrew : Card, IGizmoTheFoxCCModCard, IHasCustomCardTraits
 {
     public static void Register(IModHelper helper)
     {
@@ -19,25 +19,24 @@ internal sealed class CardQuickBrew : Card, IGizmoTheFoxCCModCard
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Quick Brew", "name"]).Localize
         });
+
+        // Set limited on cards
+        ModEntry.Instance.KokoroApi.Limited.SetBaseLimitedUses(entry.UniqueName, Upgrade.None, 3);
+        ModEntry.Instance.KokoroApi.Limited.SetBaseLimitedUses(entry.UniqueName, Upgrade.A, 3);
     }
 
-    public int currCost = 0;
-    public int numPlaysUntilIncrease = 2;
-
-    public override void OnExitCombat(State s, Combat c)
-    {
-        currCost = 0;
-        numPlaysUntilIncrease = 2;
-    }
+    public IReadOnlySet<ICardTraitEntry> GetInnateTraits(State state)
+		=> upgrade != Upgrade.B
+            ? new HashSet<ICardTraitEntry> { ModEntry.Instance.KokoroApi.Limited.Trait }
+            : new HashSet<ICardTraitEntry>();
 
     public override CardData GetData(State state)
     {
-        string numPlaysString = "<c=boldPink>" + numPlaysUntilIncrease + "</c> play" + (numPlaysUntilIncrease == 1 ? "" : "s");
         CardData data = new CardData()
         {
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
-            description = ModEntry.Instance.Localizations.Localize(["card", "Quick Brew", "description", upgrade.ToString()], new {numPlaysString}),
-            cost = upgrade == Upgrade.B ? 0 : currCost,
+            description = ModEntry.Instance.Localizations.Localize(["card", "Quick Brew", "description", upgrade.ToString()]),
+            cost = 0,
             exhaust = upgrade == Upgrade.B
         };
         return data;
@@ -78,8 +77,7 @@ internal sealed class CardQuickBrew : Card, IGizmoTheFoxCCModCard
                             destination = CardDestination.Hand,
                             amount = 1
                         }
-                    ).AsCardAction,
-                    new AIncrementQuickBrew() { uuid = uuid }
+                    ).AsCardAction
                 };
                 break;
 
@@ -93,8 +91,7 @@ internal sealed class CardQuickBrew : Card, IGizmoTheFoxCCModCard
                         canSkip = false,
                         rarityOverride = Rarity.uncommon, // Non-shimmering potions
                         inCombat = true
-                    },
-                    new AIncrementQuickBrew() { uuid = uuid }
+                    }
                 };
                 break;
 

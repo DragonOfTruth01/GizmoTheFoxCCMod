@@ -336,8 +336,8 @@
     "Quick Brew": {
       "name": "Quick Brew",
       "description": {
-        "None": "Obtain a random <c=card>potion</c>. After {{numPlaysString}}, raise cost by 1 this combat.",
-        "A": "Obtain 1 of 2 <c=card>potions</c>. After {{numPlaysString}}, raise cost by 1 this combat.",
+        "None": "Add a random <c=card>potion</c> to your hand.",
+        "A": "Add 1 of 2 <c=card>potions</c> to your hand.",
         "B": "Add 3 random <c=card>potions</c> to your draw pile."
       }
     },
