@@ -434,7 +434,7 @@ public sealed class ModEntry : SimpleMod
                         new ArtifactResiduumPouch()
                     ],
                     cards = [
-                        new CardAbsorbElements(),
+                        new CardDiametricDecoction(),
                         new CardMagicMissile()
                     ]
                 }
