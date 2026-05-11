@@ -4,11 +4,11 @@ using System.Reflection;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod.Cards;
 
-internal sealed class CardConjureManaBlades : Card, IGizmoTheFoxCCModCard
+internal sealed class CardCreateManaBlades : Card, IGizmoTheFoxCCModCard
 {
     public static void Register(IModHelper helper)
     {
-        helper.Content.Cards.RegisterCard("Conjure Mana Blades", new()
+        helper.Content.Cards.RegisterCard("Create Mana Blades", new()
         {
             CardType = MethodBase.GetCurrentMethod()!.DeclaringType!,
             Meta = new()
@@ -17,15 +17,15 @@ internal sealed class CardConjureManaBlades : Card, IGizmoTheFoxCCModCard
                 rarity = Rarity.common,
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
-            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Conjure Mana Blades", "name"]).Localize
+            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "Create Mana Blades", "name"]).Localize
         });
     }
     public override CardData GetData(State state)
     {
         CardData data = new CardData()
         {
-            art = ModEntry.Instance.GizmoTheFoxCCMod_CardConjureManaBladesBG.Sprite,
-            description = ModEntry.Instance.Localizations.Localize(["card", "Conjure Mana Blades", "description", upgrade.ToString()]),
+            art = ModEntry.Instance.GizmoTheFoxCCMod_CardCreateManaBladesBG.Sprite,
+            description = ModEntry.Instance.Localizations.Localize(["card", "Create Mana Blades", "description", upgrade.ToString()]),
             cost = 0,
             artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Character_CardOverlaySpellCommon.Sprite
         };

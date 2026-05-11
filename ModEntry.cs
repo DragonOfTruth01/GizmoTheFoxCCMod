@@ -39,7 +39,7 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_CardPrestidigitationBGBottom { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_CardPrestidigitationBGTopCondensed { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_CardPrestidigitationBGBottomCondensed { get; }
-    internal ISpriteEntry GizmoTheFoxCCMod_CardConjureManaBladesBG { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_CardCreateManaBladesBG { get; }
 
     // Starter Artifacts
     internal ISpriteEntry GizmoTheFoxCCMod_ArtifactResiduumPouch { get; }
@@ -161,7 +161,7 @@ public sealed class ModEntry : SimpleMod
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_CommonCard_Types { get; } = [
         typeof(CardHomunculus),
         typeof(CardAbsorbElements),
-        typeof(CardConjureManaBlades),
+        typeof(CardCreateManaBlades),
         typeof(CardDiametricDecoction),
         typeof(CardEvocation),
         typeof(CardSteamEngine),
@@ -228,7 +228,7 @@ public sealed class ModEntry : SimpleMod
     ];
 
     internal static IReadOnlyList<Type> GizmoTheFoxCCMod_Character_ExeCard_Types { get; } = [
-        
+        typeof(CardGizmoEXE)
     ];
 
     // Combine all the lists into a single object for reference
@@ -313,7 +313,7 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_CardPrestidigitationBGBottom = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardPrestidigitationBGBottom.png"));
         GizmoTheFoxCCMod_CardPrestidigitationBGTopCondensed = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardPrestidigitationBGTopCondensed.png"));
         GizmoTheFoxCCMod_CardPrestidigitationBGBottomCondensed = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardPrestidigitationBGBottomCondensed.png"));
-        GizmoTheFoxCCMod_CardConjureManaBladesBG = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardConjureManaBladesBG.png"));
+        GizmoTheFoxCCMod_CardCreateManaBladesBG = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/character/CardBGs/common/GizmoTheFoxCCMod_CardCreateManaBladesBG.png"));
 
         // Starter Artifacts
         GizmoTheFoxCCMod_ArtifactResiduumPouch = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/artifact/starter/residuumPouch.png"));
@@ -434,7 +434,7 @@ public sealed class ModEntry : SimpleMod
                         new ArtifactResiduumPouch()
                     ],
                     cards = [
-                        new CardAbsorbElements(),
+                        new CardDiametricDecoction(),
                         new CardMagicMissile()
                     ]
                 }
@@ -557,13 +557,15 @@ public sealed class ModEntry : SimpleMod
                 ],
                 cards = [
                     new CardEvocation(),
-                    new CardConjureManaBlades()
+                    new CardCreateManaBlades()
                 ]
             },
 
             Description = AnyLocalizations.Bind(["character", "GizmoTheFoxCCMod_Character", "description"]).Localize,
 
-            BorderSprite = GizmoTheFoxCCMod_Character_Panel.Sprite
+            BorderSprite = GizmoTheFoxCCMod_Character_Panel.Sprite,
+
+            ExeCardType = typeof(CardGizmoEXE)
         });
 
         // Register Cards

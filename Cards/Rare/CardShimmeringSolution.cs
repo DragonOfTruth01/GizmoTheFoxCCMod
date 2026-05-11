@@ -126,21 +126,16 @@ internal sealed class CardShimmeringSolution : Card, IGizmoTheFoxCCModCard
                 break;
 
             case Upgrade.B:
-                Card selectedCardB1 = CardReward.GetOffering(
-                                    s: s,
-                                    count: 1,
-                                    limitDeck: ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
-                                    rarityOverride: Rarity.rare, // Shimmering potions only
-                                    inCombat: true,
-                                    isEvent: false) [0]; // We only have one card so index the first one
+                List<Card> cardList = CardReward.GetOffering(
+                                      s: s,
+                                      count: 2,
+                                      limitDeck: ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
+                                      rarityOverride: Rarity.rare, // Shimmering potions only
+                                      inCombat: true,
+                                      isEvent: false);
 
-                Card selectedCardB2 = CardReward.GetOffering(
-                                    s: s,
-                                    count: 1,
-                                    limitDeck: ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
-                                    rarityOverride: Rarity.rare,
-                                    inCombat: true,
-                                    isEvent: false) [0];
+                Card selectedCardB1 = cardList[0];
+                Card selectedCardB2 = cardList[1];
 
                 selectedCardB1.flipAnim = 1.0f;
                 selectedCardB2.flipAnim = 1.0f;

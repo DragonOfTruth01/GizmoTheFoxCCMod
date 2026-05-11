@@ -10,7 +10,7 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Common | Steam Engine | 2 | Floppable. Gain 1 wind charge + attune wind / Gain 1 overdrive + attune fire. Gain 1 energy next turn. | Instead gain 2 energy next turn. | Both actions attune fire and wind. Card gains discounted 1. |
 | Yes | Common | Flutter | 0 | Move 1 random. Gain 1 wind charge. Attune wind. | Also gain 1 hermes boots. | Instead gain 2 wind charge. Also gain 1 engine stall. |
 | Yes | Common | Magic Missile | 1 | Attack 1. Repeat this attack if attuned 2/3 elements. Un-attune all elements. | Also repeat attack if attuned 1 element. | All attacks gain piercing. |
-| Yes | Common | Conjure Mana Blades | 0 | Add Mana Blade (Fire) and Mana Blade (Ice) to your hand. | Added cards have A upgrade. | Added cards have B upgrade. |
+| Yes | Common | Create Mana Blades | 0 | Add Mana Blade (Fire) and Mana Blade (Ice) to your hand. | Added cards have A upgrade. | Added cards have B upgrade. |
 | Yes | Common | Prestidigitation | 1 | Floppable. Deal 1 damage. / Gain 1 block. Add 1 of 2 cantrips to your hand. | Instead add 1 of 4 cantrips. | Increase damage by 1. / Add 1 temp shield. |
 | Yes | Common | Sea Quake | 2 | Floppable. Gain 3 temp shield. Attune water. / Gain 2 shield. Attune earth. | Gain 5 temp shield / 3 shield. | Both actions attune earth and water. Card gains discounted 1. |
 | Yes | Common | Homunculus | 1 | Attune earth. Deploy a stone construct from the missile bay. | Deploy an imbued stone construct from the missile bay. | Increase cost to 2. Deploy a stone construct from the missile bay, and one to the right of the missile bay. Card gains flippable. |

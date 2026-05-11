@@ -75,7 +75,7 @@
     },
     "Attune Random": {
       "name": "Attune Random",
-      "description": "<c=boldPink>Attune</c> a random element {{execCountString}}</c> times."
+      "description": "<c=boldPink>Attune</c> a random unattuned element {{execCountString}}</c> times."
     },
     "Attune Earth and Water": {
       "name": "     Attune Earth and Water",
@@ -195,8 +195,8 @@
         "B": "Add a random <c=card>Mace of Seasons</c> with <c=cardtrait>B upgrade</c> to your hand."
       }
     },
-    "Conjure Mana Blades": {
-      "name": "Conjure Mana Blades",
+    "Create Mana Blades": {
+      "name": "Create Mana Blades",
       "description": {
         "None": "Add <c=card>Mana Blade (Fire)</c> and <c=card>Mana Blade (Ice)</c> to your hand.",
         "A": "Add <c=card>Mana Blade (Fire) A</c> and <c=card>Mana Blade (Ice) A</c> to your hand.",
@@ -255,6 +255,14 @@
     },
     "Forage": {
       "name": "Forage"
+    },
+    "Gizmo.EXE": {
+      "name": "Gizmo.EXE",
+      "description": {
+        "None": "<c=boldPink>Attune</c> 2. Add 1 of 3 <c=cardtrait>discount, temp</c> <c=d1c3ac>Gizmo</c> cards to your hand.",
+        "A": "<c=boldPink>Attune</c> 2. Add 1 of 3 <c=cardtrait>discount, temp</c> <c=d1c3ac>Gizmo</c> cards to your hand.",
+        "B": "<c=boldPink>Attune</c> 3. Add 1 of 5 <c=cardtrait>discount, temp</c> <c=d1c3ac>Gizmo</c> cards to your hand."
+      }
     },
     "Gust": {
       "name": "Gust"
