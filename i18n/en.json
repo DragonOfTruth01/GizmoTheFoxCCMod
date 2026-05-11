@@ -75,7 +75,7 @@
     },
     "Attune Random": {
       "name": "Attune Random",
-      "description": "<c=boldPink>Attune</c> a random element {{execCountString}}</c> times."
+      "description": "<c=boldPink>Attune</c> a random unattuned element {{execCountString}}</c> times."
     },
     "Attune Earth and Water": {
       "name": "     Attune Earth and Water",
