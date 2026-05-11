@@ -98,21 +98,16 @@ internal sealed class CardQuickBrew : Card, IGizmoTheFoxCCModCard, IHasCustomCar
                 break;
 
             case Upgrade.A:
-                Card selectedCardA1 = CardReward.GetOffering(
-                                    s: s,
-                                    count: 1,
-                                    limitDeck: ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
-                                    rarityOverride: Rarity.uncommon, // Non-shimmering potions
-                                    inCombat: true,
-                                    isEvent: false) [0]; // We only have one card so index the first one
+                List<Card> cardList = CardReward.GetOffering(
+                                      s: s,
+                                      count: 2,
+                                      limitDeck: ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
+                                      rarityOverride: Rarity.uncommon, // Non-shimmering potions
+                                      inCombat: true,
+                                      isEvent: false);
 
-                Card selectedCardA2 = CardReward.GetOffering(
-                                    s: s,
-                                    count: 1,
-                                    limitDeck: ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
-                                    rarityOverride: Rarity.uncommon,
-                                    inCombat: true,
-                                    isEvent: false) [0];
+                Card selectedCardA1 = cardList[0];
+                Card selectedCardA2 = cardList[1];
 
                 selectedCardA1.flipAnim = 1.0f;
                 selectedCardA2.flipAnim = 1.0f;

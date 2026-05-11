@@ -1,6 +1,7 @@
 ﻿using HarmonyLib;
 using System.Linq;
 using DragonOfTruth01.GizmoTheFoxCCMod.Artifacts;
+using System.Collections.Generic;
 
 namespace DragonOfTruth01.GizmoTheFoxCCMod;
 
@@ -115,29 +116,17 @@ internal sealed class AttunementManager : IKokoroApi.IV2.IStatusRenderingApi.IHo
                 }
             }
 
-            Card selectedCard1 = CardReward.GetOffering(
+            List<Card> cardList = CardReward.GetOffering(
                                     s: s,
-                                    count: 1,
+                                    count: 3,
                                     limitDeck: ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
                                     rarityOverride: isShimmering ? Rarity.rare : Rarity.uncommon,
                                     inCombat: true,
-                                    isEvent: false) [0]; // We only have one card so index the first one
+                                    isEvent: false);
 
-            Card selectedCard2 = CardReward.GetOffering(
-                                    s: s,
-                                    count: 1,
-                                    limitDeck: ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
-                                    rarityOverride: isShimmering ? Rarity.rare : Rarity.uncommon,
-                                    inCombat: true,
-                                    isEvent: false) [0]; // We only have one card so index the first one
-
-            Card selectedCard3 = CardReward.GetOffering(
-                                    s: s,
-                                    count: 1,
-                                    limitDeck: ModEntry.Instance.GizmoTheFoxCCMod_Potion_Deck.Deck,
-                                    rarityOverride: isShimmering ? Rarity.rare : Rarity.uncommon,
-                                    inCombat: true,
-                                    isEvent: false) [0]; // We only have one card so index the first one
+            Card selectedCard1 = cardList[0];
+            Card selectedCard2 = cardList[1];
+            Card selectedCard3 = cardList[2];
 
             selectedCard1.flipAnim = 1.0f;
             selectedCard2.flipAnim = 1.0f;
