@@ -195,8 +195,8 @@
         "B": "Add a random <c=card>Mace of Seasons</c> with <c=cardtrait>B upgrade</c> to your hand."
       }
     },
-    "Conjure Mana Blades": {
-      "name": "Conjure Mana Blades",
+    "Create Mana Blades": {
+      "name": "Create Mana Blades",
       "description": {
         "None": "Add <c=card>Mana Blade (Fire)</c> and <c=card>Mana Blade (Ice)</c> to your hand.",
         "A": "Add <c=card>Mana Blade (Fire) A</c> and <c=card>Mana Blade (Ice) A</c> to your hand.",
