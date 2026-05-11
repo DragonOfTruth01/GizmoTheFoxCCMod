@@ -15,21 +15,42 @@ This README was made using Louis3797's awesome-readme-template
 This mod adds the following:
 
 - <b>1</b> Character
-- <b>???</b> Cards
-  - <b>10/10</b> common
-  - <b>8/8</b> uncommon
-  - <b>6/6</b> rare
-  - <b>???</b> potions
-  - <b>10/10</b> generated cards
-  - <b>1/1</b> status
-  - <b>0/2</b> EXE cards
-- <b>???</b> Artifacts
-  - <b>???</b> common
-  - <b>???</b> boss
-- <b>1/1</b> Statuses
+- <b>66</b> Cards
+  - <b>10</b> common
+  - <b>8</b> uncommon
+  - <b>6</b> rare
+  - <b>30</b> potions
+  - <b>10</b> generated cards
+  - <b>1</b> status
+  - <b>1</b> EXE cards
+- <b>10</b> Artifacts
+  - <b>1</b> starter
+  - <b>6</b> common
+  - <b>3</b> boss
+- <b>4</b> Statuses
+
+Dialogue and card art to be added!
 
 # Content Infographics
 
+## Card List
+<img src="README_assets/infographics/Gizmo_Normal.png" alt="screenshot" width="auto" height="auto" />
+<img src="README_assets/infographics/Gizmo_A.png" alt="screenshot" width="auto" height="auto" />
+<img src="README_assets/infographics/Gizmo_B.png" alt="screenshot" width="auto" height="auto" />
+
+## Generated Cards
+<img src="README_assets/infographics/Gizmo_Generated_Normal.png" alt="screenshot" width="auto" height="auto" />
+<img src="README_assets/infographics/Gizmo_Generated_A.png" alt="screenshot" width="auto" height="auto" />
+<img src="README_assets/infographics/Gizmo_Generated_B.png" alt="screenshot" width="auto" height="auto" />
+
+## Potions
+<img src="README_assets/infographics/Gizmo_Potions.png" alt="screenshot" width="auto" height="auto" />
+
+## Artifacts
+<img src="README_assets/infographics/Gizmo_Artifacts.png" alt="screenshot" width="auto" height="auto" />
+
+## Tooltips
+<img src="README_assets/infographics/Gizmo_Tooltips.png" alt="screenshot" width="auto" height="auto" />
 
 # Screenshots
 
