@@ -46,6 +46,18 @@ internal sealed class CardSeizeTime : Card, IGizmoTheFoxCCModCard
                         status = Status.timeStop,
                         statusAmount = 2,
                         targetPlayer = true
+                    },
+                    new AStatus
+                    {
+                        status = Status.energyNextTurn,
+                        statusAmount = 1,
+                        targetPlayer = true
+                    },
+                    new AStatus
+                    {
+                        status = Status.drawNextTurn,
+                        statusAmount = 2,
+                        targetPlayer = true
                     }
                 };
                 break;
@@ -62,7 +74,13 @@ internal sealed class CardSeizeTime : Card, IGizmoTheFoxCCModCard
                     new AStatus
                     {
                         status = Status.energyNextTurn,
-                        statusAmount = 1,
+                        statusAmount = 2,
+                        targetPlayer = true
+                    },
+                    new AStatus
+                    {
+                        status = Status.drawNextTurn,
+                        statusAmount = 3,
                         targetPlayer = true
                     }
                 };
@@ -75,6 +93,18 @@ internal sealed class CardSeizeTime : Card, IGizmoTheFoxCCModCard
                     {
                         status = Status.timeStop,
                         statusAmount = 4,
+                        targetPlayer = true
+                    },
+                    new AStatus
+                    {
+                        status = Status.energyNextTurn,
+                        statusAmount = 1,
+                        targetPlayer = true
+                    },
+                    new AStatus
+                    {
+                        status = Status.drawNextTurn,
+                        statusAmount = 2,
                         targetPlayer = true
                     }
                 };
