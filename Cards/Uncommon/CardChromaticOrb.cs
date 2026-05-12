@@ -70,7 +70,7 @@ internal sealed class CardChromaticOrb : Card, IGizmoTheFoxCCModCard
                 {
                     new AAttack
                     {
-                        damage = GetDmg(s, 1),
+                        damage = GetDmg(s, 2),
                     },
                     new AStatus()
                     {
@@ -93,8 +93,7 @@ internal sealed class CardChromaticOrb : Card, IGizmoTheFoxCCModCard
                 {
                     new AAttack
                     {
-                        damage = GetDmg(s, 2),
-                        piercing = true
+                        damage = GetDmg(s, 1)
                     },
                     new AStatus()
                     {
@@ -108,6 +107,11 @@ internal sealed class CardChromaticOrb : Card, IGizmoTheFoxCCModCard
                         {
                             yAnimation = 0.0
                         }
+                    },
+                    new ACustomAddCantrip()
+                    {
+                        cantripType = ACustomAddCantrip.AddCantripType.addCantrip4,
+                        dest = CardDestination.Hand
                     }
                 };
                 break;
