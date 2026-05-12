@@ -19,7 +19,7 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Uncommon | Forage | 1 | Attune a random non-attuned element. Draw 3 cards. | Instead draw 5 cards. | Attune two random non-attuned elements. |
 | Yes | Uncommon | Imbue | 1 | If attuned earth, gain 1 stun charge. If attuned wind, gain 1 wind charge. If attuned fire, gain 1 overdrive. If attuned water, gain 1 flux. Exhaust. | Card gains retain. | Remove exhaust. Also unattune all elements. |
 | Yes | Uncommon | Fermented Tincture | 8 | Gain 3 max hull. Permanently reduce cost by 1 when drawn. Single use. Fleeting. | Reduce cost by 2. | Increase cost by 3 (max 11). Gain 5 max hull instead. |
-| Yes | Uncommon | Arcane Capacitor | 0 | Gain 2 energy. Add a Discharged Capacitor to your draw pile. Retain. Exhaust. | Discharged Capacitor gains A upgrade. | Discharged capacitor gains B upgrade. |
+| Yes | Uncommon | Arcane Capacitor | 0 | Gain 2 energy. Add a Discharged Capacitor to your draw pile. Retain. Exhaust. | Instead gain 3 energy. Discharged Capacitor gains A upgrade. | Discharged capacitor gains B upgrade. |
 | Yes | Uncommon | Quick Brew | 0 | Add a random potion to your hand. Limited 3. | Instead add 1 of 2 potions to your hand. | Instead add 3 random potions to your draw pile. Exhaust (instead of limited). |
 | Yes | Uncommon | Chromatic Orb | 1 | Attack 1. Gain 1 droneshift. Deploy an imbued stone construct. | Increase damage and droneshift to 2. | Also add 1 of 4 cantrips to your hand. |
 | Yes | Uncommon | Wild Magic | 1 | Floppable. Move 2 / 4 random. Add 2 random cantrips to your hand. Exhaust. | Reduce cost to 0. | Added cantrips gain B upgrade. |
@@ -78,4 +78,4 @@ This document acts as a reference for which cards are part of this mod.
 ||||||||
 | Yes | CAT (Uncommon) | Gizmo.EXE | 1 | Attune 2. Add 1 of 3 discount, temp Gizmo cards to your hand. | Reduce cost to 0. | Add 1 of 5 cards instead. |
 ||||||||
-| Yes | Status | Discharged Capacitor | 1 | If attuned 3 elements, add an Arcane Capacitor to your hand. Set attunement to 0. Retain. Exhaust. | Reduce attunement requirement to 2. Add A. | Also draw 1 card. Add B. |
+| Yes | Status | Discharged Capacitor | 1 | If attuned 3 elements, add an Arcane Capacitor to your hand. Set attunement to 0. Retain. Exhaust. | Add A. | Also draw 2 cards next turn. Add B. |

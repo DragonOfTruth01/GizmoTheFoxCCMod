@@ -69,7 +69,7 @@ internal sealed class CardDischargedCapacitor : Card, IGizmoTheFoxCCModCard
                 break;
 
             case Upgrade.A:
-                CardAction act1CardA = GenerateAttuneConditionalAddCard(s, 2, Upgrade.A);
+                CardAction act1CardA = GenerateAttuneConditionalAddCard(s, 3, Upgrade.A);
 
                 actions = new()
                 {
@@ -80,7 +80,7 @@ internal sealed class CardDischargedCapacitor : Card, IGizmoTheFoxCCModCard
                             card = new CardArcaneCapacitor() { upgrade = Upgrade.A, temporaryOverride = true },
                             destination = CardDestination.Hand,
                             amount = 1,
-                            disabled = GetNumAttunedElements(s) < 2
+                            disabled = GetNumAttunedElements(s) < 3
                         }
                     ).AsCardAction,
                     new AStatus()
@@ -108,9 +108,11 @@ internal sealed class CardDischargedCapacitor : Card, IGizmoTheFoxCCModCard
                             disabled = GetNumAttunedElements(s) < 3
                         }
                     ).AsCardAction,
-                    new ADrawCard()
+                    new AStatus()
                     {
-                        count = 1
+                        status = Status.drawNextTurn,
+                        statusAmount = 2,
+                        targetPlayer = true
                     },
                     new AStatus()
                     {

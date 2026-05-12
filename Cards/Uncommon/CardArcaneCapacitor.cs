@@ -60,7 +60,7 @@ internal sealed class CardArcaneCapacitor : Card, IGizmoTheFoxCCModCard
                 {
                     new AEnergy()
                     {
-                        changeAmount = 2
+                        changeAmount = 3
                     },
                     new AAddCard()
                     {

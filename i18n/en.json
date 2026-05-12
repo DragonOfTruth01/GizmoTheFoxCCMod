@@ -175,7 +175,7 @@
       "name": "Arcane Capacitor",
       "description": {
         "None": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor</c>\nto your\ndraw pile.",
-        "A": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor\nA</c> to your\ndraw pile.",
+        "A": "Gain 3 <c=status>energy</c>. Add a <c=card>Discharged Capacitor\nA</c> to your\ndraw pile.",
         "B": "Gain 2 <c=status>energy</c>. Add a <c=card>Discharged Capacitor\nB</c> to your\ndraw pile."
       }
     },
