@@ -61,7 +61,7 @@ public sealed class AAddRandomMaceOfSeasonsVariant : CardAction
         }
 
 
-        if(upgr != Upgrade.B)
+        if(upgr == Upgrade.None)
         {
             return [
                 new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AddRandomMaceOfSeasonsVariant")
@@ -78,6 +78,24 @@ public sealed class AAddRandomMaceOfSeasonsVariant : CardAction
                 }
             ];
         }
+
+        else if(upgr == Upgrade.A)
+        {
+            return [
+                new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::AddRandomMaceOfSeasonsVariantA")
+                {
+                    Icon = Spr.icons_addCard,
+                    TitleColor = Colors.action,
+                    Title = ModEntry.Instance.Localizations.Localize(["action", "Add Random Mace of Seasons Variant A", "name"]),
+                    Description = ModEntry.Instance.Localizations.Localize(["action", "Add Random Mace of Seasons Variant A", "description"] )
+                },
+                new TTCard
+                {
+                    card = selectedCard,
+                    showCardTraitTooltips = true
+                }
+            ];
+        }    
 
         else
         {

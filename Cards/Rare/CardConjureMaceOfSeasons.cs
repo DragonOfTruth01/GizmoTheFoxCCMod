@@ -28,7 +28,7 @@ internal sealed class CardConjureMaceOfSeasons : Card, IGizmoTheFoxCCModCard
             art = ModEntry.Instance.GizmoTheFoxCCMod_Character_DefaultCardBG.Sprite,
             artOverlay = ModEntry.Instance.GizmoTheFoxCCMod_Character_CardOverlaySpellRare.Sprite,
             description = ModEntry.Instance.Localizations.Localize(["card", "Conjure Mace of Seasons", "description", upgrade.ToString()]),
-            cost = upgrade == Upgrade.A ? 0 : upgrade == Upgrade.B ? 2 : 1,
+            cost = upgrade == Upgrade.B ? 2 : 0,
             exhaust = true
         };
         return data;
@@ -54,7 +54,7 @@ internal sealed class CardConjureMaceOfSeasons : Card, IGizmoTheFoxCCModCard
                 {
                     new AAddRandomMaceOfSeasonsVariant()
                     {
-                        upgr = Upgrade.None
+                        upgr = Upgrade.A
                     }
                 };
                 break;
