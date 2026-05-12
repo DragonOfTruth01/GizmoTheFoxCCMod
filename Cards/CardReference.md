@@ -19,17 +19,17 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Uncommon | Forage | 1 | Attune a random non-attuned element. Draw 3 cards. | Instead draw 5 cards. | Attune two random non-attuned elements. |
 | Yes | Uncommon | Imbue | 1 | If attuned earth, gain 1 stun charge. If attuned wind, gain 1 wind charge. If attuned fire, gain 1 overdrive. If attuned water, gain 1 flux. Exhaust. | Card gains retain. | Remove exhaust. Also unattune all elements. |
 | Yes | Uncommon | Fermented Tincture | 8 | Gain 3 max hull. Permanently reduce cost by 1 when drawn. Single use. Fleeting. | Reduce cost by 2. | Increase cost by 3 (max 11). Gain 5 max hull instead. |
-| Yes | Uncommon | Arcane Capacitor | 0 | Gain 2 energy. Add a Discharged Capacitor to your draw pile. Retain. Exhaust. | Discharged Capacitor gains A upgrade. | Discharged capacitor gains B upgrade. |
+| Yes | Uncommon | Arcane Capacitor | 0 | Gain 2 energy. Add a Discharged Capacitor to your draw pile. Retain. Exhaust. | Instead gain 3 energy. Discharged Capacitor gains A upgrade. | Discharged capacitor gains B upgrade. |
 | Yes | Uncommon | Quick Brew | 0 | Add a random potion to your hand. Limited 3. | Instead add 1 of 2 potions to your hand. | Instead add 3 random potions to your draw pile. Exhaust (instead of limited). |
-| Yes | Uncommon | Chromatic Orb | 1 | Attack 1. Gain 1 droneshift. Deploy an imbued stone construct. | Increase attack to 2 and gain pierce. | Increase droneshift to 2. |
+| Yes | Uncommon | Chromatic Orb | 1 | Attack 1. Gain 1 droneshift. Deploy an imbued stone construct. | Increase damage and droneshift to 2. | Also add 1 of 4 cantrips to your hand. |
 | Yes | Uncommon | Wild Magic | 1 | Floppable. Move 2 / 4 random. Add 2 random cantrips to your hand. Exhaust. | Reduce cost to 0. | Added cantrips gain B upgrade. |
 ||||||||
 | Yes | Rare | Dark Lightning | 3 | Deal piercing damage equal to the enemy's missing hull. | Reduce cost to 2. | Reduce cost to 0. Lose 2 hull before the attack. |
 | Yes | Rare | Leyline Tapping | 1 | Gain 1 accumulate. Exhaust. | Reduce cost to 0. | Increase cost to 2. Gain 2 accumulate. |
-| Yes | Rare | Conjure Mace of Seasons | 1 | Add a random variant of Mace of Seasons to your hand. Exhaust. | Reduce cost to 0. | Increase cost to 2. Added card has B upgrade. |
+| Yes | Rare | Conjure Mace of Seasons | 0 | Add a random variant of Mace of Seasons to your hand. Exhaust. | Added card has A upgrade. | Increase cost to 2. Added card has B upgrade. |
 | Yes | Rare | Prismatic Wall | 2 | If attuned earth, gain 3 shield. If attuned wind, gain 1 evade. If attuned fire, gain 2 temp payback. If attuned water, gain 4 temp shield. Unattune all elements. | No longer unattune elements. | Increase cost to 3. Increase all effects by 1. |
 | Yes | Rare | Shimmering Solution | 1 | Gain a random shimmering potion. Exhaust. | Reduce cost to 0. | Instead choose 1 of 2 shimmering potions. |
-| Yes | Rare | Seize Time | 2 | Gain 2 time stop. Exhaust. | Also gain 1 energy next turn. | Increase cost to 3 and time stop to 4. |
+| Yes | Rare | Seize Time | 2 | Gain 2 time stop. Gain 1 energy and draw 2 cards next turn. Exhaust. | Instead gain 2 energy and draw 3 cards next turn. | Increase cost to 3 and time stop to 4. |
 ||||||||
 | Yes | Common (Cantrip) | Tremor | 0 | Attune earth. Draw 1 card. Limited 3. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
 | Yes | Common (Cantrip) | Gust | 0 | Attune wind. Draw 1 card. Limited 3. Temporary. | Increase card draw to 2. | Also gain 1 temp shield. |
@@ -76,7 +76,6 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Rare (Generated) | Mace of Seasons (Summer) | 1 | Deal 2 damage. Stun. Attune fire. Add Mace of Seasons (Autumn) to your hand. Exhaust 1. Temporary. Immutable. | Increase damage to 3. Summon A. | Card gains retain. Summon B. |
 | Yes | Rare (Generated) | Mace of Seasons (Autumn) | 1 | Deal 2 damage. Gain 1 shield. Attune earth. Add Mace of Seasons (Winter) to your hand. Exhaust 1. Temporary. Immutable. | Increase damage to 3. Summon A. | Card gains retain. Summon B. |
 ||||||||
-| No | CAT | GIZMO.EXE | 1 | Attune 2. Add 1 of 3 discount, temp Gizmo cards to your hand. | Reduce cost to 0. | Add 1 of 5 cards instead. |
-| No | CAT | POTION.EXE | 1 | Add 1 of 3 potions of any rarity to your hand. | Reduce cost to 0. | Add 1 of 5 potions instead. |
+| Yes | CAT (Uncommon) | Gizmo.EXE | 1 | Attune 2. Add 1 of 3 discount, temp Gizmo cards to your hand. | Reduce cost to 0. | Add 1 of 5 cards instead. |
 ||||||||
-| Yes | Status | Discharged Capacitor | 1 | If attuned 3 elements, add an Arcane Capacitor to your hand. Set attunement to 0. Retain. Exhaust. | Reduce attunement requirement to 2. Add A. | Also draw 1 card. Add B. |
+| Yes | Status | Discharged Capacitor | 1 | If attuned 3 elements, add an Arcane Capacitor to your hand. Set attunement to 0. Retain. Exhaust. | Add A. | Also draw 2 cards next turn. Add B. |
