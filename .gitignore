@@ -21,3 +21,4 @@ packages/**
 **/bin/**
 /bin
 /obj
+*.lscache
