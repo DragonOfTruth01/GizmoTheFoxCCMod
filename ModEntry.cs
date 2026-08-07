@@ -546,7 +546,7 @@ public sealed class ModEntry : SimpleMod
         });
         
         // Register the mod character as a playable character
-        helper.Content.Characters.V2.RegisterPlayableCharacter("GizmoTheFoxCCMod", new PlayableCharacterConfigurationV2()
+        helper.Content.Characters.V2.RegisterPlayableCharacter("GizmoTheFoxCCMod_Character", new PlayableCharacterConfigurationV2()
         {
             Deck = GizmoTheFoxCCMod_Character_Deck.Deck,
 
