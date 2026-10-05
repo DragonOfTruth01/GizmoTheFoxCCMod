@@ -123,7 +123,7 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_Attunement { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_Absorb { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_Accumulate { get; }
-    internal ISpriteEntry GizmoTheFoxCCMod_WindCharge { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_Zephyr { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_EnemyMissingHull { get; }
 
     // Custom Trait Icons
@@ -137,7 +137,7 @@ public sealed class ModEntry : SimpleMod
     internal IStatusEntry Attunement { get; }
     internal IStatusEntry Absorb { get; }
     internal IStatusEntry Accumulate { get; }
-    internal IStatusEntry WindCharge { get; }
+    internal IStatusEntry Zephyr { get; }
     internal IStatusEntry AttunementCount { get; }
     internal IStatusEntry EnemyMissingHull { get; }
 
@@ -401,7 +401,7 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_Attunement = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/attunement.png"));
         GizmoTheFoxCCMod_Absorb = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/absorb.png"));
         GizmoTheFoxCCMod_Accumulate = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/accumulate.png"));
-        GizmoTheFoxCCMod_WindCharge = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/windCharge.png"));
+        GizmoTheFoxCCMod_Zephyr = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/zephyr.png"));
         GizmoTheFoxCCMod_EnemyMissingHull = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/status/enemyMissingHull.png"));
 
         // Custom Trait Icons
@@ -604,17 +604,17 @@ public sealed class ModEntry : SimpleMod
             Description = AnyLocalizations.Bind(["status", "Absorb", "description"]).Localize
         });
 
-        WindCharge = helper.Content.Statuses.RegisterStatus("Wind Charge", new()
+        Zephyr = helper.Content.Statuses.RegisterStatus("Zephyr", new()
         {
             Definition = new()
             {
-                icon = GizmoTheFoxCCMod_WindCharge.Sprite,
-                color = new("14a02e"),
+                icon = GizmoTheFoxCCMod_Zephyr.Sprite,
+                color = new("553680"),
                 isGood = true,
                 affectedByTimestop = true
             },
-            Name = AnyLocalizations.Bind(["status", "Wind Charge", "name"]).Localize,
-            Description = AnyLocalizations.Bind(["status", "Wind Charge", "description"]).Localize
+            Name = AnyLocalizations.Bind(["status", "Zephyr", "name"]).Localize,
+            Description = AnyLocalizations.Bind(["status", "Zephyr", "description"]).Localize
         });
 
         Accumulate = helper.Content.Statuses.RegisterStatus("Accumulate", new()
@@ -674,6 +674,6 @@ public sealed class ModEntry : SimpleMod
         _ = new AbsorbManager();
         _ = new AttunementManager();
         _ = new AccumulateManager();
-        _ = new WindChargeManager();
+        _ = new ZephyrManager();
     }
 }

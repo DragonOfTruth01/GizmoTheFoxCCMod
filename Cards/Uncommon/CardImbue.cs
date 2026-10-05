@@ -55,7 +55,7 @@ internal sealed class CardImbue : Card, IGizmoTheFoxCCModCard
                     Conditional.MakeAction(
                         new AttunedCondition(true, AttunementManager.WindBitMask),
                         new AStatus(){
-                            status = ModEntry.Instance.WindCharge.Status,
+                            status = ModEntry.Instance.Zephyr.Status,
                             statusAmount = 1,
                             targetPlayer = true
                         }
@@ -93,7 +93,7 @@ internal sealed class CardImbue : Card, IGizmoTheFoxCCModCard
                     Conditional.MakeAction(
                         new AttunedCondition(true, AttunementManager.WindBitMask),
                         new AStatus(){
-                            status = ModEntry.Instance.WindCharge.Status,
+                            status = ModEntry.Instance.Zephyr.Status,
                             statusAmount = 1,
                             targetPlayer = true
                         }
@@ -131,7 +131,7 @@ internal sealed class CardImbue : Card, IGizmoTheFoxCCModCard
                     Conditional.MakeAction(
                         new AttunedCondition(true, AttunementManager.WindBitMask),
                         new AStatus(){
-                            status = ModEntry.Instance.WindCharge.Status,
+                            status = ModEntry.Instance.Zephyr.Status,
                             statusAmount = 1,
                             targetPlayer = true
                         }

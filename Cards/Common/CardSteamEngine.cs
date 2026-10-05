@@ -45,7 +45,7 @@ internal sealed class CardSteamEngine : Card, IGizmoTheFoxCCModCard
                 {
                     new AStatus()
                     {
-                        status = ModEntry.Instance.WindCharge.Status,
+                        status = ModEntry.Instance.Zephyr.Status,
                         statusAmount = 1,
                         targetPlayer = true,
                         disabled = flipped
@@ -81,7 +81,7 @@ internal sealed class CardSteamEngine : Card, IGizmoTheFoxCCModCard
                 {
                     new AStatus()
                     {
-                        status = ModEntry.Instance.WindCharge.Status,
+                        status = ModEntry.Instance.Zephyr.Status,
                         statusAmount = 1,
                         targetPlayer = true,
                         disabled = flipped
@@ -117,7 +117,7 @@ internal sealed class CardSteamEngine : Card, IGizmoTheFoxCCModCard
                 {
                     new AStatus()
                     {
-                        status = ModEntry.Instance.WindCharge.Status,
+                        status = ModEntry.Instance.Zephyr.Status,
                         statusAmount = 1,
                         targetPlayer = true,
                         disabled = flipped

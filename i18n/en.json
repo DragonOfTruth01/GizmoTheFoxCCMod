@@ -430,8 +430,8 @@
       "name": "Accumulate",
       "description": "At the start of your turn, <c=boldPink>attune</c> a random non-attuned element."
     },
-    "Wind Charge": {
-      "name": "Wind Charge",
+    "Zephyr": {
+      "name": "Zephyr",
       "description": "After your next <c=boldPink>{0}</c> attacks, gain 1 <c=status>EVADE</c>. <c=downside>Goes away at the start of your next turn.</c>"
     },
     "AttunementCount": {

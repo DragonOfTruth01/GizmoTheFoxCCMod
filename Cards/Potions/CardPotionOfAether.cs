@@ -41,7 +41,7 @@ internal sealed class CardPotionOfAether : Card, IGizmoTheFoxCCModCard
         {
             new AStatus()
             {
-                status = ModEntry.Instance.WindCharge.Status,
+                status = ModEntry.Instance.Zephyr.Status,
                 statusAmount = 2,
                 targetPlayer = true
             }
