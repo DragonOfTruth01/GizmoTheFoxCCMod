@@ -47,7 +47,7 @@ internal sealed class CardFlutter : Card, IGizmoTheFoxCCModCard
                     },
                     new AStatus()
                     {
-                        status = ModEntry.Instance.WindCharge.Status,
+                        status = ModEntry.Instance.Zephyr.Status,
                         statusAmount = 1,
                         targetPlayer = true
                     },
@@ -69,7 +69,7 @@ internal sealed class CardFlutter : Card, IGizmoTheFoxCCModCard
                     },
                     new AStatus()
                     {
-                        status = ModEntry.Instance.WindCharge.Status,
+                        status = ModEntry.Instance.Zephyr.Status,
                         statusAmount = 1,
                         targetPlayer = true
                     },
@@ -97,7 +97,7 @@ internal sealed class CardFlutter : Card, IGizmoTheFoxCCModCard
                     },
                     new AStatus()
                     {
-                        status = ModEntry.Instance.WindCharge.Status,
+                        status = ModEntry.Instance.Zephyr.Status,
                         statusAmount = 2,
                         targetPlayer = true
                     },

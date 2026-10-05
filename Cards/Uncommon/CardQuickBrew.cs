@@ -77,7 +77,7 @@ internal sealed class CardQuickBrew : Card, IGizmoTheFoxCCModCard, IHasCustomCar
 
                 actions = new()
                 {
-                                        // Need to spoof this action so we don't try to display a card before CardReward.GetOffering
+                    // Need to spoof this action so we don't try to display a card before CardReward.GetOffering
                     ModEntry.Instance.KokoroApi.SpoofedActions.MakeAction(
                         new ACardOffering()
                         {
@@ -93,7 +93,8 @@ internal sealed class CardQuickBrew : Card, IGizmoTheFoxCCModCard, IHasCustomCar
                             destination = CardDestination.Hand,
                             amount = 1
                         }
-                    ).AsCardAction
+                    ).AsCardAction,
+                    new APotionTooltip()
                 };
                 break;
 
@@ -127,7 +128,8 @@ internal sealed class CardQuickBrew : Card, IGizmoTheFoxCCModCard, IHasCustomCar
                             selectedCardA1,
                             selectedCardA2
                         ]
-                    }
+                    },
+                    new APotionTooltip()
                 };
                 break;
 
@@ -217,6 +219,7 @@ internal sealed class CardQuickBrew : Card, IGizmoTheFoxCCModCard, IHasCustomCar
                             amount = 1
                         }
                     ).AsCardAction,
+                    new APotionTooltip()
                 };
                 break;
         }

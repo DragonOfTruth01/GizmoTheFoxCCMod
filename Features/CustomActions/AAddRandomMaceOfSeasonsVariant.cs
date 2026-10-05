@@ -36,27 +36,27 @@ public sealed class AAddRandomMaceOfSeasonsVariant : CardAction
 
 	public override List<Tooltip> GetTooltips(State s)
     {
-        Card selectedCard;
+        Card selCard;
         long currTimeInSecondsMod8 = DateTimeOffset.UtcNow.ToUnixTimeSeconds() % 8;
 
         switch (currTimeInSecondsMod8)
         {
             case 0:
             case 1:
-                selectedCard = new CardMaceOfSeasonsWinter() { upgrade = upgr };
+                selCard = new CardMaceOfSeasonsWinter() { upgrade = upgr };
                 break;
             case 2:
             case 3:
-                selectedCard = new CardMaceOfSeasonsSpring() { upgrade = upgr };
+                selCard = new CardMaceOfSeasonsSpring() { upgrade = upgr };
                 break;
             case 4:
             case 5:
-                selectedCard = new CardMaceOfSeasonsSummer() { upgrade = upgr };
+                selCard = new CardMaceOfSeasonsSummer() { upgrade = upgr };
                 break;
             case 6:
             case 7:
             default:
-                selectedCard = new CardMaceOfSeasonsAutumn() { upgrade = upgr };
+                selCard = new CardMaceOfSeasonsAutumn() { upgrade = upgr };
                 break;
         }
 
@@ -73,7 +73,7 @@ public sealed class AAddRandomMaceOfSeasonsVariant : CardAction
                 },
                 new TTCard
                 {
-                    card = selectedCard,
+                    card = selCard,
                     showCardTraitTooltips = true
                 }
             ];
@@ -91,7 +91,7 @@ public sealed class AAddRandomMaceOfSeasonsVariant : CardAction
                 },
                 new TTCard
                 {
-                    card = selectedCard,
+                    card = selCard,
                     showCardTraitTooltips = true
                 }
             ];
@@ -109,7 +109,7 @@ public sealed class AAddRandomMaceOfSeasonsVariant : CardAction
                 },
                 new TTCard
                 {
-                    card = selectedCard,
+                    card = selCard,
                     showCardTraitTooltips = true
                 }
             ];

@@ -7,8 +7,8 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Common | Absorb Elements | 1 | Gain 1 temp shield. Gain 1 absorb. | Increase temp shield to 2. | Increase absorb to 2. |
 | Yes | Common | Evocation | 1 | Gain 1 temp shield. Add 1 of 4 cantrips to your hand. | Added card has A upgrade. | Added card has B upgrade. |
 | Yes | Common | Diametric Decoction | 1 | Floppable. Attune earth + wind. / Attune fire + water. Recycle. | Also draw 1 card next turn. | Reduce cost to 0. Attune 4 random elements. Card instead gains exhaust. |
-| Yes | Common | Steam Engine | 2 | Floppable. Gain 1 wind charge + attune wind / Gain 1 overdrive + attune fire. Gain 1 energy next turn. | Instead gain 2 energy next turn. | Both actions attune fire and wind. Card gains discounted 1. |
-| Yes | Common | Flutter | 0 | Move 1 random. Gain 1 wind charge. Attune wind. | Also gain 1 hermes boots. | Instead gain 2 wind charge. Also gain 1 engine stall. |
+| Yes | Common | Steam Engine | 2 | Floppable. Gain 1 zephyr + attune wind / Gain 1 overdrive + attune fire. Gain 1 energy next turn. | Instead gain 2 energy next turn. | Both actions attune fire and wind. Card gains discounted 1. |
+| Yes | Common | Flutter | 0 | Move 1 random. Gain 1 zephyr. Attune wind. | Also gain 1 hermes boots. | Instead gain 2 zephyr. Also gain 1 engine stall. |
 | Yes | Common | Magic Missile | 1 | Attack 1. Repeat this attack if attuned 2/3 elements. Un-attune all elements. | Also repeat attack if attuned 1 element. | All attacks gain piercing. |
 | Yes | Common | Create Mana Blades | 0 | Add Mana Blade (Fire) and Mana Blade (Ice) to your hand. | Added cards have A upgrade. | Added cards have B upgrade. |
 | Yes | Common | Prestidigitation | 1 | Floppable. Deal 1 damage. / Gain 1 block. Add 1 of 2 cantrips to your hand. | Instead add 1 of 4 cantrips. | Increase damage by 1. / Add 1 temp shield. |
@@ -17,7 +17,7 @@ This document acts as a reference for which cards are part of this mod.
 ||||||||
 | Yes | Uncommon | Dimensional Storage | 1 | Move two cards from the discard pile to your hand. Exhaust. | Reduce cost to 0. | Instead move three cards to the draw pile. |
 | Yes | Uncommon | Forage | 1 | Attune a random non-attuned element. Draw 3 cards. | Instead draw 5 cards. | Attune two random non-attuned elements. |
-| Yes | Uncommon | Imbue | 1 | If attuned earth, gain 1 stun charge. If attuned wind, gain 1 wind charge. If attuned fire, gain 1 overdrive. If attuned water, gain 1 flux. Exhaust. | Card gains retain. | Remove exhaust. Also unattune all elements. |
+| Yes | Uncommon | Imbue | 1 | If attuned earth, gain 1 stun charge. If attuned wind, gain 1 zephyr. If attuned fire, gain 1 overdrive. If attuned water, gain 1 flux. Exhaust. | Card gains retain. | Remove exhaust. Also unattune all elements. |
 | Yes | Uncommon | Fermented Tincture | 8 | Gain 3 max hull. Permanently reduce cost by 1 when drawn. Single use. Fleeting. | Reduce cost by 2. | Increase cost by 3 (max 11). Gain 5 max hull instead. |
 | Yes | Uncommon | Arcane Capacitor | 0 | Gain 2 energy. Add a Discharged Capacitor to your draw pile. Retain. Exhaust. | Instead gain 3 energy. Discharged Capacitor gains A upgrade. | Discharged capacitor gains B upgrade. |
 | Yes | Uncommon | Quick Brew | 0 | Add a random potion to your hand. Limited 3. | Instead add 1 of 2 potions to your hand. | Instead add 3 random potions to your draw pile. Exhaust (instead of limited). |
@@ -48,7 +48,7 @@ This document acts as a reference for which cards are part of this mod.
 | Yes | Uncommon (Potion) | Potion of Agility | 0 | Gain 1 autopilot. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Time Immurement | 0 | Gain 1 timestop. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Potion of Swiftness | 0 | Draw 3 cards. Temporary. |  |  |
-| Yes | Uncommon (Potion) | Potion of Aether | 0 | Gain 2 wind charge. Temporary. |  |  |
+| Yes | Uncommon (Potion) | Potion of Aether | 0 | Gain 2 zephyr. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Alchemist's Fire | 0 | Deal 4 damage. Temporary. |  |  |
 | Yes | Uncommon (Potion) | Potion of Leaping | 0 | Gain 1 hermes boots. Temporary. |  |  |
 ||||||||

@@ -83,7 +83,8 @@ internal sealed class CardShimmeringSolution : Card, IGizmoTheFoxCCModCard
                             destination = CardDestination.Hand,
                             amount = 1
                         }
-                    ).AsCardAction
+                    ).AsCardAction,
+                    new AShimmeringPotionTooltip()
                 };
                 break;
 
@@ -121,7 +122,8 @@ internal sealed class CardShimmeringSolution : Card, IGizmoTheFoxCCModCard
                             destination = CardDestination.Hand,
                             amount = 1
                         }
-                    ).AsCardAction
+                    ).AsCardAction,
+                    new AShimmeringPotionTooltip()
                 };
                 break;
 
@@ -155,7 +157,8 @@ internal sealed class CardShimmeringSolution : Card, IGizmoTheFoxCCModCard
 			    			selectedCardB1,
 			    			selectedCardB2
 			    		]
-                    }
+                    },
+                    new AShimmeringPotionTooltip()
                 };
                 break;
         }
