@@ -21,7 +21,7 @@ This document acts as a reference for which cards are part of this mod.
 | No | Uncommon | Absorb Elements | 0 |
 | No | Uncommon | Arcane Capacitor | 0 |
 | No | Uncommon | Quick Brew | 0 |
-| No | Uncommon | Chromatic Orb | 0 |
+| No | Uncommon | Chromatic Orb | Imbued construct is the one shooting the orb out of its mouth while launching forward? |
 | No | Uncommon | Wild Magic | 0 |
 ||||||||
 | No | Rare | Dark Lightning | 0 |

@@ -46,7 +46,7 @@ internal sealed class CardSteamEngine : Card, IGizmoTheFoxCCModCard
                     new AStatus()
                     {
                         status = ModEntry.Instance.Zephyr.Status,
-                        statusAmount = 1,
+                        statusAmount = 2,
                         targetPlayer = true,
                         disabled = flipped
                     },
@@ -57,7 +57,7 @@ internal sealed class CardSteamEngine : Card, IGizmoTheFoxCCModCard
                     },
                     new AStatus()
                     {
-                        status = Status.overdrive,
+                        status = ModEntry.Instance.KokoroApi.StatusNextTurn.Overdrive,
                         statusAmount = 1,
                         targetPlayer = true,
                         disabled = !flipped
@@ -82,7 +82,7 @@ internal sealed class CardSteamEngine : Card, IGizmoTheFoxCCModCard
                     new AStatus()
                     {
                         status = ModEntry.Instance.Zephyr.Status,
-                        statusAmount = 1,
+                        statusAmount = 2,
                         targetPlayer = true,
                         disabled = flipped
                     },
@@ -93,7 +93,7 @@ internal sealed class CardSteamEngine : Card, IGizmoTheFoxCCModCard
                     },
                     new AStatus()
                     {
-                        status = Status.overdrive,
+                        status = ModEntry.Instance.KokoroApi.StatusNextTurn.Overdrive,
                         statusAmount = 1,
                         targetPlayer = true,
                         disabled = !flipped
@@ -118,7 +118,7 @@ internal sealed class CardSteamEngine : Card, IGizmoTheFoxCCModCard
                     new AStatus()
                     {
                         status = ModEntry.Instance.Zephyr.Status,
-                        statusAmount = 1,
+                        statusAmount = 2,
                         targetPlayer = true,
                         disabled = flipped
                     },
@@ -130,7 +130,7 @@ internal sealed class CardSteamEngine : Card, IGizmoTheFoxCCModCard
                     },
                     new AStatus()
                     {
-                        status = Status.overdrive,
+                        status = ModEntry.Instance.KokoroApi.StatusNextTurn.Overdrive,
                         statusAmount = 1,
                         targetPlayer = true,
                         disabled = !flipped

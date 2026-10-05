@@ -63,10 +63,16 @@ internal sealed class CardHomunculus : Card, IGizmoTheFoxCCModCard
                     },
                     new ASpawn()
                     {
-                        thing = new MidrowImbuedStoneConstruct()
+                        thing = new MidrowStoneConstruct()
                         {
                             yAnimation = 0.0
                         }
+                    },
+                    new AStatus()
+                    {
+                        status = Status.droneShift,
+                        statusAmount = 1,
+                        targetPlayer = true
                     }
                 };
                 break;
