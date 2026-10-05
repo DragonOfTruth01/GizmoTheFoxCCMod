@@ -29,10 +29,17 @@ internal sealed class ArtifactResiduumPouch : Artifact, IGizmoTheFoxCCModArtifac
     => [
         new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::Potion")
             {
-                Icon = null,
+                Icon = ModEntry.Instance.GizmoTheFoxCCMod_Potion.Sprite,
                 TitleColor = Colors.card,
                 Title = ModEntry.Instance.Localizations.Localize(["action", "Potion", "name"]),
                 Description = ModEntry.Instance.Localizations.Localize(["action", "Potion", "description"])
+            },
+        new GlossaryTooltip($"action.{ModEntry.Instance.Package.Manifest.UniqueName}::ShimmeringPotion")
+            {
+                Icon = ModEntry.Instance.GizmoTheFoxCCMod_ShimmeringPotion.Sprite,
+                TitleColor = Colors.card,
+                Title = ModEntry.Instance.Localizations.Localize(["action", "Shimmering Potion", "name"]),
+                Description = ModEntry.Instance.Localizations.Localize(["action", "Shimmering Potion", "description"])
             }
     ];
 

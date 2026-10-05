@@ -113,6 +113,7 @@ public sealed class ModEntry : SimpleMod
     internal ISpriteEntry GizmoTheFoxCCMod_stoneConstructSmall { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_imbuedStoneConstructSmall { get; }
     internal ISpriteEntry GizmoTheFoxCCMod_Potion { get; }
+    internal ISpriteEntry GizmoTheFoxCCMod_ShimmeringPotion { get; }
 
     // Custom Midrow Icons
     internal ISpriteEntry GizmoTheFoxCCMod_stoneConstruct { get; }
@@ -388,6 +389,7 @@ public sealed class ModEntry : SimpleMod
         GizmoTheFoxCCMod_stoneConstructSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/stoneConstructSmall.png"));
         GizmoTheFoxCCMod_imbuedStoneConstructSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/imbuedStoneConstructSmall.png"));
         GizmoTheFoxCCMod_Potion = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/potion.png"));
+        GizmoTheFoxCCMod_ShimmeringPotion = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/action/shimmeringPotion.png"));
 
         // Custom Midrow Icons
 

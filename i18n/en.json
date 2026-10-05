@@ -151,7 +151,11 @@
     },
     "Potion": {
       "name": "Potion",
-      "description": "A <c=cardtrait>temporary, exhausting</c> 0-cost card with a simple effect. <c=card>Shimmering potions</c> are more powerful."
+      "description": "A <c=cardtrait>temporary, exhausting</c> 0-cost card with a simple effect."
+    },
+    "Shimmering Potion": {
+      "name": "Shimmering Potion",
+      "description": "A <c=cardtrait>temporary, exhausting</c> 0-cost card with an <c=boldPink>especially strong</c> effect."
     },
     "Potion of the Phoenix": {
       "name": "Potion of the Phoenix",
